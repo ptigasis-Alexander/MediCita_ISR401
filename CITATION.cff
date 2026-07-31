@@ -13,12 +13,15 @@ authors:
     orcid: 'https://orcid.org/0009-0005-1812-7100'
   - family-names: Díaz Pontón
     given-names: Steven Santiago
+    orcid: 'https://orcid.org/0009-0000-6558-4930'
   - family-names: Gamarra Zárate
     given-names: Jamileth Estefanía
   - family-names: Herrera Ramos
     given-names: Thais Melanie
+    orcid: 'https://orcid.org/0009-0005-2666-6921'
   - family-names: Trujillo Vega
     given-names: Mayummy Jailly
+    orcid: 'https://orcid.org/0009-0009-5157-290X'
 version: 3.0.0
 date-released: '2026-07-26'
 repository-code: >-
@@ -36,13 +39,14 @@ keywords:
   - sistema de gestión médica
 
 # NOTAS PARA EL EQUIPO:
-# 1. Agregar una línea "orcid: 'https://orcid.org/XXXX-XXXX-XXXX-XXXX'"
-#    debajo de cada integrante a medida que se registren en
-#    https://orcid.org/register (el de Steven, Jamileth, Thais y
-#    Mayummy faltan). No usar placeholders como "ORCID-PENDIENTE":
-#    el validador de GitHub rechaza el archivo si el campo no tiene
-#    el formato exacto de URL de ORCID, así que es mejor omitir el
-#    campo por completo hasta tener el real (como está ahora).
+# 1. Falta agregar el orcid de Jamileth Gamarra Zárate cuando se
+#    registre en https://orcid.org/register (formato:
+#    "orcid: 'https://orcid.org/XXXX-XXXX-XXXX-XXXX'"). No usar
+#    placeholders como "ORCID-PENDIENTE": el validador de GitHub
+#    rechaza el archivo si el campo no tiene el formato exacto de
+#    URL de ORCID, así que es mejor omitir el campo hasta tener el
+#    real (como está ahora).
 # 2. Agregar un campo "doi: '10.5281/zenodo.XXXXXXX'" una vez que el
 #    dataset esté depositado en Zenodo (Entrega 4 / 2B). Por la misma
 #    razón, no se incluye un DOI de relleno ahora.
+
