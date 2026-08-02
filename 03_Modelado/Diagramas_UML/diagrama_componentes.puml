@@ -1,0 +1,110 @@
+@startuml
+!pragma layout smetana
+
+title SICM — Diagrama de componentes
+
+top to bottom direction
+
+skinparam monochrome true
+skinparam shadowing false
+skinparam linetype ortho
+skinparam componentStyle rectangle
+skinparam packageStyle rectangle
+skinparam DefaultFontSize 12
+skinparam ArrowThickness 1.2
+skinparam nodesep 55
+skinparam ranksep 55
+
+package "Capa de presentación" as PRESENTACION {
+
+    [Portal del paciente] as PortalPaciente
+    [Portal del personal clínico] as PortalClinico
+    [Portal administrativo] as PortalAdmin
+
+    PortalPaciente -[hidden]right- PortalClinico
+    PortalClinico -[hidden]right- PortalAdmin
+}
+
+package "API y control de acceso" as API {
+
+    [API REST SICM] as ApiRest
+    [Autenticación y RBAC] as Auth
+    [Auditoría] as Auditoria
+
+    Auth -[hidden]right- ApiRest
+    ApiRest -[hidden]right- Auditoria
+}
+
+package "Servicios de negocio" as NEGOCIO {
+
+    [Gestión de pacientes] as Pacientes
+    [Citas y turnos] as Citas
+    [Recepción y recaudación] as Recepcion
+
+    [Historia clínica] as Historia
+    [Atención por especialidad] as Atencion
+    [Enfermería] as Enfermeria
+    [Recetas] as Recetas
+
+    [Farmacia e inventario] as Inventario
+    [Personal y horarios] as Personal
+    [Reportes] as Reportes
+
+    Pacientes -[hidden]right- Citas
+    Citas -[hidden]right- Recepcion
+
+    Historia -[hidden]right- Atencion
+    Atencion -[hidden]right- Enfermeria
+    Enfermeria -[hidden]right- Recetas
+
+    Inventario -[hidden]right- Personal
+    Personal -[hidden]right- Reportes
+}
+
+package "Servicios transversales" as TRANSVERSAL {
+
+    [Notificaciones] as Notificaciones
+    [Generación de comprobantes] as Comprobantes
+    [Asistente virtual FAQ] as Asistente
+
+    Notificaciones -[hidden]right- Comprobantes
+    Comprobantes -[hidden]right- Asistente
+}
+
+package "Persistencia" as DATOS {
+
+    [Repositorio de datos] as Repositorio
+    database "Base de datos SICM" as BD
+    [Almacenamiento de documentos] as Documentos
+
+    BD -[hidden]right- Documentos
+}
+
+cloud "Servicios externos" as EXTERNOS {
+
+    [Correo / mensajería] as Mensajeria
+    [Servicio de facturación] as Facturacion
+
+    Mensajeria -[hidden]right- Facturacion
+}
+
+' Relaciones entre las capas principales
+PRESENTACION -down-> API : HTTPS / JSON
+API -down-> NEGOCIO : invoca servicios autorizados
+NEGOCIO -down-> TRANSVERSAL : utiliza servicios comunes
+NEGOCIO -down-> DATOS : persiste y consulta información
+TRANSVERSAL -down-> EXTERNOS : API segura
+
+' Relaciones internas del control de acceso
+ApiRest --> Auth : autenticar / autorizar
+ApiRest --> Auditoria : registrar operación
+
+' Relaciones de persistencia
+Repositorio --> BD : SQL transaccional
+Repositorio --> Documentos : documentos clínicos
+
+' Integraciones externas
+Notificaciones --> Mensajeria : enviar avisos
+Comprobantes --> Facturacion : emitir comprobantes
+
+@enduml
