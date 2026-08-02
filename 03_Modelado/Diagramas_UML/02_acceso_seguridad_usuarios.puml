@@ -1,0 +1,66 @@
+@startuml
+title SICM — Acceso, Seguridad y Usuarios
+
+left to right direction
+
+skinparam monochrome true
+skinparam shadowing false
+skinparam linetype ortho
+skinparam packageStyle rectangle
+skinparam actorStyle awesome
+
+skinparam DefaultFontSize 14
+skinparam ArrowThickness 1.5
+skinparam RectangleBorderThickness 2
+skinparam nodesep 70
+skinparam ranksep 70
+
+actor "Usuario registrado" as USU
+actor Coordinadora as COO
+actor "Servicio de correo" as CORREO
+
+rectangle "Módulo de Acceso, Seguridad y Usuarios" {
+
+    usecase "CU-12\nIniciar sesión" as CU12
+    usecase "CU-32\nRecuperar\ncontraseña" as CU32
+    usecase "CU-33\nCerrar sesión" as CU33
+
+    usecase "CU-31\nGestionar\nusuarios" as CU31
+    usecase "CU-13\nGestionar\npermisos y roles" as CU13
+    usecase "CU-10\nRestringir acceso\nclínico por rol" as CU10
+
+    usecase "CU-15\nConsultar registro\nde auditoría" as CU15
+
+    ' Organización
+    CU12 -[hidden]right-> CU32
+    CU32 -[hidden]right-> CU33
+
+    CU31 -[hidden]right-> CU13
+    CU13 -[hidden]right-> CU10
+
+    CU32 -[hidden]down-> CU13
+    CU13 -[hidden]down-> CU15
+
+    ' Relaciones
+    CU31 ..> CU13 : <<include>>
+    CU31 ..> CU10 : <<include>>
+    CU13 ..> CU10 : <<include>>
+}
+
+USU -- CU12
+USU -- CU32
+USU -- CU33
+
+COO -- CU31
+COO -- CU13
+COO -- CU15
+
+CORREO -- CU32
+
+note right of CU15
+La Coordinadora administra
+usuarios, permisos y
+auditoría del sistema.
+end note
+
+@enduml

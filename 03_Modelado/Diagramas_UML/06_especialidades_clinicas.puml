@@ -1,0 +1,42 @@
+@startuml
+title SICM — Nutrición y terapia física
+left to right direction
+skinparam monochrome true
+skinparam shadowing false
+skinparam linetype ortho
+skinparam packageStyle rectangle
+skinparam actorStyle awesome
+
+actor Nutricionista as NUT
+actor "Terapeuta físico" as TER
+
+rectangle "Módulo de especialidades clínicas" {
+  usecase "CU-09\nDerivar paciente\nentre áreas" as CU09
+  usecase "CU-23\nRegistrar atención\nclínica" as CU23
+  usecase "CU-27\nRegistrar plan\nnutricional" as CU27
+  usecase "CU-28\nRegistrar sesión de\nterapia física" as CU28
+  usecase "CU-26\nRegistrar evolución\nclínica" as CU26
+
+  CU09 -[hidden]down- CU23
+  CU23 -[hidden]down- CU26
+  CU27 -[hidden]down- CU28
+
+  CU27 ..> CU23 : <<include>>
+  CU27 ..> CU26 : <<include>>
+  CU28 ..> CU23 : <<include>>
+  CU28 ..> CU26 : <<include>>
+}
+
+actor Paciente as PAC
+actor Enfermero as ENF
+
+NUT -- CU23
+NUT -- CU27
+NUT -- CU26
+TER -- CU23
+TER -- CU28
+TER -- CU26
+PAC -- CU27
+PAC -- CU28
+ENF -- CU09
+@enduml

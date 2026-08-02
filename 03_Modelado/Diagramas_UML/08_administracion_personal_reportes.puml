@@ -1,0 +1,63 @@
+@startuml
+title SICM — Administración, Personal y Reportes
+
+left to right direction
+
+skinparam monochrome true
+skinparam shadowing false
+skinparam linetype ortho
+skinparam packageStyle rectangle
+skinparam actorStyle awesome
+
+skinparam DefaultFontSize 14
+skinparam ArrowThickness 1.5
+skinparam RectangleBorderThickness 2
+skinparam nodesep 70
+skinparam ranksep 70
+
+actor Coordinadora as COO
+actor Recepcionista as REC
+
+rectangle "Módulo de Administración, Personal y Reportes" {
+
+    usecase "CU-16\nGestionar perfil\ndel profesional" as CU16
+    usecase "CU-11\nConfigurar horarios\ny turnos" as CU11
+    usecase "CU-17\nAsignar y consultar\nturnos del profesional" as CU17
+
+    usecase "CU-05\nGenerar reportes\nde atención" as CU05
+    usecase "CU-15\nConsultar registro\nde auditoría" as CU15
+    usecase "CU-19\nGenerar información\nfinanciera" as CU19
+
+    ' Organización
+    CU16 -[hidden]right-> CU11
+    CU11 -[hidden]right-> CU17
+
+    CU16 -[hidden]down-> CU05
+    CU11 -[hidden]down-> CU15
+    CU17 -[hidden]down-> CU19
+
+    ' Relaciones
+    CU17 ..> CU16 : <<include>>
+    CU17 ..> CU11 : <<include>>
+    CU05 ..> CU15 : <<include>>
+}
+
+COO -- CU16
+COO -- CU11
+COO -- CU17
+COO -- CU05
+COO -- CU15
+COO -- CU19
+
+REC -- CU17
+
+note right of CU15
+La Coordinadora administra
+el personal, horarios,
+auditoría y reportes.
+
+No modifica la historia
+clínica del paciente.
+end note
+
+@enduml
