@@ -1,0 +1,58 @@
+@startuml
+title SICM — Diagrama general de casos de uso
+left to right direction
+skinparam monochrome true
+skinparam shadowing false
+skinparam linetype ortho
+skinparam packageStyle rectangle
+skinparam actorStyle awesome
+skinparam usecase {
+  BackgroundColor white
+  BorderColor black
+  ArrowColor black
+}
+
+actor Paciente as PAC
+actor Recepcionista as REC
+actor Enfermero as ENF
+actor "Servicio SRI" as SRI
+
+rectangle "Sistema Inteligente para un Centro Médico — SICM" {
+  usecase "M-01\nGestionar acceso\ny seguridad" as M01
+  usecase "M-02\nGestionar pacientes\ny citas" as M02
+  usecase "M-03\nGestionar recepción\ny facturación" as M03
+  usecase "M-04\nGestionar atención\nclínica" as M04
+  usecase "M-05\nGestionar enfermería\ne inventario" as M05
+  usecase "M-06\nGestionar administración\ny reportes" as M06
+  usecase "M-07\nGestionar nutrición\ny terapia física" as M07
+
+  M01 -[hidden]down- M02
+  M02 -[hidden]down- M03
+  M04 -[hidden]down- M05
+  M05 -[hidden]down- M06
+}
+
+actor Administrador as ADM
+actor Médico as MED
+actor Nutricionista as NUT
+actor "Terapeuta físico" as TER
+
+PAC -- M01
+PAC -- M02
+REC -- M02
+REC -- M03
+ENF -- M05
+SRI -- M03
+
+ADM -- M01
+ADM -- M06
+MED -- M04
+NUT -- M07
+TER -- M07
+
+note bottom of M06
+  Coordinación y administración gestionan
+  usuarios, horarios y reportes, pero no
+  modifican información clínica del paciente.
+end note
+@enduml
