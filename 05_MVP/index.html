@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SICM — Demostración automática</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient one"></div><div class="ambient two"></div>
+  <div id="app">
+    <header class="topbar">
+      <div class="brand"><span class="brandmark">S</span><span><b>SICM</b><small>Centro médico inteligente</small></span></div>
+      <div class="demo-label"><span class="live-dot"></span> DEMOSTRACIÓN GUIADA</div>
+      <div class="controls">
+        <button id="soundBtn" aria-label="Activar o silenciar narración">🔊</button>
+        <button id="pauseBtn">Pausar</button>
+        <button id="fullBtn">Pantalla completa</button>
+      </div>
+    </header>
+
+    <main class="stage">
+      <section class="browser" id="browser">
+        <div class="browserbar"><span></span><span></span><span></span><div class="address">🔒 sicm.centro-medico.local</div></div>
+        <div id="screen" class="screen"></div>
+        <div id="spotlight" class="spotlight"></div>
+      </section>
+      <div id="chapter" class="chapter"><small id="chapterKicker"></small><strong id="chapterTitle"></strong></div>
+      <div id="cursor" class="cursor"><i></i></div>
+      <div id="clickFx" class="click-fx"></div>
+    </main>
+
+    <footer class="timeline">
+      <div class="timeline-copy"><span id="sceneName">Introducción</span><span id="clock">00:00 / 05:00</span></div>
+      <div class="track"><div id="progress"></div></div>
+      <div id="markers" class="markers"></div>
+    </footer>
+  </div>
+
+  <div id="welcome" class="welcome">
+    <div class="welcome-card">
+      <span class="eyebrow">DEMO INTERACTIVA · 5 MINUTOS</span>
+      <div class="hero-icon">S</div>
+      <h1>Conozca SICM</h1>
+      <p>Una demostración automática de las interfaces, roles y funciones del Sistema Inteligente para un Centro Médico.</p>
+      <div class="feature-row"><span>🎙 Narración</span><span>↗ Cursor guiado</span><span>◉ 20 módulos</span></div>
+      <button id="startBtn">Iniciar demostración con narración <b>▶</b></button>
+      <small>La narración utiliza la voz en español instalada en su navegador.</small>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
