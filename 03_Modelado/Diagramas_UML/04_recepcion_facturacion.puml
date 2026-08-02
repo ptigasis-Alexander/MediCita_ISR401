@@ -1,0 +1,47 @@
+@startuml
+title SICM — Módulo de Recepción, Recaudación y Facturación
+
+left to right direction
+
+skinparam monochrome true
+skinparam shadowing false
+skinparam linetype ortho
+skinparam packageStyle rectangle
+skinparam actorStyle awesome
+
+skinparam nodesep 70
+skinparam ranksep 70
+skinparam DefaultFontSize 14
+skinparam ArrowThickness 1.5
+
+actor Recepcionista as REC
+actor Paciente as PAC
+
+rectangle "Módulo de Recepción, Recaudación y Facturación" {
+
+    usecase "CU-07\nBuscar paciente\npor cédula" as CU07
+    usecase "CU-08\nRegistrar cobro\ny generar turno" as CU08
+    usecase "CU-19\nRegistrar pagos\n(totales o parciales)" as CU19
+    usecase "CU-18\nEmitir comprobante\nelectrónico" as CU18
+
+    usecase "CU-14\nNotificar\nal paciente" as CU14
+
+    CU07 -[hidden]right-> CU08
+    CU08 -[hidden]right-> CU19
+    CU19 -[hidden]right-> CU18
+    CU19 -[hidden]down-> CU14
+
+    CU08 ..> CU07 : <<include>>
+    CU19 ..> CU08 : <<extend>>
+    CU18 ..> CU19 : <<extend>>
+    CU18 ..> CU14 : <<include>>
+}
+
+REC --> CU07
+REC --> CU08
+REC --> CU19
+REC --> CU18
+
+PAC --> CU19
+
+@enduml

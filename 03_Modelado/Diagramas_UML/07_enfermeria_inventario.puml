@@ -1,0 +1,39 @@
+@startuml
+title SICM — Enfermería, dispensación e inventario
+left to right direction
+skinparam monochrome true
+skinparam shadowing false
+skinparam linetype ortho
+skinparam packageStyle rectangle
+skinparam actorStyle awesome
+
+actor Enfermero as ENF
+
+rectangle "Módulo de enfermería e inventario" {
+  usecase "CU-07\nBuscar paciente\npor cédula" as CU07
+  usecase "CU-06\nRegistrar signos\nvitales" as CU06
+  usecase "CU-09\nDerivar paciente\nentre áreas" as CU09
+  usecase "CU-29\nGestionar inventario" as CU29
+  usecase "CU-30\nRegistrar entrega\nde medicamentos" as CU30
+
+  CU07 -[hidden]down- CU06
+  CU06 -[hidden]down- CU09
+  CU29 -[hidden]down- CU30
+
+  CU06 ..> CU07 : <<include>>
+  CU09 ..> CU06 : <<extend>>
+  CU30 ..> CU29 : <<include>>
+}
+
+actor Paciente as PAC
+actor Administrador as ADM
+
+ENF -- CU07
+ENF -- CU06
+ENF -- CU09
+ENF -- CU29
+ENF -- CU30
+PAC -- CU06
+PAC -- CU30
+ADM -- CU29
+@enduml

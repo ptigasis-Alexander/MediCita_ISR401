@@ -1,0 +1,66 @@
+@startuml
+title SICM — Atención clínica e historia del paciente
+
+left to right direction
+
+skinparam monochrome true
+skinparam shadowing false
+skinparam linetype ortho
+skinparam packageStyle rectangle
+skinparam actorStyle awesome
+
+skinparam DefaultFontSize 14
+skinparam ArrowThickness 1.5
+skinparam RectangleBorderThickness 2
+skinparam nodesep 70
+skinparam ranksep 70
+
+actor Médico as MED
+actor Enfermero as ENF
+actor Paciente as PAC
+
+rectangle "Módulo de Atención Clínica" {
+
+    usecase "CU-02\nConsultar historial\nclínico" as CU02
+    usecase "CU-22\nActualizar historia\nclínica" as CU22
+    usecase "CU-23\nRegistrar atención\nmédica" as CU23
+
+    usecase "CU-24\nRegistrar\ndiagnóstico" as CU24
+    usecase "CU-25\nRegistrar\ntratamiento" as CU25
+    usecase "CU-03\nEmitir receta\nmédica" as CU03
+
+    usecase "CU-26\nRegistrar evolución\nclínica" as CU26
+
+    ' Organización
+    CU02 -[hidden]right-> CU22
+    CU22 -[hidden]right-> CU23
+
+    CU02 -[hidden]down-> CU24
+    CU22 -[hidden]down-> CU25
+    CU23 -[hidden]down-> CU03
+
+    CU25 -[hidden]right-> CU26
+
+    ' Relaciones
+    CU22 ..> CU02 : <<include>>
+    CU23 ..> CU02 : <<include>>
+
+    CU24 ..> CU23 : <<extend>>
+    CU25 ..> CU24 : <<extend>>
+    CU03 ..> CU25 : <<extend>>
+    CU26 ..> CU23 : <<extend>>
+}
+
+MED -- CU02
+MED -- CU22
+MED -- CU23
+MED -- CU24
+MED -- CU25
+MED -- CU03
+MED -- CU26
+
+ENF -- CU02
+
+PAC -- CU23
+
+@enduml

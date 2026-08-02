@@ -1,0 +1,71 @@
+@startuml
+title SICM — Módulo de Pacientes, Citas y Notificaciones
+
+left to right direction
+
+skinparam monochrome true
+skinparam shadowing false
+skinparam linetype ortho
+skinparam packageStyle rectangle
+skinparam actorStyle awesome
+
+skinparam DefaultFontSize 14
+skinparam ArrowThickness 1.5
+skinparam RectangleBorderThickness 2
+skinparam nodesep 60
+skinparam ranksep 60
+
+actor Paciente as PAC
+actor Recepcionista as REC
+actor Administrador as ADM
+actor "Servicio de\nWhatsApp y correo" as CANAL
+
+rectangle "Módulo de Pacientes, Citas y Notificaciones" {
+
+    usecase "CU-20\nRegistrar\npaciente" as CU20
+    usecase "CU-07\nBuscar paciente\npor cédula" as CU07
+    usecase "CU-17\nConsultar\ndisponibilidad" as CU17
+
+    usecase "CU-01\nAgendar\ncita médica" as CU01
+    usecase "CU-21\nReagendar\ncita médica" as CU21
+    usecase "CU-04\nCancelar\ncita médica" as CU04
+
+    usecase "CU-14\nNotificar\nal paciente" as CU14
+
+    CU20 -[hidden]right- CU07
+    CU07 -[hidden]right- CU17
+
+    CU20 -[hidden]down- CU01
+    CU07 -[hidden]down- CU21
+    CU17 -[hidden]down- CU04
+
+    CU21 -[hidden]down- CU14
+
+    CU01 ..> CU17 : <<include>>
+    CU21 ..> CU17 : <<include>>
+
+    CU01 ..> CU14 : <<include>>
+    CU21 ..> CU14 : <<include>>
+    CU04 ..> CU14 : <<include>>
+}
+
+PAC -- CU01
+PAC -- CU04
+
+REC -- CU20
+REC -- CU07
+REC -- CU01
+REC -- CU21
+
+ADM -- CU17
+
+CANAL -- CU14
+
+note right of CU14
+Las notificaciones se envían
+mediante WhatsApp o correo
+electrónico según la
+configuración del sistema.
+end note
+
+@enduml
