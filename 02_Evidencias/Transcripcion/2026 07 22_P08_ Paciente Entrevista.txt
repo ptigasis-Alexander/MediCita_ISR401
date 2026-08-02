@@ -1,0 +1,144 @@
+
+
+
+Código: P08
+Usuario (Paciente)
+    
+
+P
+0
+8
+ 
+–
+ 
+P
+a
+c
+i
+e
+n
+t
+e
+ 
+T
+r
+a
+n
+s
+c
+r
+i
+p
+c
+i
+ó
+n
+ 
+A
+n
+o
+n
+i
+m
+i
+z
+a
+d
+a
+    
+
+Tipo de documento: Transcripción corregida y anonimizada
+
+Entrevistador: Buenos días. Somos estudiantes de Ingeniería de Software de la Universidad Técnica 
+Estatal de Quevedo (UTEQ) y estamos desarrollando un documento para un sistema de mejora en la 
+atención del Centro Médico. Nos gustaría hacerle algunas preguntas sobre su experiencia como 
+paciente. No existen respuestas correctas o incorrectas; toda la información será utilizada únicamente 
+con fines académicos.
+Entrevistada: Sí, podemos continuar.
+
+Entrevistador: ¿Cuál es su nombre?
+Entrevistada: María Sampedro.
+Entrevistador: ¿Cuál es su edad?
+Entrevistada: 55 años.
+Entrevistador: ¿Cuál es el motivo de atención por el que visita con mayor frecuencia el Centro 
+Médico? Por ejemplo: medicina general, odontología, psicología, nutrición o fisioterapia.
+Entrevistada: Medicina general y también odontología.
+Entrevistador: ¿Con qué frecuencia visita el Centro Médico?
+Entrevistada: Tres veces al año.
+
+Entrevistador: ¿Qué es lo que más le incomoda o le hace perder más tiempo durante su atención? 
+Entrevistada: No hay nada que me haya incomodado. Todo es perfecto, me gusta la atención, la 
+prioridad que brindan y, en general, todo es bueno.
+
+Entrevistador: ¿Cómo agenda actualmente una cita médica: de manera presencial, por teléfono o en 
+línea?
+Entrevistada: Presencial.
+
+Entrevistador: ¿Le gustaría poder agendar, reprogramar o cancelar una cita desde su celular o 
+computadora?
+Entrevistada: Sí, sería bueno.
+
+Entrevistador: ¿Qué debería suceder si necesita cancelar una cita a último momento?
+Entrevistada: Debería existir una opción en línea para cancelarla, porque es difícil tener que acercarse 
+personalmente.
+
+Entrevistador: ¿Cómo la identifican actualmente cuando llega al Centro Médico?
+Entrevistada: Con la cédula.
+
+Entrevistador: ¿Le parece importante que sus datos personales y médicos estén protegidos y solo sean 
+accesibles para el personal autorizado?
+Entrevistada: Sí.
+Entrevistador: ¿Sabe si el personal médico recibe su historial clínico antes de atenderla?
+Entrevistada: Sí.
+Entrevistador: Cuando es atendida en otra área, ¿le informan que su historial clínico ha sido 
+compartido con ese servicio?
+
+
+Entrevistada: Sí.
+Entrevistador:
+¿Le miden los signos vitales, como presión arterial y temperatura, cada vez que acude al Centro 
+Médico?
+Entrevistada: Sí.
+
+Entrevistador: ¿Quién realiza ese procedimiento?
+Entrevistada: La enfermera.
+Entrevistador: ¿Le gustaría que los distintos profesionales de salud, como médicos, odontólogos, 
+psicólogos y nutricionistas, pudieran consultar un mismo historial clínico autorizado?
+Entrevistada: Sí, porque así conocen todo el proceso de atención que uno ha recibido.
+Entrevistador: Cuando le recetan un medicamento, ¿cómo recibe la información?
+Entrevistada: Mediante una receta física.
+Entrevistador: ¿Le sería útil recibir también la receta de manera digital, por mensaje o correo 
+electrónico?
+Entrevistada: Sí, también sería una buena opción.
+Entrevistador: ¿Alguna vez ha sido derivada a otra área del Centro Médico?
+Entrevistada: No.
+
+Entrevistador: ¿Cómo es el proceso de pago o facturación después de la atención?
+Entrevistada: Primero se realiza el pago y luego se recibe la atención.
+
+Entrevistador: ¿Le gustaría conocer el costo estimado de la atención antes de recibir el servicio?
+Entrevistada: Sí.
+Entrevistador: ¿Le gustaría poder solicitar un reporte o resumen de sus atenciones anteriores?
+Entrevistada: Sí, claro.
+Entrevistador: ¿Qué información le gustaría encontrar en ese resumen?
+Entrevistada: Me gustaría conocer todas las áreas donde he sido atendida, los tratamientos, 
+diagnósticos y toda la información relacionada.
+Entrevistador:
+¿Confía en que el Centro Médico protege actualmente su información personal y clínica?
+Entrevistada:
+Sí.
+Entrevistador: Si pudiera mejorar una sola cosa del proceso de atención del Centro Médico, ¿qué 
+mejoraría?
+Entrevistada: Me gustaría que mejoraran algunos servicios. Por ejemplo, en odontología actualmente 
+solo realizan extracciones. Sería bueno que existieran más tratamientos y una mayor variedad de 
+servicios médicos.
+Entrevistador: ¿Qué tan cómoda se sentiría utilizando una aplicación digital para gestionar sus citas y 
+consultar su información médica?
+Entrevistada: Sería muy útil porque ahorraría tiempo. Podría realizar los trámites desde mi casa sin 
+tener que trasladarme al Centro Médico.
+Entrevistador: Muchas gracias por su tiempo y por compartir su experiencia. Esta información será de 
+gran utilidad para el diseño del sistema de mejora en la atención del Centro Médico.
+
+
+¿Tiene alguna pregunta o comentario adicional?
+Entrevistada: No.

@@ -1,0 +1,163 @@
+P04 – Odontología
+Transcripción anonimizada
+
+Código:
+P04
+Área:
+Odontología
+Entrevistada: Soy la coordinadora del área.
+Entrevistador: ¿Qué tipo de experiencia tiene en el cargo?
+Entrevistada: ¿Aquí o por fuera?
+Entrevistador: Todo el tiempo, en general.
+Entrevistada: Como seis meses.
+Entrevistador: ¿Y laborando aquí?
+Entrevistada: Voy a cumplir tres.
+Entrevistador: Bien, ¿cómo se organiza usted actualmente en la atención al cliente o a los usuarios en el centro médico?
+Entrevistada: Conforme van llegando se los va atendiendo. Si los pacientes ya tienen una cita programada, se los agenda; pero si no tienen programación, se los atiende conforme van llegando.
+Entrevistador: ¿Eso quiere decir que no tienen que tener obligatoriamente una cita previa para venir?
+Entrevistada: No.
+Entrevistador: Pero antes de eso sí tienen que pasar por admisión para llegar hasta usted.
+Entrevistada: Claro, primero pasan por recaudación, luego por enfermería para llenar la ficha de historia clínica, y luego ya me la traen para completar la historia clínica del paciente.
+Entrevistador: ¿Existe algún mecanismo formal para registrar el orden de llegada del usuario?
+Entrevistada: No. Como le explico, solamente en recaudación se registra el pago y de ahí pasa a enfermería con una ficha manual. Pero no hay un registro como tal.
+Entrevistador: ¿Cómo le gustaría que fuera ese registro formal?
+Entrevistada: Bueno, sí sería bueno que una vez que cancelen en recaudación, la ficha se llenara por internet y me la pasaran directamente para ser más rápido.
+Entrevistador: ¿Qué debería contener esa ficha?
+Entrevistada: Los datos personales del paciente, peso y talla, temperatura, y la anamnesis del paciente.
+Entrevistador: ¿Qué sucede cuando la cantidad de usuarios que llega supera la capacidad de atención del día?
+Entrevistada: Tienen que esperar hasta que me desocupe, pero usualmente no tenemos muchos usuarios por el momento, porque en odontología no trabajamos con agendamiento como en otras áreas, por ejemplo terapia física. Pero hablo solo de mi área: no tengo mucho agendamiento porque por el momento solo hago extracciones dentales.
+Entrevistador: ¿Con qué frecuencia ocurre que los usuarios no puedan ser atendidos debido a falta de personal o una demanda inesperada?
+Entrevistada: Por falta de insumos.
+Entrevistador: Podría ser eso o cualquier inconveniente por el que usted no pudo llegar.
+Entrevistada: Cuando sucede eso, como contamos con la historia clínica, llamamos a los pacientes previamente para que no vengan.
+Entrevistador: ¿Esto ocurre diariamente o algunas veces por semana?
+Entrevistada: No, casi no lo tenemos.
+Entrevistador: ¿Cuando un usuario no puede ser atendido en su visita, qué alternativas le ofrecen?
+Entrevistada: ¿Cuando ya no estoy yo?
+Entrevistador: Por ejemplo, si llega el usuario y usted no lo puede atender porque está con otros pacientes o se dañó algún equipo, o algún contratiempo.
+Entrevistada: Ah, ya. Se reagenda la cita.
+Entrevistador: ¿Cómo se coordina la atención entre las áreas del centro médico?
+Entrevistada: Depende de cómo vayan llegando, se los va atendiendo, como le dije. Y de ahí, en recaudación, se los dirige para que puedan ir a enfermería y luego acudir a cada área.
+Entrevistada: En enfermería es donde nos pasan a todos la ficha; entonces ellos dirigen al paciente a cada área.
+Entrevistador: Y en lo que se refiere al historial clínico de los pacientes y su seguimiento, ¿se lleva actualmente un registro?
+Entrevistada: Claro.
+Entrevistador: ¿En qué formato lo tienen?
+Entrevistada: Manejamos dos tipos de formatos: en la computadora y escrito, en fichas.
+Entrevistador: ¿Está conforme con ese registro de fichas y con el de la computadora?
+Entrevistada: Sí, podría mejorarse, obviamente.
+Entrevistador: ¿Cómo le gustaría que fuera?
+Entrevistada: Que la información de cada paciente fuera más detallada y que el registro se pudiera buscar más rápidamente.
+Entrevistador: ¿Podría ser en hojas de Excel?
+Entrevistada: Podría ser un Excel.
+Entrevistador: ¿O en un sistema digital especializado?
+Entrevistada: Ah sí, mejor un sistema especializado.
+Entrevistador: ¿Qué inconvenientes ha encontrado al buscar información de usuarios atendidos anteriormente?
+Entrevistada: A veces se pierden las fichas.
+Entrevistador: ¿Y cuando no se pierden, tardan al momento de buscarlas?
+Entrevistada: Tardan un poco, claro, porque es manual.
+Entrevistador: ¿Con qué frecuencia necesita consultar la atención previa del usuario?
+Entrevistador: Es decir, cuánto tiempo le toma cuando tiene que consultar su historial anterior.
+Entrevistada: Por lo general toma de diez a quince minutos.
+Entrevistador: ¿En qué situaciones la ausencia de un historial actualizado ha limitado la calidad de la atención?
+Entrevistador: Es decir, si los registros del usuario a veces no están actualizados o tienen información errónea.
+Entrevistada: Por ejemplo, cuando ya hay una historia clínica previa y el paciente viene después de mucho tiempo, se le actualiza la historia clínica, pero nuevamente llenando los datos.
+Entrevistador: ¿Qué información considera indispensable que debería registrarse en el historial clínico de un usuario?
+Entrevistada: Por ejemplo, anotamos qué tipo de medicinas toman previamente y qué enfermedades tienen, pero me gustaría que eso se ampliara más, que fuera un poco más específico, para saber cómo tratarlo y qué medicinas no recetarle. O sea, yo sí lo hago, pero en el historial queda muy corto; me gustaría extenderlo un poco más.
+Entrevistador: Que tenga más detalle sobre lo que debería y no debería tomar, o sobre sus alergias...
+Entrevistada: Exacto.
+Entrevistador: ¿De qué manera se asegura actualmente que se respete la confidencialidad de la información médica de los usuarios?
+Entrevistador: Es decir, que la información del usuario y sus datos personales no se repartan por cualquier lado.
+Entrevistada: Si el usuario es derivado a otras áreas, cada especialista tiene la información del usuario, es obvio, pero de ahí no sale; solo queda entre el enfermero y el especialista.
+Entrevistador: Y en cuanto al control de medicamentos, ¿qué tipos de medicamentos básicos se entregan habitualmente a los usuarios?
+Entrevistada: Paracetamol, ibuprofeno, amoxicilina... tenemos todo tipo de medicamentos en este momento.
+Entrevistador: ¿Cómo se registra actualmente la entrega de medicamentos?
+Entrevistada: Eso lo maneja directamente enfermería.
+Entrevistador: ¿Ha ocurrido que los medicamentos se agoten sin que se den cuenta con anticipación?
+Entrevistada: No, porque en enfermería llevan un registro en el sistema de todos los medicamentos que entran y salen; conforme se van entregando se van descargando, entonces se lleva un control y no hay pérdidas.
+Entrevistador: ¿Existe algún procedimiento definido para solicitar la reposición de medicamentos cuando se agotan?
+Entrevistada: Sí, claro. Cada año se hace el requerimiento de medicación; se pide una cierta cantidad y esa cantidad tiene que durar, por eso hay que contabilizar cuántos medicamentos se entregan dentro y fuera, porque nosotros también hacemos brigadas fuera del centro.
+Entrevistador: ¿Se lleva un registro de los usuarios que reciben medicamentos?
+Entrevistada: Claro que sí, por medio de recetas.
+Entrevistador: ¿Considera que ese nivel de detalle es suficiente?
+Entrevistada: Sí.
+Entrevistador: ¿Qué piensa sobre registrar, de cada usuario, qué medicamentos lleva y qué necesidad tiene, de forma más detallada?
+Entrevistador: Por ejemplo, si un usuario lleva paracetamol o algún antibiótico, detallar para qué es su uso, o simplemente se lo entrega así...
+Entrevistada: No; cada quien tiene su historia clínica y sabe por qué se le envía eso. Aunque, si vienen a inspeccionar, sí estaría bien tener un respaldo de para qué se le dio ese medicamento.
+Entrevistador: ¿Por qué medios se mantiene informados a los usuarios sobre los horarios de atención disponibles o si ha habido cambios?
+Entrevistada: No hemos tenido cambios; atendemos de ocho de la mañana a cinco de la tarde.
+Entrevistador: ¿Con qué frecuencia los usuarios llegan al centro médico sin poder ser atendidos, o encuentran que el servicio no está disponible?
+Entrevistada: Aquí llegan usualmente a diario.
+Entrevistador: ¿Qué tipo de consultas o preguntas recibe con mayor frecuencia por parte de los usuarios, antes o después de la atención?
+Entrevistada: Siempre preguntan por el horario de atención y por la disponibilidad de la agenda, porque me preguntan mucho si pueden venir sin cita previa.
+Entrevistada: Y también cuánto cuesta la consulta.
+Entrevistador: En cuanto a las citas, ¿no le parecería mejor que hubiera un registro para agendarlas?
+Entrevistada: Un agendamiento sí sería muy bueno, que tuviéramos un sistema de agendamiento; pero también se presentan ciertas urgencias que hay que atender de manera espontánea. Por ejemplo, en otras áreas sí hay agendamiento; en odontología también podríamos tenerlo, pero, como le digo, llegan urgencias o emergencias que hay que atender en ese momento. Si estoy disponible, las atiendo o les doy prioridad.
+Entrevistador: ¿Utiliza actualmente alguna herramienta digital para la gestión de la información de los usuarios? Describa sus funciones.
+Entrevistada: Tenemos una plataforma en Google Drive. Ahí guardamos la información de todos los pacientes y sus fichas.
+Entrevistador: ¿Cuál es su nivel de comodidad al usar esa herramienta digital?
+Entrevistada: Cómoda.
+Entrevistador: ¿Con qué frecuencia considera que la ausencia de una herramienta digital específica para el centro médico afecta negativamente la calidad del servicio?
+Entrevistada: Sí sería bueno mejorar lo de la historia clínica, que ya no sea manual sino digital. Eso es lo único que haría falta aquí para mejorar la calidad del servicio.
+Entrevistador: En su opinión, ¿qué aspectos de la gestión actual del centro médico generan mayor desgaste o carga de trabajo innecesaria para usted?
+Entrevistada: No es tan pesado, pero a veces salimos de nuestras áreas para atender otras situaciones; estamos ocupados y tenemos que hacer las dos cosas.
+Entrevistador: ¿Qué funcionalidades considera más urgentes o de mayor importancia para implementar en la gestión del centro médico?
+Entrevistada: Como le dije, la historia clínica digital, y también más publicidad.
+Entrevistador: ¿Le interesaría una gestión de organización de turnos y un historial clínico más estructurado que facilite el acceso a la información del usuario?
+Entrevistador: Si pudiera cambiar únicamente un proceso de la gestión actual del centro médico, ¿cuál sería?
+Entrevistada: Lo de la historia clínica.
+Entrevistador: De todas las áreas de gestión que tiene el centro médico, ¿cuál función manual le genera más inconveniente y le gustaría que cambiara?
+Entrevistada: Únicamente la historia clínica.
+Entrevistador: ¿Qué obstáculos considera que podrían dificultar la adopción de una nueva forma de gestión? Podría ser falta de información sobre esta nueva forma de registrar los datos, o...
+Entrevistada: Puede ser tedioso al inicio, pero todo se va acoplando y uno se va adaptando a lo nuevo.
+Entrevistador: Desde su perspectiva personal, ¿cómo consideraría la calidad del servicio que brinda actualmente el centro médico?
+Entrevistada: Buena.
+Entrevistador: ¿Ha recibido alguna queja o retroalimentación directa de algún usuario sobre aspectos del servicio que considere deficientes?
+Entrevistada: Actualmente, podría ser por falta de insumos odontológicos.
+Entrevistador: ¿Considera que la cantidad de personal disponible actualmente es suficiente para cubrir todas las necesidades del centro médico?
+Entrevistada: Nos falta personal para las brigadas médicas extramurales.
+Entrevistada: Internamente estamos bien, pero para lo extramural sí hace falta.
+Entrevistador: ¿Cómo afecta la falta de un registro centralizado a la coordinación entre las diferentes áreas del centro médico? Es decir, cuando usted deriva a un usuario hacia otra área médica.
+Entrevistada: No hay buena coordinación.
+Entrevistador: ¿Cuántos usuarios atiende usted a diario?
+Entrevistada: Aquí en odontología, como le dije, ahora mismo por falta de insumos no atendemos muchos usuarios. Estamos atendiendo de cinco a seis usuarios por día; se atendería un poco más si tuviéramos más insumos, pero ya están en camino.
+Entrevistador: ¿Con qué frecuencia los usuarios deben esperar más de treinta minutos antes de ser atendidos?
+Entrevistada: Treinta minutos, sí, o hasta menos.
+Entrevistador: ¿Con qué frecuencia ocurre que los usuarios no puedan ser atendidos, o que falten el día de su cita?
+Entrevistada: Pueden faltar a citas, pero casi no faltan; tal vez una vez.
+Entrevistador: ¿Cómo describe el proceso de organización de la llegada de los usuarios, con cita o sin cita?
+Entrevistada: En organización estamos muy bien actualmente.
+Entrevistador: ¿Considera que la coordinación actual entre las áreas del centro médico es eficiente y eficaz?
+Entrevistada: Sí.
+Entrevistador: ¿Cómo se controla la entrega de medicamentos y hacia dónde debe ir el usuario?
+Entrevistada: A enfermería.
+Entrevistador: ¿Pero con...?
+Entrevistada: Con la receta.
+Entrevistador: ¿En papel?
+Entrevistada: Sí, en físico.
+Entrevistador: ¿Le gustaría que también fuera digital?
+Entrevistada: También podría ser digital.
+Entrevistador: ¿Para que se envíe directamente de un área a otra?
+Entrevistada: A enfermería directamente, y ellos ya van a retirarla.
+Entrevistada: Siento que eso es lo que nos falta: actualizarnos un poco más en la plataforma digital.
+Entrevistador: ¿Le gustaría que, en todo caso, fuera un sistema con algo de inteligencia artificial?
+Entrevistada: Sí, me gustaría.
+Entrevistador: ¿Para el control de medicamentos o el diagnóstico?
+Entrevistada: Que nos ayude.
+Entrevistador: ¿Necesitan que el sistema genere reportes?
+Entrevistada: Reportes diarios de atención, sí; podrían ser mensuales, como se realiza actualmente.
+Entrevistador: Listo, muchísimas gracias.
+Entrevistada: Gracias.
+Observaciones derivadas
+* No existe un mecanismo formal para registrar el orden de llegada de los usuarios; el único registro se genera en recaudación al momento del pago, y de ahí se pasa una ficha manual a enfermería.
+* El historial clínico se maneja en dos formatos (computadora y ficha física en papel), lo que provoca pérdida ocasional de fichas y tiempos de búsqueda de 10 a 15 minutos para consultar el historial de un paciente.
+* La entrevistada identifica como su principal necesidad la digitalización de la historia clínica, con un formato más detallado (medicación previa, enfermedades, alergias) y de búsqueda más rápida; sugiere un sistema especializado antes que una simple hoja de Excel.
+* El área de odontología no cuenta actualmente con agendamiento formal, atendiendo solo por orden de llegada, principalmente porque el servicio se limita a extracciones dentales; sin embargo, se reconoce que un sistema de agendamiento sería positivo siempre que permita atender urgencias de forma espontánea.
+* La disponibilidad de atención está limitada por la falta de insumos odontológicos, lo que reduce la atención diaria a entre 5 y 6 usuarios; se indica que ya hay insumos en camino.
+* El control de medicamentos (entradas y salidas) lo administra enfermería mediante un registro en sistema, lo que hasta ahora ha evitado desabastecimientos; la reposición se solicita anualmente en función del consumo, incluyendo brigadas extramurales.
+* La entrega de medicamentos se respalda actualmente con receta física; la entrevistada estaría de acuerdo con que este proceso se digitalice y se envíe directamente entre áreas (por ejemplo, de admisión/consulta a enfermería).
+* La confidencialidad de la información se maneja de forma informal: se limita a que solo el enfermero y el especialista correspondiente tengan acceso a los datos del usuario derivado, sin un procedimiento documentado.
+* La entrevistada percibe que la coordinación entre áreas del centro médico es deficiente, principalmente por la ausencia de un registro centralizado que permita dar seguimiento a la derivación de usuarios entre áreas.
+* Existe interés explícito en incorporar una herramienta con inteligencia artificial que apoye tanto el control de medicamentos como el diagnóstico.
+* Se identifica la necesidad de generar reportes de atención, tanto diarios como mensuales.
+* Se reporta escasez de personal específicamente para brigadas médicas extramurales, mientras que el personal interno se considera suficiente.
+* Actualmente se usa Google Drive como repositorio de fichas de pacientes; la entrevistada se siente cómoda con esta herramienta, aunque reconoce que no sustituye una historia clínica digital estructurada.

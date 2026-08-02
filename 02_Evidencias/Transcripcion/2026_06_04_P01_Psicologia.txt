@@ -1,0 +1,36 @@
+P01 – Psicología
+Transcripción Anonimizada
+Código: P01
+Área: Psicología
+Tipo de documento: Transcripción corregida y anonimizada
+Transcripción
+Entrevistador: ¿Cómo se organiza actualmente con la llegada de nuevos usuarios para terapia ocupacional?
+Participante: Trabajo mediante agendamiento. Elaboro un documento con la planificación semanal y, conforme llegan los pacientes, los voy registrando. Luego imprimo el horario correspondiente.
+Entrevistador: ¿Qué mecanismo utiliza para registrar el agendamiento?
+Participante: Actualmente utilizo Excel.
+Entrevistador: ¿Qué ocurre cuando un usuario no puede ser atendido?
+Participante: Generalmente sucede una vez por semana por reuniones o actividades institucionales. Si el paciente ya es frecuente, me comunico con él para reagendar. Si no tengo un medio de contacto, debe acercarse nuevamente al centro o comunicarse cuando sea posible.
+Entrevistador: ¿Cómo se informa al usuario sobre la cancelación de la atención?
+Participante: Se deja una nota o se le indica que se acerque al área para reagendar según la disponibilidad.
+Entrevistador: ¿Cómo maneja la historia clínica?
+Participante: La historia clínica es física. Se completa manualmente y luego queda bajo custodia del personal de enfermería.
+Entrevistador: ¿Cómo obtiene posteriormente la historia clínica?
+Participante: La solicito verbalmente al encargado de enfermería cuando necesito consultar la información de un paciente.
+Entrevistador: ¿Preferiría un sistema digital?
+Participante: Sí. Sería mucho más rápido disponer de un sistema donde se pueda buscar la información directamente.
+Entrevistador: ¿Qué inconvenientes presenta el sistema actual?
+Participante: En ocasiones los documentos se extravían o tardan en encontrarse.
+Entrevistador: ¿Qué información considera indispensable en la historia clínica?
+Participante: Datos personales, antecedentes clínicos, enfermedades y, en el área de psicología, información sobre comportamiento y evolución.
+Entrevistador: ¿Cree que una historia clínica digital mejoraría la atención?
+Participante: Sí. Agilizaría el acceso a la información y reduciría los tiempos de espera.
+Entrevistador: ¿Utiliza medicamentos en su área?
+Participante: No. El área de psicología no prescribe medicamentos.
+Entrevistador: ¿Cambiaría el sistema actual de agendamiento?
+Participante: Sí, implementaría un sistema digital especializado.
+Observaciones derivadas
+
+* El agendamiento depende de herramientas ofimáticas (Excel).
+* Existe dependencia de historias clínicas físicas.
+* Se presentan demoras por búsqueda manual de expedientes.
+* El participante manifiesta interés por un sistema digital centralizado.
