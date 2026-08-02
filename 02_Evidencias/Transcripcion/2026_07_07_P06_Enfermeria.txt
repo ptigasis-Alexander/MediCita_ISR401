@@ -1,0 +1,41 @@
+P06 – Enfermería
+Transcripción Anonimizada
+Código: P06
+Área: Enfermería
+
+Transcripción
+Entrevistador: ¿Cuáles son sus principales actividades?
+Participante: Realizo el registro de pacientes, toma de signos vitales, campañas de vitaminización, elaboración de informes semanales y actualización de la matriz de atención de enfermería.
+Entrevistador: ¿Cómo consulta la información de pacientes atendidos anteriormente?
+Participante: Generalmente solo verifico el área a la que será derivado el paciente. La información clínica detallada es consultada por el profesional tratante para mantener la confidencialidad.
+Entrevistador: ¿Qué dificultades encuentra al registrar la información clínica?
+Participante: La principal dificultad ocurre cuando los representantes de menores de edad no conocen o no proporcionan correctamente el número de cédula del paciente.
+Entrevistador: ¿Qué inconvenientes existen al buscar una historia clínica?
+Participante: No existen mayores inconvenientes porque los expedientes están organizados; sin embargo, el proceso podría ser más rápido.
+Entrevistador: ¿Qué información considera indispensable en una historia clínica digital?
+Participante: Número de cédula, nombres completos, apellidos, fecha de nacimiento y demás datos de identificación correctamente registrados.
+Entrevistador: ¿Qué funciones debería tener un sistema?
+Participante: Permitir registrar la información directamente en la computadora y localizar rápidamente el expediente mediante el número de cédula.
+Entrevistador: ¿Cómo debería compartirse la información con otras áreas?
+Participante: Mediante un sistema integrado donde la información ingresada esté disponible inmediatamente para los demás profesionales autorizados.
+Entrevistador: ¿Cómo controla el inventario de medicamentos?
+Participante: Realizo informes periódicos de entradas y salidas de medicamentos y los entrego a la coordinación.
+Entrevistador: ¿Cómo registra la entrega de medicamentos?
+Participante: Se registra manualmente en una hoja con la información del paciente y la entrega realizada.
+Entrevistador: ¿Cómo identifica medicamentos próximos a agotarse?
+Participante: A través de informes de inventario que incluyen nombre del medicamento, presentación, fecha de fabricación y vencimiento.
+Entrevistador: ¿Qué limitaciones presenta el proceso actual?
+Participante: La principal limitación es depender de registros físicos cuando sería más eficiente trabajar con un sistema digital.
+Entrevistador: ¿Qué dificultades existirían para implementar un sistema digital?
+Participante: Ninguna importante, ya que el área dispone de equipos e Internet.
+Entrevistador: ¿Qué beneficios espera obtener?
+Participante: Mayor agilidad para localizar información y reducir el tiempo de búsqueda de expedientes.
+Entrevistador: ¿Cuál considera la prioridad principal del nuevo sistema?
+Participante: Permitir buscar e ingresar la información del paciente mediante el número de cédula de forma rápida y segura.
+Observaciones derivadas
+
+* El área mantiene registros físicos y matrices de control.
+* El inventario de medicamentos se administra mediante informes periódicos.
+* Existe interés en implementar una historia clínica electrónica integrada.
+* La búsqueda por número de cédula es considerada una función prioritaria.
+* El personal considera viable la adopción de un sistema digital.
