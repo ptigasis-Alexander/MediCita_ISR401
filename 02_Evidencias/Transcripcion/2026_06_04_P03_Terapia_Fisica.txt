@@ -1,0 +1,55 @@
+P03 – Terapia Física
+Transcripción Anonimizada (Parte 1)
+Código: P03
+Área: Terapia Física
+
+Transcripción
+Entrevistador: ¿Cuál es su cargo?
+Participante: Soy terapeuta físico.
+Entrevistador: ¿Cuál es su experiencia profesional?
+Participante: Tengo un año y cuatro meses de experiencia en el área y nueve meses laborando en este centro médico.
+Entrevistador: ¿Cómo se organiza la atención de los pacientes?
+Participante: Trabajamos mediante un sistema de agendamiento. Si existe disponibilidad se asigna un horario; debido a la alta demanda algunos pacientes deben esperar hasta que existan nuevos espacios.
+Entrevistador: ¿Cuántos pacientes atiende por día?
+Participante: Entre 15 y 20 pacientes diariamente.
+Entrevistador: ¿Los pacientes esperan más de 30 minutos?
+Participante: No. Cada paciente tiene un horario específico de atención, por lo que normalmente ingresa a la hora programada.
+Entrevistador: ¿Qué sucede si un paciente llega tarde?
+Participante: Existe una política de tolerancia de 15 minutos. Si supera ese tiempo, no puede ser atendido para no afectar el horario de los demás pacientes.
+Entrevistador: ¿Qué ocurre si llega un paciente sin cita?
+Participante: Si no es una emergencia, primero debe agendar una cita. En casos urgentes se brinda atención.
+Entrevistador: ¿Cómo manejan la historia clínica?
+Participante: El expediente es físico. Enfermería abre la historia clínica, nosotros registramos la evolución y posteriormente el documento vuelve al archivo de enfermería.
+Entrevistador: ¿Le gustaría utilizar un sistema digital?
+Participante: Sí. Facilitaría el registro y la consulta de la información, además de agilizar el trabajo.
+Entrevistador: ¿Con qué frecuencia consulta la historia clínica?
+Participante: En cada sesión, para registrar la evolución del paciente.
+Entrevistador: ¿Se ha perdido información de pacientes?
+Participante: Anteriormente ocurrió en algunas ocasiones; actualmente no hemos tenido inconvenientes relevantes.
+Entrevistador: ¿Qué información considera indispensable en la historia clínica?
+Participante: La presión arterial, el diagnóstico inicial y, principalmente, las notas de evolución del paciente en cada sesión.
+Entrevistador: ¿Prescriben medicamentos?
+Participante: No. Los terapeutas físicos no prescribimos medicamentos; únicamente lo hacen los profesionales autorizados.
+Entrevistador: ¿Cómo afecta la ausencia de un sistema digital?
+Participante: Las historias clínicas físicas pueden confundirse con las de otras áreas y esto dificulta localizar rápidamente la información del paciente.
+Entrevistador: ¿Existe coordinación con otras áreas?
+Participante: Sí. Trabajamos de forma multidisciplinaria y derivamos pacientes, por ejemplo, al área de nutrición cuando es necesario.
+Entrevistador: ¿Cómo se comparte la información del paciente?
+Participante: Se utiliza la misma historia clínica física; actualmente no existe un mecanismo digital.
+Entrevistador: ¿Qué función considera prioritaria para un nuevo sistema?
+Participante: La digitalización de la historia clínica y del seguimiento clínico, ya que los demás registros se realizan manualmente.
+Entrevistador: ¿Qué obstáculos existirían para implementar un sistema?
+Participante: Algunos colaboradores con mayor edad necesitarían capacitación para adaptarse a las nuevas tecnologías.
+Entrevistador: ¿Ha recibido quejas de los pacientes?
+Participante: No. En general los usuarios manifiestan satisfacción con la atención recibida.
+Entrevistador: ¿Qué cambiaría del sistema actual?
+Participante: Implementaría un expediente clínico electrónico que facilite el acceso y seguimiento de la información.
+Entrevistador: ¿Estaría de acuerdo con implementar un sistema para el centro?
+Participante: Sí, porque haría el trabajo más eficiente.
+Observaciones derivadas
+
+* El proceso de agendamiento funciona adecuadamente, pero la alta demanda limita la disponibilidad.
+* La historia clínica continúa siendo física.
+* Existe trabajo multidisciplinario entre áreas.
+* Se identifica como principal necesidad la historia clínica electrónica.
+

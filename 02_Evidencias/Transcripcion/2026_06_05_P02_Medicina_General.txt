@@ -1,0 +1,71 @@
+P02 – Medicina General
+Transcripción Anonimizada
+
+Código: P02
+Área: Medicina General
+Cargo del participante: Profesional del área clínica (anonimizado)
+Transcripción
+Entrevistador: ¿Cuál es su cargo de trabajo actual?
+Participante: Enfermera.
+Entrevistador: ¿Cuántos años de experiencia tiene en el cargo?
+Participante: Cuatro años en el cargo y seis años de experiencia profesional en el área.
+Entrevistador: ¿Cuánto tiempo lleva laborando en este centro médico?
+Participante: Seis meses.
+Entrevistador: ¿Cómo se organiza actualmente la atención de los usuarios?
+Participante: La atención se realiza según el orden de llegada y la clasificación del Triaje de Manchester. Los casos con mayor prioridad son atendidos primero, aunque hayan llegado después.
+Entrevistador: ¿Cuántos usuarios atiende en promedio por día?
+Participante: Aproximadamente veinte usuarios.
+Entrevistador: ¿Con qué frecuencia no puede atender a los usuarios?
+Participante: Casi nunca.
+Entrevistador: ¿Qué ocurre cuando un usuario no puede ser atendido?
+Participante: Se agenda una nueva cita. Si el usuario lo desea, deja un número telefónico para confirmar la disponibilidad del profesional.
+Entrevistador: ¿Existen tiempos definidos de atención?
+Participante: Sí. El tiempo promedio es de 20 minutos por paciente.
+Entrevistador: ¿Cómo se coordina con las demás áreas?
+Participante: La coordinación es directa. Cuando se requiere una interconsulta, me comunico personalmente con el profesional correspondiente.
+Entrevistador: ¿Cómo registra la información de los usuarios?
+Participante: Mediante una hoja de ruta donde se registra el paciente, el diagnóstico y la hora de atención.
+Entrevistador: ¿Tiene inconvenientes para encontrar historiales clínicos?
+Participante: Sí, siempre.
+Entrevistador: ¿Consulta atenciones previas?
+Participante: Sí, siempre, para brindar una atención adecuada.
+Entrevistador: ¿Qué información considera indispensable en la historia clínica?
+Participante: Antecedentes patológicos personales y familiares, así como la medicación prescrita anteriormente.
+Entrevistador: ¿Cómo se garantiza la confidencialidad de la información?
+Participante: Solo el personal de salud tiene acceso; sin embargo, los historiales físicos permanecen en archivadores, por lo que la seguridad es limitada.
+Entrevistador: ¿Comparte información con otras áreas?
+Participante: Sí, siempre que el caso lo requiere.
+Entrevistador: ¿Cómo registra la entrega de medicamentos?
+Participante: En la hoja de ruta.
+Entrevistador: ¿Cómo controla el inventario de medicamentos?
+Participante: Mediante una hoja de cálculo en Excel.
+Entrevistador: ¿Con qué frecuencia se agotan medicamentos?
+Participante: A veces.
+Entrevistador: ¿Quién solicita la reposición de medicamentos?
+Participante: La coordinadora del área.
+Entrevistador: ¿Se registra qué medicamento recibe cada usuario?
+Participante: Se registra la entrega, pero para conocer el medicamento específico es necesario revisar la receta.
+Entrevistador: ¿Cómo se informa a los usuarios sobre cambios en la atención?
+Participante: Generalmente no existe un medio formal; en ocasiones se utilizan redes sociales.
+Entrevistador: ¿Los usuarios llegan sin conocer cambios en la atención?
+Participante: Sí, ocurre con bastante frecuencia.
+Entrevistador: Si pudiera cambiar una sola cosa del proceso actual, ¿qué cambiaría?
+Participante: Implementaría un sistema informático para registrar y consultar la información.
+Entrevistador: ¿Está de acuerdo con el sistema actual?
+Participante: No, porque dificulta brindar un servicio de calidad.
+Entrevistador: ¿Considera necesaria una historia clínica centralizada?
+Participante: Sí, facilitaría el seguimiento del tratamiento.
+Entrevistador: ¿Con qué frecuencia realiza tareas administrativas manuales?
+Participante: Con mucha frecuencia.
+Entrevistador: ¿La coordinación entre áreas es adecuada?
+Participante: No completamente; todavía presenta dificultades.
+Entrevistador: ¿Qué recomendaría para el nuevo sistema?
+Participante: Que sea sencillo, intuitivo y centrado en la información esencial de la historia clínica, evitando procesos complejos.
+Entrevistador: ¿Estaría de acuerdo con incorporar herramientas de inteligencia artificial?
+Participante: Sí.
+Observaciones derivadas
+* El proceso depende de registros manuales y hojas de cálculo.
+* Existe dificultad constante para localizar historias clínicas.
+* El control de medicamentos no está completamente integrado con la información del paciente.
+* Se identifica la necesidad de una historia clínica electrónica centralizada.
+* El participante considera conveniente incorporar un sistema sencillo con apoyo de inteligencia artificial.

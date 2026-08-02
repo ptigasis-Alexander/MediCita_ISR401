@@ -1,0 +1,43 @@
+P07 – Recepción y Recaudación
+Transcripción Anonimizada
+Código: P07
+Área: Recepción y Recaudación
+
+Transcripción
+Entrevistador: ¿Cuáles son las principales actividades que realiza diariamente?
+Participante: Realizo el cobro de los servicios de las diferentes áreas del centro médico, oriento a los pacientes y los derivo al área correspondiente.
+Entrevistador: ¿Cómo es el proceso de atención desde que llega un paciente?
+Participante: Primero pasa por recaudación para registrar el pago y obtener el turno. Luego se dirige a enfermería para el registro de signos vitales y finalmente al profesional correspondiente.
+Entrevistador: ¿Qué información registra del paciente?
+Participante: Se solicita la copia de la cédula y los datos personales necesarios para el registro administrativo.
+Entrevistador: ¿Cómo se realiza el cobro?
+Participante: El paciente pasa por el área de recaudación, donde se registra el servicio y se realiza el cobro correspondiente.
+Entrevistador: ¿Cómo se deriva al paciente?
+Participante: Se orienta al usuario según el servicio que necesita y se le indica el área a la que debe acudir.
+Entrevistador: ¿Qué dificultades encuentra?
+Participante: La información clínica corresponde a los profesionales; desde recepción se limita el registro administrativo y la orientación.
+Entrevistador: ¿Cómo se registran las citas?
+Participante: Generalmente mediante turnos. Algunas áreas, como Terapia Física y Lenguaje, trabajan con agendamiento.
+Entrevistador: ¿Cómo se gestionan las cancelaciones o reagendaciones?
+Participante: El paciente debe comunicarse directamente con el profesional del área para reprogramar la cita.
+Entrevistador: ¿Cómo se informa sobre horarios y cambios?
+Participante: Cada área informa directamente a sus pacientes.
+Entrevistador: ¿Qué ocurre si un paciente llega sin cita?
+Participante: Se le orienta y espera su turno según la disponibilidad del área correspondiente.
+Entrevistador: ¿Qué actividades consumen más tiempo?
+Participante: La atención al público, la orientación y el proceso de recaudación.
+Entrevistador: ¿Qué limitaciones tiene el proceso actual?
+Participante: El registro inicial y la orientación aún dependen de procesos manuales.
+Entrevistador: ¿Qué beneficios espera de un sistema de gestión?
+Participante: Mayor organización, mejor apoyo técnico y un proceso de atención más eficiente.
+Entrevistador: ¿Qué actividad automatizaría?
+Participante: El registro y derivación inicial de los pacientes para agilizar la atención.
+Entrevistador: ¿Cuál debería ser la funcionalidad más importante del nuevo sistema?
+Participante: Facilitar la orientación del paciente, registrar automáticamente su información y dirigirlo al área correspondiente.
+Observaciones derivadas
+
+* Recepción actúa como punto inicial del flujo de atención.
+* El proceso depende de registros administrativos y orientación manual.
+* Las citas se gestionan de forma diferente según cada área.
+* Se identifica la necesidad de automatizar el registro y la derivación de pacientes.
+* Un sistema integrado reduciría tiempos de atención y mejoraría la coordinación.
