@@ -520,6 +520,7 @@ Estas preguntas eran de respuesta abierta. Se listan **todas** las respuestas re
 |:--|:--:|:--:|
 | `Resultado_Cuestionario_IR_SGICM.csv` | CSV | ✅ Disponible |
 | `README.md` (este documento) | Markdown | ✅ Vista completa sin descarga |
+| Link (vínculo) | [Google Forms](https://docs.google.com/forms/d/1Sk_SVewfrvQNsEZfYCj2jLrMzXFU9n0m5O9oQhZNmgI/viewanalytics) | ✅ Vista completa sin descarga |
 
 **Proyecto PFC – Ingeniería de Requerimientos (ISR-401)**  
 Sistema de Gestión Inteligente para un Centro Médico (SGICM) — UTEQ
