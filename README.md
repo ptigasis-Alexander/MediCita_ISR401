@@ -12,9 +12,25 @@
 ![Carrera](https://img.shields.io/badge/Carrera-Ingeniería_de_Software-00509d?style=for-the-badge)
 ![Norma](https://img.shields.io/badge/ISO-29148:2018-orange?style=for-the-badge)
 ![Licencia](https://img.shields.io/badge/Licencia-MIT_%2B_CC_BY_4.0-2e7d32?style=for-the-badge)
-![Estado](https://img.shields.io/badge/Estado-En_desarrollo-yellow?style=for-the-badge)
+![Estado](https://img.shields.io/badge/Estado-En_desarrollo_avanzado-yellow?style=for-the-badge)
 
 </div>
+
+---
+
+## ✅ Estado de avance por sección
+
+| Sección | Estado |
+|---|:---:|
+| `01_ERS/` — Especificación de Requisitos | ✅ Completo |
+| `02_Evidencias/` — Elicitación (consentimientos, transcripciones, codificación, restringido cifrado) | ✅ Completo |
+| `03_Modelado/` — Diagramas UML y Mockups | ✅ Completo |
+| `04_Trazabilidad/` — Matriz y priorización | ✅ Completo |
+| `05_MVP/` — Producto Mínimo Viable | ✅ Completo (publicado con GitHub Pages) |
+| `06_Experimento/` — Diseño experimental | 🔜 Pendiente (solo estructura de carpetas) |
+| `07_Publicacion/` — Manuscrito y dataset Zenodo | 🔜 Pendiente (solo estructura de carpetas) |
+| `08_Etica/` — Documentación ética | 🟡 Parcial (faltan A8, A13, y Categoría B/C del Anexo A) |
+| `checksums.sha256` (raíz) | 🟡 Script listo (`GENERA_CHEDKSUMS.sh`), falta correrlo y subir el resultado |
 
 ---
 
@@ -103,6 +119,7 @@ Pasos para reproducir:
 | [`CITATION.cff`](CITATION.cff) | Metadatos para citar este repositorio |
 | [`LICENSE`](LICENSE) | Licencia dual: MIT (código del MVP) + CC BY 4.0 (documentación y dataset anonimizado) |
 | [`CHANGELOG.md`](CHANGELOG.md) | Historial de cambios notables del proyecto |
+| [`GENERA_CHEDKSUMS.sh`](GENERA_CHEDKSUMS.sh) | Script que genera `checksums.sha256` (hash de integridad de imágenes, audio, video, PDF y partes 7z) |
 
 ---
 
