@@ -1,11 +1,10 @@
 cff-version: 1.2.0
 message: >-
-  Si utiliza este software o conjunto de datos, por favor cítelo
-  usando los siguientes metadatos.
+  Si utiliza este software, documento o conjunto de datos anonimizado,
+  por favor cite este repositorio usando los siguientes metadatos.
 title: >-
   SICM — Sistema de Gestión Inteligente para un Centro Médico:
-  Especificación de Requisitos de Software (ERS/SRS) y Producto
-  Mínimo Viable
+  Especificación de Requisitos de Software y Producto Mínimo Viable
 type: software
 authors:
   - family-names: Tigasi Sampedro
@@ -16,6 +15,7 @@ authors:
     orcid: 'https://orcid.org/0009-0000-6558-4930'
   - family-names: Gamarra Zárate
     given-names: Jamileth Estefanía
+    orcid: 'https://orcid.org/0009-0002-8916-6578'
   - family-names: Herrera Ramos
     given-names: Thais Melanie
     orcid: 'https://orcid.org/0009-0005-2666-6921'
@@ -23,30 +23,20 @@ authors:
     given-names: Mayummy Jailly
     orcid: 'https://orcid.org/0009-0009-5157-290X'
 version: 3.0.0
-date-released: '2026-07-26'
-repository-code: >-
-  https://github.com/ptigasis-Alexander/MediCita_ISR401
-license: CC-BY-4.0
+date-released: '2026-08-02'
+repository-code: 'https://github.com/ptigasis-Alexander/MediCita_ISR401'
+license: MIT
 keywords:
   - ingeniería de requerimientos
   - especificación de requisitos de software
-  - ERS
-  - SRS
   - ISO/IEC/IEEE 29148
-  - ISO/IEC 25010
-  - explicabilidad
-  - modelos grandes de lenguaje
+  - trazabilidad
   - sistema de gestión médica
+  - producto mínimo viable
 
-# NOTAS PARA EL EQUIPO:
-# 1. Falta agregar el orcid de Jamileth Gamarra Zárate cuando se
-#    registre en https://orcid.org/register (formato:
-#    "orcid: 'https://orcid.org/XXXX-XXXX-XXXX-XXXX'"). No usar
-#    placeholders como "ORCID-PENDIENTE": el validador de GitHub
-#    rechaza el archivo si el campo no tiene el formato exacto de
-#    URL de ORCID, así que es mejor omitir el campo hasta tener el
-#    real (como está ahora).
-# 2. Agregar un campo "doi: '10.5281/zenodo.XXXXXXX'" una vez que el
-#    dataset esté depositado en Zenodo (Entrega 4 / 2B). Por la misma
-#    razón, no se incluye un DOI de relleno ahora.
-
+# Agregar después de publicar en Zenodo:
+# doi: '10.5281/zenodo.XXXXXXXX'
+#
+# El campo license identifica la licencia del software citado. La documentación
+# y el dataset anonimizado usan CC BY 4.0. El contenido de
+# 02_Evidencias/00_Restringido/ está excluido. Véase LICENSE.
