@@ -1,0 +1,38 @@
+P04 – Nutrición 
+Transcripción Anonimizada
+
+Código: P04
+Área: Nutrición
+Transcripción anonimizada (contenido parcial, según la información disponible).
+Transcripción
+Entrevistador: ¿Cuál es su cargo y experiencia?
+Participante: Soy nutricionista. Llevo aproximadamente dos años laborando en este centro y tres años de experiencia profesional.
+Entrevistador: ¿Cómo organiza la atención?
+Participante: La atención se realiza mediante agendamiento. Los controles suelen ser mensuales y, dependiendo de la condición del paciente, pueden programarse cada quince días.
+Entrevistador: ¿Cómo registra la llegada de los pacientes?
+Participante: Las historias clínicas se registran inicialmente en enfermería y luego pasan al área de nutrición.
+Entrevistador: ¿Qué ocurre si se ausenta?
+Participante: Se informa a los pacientes y se reprograma la cita para la siguiente fecha disponible.
+Entrevistador: ¿Cómo maneja la historia clínica?
+Participante: Se trabaja con historias clínicas físicas y una base de datos en Drive para elaborar informes mensuales.
+Entrevistador: ¿Qué mejoraría?
+Participante: Un sistema donde enfermería registre los datos básicos y nutrición complete únicamente la información clínica específica.
+Entrevistador: ¿Cómo consulta la información?
+Participante: La búsqueda en carpetas físicas toma tiempo, aunque normalmente se encuentra la información.
+Entrevistador: ¿Qué datos considera indispensables?
+Participante: Nombre, edad, teléfono, peso, talla, presión arterial, glucosa, saturación y antecedentes clínicos relevantes.
+Entrevistador: ¿Cómo entrega los planes alimentarios?
+Participante: Mediante una guía alimentaria y seguimiento por WhatsApp; los formatos se almacenan en un dispositivo personal.
+Entrevistador: ¿Cómo ayudaría un sistema digital?
+Participante: Permitiría consultar el historial, registrar diagnósticos, visualizar exámenes y mejorar el seguimiento del paciente.
+Entrevistador: ¿Cómo es la coordinación con otras áreas?
+Participante: El trabajo es multidisciplinario. Se realizan derivaciones hacia psicología, odontología, medicina general y terapias cuando es necesario.
+Entrevistador: ¿Qué funciones debería tener el sistema?
+Participante: Seguimiento antropométrico, evolución clínica, antecedentes, exámenes, diagnóstico, recordatorios y control de indicadores nutricionales.
+Observaciones derivadas
+
+* El área utiliza historias clínicas físicas y registros complementarios en Drive.
+* Existe alta disposición para implementar una historia clínica electrónica.
+* El seguimiento nutricional requiere indicadores antropométricos y evolución clínica.
+* El trabajo interdisciplinario es frecuente.
+
