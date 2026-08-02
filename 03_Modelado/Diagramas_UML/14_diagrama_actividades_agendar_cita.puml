@@ -1,0 +1,46 @@
+@startuml
+title SICM — Diagrama de Actividades: Agendar cita médica
+skinparam monochrome true
+skinparam shadowing false
+skinparam activity {
+  BackgroundColor white
+  BorderColor black
+  ArrowColor black
+}
+
+|Paciente|
+start
+:Ingresar al portal\ny autenticarse;
+:Seleccionar especialidad\ny profesional;
+
+|Sistema|
+:Consultar disponibilidad\nde horarios (CU-01);
+
+if (¿Existe horario\ndisponible?) then (no)
+  |Paciente|
+  :Ver mensaje sin disponibilidad\ny elegir otra especialidad\nu otro profesional;
+  stop
+else (sí)
+  |Paciente|
+  :Seleccionar fecha y hora;
+  :Confirmar solicitud de cita;
+
+  |Sistema|
+  :Validar reglas de agenda\n(cupo máximo por turno);
+  if (¿Datos y cupo\nválidos?) then (no)
+    :Mostrar mensaje de error;
+    stop
+  else (sí)
+    :Registrar cita (RF-02);
+    :Actualizar agenda\ndel profesional;
+
+    |Sistema de Notificaciones|
+    :Enviar confirmación de cita\npor WhatsApp / correo (RF-11);
+
+    |Paciente|
+    :Recibir confirmación de cita;
+    stop
+  endif
+endif
+
+@enduml
