@@ -1,0 +1,70 @@
+@startuml
+title SICM — Diagrama de Despliegue
+skinparam monochrome true
+skinparam shadowing false
+skinparam node {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam database {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam cloud {
+  BackgroundColor white
+  BorderColor black
+}
+
+node "Dispositivo del Paciente\n<<navegador / app móvil>>" as DEV_PAC {
+  artifact "Portal del Paciente\n(SPA)" as APP_PAC
+}
+
+node "Dispositivo de Personal\n<<navegador>>\n(Recepción, Enfermería,\nPersonal médico, Coordinación)" as DEV_STAFF {
+  artifact "Portal Administrativo\n/ Clínico (SPA)" as APP_STAFF
+}
+
+cloud "Internet" as NET
+
+node "Servidor Web\n<<balanceador / reverse proxy>>" as SRV_WEB {
+  artifact "Nginx / HTTPS" as WEB_ART
+}
+
+node "Servidor de Aplicaciones\n<<API SICM>>" as SRV_APP {
+  artifact "API REST\n(Autenticación, Citas,\nHistoria Clínica, Facturación,\nInventario, Notificaciones)" as API_ART
+}
+
+node "Servidor de Base de Datos" as SRV_DB {
+  database "Base de Datos SICM\n(PostgreSQL / MySQL)" as DB
+}
+
+node "Servidor de Notificaciones" as SRV_NOTIF {
+  artifact "Servicio de Notificaciones\n(colas / programador)" as NOTIF_ART
+}
+
+cloud "Servicios Externos" as EXT {
+  artifact "WhatsApp Business API\n/ Gmail (SMTP)" as WA_GMAIL
+  artifact "Servicio SRI\n(comprobantes electrónicos)" as SRI
+}
+
+DEV_PAC -- NET
+DEV_STAFF -- NET
+NET -- SRV_WEB
+SRV_WEB -- SRV_APP : HTTPS / REST\n(TLS)
+SRV_APP -- SRV_DB : TCP/IP\n(consultas SQL cifradas)
+SRV_APP -- SRV_NOTIF : eventos internos
+SRV_NOTIF -- EXT : HTTPS / API
+SRV_APP -- EXT : HTTPS / API\n(comprobantes SRI)
+
+note right of SRV_DB
+  Almacena Persona, Paciente, Médico,
+  Cita, Historia Clínica, Receta,
+  Inventario, Notificación, entre otras.
+end note
+
+note bottom of EXT
+  Integraciones externas al centro
+  médico: mensajería y facturación
+  electrónica normada por el SRI.
+end note
+
+@enduml

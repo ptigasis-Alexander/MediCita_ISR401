@@ -1,0 +1,70 @@
+@startuml
+title SICM — Diagrama de Secuencia: Agendar cita médica
+skinparam monochrome true
+skinparam shadowing false
+skinparam sequenceMessageAlign center
+skinparam sequence {
+  ArrowColor black
+  LifeLineBorderColor black
+  ParticipantBorderColor black
+  ParticipantBackgroundColor white
+}
+
+actor Paciente as PAC
+boundary "Portal de Citas\n(UI)" as UI
+control "Controlador\nde Citas" as CTRL
+entity "Servicio de\nAgenda" as AGENDA
+database "Base de Datos\nSICM" as BD
+control "Servicio de\nNotificaciones" as NOTIF
+
+PAC -> UI : seleccionar especialidad y profesional
+activate UI
+
+UI -> CTRL : solicitarDisponibilidad(especialidad, profesional)
+activate CTRL
+
+CTRL -> AGENDA : consultarHorarios()
+activate AGENDA
+AGENDA -> BD : SELECT horarios disponibles
+activate BD
+BD --> AGENDA : lista de horarios
+deactivate BD
+AGENDA --> CTRL : horarios disponibles
+deactivate AGENDA
+
+CTRL --> UI : mostrar horarios disponibles
+deactivate CTRL
+
+UI --> PAC : presentar horarios
+
+PAC -> UI : seleccionar fecha/hora y confirmar
+UI -> CTRL : agendarCita(idPaciente, idMedico, fecha, hora)
+activate CTRL
+
+CTRL -> AGENDA : validarCupoMaximo(fecha, hora)
+activate AGENDA
+AGENDA --> CTRL : cupo válido
+deactivate AGENDA
+
+alt cupo disponible
+  CTRL -> BD : INSERT Cita(...)
+  activate BD
+  BD --> CTRL : id_Cita generado
+  deactivate BD
+
+  CTRL -> NOTIF : enviarConfirmacion(idPaciente, idCita)
+  activate NOTIF
+  NOTIF -> PAC : notificación WhatsApp / correo
+  deactivate NOTIF
+
+  CTRL --> UI : cita registrada con éxito
+  UI --> PAC : mostrar confirmación de cita
+else cupo no disponible
+  CTRL --> UI : error - horario no disponible
+  UI --> PAC : solicitar nueva selección
+end
+
+deactivate CTRL
+deactivate UI
+
+@enduml
