@@ -1,0 +1,77 @@
+﻿Matriz de Trazabilidad ;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+Fuente;Requisito;CU;Clase UML;Proceso DFD;Estado;BDD;CP;Historia;Estado de la traza
+Acta de entrevista N°1 (EV-01);RF-01;CU-02;Paciente, HistoriaClinica;P03 Gestionar historia clínica;Sin historia -> Historia activa;BDD-RF-01;CP-RF-01;US-06;Completa
+Acta de entrevista N°1, Cuestionario digital (EV-01, EV-02);RF-02;CU-01;Paciente, Cita, Horario;P02 Gestionar citas;Disponible -> Reservada -> Confirmada;BDD-RF-02;CP-RF-02;US-01;Completa
+Acta de entrevista N°1 (EV-01);RF-03;CU-02;Paciente, HistoriaClinica;P01 Gestionar pacientes;Consulta iniciada -> Paciente encontrado/no encontrado;BDD-RF-03;CP-RF-03;US-02;Completa
+Médico (Odontología / Medicina General) / Acta de entrevista N°1 (EV-01);RF-04;CU-03;Receta, Medicamento, HistoriaClinica;P03 Gestionar historia clínica;Atención activa -> Receta emitida;BDD-RF-04;CP-RF-04;US-03;Completa
+Acta de entrevista N°1 (EV-01);RF-05;CU-02;HistoriaClinica, Auditoria;P03 Gestionar historia clínica;Historia activa -> Actualizada;BDD-RF-05;CP-RF-05;US-05;Completa
+Acta de entrevista N°1 (EV-01);RF-06;CU-04;Cita, Horario;P02 Gestionar citas;Confirmada -> Reprogramada/Cancelada;BDD-RF-06;CP-RF-06;US-04;Completa
+Acta de negociación N°1 (EV-04);RF-07;CU-05;Derivacion, HistoriaClinica, AreaMedica;P04 Gestionar derivaciones;Atención -> Derivada -> Aceptada;BDD-RF-07;CP-RF-07;US-19;Completa
+Coordinadora / Administrador / Acta de entrevista N°1 (EV-01);RF-08;CU-05;Atencion, Reporte;P08 Generar reportes;Solicitud -> Reporte generado;BDD-RF-08;CP-RF-08;US-06;Completa
+EV-01 / CU-12;RF-09;CU-12/CU-32/CU-33;Usuario, Sesion;P00 Autenticar y autorizar;No autenticado -> Autenticado/Bloqueado;BDD-RF-09;CP-RF-09;US-07/US-31/US-32;Completa
+EV-04;RF-10;CU-13/CU-31;Usuario, Rol, Permiso;P00 Autenticar y autorizar;Rol vigente -> Rol actualizado;BDD-RF-10;CP-RF-10;US-08/US-30;Completa
+Cuestionario digital (EV-02): 100 % prefiere WhatsApp;RF-11;CU-14;Notificacion, Cita;P09 Notificar;Pendiente -> Enviada/Fallida;BDD-RF-11;CP-RF-11;US-01;Completa
+Acta de negociación N°1 (EV-04);RF-12;CU-15;Auditoria, Usuario;P10 Auditar;Evento -> Registrado;BDD-RF-12;CP-RF-12;US-09;Completa
+Diagrama de CU-01 Agendar cita médica (Figura 12);RF-13;CU-01;Horario, Cita;P02 Gestionar citas;Sin horario -> Horario disponible;BDD-RF-13;CP-RF-13;US-01;Completa
+EV-01;RF-14;CU-22;DocumentoClinico, HistoriaClinica;P03 Gestionar historia clínica;Físico -> Digital validado;BDD-RF-14;CP-RF-14;US-05;Completa
+EV-Enf-01;RF-15;CU-29;Inventario, Medicamento, MovimientoInventario;P06 Gestionar inventario;Disponible -> Actualizado/Stock bajo;BDD-RF-15;CP-RF-15;US-33;Completa
+EV-01;RF-16;CU-34;AsistenteVirtual, ConsultaIA;P11 Asistente virtual IA;Consulta -> Respondida/Derivada;BDD-RF-16;CP-RF-16;US-35;Completa
+Coordinadora del centro médico;RF-17;CU-16;Profesional, AreaMedica;P05 Gestionar personal;No registrado -> Perfil activo;BDD-RF-17;CP-RF-17;US-10;Completa
+Jefatura de área médica;RF-18;CU-17;Profesional, TurnoLaboral;P05 Gestionar personal;Sin turno -> Turno asignado;BDD-RF-18;CP-RF-18;US-11;Completa
+Paciente (módulo de agendamiento);RF-19;CU-17;Profesional, TurnoLaboral;P05 Gestionar personal;Ocupado/Libre;BDD-RF-19;CP-RF-19;US-12;Completa
+Personal médico;RF-20;CU-17;Profesional, Ausencia, TurnoLaboral;P05 Gestionar personal;Activo -> Ausente -> Reasignado;BDD-RF-20;CP-RF-20;US-11;Completa
+Requisito normativo SRI;RF-21;CU-18;Comprobante, Paciente;P07 Gestionar recaudación;Servicio -> Comprobante emitido;BDD-RF-21;CP-RF-21;US-13;Completa
+EV-Enf-01;RF-22;CU-19;Pago, Comprobante;P07 Gestionar recaudación;Pendiente -> Parcial/Pagado;BDD-RF-22;CP-RF-22;US-14;Completa
+EV-Enf-01;RF-23;CU-19;Pago, ReporteFinanciero;P08 Generar reportes;Solicitud -> Reporte financiero;BDD-RF-23;CP-RF-23;US-14;Completa
+EV-01;RF-24;CU-11;AreaMedica, Horario;P02 Gestionar citas;Horario base -> Configurado;BDD-RF-24;CP-RF-24;US-15;Completa
+EV-01;RF-25;CU-11;Horario, Cupo;P02 Gestionar citas;Cupo disponible -> Cupo completo;BDD-RF-25;CP-RF-25;US-15;Completa
+Entrevista al personal de Enfermería y Recepción;RF-26;CU-06;SignosVitales, Paciente;P03 Gestionar historia clínica;Pendiente -> Signos registrados;BDD-RF-26;CP-RF-26;US-16;Completa
+Recepcionista / Entrevista al personal de Enfermería y Recepción;RF-27;CU-07;Paciente, HistoriaClinica;P01 Gestionar pacientes;Consulta -> Encontrado;BDD-RF-27;CP-RF-27;US-17;Completa
+Recepcionista / Entrevista al personal de Enfermería y Recepción;RF-28;CU-07/CU-20;Paciente, Representante;P01 Gestionar pacientes;No registrado -> Registrado;BDD-RF-28;CP-RF-28;US-18;Completa
+Recepcionista / Entrevista al personal de Enfermería y Recepción;RF-29;CU-20;Paciente, Representante;P01 Gestionar pacientes;Menor sin ID -> Vinculado;BDD-RF-29;CP-RF-29;US-18;Completa
+Administrador del sistema / Entrevista al personal de Enfermería y Recepción;RF-30;CU-10;Usuario, Rol, HistoriaClinica;P00 Autenticar y autorizar;Solicitud acceso -> Permitido/Denegado;BDD-RF-30;CP-RF-30;US-19;Completa
+Enfermería / EV-Enf-01;RF-31;CU-29;Medicamento, AlertaInventario;P06 Gestionar inventario;Normal -> Alerta activa;BDD-RF-31;CP-RF-31;US-33;Completa
+EV-Enf-01;RF-32;CU-30;EntregaMedicamento, Medicamento, Paciente;P06 Gestionar inventario;Prescrito -> Entregado;BDD-RF-32;CP-RF-32;US-34;Completa
+EV-Enf-01;RF-33;CU-08;Pago, AreaMedica, Paciente;P07 Gestionar recaudación;Pendiente -> Cobrado;BDD-RF-33;CP-RF-33;US-20;Completa
+Recepcionista / Entrevista al personal de Enfermería y Recepción;RF-34;CU-08;TurnoAtencion, Paciente;P07 Gestionar recaudación;Cobrado -> Turno asignado;BDD-RF-34;CP-RF-34;US-21;Completa
+Profesional del área (destino) / Entrevista al personal de Enfermería y Recepción;RF-35;CU-09;Derivacion, AreaMedica, Paciente;P04 Gestionar derivaciones;Enfermería -> Área destino;BDD-RF-35;CP-RF-35;US-19;Completa
+Profesional del área / EV-Enf-01;RF-36;CU-01;Cita, AreaMedica, Profesional;P02 Gestionar citas;Disponible -> Cita de área;BDD-RF-36;CP-RF-36;US-01;Completa
+Profesional del área / EV-Enf-01;RF-37;CU-21;Cita, Auditoria;P02 Gestionar citas;Activa -> Reprogramada/Cancelada;BDD-RF-37;CP-RF-37;US-23;Completa
+Entrevista al personal de Enfermería y Recepción;RF-38;CU-07;Paciente, Pago;P01 Gestionar pacientes;Consulta -> Datos precargados;BDD-RF-38;CP-RF-38;US-22;Completa
+Entrevista al personal médico;RF-39;CU-23/CU-24/CU-25/CU-26;Atencion, Diagnostico, Tratamiento, Evolucion;P03 Gestionar historia clínica;Atención abierta -> Cerrada;BDD-RF-39;CP-RF-39;US-24/US-25/US-26/US-27;Completa
+Fisioterapeuta / Entrevista al personal de especialidades;RF-40;CU-27/CU-28;PlanNutricional, SesionTerapia, HistoriaClinica;P03 Gestionar historia clínica;Sesión/plan -> Registrado;BDD-RF-40;CP-RF-40;US-28/US-29;Completa
+EV-01 / ISO 25010;RNF-01;CU-02;HistoriaClinica;P03 Gestionar historia clínica;Consulta -> Resultado;BDD-RNF-01;CP-RNF-01;US-02;Completa
+LOPDP / ISO 27001;RNF-02;CU-12/CU-13;Usuario, HistoriaClinica;P00 Autenticar y autorizar;Sesión -> Acceso protegido;BDD-RNF-02;CP-RNF-02;US-07/US-08;Completa
+EV-01 / ISO 9241-11;RNF-03;CU-01/CU-02;InterfazUsuario;P01/P02;Tarea -> Completada;BDD-RNF-03;CP-RNF-03;US-01/US-02;Completa
+EV-01 / ISO 25010;RNF-04;CU-01..CU-35;SistemaSICM;Todos;Operativo -> Disponible;BDD-RNF-04;CP-RNF-04;Todas;Completa
+Arquitectura del SICM / ISO 25010;RNF-05;CU-13/CU-29;Modulo, Servicio;P00-P12;Cambio -> Validado;BDD-RNF-05;CP-RNF-05;US-08/US-33;Completa
+EV-04 / LOPDP;RNF-06;CU-10/CU-13;Rol, Permiso, HistoriaClinica;P00;Solicitud -> Permitida/Denegada;BDD-RNF-06;CP-RNF-06;US-19;Completa
+Restricción técnica / ISO 25010;RNF-07;CU-01..CU-35;InterfazUsuario;Todos;Vista -> Renderizada;BDD-RNF-07;CP-RNF-07;Todas;Completa
+EV-Enf-01;RNF-08;CU-07;Paciente, HistoriaClinica;P01;Consulta -> Encontrado;BDD-RNF-08;CP-RNF-08;US-17;Completa
+EV-Enf-01;RNF-09;CU-06/CU-07/CU-08;SistemaSICM;P01/P03/P07;Operativo -> Disponible;BDD-RNF-09;CP-RNF-09;US-16/US-17/US-20;Completa
+EV-Enf-01 / LOPDP;RNF-10;CU-12/CU-13;Usuario, Rol, Permiso;P00;Solicitud -> Permitida/Denegada;BDD-RNF-10;CP-RNF-10;US-07/US-08;Completa
+EV-Enf-01;RNF-11;CU-06/CU-09;SignosVitales, Derivacion;P03/P04;Guardado -> Propagado;BDD-RNF-11;CP-RNF-11;US-16/US-19;Completa
+EV-Enf-01;RNF-12;CU-20;Paciente, InterfazUsuario;P01;Inicio -> Registro completo;BDD-RNF-12;CP-RNF-12;US-18;Completa
+EV-Enf-01;RNF-13;CU-07/CU-20;Paciente;P01;Captura -> Validada;BDD-RNF-13;CP-RNF-13;US-18;Completa
+Inventario técnico del centro;RNF-14;CU-01..CU-35;InterfazUsuario;Todos;Inicio -> Compatible;BDD-RNF-14;CP-RNF-14;Todas;Completa
+EV-Enf-01;RNF-15;CU-29;Inventario, Reporte;P06;Solicitud -> Reporte;BDD-RNF-15;CP-RNF-15;US-33;Completa
+EV-Enf-01 / LOPDP;RNF-16;CU-20;Paciente, Representante;P01;Menor -> Vinculado;BDD-RNF-16;CP-RNF-16;US-18;Completa
+EV-01 / AI Act art. 50 / OMS;RNF-18;CU-34;AsistenteVirtual, ConsultaIA;P11;Consulta -> Derivada/Explicada;BDD-RNF-18;CP-RNF-18;US-35;Completa
+EV-01 / RF-16;RF-IA1-02;CU-34;AsistenteVirtual, ConsultaIA;P11 Asistente virtual IA;Consulta -> Intención clasificada;BDD-RF-IA1-02;CP-RF-IA1-02;US-35;Completa
+EV-01 / RF-16 / OMS;RF-IA1-03;CU-34;AsistenteVirtual, DerivacionIA;P11 Asistente virtual IA;Consulta -> Derivada;BDD-RF-IA1-03;CP-RF-IA1-03;US-35;Completa
+RF-16 / Vogelsang y Borg;RNF-IA1-P01;CU-34;ModeloIntenciones;P11 Asistente virtual IA;Modelo evaluado -> Aprobado/Rechazado;BDD-RNF-IA1-P01;CP-RNF-IA1-P01;US-35;Completa
+RF-16 / ISO 25010;RNF-IA1-P02;CU-34;AsistenteVirtual;P11 Asistente virtual IA;Consulta -> Respuesta;BDD-RNF-IA1-P02;CP-RNF-IA1-P02;US-35;Completa
+RF-16 / RNF-04;RNF-IA1-P03;CU-34;AsistenteVirtual, FallbackIA;P11 Asistente virtual IA;Disponible -> Fallo -> Fallback;BDD-RNF-IA1-P03;CP-RNF-IA1-P03;US-35;Completa
+PE5 / Habibullah et al.;RNF-IA1-E01;CU-34;ModeloIntenciones;P11 Asistente virtual IA;Evaluado -> Brecha aceptable/alerta;BDD-RNF-IA1-E01;CP-RNF-IA1-E01;US-35;Completa
+PE5 / Habibullah et al.;RNF-IA1-E02;CU-34;ModeloIntenciones;P11 Asistente virtual IA;Evaluado -> Brecha aceptable/alerta;BDD-RNF-IA1-E02;CP-RNF-IA1-E02;US-35;Completa
+RF-02 / RF-11 / EV-02;RF-IA2-01;CU-35;ModeloInasistencia, Cita;P12 Estimar riesgo de inasistencia;Cita confirmada -> Riesgo estimado;BDD-RF-IA2-01;CP-RF-IA2-01;US-36;Completa
+RF-11 / RF-IA2-01;RF-IA2-02;CU-35;ModeloInasistencia, Notificacion;P12 Estimar riesgo de inasistencia;Riesgo estimado -> Estrategia asignada;BDD-RF-IA2-02;CP-RF-IA2-02;US-37;Completa
+RF-12 / RF-IA2-02;RF-IA2-03;CU-35;PrediccionInasistencia, Auditoria;P12 Estimar riesgo de inasistencia;Predicción -> Confirmada/Anulada;BDD-RF-IA2-03;CP-RF-IA2-03;US-38;Completa
+RF-IA2-01 / literatura RE4AI;RNF-IA2-P01;CU-35;ModeloInasistencia;P12 Estimar riesgo de inasistencia;Modelo evaluado -> Aprobado/Rechazado;BDD-RNF-IA2-P01;CP-RNF-IA2-P01;US-36;Completa
+RF-IA2-01 / ISO 25010;RNF-IA2-P02;CU-35;ModeloInasistencia;P12 Estimar riesgo de inasistencia;Solicitud -> Predicción;BDD-RNF-IA2-P02;CP-RNF-IA2-P02;US-36;Completa
+RF-11 / RNF-04;RNF-IA2-P03;CU-35;ModeloInasistencia, FallbackIA;P12 Estimar riesgo de inasistencia;Disponible -> Fallo -> Recordatorio estándar;BDD-RNF-IA2-P03;CP-RNF-IA2-P03;US-37;Completa
+PE5 / Habibullah et al.;RNF-IA2-E01;CU-35;ModeloInasistencia;P12 Estimar riesgo de inasistencia;Evaluado -> Brecha aceptable/alerta;BDD-RNF-IA2-E01;CP-RNF-IA2-E01;US-36;Completa
+PE5 / Habibullah et al.;RNF-IA2-E02;CU-35;ModeloInasistencia;P12 Estimar riesgo de inasistencia;Evaluado -> Brecha aceptable/alerta;BDD-RNF-IA2-E02;CP-RNF-IA2-E02;US-36;Completa
+PE5 / AI Act enfoque de transparencia;RNF-IA2-X01;CU-35;PrediccionInasistencia;P12 Estimar riesgo de inasistencia;Predicción -> Explicada;BDD-RNF-IA2-X01;CP-RNF-IA2-X01;US-38;Completa
