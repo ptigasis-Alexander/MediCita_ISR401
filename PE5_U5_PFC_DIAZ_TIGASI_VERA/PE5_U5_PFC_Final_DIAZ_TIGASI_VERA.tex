@@ -258,6 +258,31 @@ La IA del SICM se limita a apoyo administrativo. No diagnostica, no prescribe, n
 		SUS, tasa de finalización y otras métricas de usabilidad&Objetivos verificables del producto; no se declaran alcanzados sin una prueba de usabilidad ejecutada.&Después de una sesión de validación con participantes, instrumento y resultados documentados.\\\bottomrule
 	\end{tabularx}
 \end{table}
+\subsection{IA-01 - Asistente virtual administrativo}
+\textbf{Tarea y valor.} Responder preguntas frecuentes sobre horarios, servicios, preparación no clínica, ubicación y uso del sistema. Si la consulta exige historial clínico, consejo médico o información no autorizada, deriva a recepción.
+
+\textbf{Datos.} La base de conocimiento se construye con horarios, catálogo de servicios, instrucciones administrativas y preguntas frecuentes aprobadas. No se utilizarán historias clínicas para entrenar el componente. Los registros de conversación usados para mejora deben anonimizarse o seudonimizarse y excluir información clínica innecesaria.
+
+\textbf{Riesgo y fallback.} En el alcance definido, el asistente interactúa directamente con personas y debe informar que es un sistema de IA; no se diseña como sistema de diagnóstico o triaje. Si el modelo falla o no alcanza confianza suficiente, el comportamiento seguro es derivar a recepción. La clasificación se revisará si el alcance cambia.
+
+\begin{longtable}{p{2.5cm}p{3.4cm}p{9.8cm}}
+	\caption{Requisitos y umbrales de aceptación de IA-01}\\\toprule\textbf{ID}&\textbf{Tipo}&\textbf{Requisito / umbral de aceptación}\\\midrule\endhead
+	RF-16&RF&Responder consultas administrativas frecuentes y derivar cuando no pueda resolverlas.\\
+	RF-IA1-02 & RF & El asistente debe clasificar cada consulta administrativa en horario, servicio, preparación, ubicación, cita o fuera de alcance y seleccionar una fuente institucional aprobada. \\
+	RF-IA1-03 & RF & El asistente debe derivar a recepción toda consulta fuera de alcance, clínica, ambigua o que requiera acceso al historial, sin emitir diagnóstico ni recomendación clínica autónoma. \\
+	RNF-IA1-P01 & RNF rendimiento & El clasificador del asistente debe alcanzar macro-F1 $\geq$ 0.90 sobre el conjunto de prueba versionado de intenciones administrativas. \\
+	RNF-IA1-P02 & RNF rendimiento & La respuesta o decisión de escalamiento debe producirse en $\leq$ 2 s en percentil 95 con 50 sesiones concurrentes. \\
+	RNF-IA1-P03 & RNF rendimiento & El asistente debe mantener disponibilidad $\geq$ 99 \% en horario de atención y, ante indisponibilidad, mostrar fallback a recepción en $\leq$ 2 s. \\
+	RNF-IA1-E01 & RNF equidad & La diferencia de tasa de resolución correcta entre usuarios de 18-35 años y mayores de 60 no debe superar 5 puntos porcentuales en la muestra de evaluación. \\
+	RNF-IA1-E02 & RNF equidad & La diferencia de tasa de resolución correcta entre usuarios con baja y alta familiaridad digital no debe superar 5 puntos porcentuales. \\
+	RNF-18&RNF explicabilidad&Explicar el motivo de una derivación en no más de 40 palabras y en no más de 2 s; al menos 80 \% de usuarios de validación debe puntuar la explicación con 4/5 o más.\\\bottomrule\end{longtable}
+
+\textbf{Estado de evidencia:} requisitos especificados; validación experimental pendiente hasta disponer de una implementación evaluable. Los umbrales anteriores no se contabilizan como resultados obtenidos.
+
+\textbf{Monitoreo.} Una vez implementado y desplegado el componente, cada mes se revisarán macro-F1, tasa de fallback, latencia P95, brechas de equidad y porcentaje de consultas fuera de alcance. Se activa revisión si macro-F1 cae por debajo de 0,90, la brecha supera 5 puntos porcentuales o la tasa de fallback aumenta más de 10 puntos respecto de la línea base operativa.
+
+\subsection{IA-02 - Predictor de riesgo de inasistencia para recordatorios}
+\textbf{Tarea y valor.} Estimar un riesgo administrativo de inasistencia para adaptar la intensidad de recordatorios. El resultado nunca cancela una cita, reduce prioridad clínica o impide atención.
 	SECCION DE METRICAS 
 	
 \section{Retrospectiva Start--Stop--Continue}
