@@ -283,6 +283,26 @@ La IA del SICM se limita a apoyo administrativo. No diagnostica, no prescribe, n
 
 \subsection{IA-02 - Predictor de riesgo de inasistencia para recordatorios}
 \textbf{Tarea y valor.} Estimar un riesgo administrativo de inasistencia para adaptar la intensidad de recordatorios. El resultado nunca cancela una cita, reduce prioridad clínica o impide atención.
+\textbf{Datos.} Se usarán únicamente variables administrativas justificadas: anticipación con que se reservó la cita, historial de asistencia/no asistencia, área, franja horaria y confirmación del recordatorio. Diagnósticos, notas clínicas y datos no necesarios quedan fuera del conjunto de características. Los atributos usados para auditoría de equidad pueden mantenerse seudonimizados y no tienen que ser variables predictoras.
+
+\textbf{Riesgo y fallback.} Dado que la función propuesta solo ajusta recordatorios y no decide acceso a atención, se documenta como apoyo administrativo. Si en el futuro se usa para triaje, diagnóstico, asignación clínica o denegación de servicios, la clasificación de riesgo y las obligaciones deben reevaluarse. Ante fallo, se aplica el recordatorio estándar configurado en RF-11.
+
+\begin{longtable}{p{2.5cm}p{3.4cm}p{9.8cm}}
+	\caption{Requisitos y umbrales de aceptación de IA-02}\\\toprule\textbf{ID}&\textbf{Tipo}&\textbf{Requisito / umbral de aceptación}\\\midrule\endhead
+	RF-IA2-01 & RF & El sistema debe estimar, después de confirmar una cita, un puntaje de riesgo de inasistencia entre 0 y 1 usando únicamente datos administrativos de citas y asistencia previa. \\
+	RF-IA2-02 & RF & El sistema debe clasificar el riesgo en bajo, medio o alto y seleccionar una estrategia de recordatorio; el resultado no puede cancelar, negar ni disminuir la prioridad clínica de una cita. \\
+	RF-IA2-03 & RF & Recepción debe poder visualizar el nivel de riesgo, desactivar el uso de la predicción para una cita y aplicar manualmente una estrategia de recordatorio, dejando registro de auditoría. \\
+	RNF-IA2-P01 & RNF rendimiento & El modelo debe alcanzar F1 $\geq$ 0.80 en el conjunto de prueba temporal definido antes de cada despliegue. \\
+	RNF-IA2-P02 & RNF rendimiento & La inferencia debe completarse en $\leq$ 500 ms en percentil 95 para lotes de hasta 100 citas. \\
+	RNF-IA2-P03 & RNF rendimiento & El servicio predictivo debe alcanzar disponibilidad $\geq$ 99 \%; si falla, el sistema conserva el esquema estándar de recordatorios sin afectar la cita. \\
+	RNF-IA2-E01 & RNF equidad & La diferencia de sensibilidad del modelo entre usuarios de 18-35 años y mayores de 60 no debe superar 5 puntos porcentuales. \\
+	RNF-IA2-E02 & RNF equidad & La diferencia de tasa de falsos positivos entre pacientes nuevos y recurrentes no debe superar 5 puntos porcentuales. \\
+	RNF-IA2-X01 & RNF explicabilidad & Al mostrar un riesgo medio o alto, el sistema debe presentar a recepción al menos dos factores administrativos que influyeron en el resultado y una advertencia de que la predicción no modifica la atención. \\
+	\bottomrule\end{longtable}
+
+\textbf{Estado de evidencia:} requisitos especificados; validación experimental pendiente hasta disponer de una implementación evaluable. Los umbrales anteriores no se contabilizan como resultados obtenidos.
+
+\textbf{Monitoreo.} Una vez implementado y desplegado el componente, se revisarán mensualmente F1, latencia P95, disponibilidad, diferencia de sensibilidad por edad y falsos positivos por condición nuevo/recurrente. Se requiere reentrenamiento o retirada temporal si F1 cae por debajo de 0,80, una brecha supera 5 puntos porcentuales o se detecta uso de datos fuera de finalidad.
 	SECCION DE METRICAS 
 	
 \section{Retrospectiva Start--Stop--Continue}
