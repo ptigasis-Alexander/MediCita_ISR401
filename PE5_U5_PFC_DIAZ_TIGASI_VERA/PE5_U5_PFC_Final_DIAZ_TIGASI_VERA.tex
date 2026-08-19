@@ -303,6 +303,10 @@ La IA del SICM se limita a apoyo administrativo. No diagnostica, no prescribe, n
 \textbf{Estado de evidencia:} requisitos especificados; validación experimental pendiente hasta disponer de una implementación evaluable. Los umbrales anteriores no se contabilizan como resultados obtenidos.
 
 \textbf{Monitoreo.} Una vez implementado y desplegado el componente, se revisarán mensualmente F1, latencia P95, disponibilidad, diferencia de sensibilidad por edad y falsos positivos por condición nuevo/recurrente. Se requiere reentrenamiento o retirada temporal si F1 cae por debajo de 0,80, una brecha supera 5 puntos porcentuales o se detecta uso de datos fuera de finalidad.
+
+\subsection{Privacidad, ética y supervisión humana}
+La LOPDP se aplica al tratamiento local de datos personales y de salud. Los requisitos de IA siguen finalidad, minimización, seguridad y trazabilidad. El Reglamento (UE) 2024/1689 se emplea como referencia de enfoque basado en riesgo y de transparencia frente a personas. El Artículo 50 exige transparencia para sistemas destinados a interactuar directamente con personas; por ello el asistente debe identificarse como IA. La supervisión humana queda implementada mediante fallback a recepción, anulación de predicciones y registro de auditoría \cite{loppd,euaiact2024,whoai2021}.
+\clearpage
 	SECCION DE METRICAS 
 	
 \section{Retrospectiva Start--Stop--Continue}
