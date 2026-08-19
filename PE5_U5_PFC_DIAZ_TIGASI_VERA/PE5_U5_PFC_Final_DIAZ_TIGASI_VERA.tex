@@ -239,6 +239,15 @@ La matriz final contiene 73 filas, una por requisito activo. Para los 45 RF la c
 \section{Requisitos de Inteligencia Artificial}
 \subsection{Principio de diseño}
 La IA del SICM se limita a apoyo administrativo. No diagnostica, no prescribe, no realiza triaje de emergencia y no decide si una persona recibe atención. Esta frontera reduce el impacto potencial y mantiene supervisión humana. La ingeniería de requisitos para sistemas de aprendizaje automático exige especificar datos, métricas, contexto de evaluación, equidad, explicabilidad y monitoreo, porque el comportamiento depende del conjunto de datos y no es completamente determinista \cite{vogelsang2019,ahmad2023,habibullah2023}. 
+
+\subsection{Criterio de interpretación de métricas y evidencia}
+\label{subsec:umbrales-ia}
+\begin{center}
+	\fcolorbox{uteqgreen}{lightgray}{%
+		\begin{minipage}{0.93\textwidth}
+			\textbf{Distinción obligatoria entre umbral y resultado.} Los valores de precisión, macro-F1, F1, latencia, disponibilidad, equidad, comprensión de explicaciones y usabilidad definidos en los requisitos de esta sección son \textbf{umbrales de aceptación} que deberá alcanzar el sistema cuando los componentes sean implementados y probados. \textbf{No se presentan como resultados experimentales ya obtenidos.} Un requisito se considerará cumplido únicamente cuando exista evidencia de una prueba ejecutada, con conjunto de evaluación identificado, fecha, procedimiento y resultado reproducible. Mientras esa evidencia no exista, el estado correcto es \emph{``especificado, pendiente de validación experimental''}. En esta PE5 se evalúa que el requisito tenga métrica, umbral, unidad y método de comprobación; no se atribuye al modelo un desempeño que todavía no ha sido medido.
+	\end{minipage}}
+\end{center}
 	SECCION DE METRICAS 
 	
 \section{Retrospectiva Start--Stop--Continue}
