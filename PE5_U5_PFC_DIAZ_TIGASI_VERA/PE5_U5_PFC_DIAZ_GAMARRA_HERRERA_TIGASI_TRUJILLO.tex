@@ -1,0 +1,108 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{fontspec}
+\usepackage[spanish,es-tabla,es-nodecimaldot]{babel}
+\usepackage[a4paper,top=2.2cm,bottom=2.2cm,left=2.3cm,right=2.3cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{xcolor}
+\usepackage{longtable,booktabs,array,tabularx,multirow}
+\usepackage{graphicx}
+\graphicspath{{Imagenes_DCF_IR_LATEX/}}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{pdflscape}
+\usepackage{tikz}
+\usetikzlibrary{positioning,arrows.meta,shapes.geometric,fit}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage[expansion=false]{microtype}
+\usepackage{appendix}
+\usepackage{lastpage}
+
+\definecolor{uteqgreen}{RGB}{0,102,51}
+\definecolor{uteqgold}{RGB}{174,137,47}
+\definecolor{lightgray}{RGB}{245,245,245}
+
+\hypersetup{colorlinks=true,linkcolor=black,citecolor=uteqgreen,urlcolor=blue,pdftitle={PE5 - SICM},pdfauthor={Equipo PFC SICM - UTEQ}}
+
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small PE5 - Sistema de Gestión Inteligente para un Centro Médico}\fancyhead[R]{\small UTEQ - ISR-401}\fancyfoot[C]{\thepage}\renewcommand{\headrulewidth}{0.2pt}
+
+
+\titleformat{\section}
+{\Large\bfseries\color{black}}
+{\thesection}
+{0.8em}
+{}
+
+\titleformat{\subsection}
+{\large\bfseries\color{black}}
+{\thesubsection}
+{0.8em}
+{}
+\setcounter{secnumdepth}{3}\setcounter{tocdepth}{3}
+\setlength{\LTleft}{0pt}\setlength{\LTright}{0pt}
+\setlength{\tabcolsep}{3pt}
+\sloppy
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcommand{\good}{\textbf{Cumple}}
+
+\begin{document}
+	\begin{titlepage}\centering
+		{\LARGE\bfseries UNIVERSIDAD TÉCNICA ESTATAL DE \\[0.5cm]
+			QUEVEDO    }\\[0.95cm]
+		{\large Facultad de Ciencias de la Computación - Carrera de Software}\\[1.0cm]
+		{\Large\bfseries PRÁCTICA EXPERIMENTAL\\
+			 PE5 - UNIDAD V}\\[0.25cm]
+		{\large Integración, Métricas y Defensa del Proyecto Integrador de Ingeniería de Requisitos}\\[0.9cm]
+		{\LARGE\bfseries Sistema de Gestión Inteligente para un Centro Médico (SICM)}\\[0.95cm]
+		{\large ERS/SRS final conforme a ISO/IEC/IEEE 29148:2018 e ISO/IEC 25010:2023}\\[1cm]
+		
+		
+			{\large\bfseries ESTUDIANTES:}\\[0.3cm]
+	\begin{tabular}{c}
+		Díaz Pontón Steven Santiago \\
+		Gamarra Zárate Jamileth Estefanía \\
+		Herrera Ramos Thais Melanie \\
+		Tigasi Sampedro Paul Alexander \\
+		Trujillo Vega Mayummy Jailly
+	\end{tabular}\\[1.2cm]
+		
+		\begin{tabular}{ll}\textbf{Curso:}&4to Nivel\\\textbf{Asignatura:}&Ingeniería de Requerimientos (ISR-401)\\\textbf{Docente:}&Ing. Gleiston Cicerón Guerrero Ulloa\\\textbf{Versión PE5:}&4.0 - 16/08/2026\end{tabular}\\[0.8cm]
+		{\small\textbf{Repositorio GitHub:} \url{https://github.com/ptigasis-Alexander/MediCita_ISR401/tree/main}}\\[1.3cm]
+		{\small\textbf{Commit base auditado:} historial público vigente al 16/08/2026.}\\
+		Último commit aceptado hasta el vienres a las 23:55\\
+		\vfill Quevedo - Los Ríos - Ecuador\\16 de agosto de 2026
+	\end{titlepage}
+	
+	\section*{Historial de versiones}
+	\begin{longtable}{p{1.2cm}p{2cm}p{2.4cm}p{9cm}}
+		\toprule\textbf{Versión}&\textbf{Fecha}&\textbf{Entrega}&\textbf{Descripción}\\\midrule\endhead
+		1.0&31/05/2026&PE1&Planificación y elicitación base.\\
+		2.0&12/07/2026&PE2&Especificación, interfaces, RF/RNF, priorización y trazabilidad parcial.\\
+		3.0&26/07/2026&PE3&Ampliación de requisitos, historias de usuario, casos de uso y matriz extendida.\\
+		3.1&01/08/2026&Revisión&Normalización del catálogo y concordancia previa.\\
+		4.0&16/08/2026&PE5&Integración final: auditoría M1--M6, corrección de defectos residuales, trazabilidad end-to-end, dos componentes IA, retrospectiva y anexos de defensa.\\\bottomrule
+	\end{longtable}
+	\section*{Resumen}
+	El presente informe consolida el Proyecto Fin de Curso de Ingeniería de Requisitos del Sistema de Gestión Inteligente para un Centro Médico (SICM) y ejecuta el cierre solicitado en la Práctica Experimental PE5. El trabajo integra la evidencia de elicitación, el catálogo de requisitos, los modelos UML, la validación, el control de cambios y la trazabilidad en una línea base única. La auditoría inicial identificó debilidades de completitud, verificabilidad, trazabilidad y consistencia: la versión previa contenía 40 requisitos funcionales y 17 no funcionales activos, pero varios requisitos conservaban textos de fusión contradictorios, no todos poseían criterios BDD y la matriz no registraba la cadena completa exigida. La corrección PE5 deja 73 requisitos activos, incluidos dos componentes de inteligencia artificial: un asistente virtual administrativo y un predictor de riesgo de inasistencia usado únicamente para adaptar recordatorios. Ambos incluyen requisitos de rendimiento, equidad, explicabilidad, datos, privacidad, supervisión humana y monitoreo. Después de la corrección, M1a, M1b, M1c, M3, M4ade y M4atr alcanzan 100 \%, M2 alcanza 1,0000, M5 obtiene 2,8 requisitos afectados en promedio y M6 queda en 0,0000. Estos valores corresponden exclusivamente a la auditoría documental del ERS; no representan resultados de desempeño de los modelos de IA ni pruebas de usabilidad del software. La propuesta mantiene el criterio clínico humano y documenta la evidencia necesaria para defensa y reproducción del informe desde LaTeX.\\[0.25cm]
+	\textbf{Palabras clave:} ingeniería de requisitos, ERS, trazabilidad, métricas, inteligencia artificial, centro médico, PE5.
+	\clearpage
+	\section*{Abstract}
+	This report consolidates the Requirements Engineering Final Course Project for the Intelligent Management System for a Medical Center (SICM) and performs the closure required by Experimental Practice PE5. The work integrates elicitation evidence, the requirements catalogue, UML models, validation, change control, and traceability into a single baseline. The initial audit identified weaknesses in completeness, verifiability, traceability, and consistency: the previous version contained 40 functional requirements and 17 active non-functional requirements, but several requirements still included contradictory merger statements, not every requirement had a BDD acceptance criterion, and the matrix did not record the complete trace chain required by PE5. A re-inspection found ten residual specification defects, all of which were closed and re-measured before this baseline was declared final. The corrected baseline contains 73 active requirements, including two artificial-intelligence components: an administrative virtual assistant and a no-show risk predictor used only to adapt appointment reminders. Both are scoped to administrative support only, excluding autonomous diagnosis or triage, and include measurable requirements for performance, fairness, explainability, data, privacy, human oversight, and monitoring. After correction, M1a, M1b, M1c, M3, M4 forward, and M4 backward reach 100 percent; M2 reaches 1.0000; M5 yields an average impact of 2.8 requirements; and M6 reaches 0.0000. These values refer only to the documentary audit of the SRS; they are not measured performance results of the AI models or software-usability tests. The design preserves human clinical judgment and documents the evidence needed for technical defense and reproducible LaTeX compilation.\\[0.25cm]
+	\textbf{Keywords:} requirements engineering, SRS, traceability, metrics, artificial intelligence, medical center, PE5.
+	\clearpage
+	\tableofcontents\clearpage
+	\listoftables\clearpage
+	\listoffigures\clearpage
+	\pagenumbering{arabic}
+	
+
+		
+
+
+\end{document}
+
