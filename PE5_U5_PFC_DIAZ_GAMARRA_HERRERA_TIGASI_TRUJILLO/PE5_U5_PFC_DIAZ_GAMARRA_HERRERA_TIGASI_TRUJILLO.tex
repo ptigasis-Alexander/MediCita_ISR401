@@ -718,6 +718,45 @@
 		\bottomrule
 	\end{tabularx}
 
+\subsubsection{RF-40 - Registrar plan o sesión de especialidad no farmacológica}
+	\begin{tabularx}{\textwidth}{p{3.2cm}Y}
+		\toprule
+		\textbf{Atributo} & \textbf{Especificación PE5}\\\midrule
+		Identificador & RF-40\\
+		Prioridad & Should\\
+		Fuente / origen & Fisioterapeuta / Entrevista al personal de especialidades\\
+		Descripción & El sistema debe permitir registrar el plan nutricional o la sesión de terapia física realizada al paciente, incluyendo actividades efectuadas, recomendaciones y observaciones para el seguimiento clínico.\\
+		Entradas / salidas & Entrada: información del plan nutricional o sesión de terapia. Salida: registro almacenado en la historia clínica del paciente.\\
+		Criterio de verificación & Registrar un plan nutricional o una sesión de terapia física y comprobar que la información quede almacenada correctamente en la historia clínica.\\
+		BDD asociado & Dado que nutricionista cumple las precondiciones y dispone de los datos válidos, cuando ejecuta "Registrar plan o sesión de especialidad no farmacológica", entonces registrar un plan nutricional o una sesión de terapia física y comprobar que la información quede almacenada correctamente en la historia clínica.\\
+		Traza principal & CU-27/CU-28; US-28/US-29; PlanNutricional, SesionTerapia, HistoriaClinica; P03 Gestionar historia clínica; CP-RF-40.\\
+		\bottomrule
+	\end{tabularx}
+	\clearpage
+	\subsection{Catálogo de requisitos no funcionales activos}
+	El catálogo base contiene diecisiete RNF activos: RNF-01 a RNF-16 y RNF-18. RNF-17 se conserva como identificador retirado/no asignado para mantener la historia de configuración. La Tabla \ref{tab:rnfbase} normaliza prioridad y fuente, atributos que no estaban explícitos en todos los RNF de la versión previa.
+	\begin{longtable}{p{1.5cm}p{2.98cm}p{1.5cm}p{2.8cm}p{6.4cm}}
+		\caption{RNF base normalizados para PE5}\label{tab:rnfbase}\\
+		\toprule\textbf{ID}&\textbf{Característica}&\textbf{Prior.}&\textbf{Fuente}&\textbf{Criterio medible}\\\midrule\endfirsthead
+		\toprule\textbf{ID}&\textbf{Característica}&\textbf{Prior.}&\textbf{Fuente}&\textbf{Criterio medible}\\\midrule\endhead
+		RNF-01 & Eficiencia de desempeño & Must & EV-01 / ISO 25010 & Tiempo de respuesta $\leq$ 2 s en el 95 \% de las consultas con hasta 50 usuarios concurrentes. \\
+		RNF-02 & Seguridad & Must & LOPDP / ISO 27001 & TLS 1.2+ en tránsito y AES-256 en reposo; 100 \% de pruebas de configuración críticas aprobadas. \\
+		RNF-03 & Usabilidad & Should & EV-01 / ISO 9241-11 & Tasa de finalización $\geq$ 90 \% y SUS $\geq$ 75/100 en la validación de usabilidad. \\
+		RNF-04 & Fiabilidad / disponibilidad & Must & EV-01 / ISO 25010 & Disponibilidad $\geq$ 99 \% entre 07h00 y 18h00 de lunes a viernes; MTTR $\leq$ 30 min. \\
+		RNF-05 & Mantenibilidad & Should & Arquitectura del SICM / ISO 25010 & Cobertura automatizada $\geq$ 70 \% y cambios confinados a módulos definidos por la arquitectura por capas. \\
+		RNF-06 & Seguridad / control de acceso & Must & EV-04 / LOPDP & 100 \% de accesos no autorizados rechazados y auditados. \\
+		RNF-07 & Compatibilidad / portabilidad & Should & Restricción técnica / ISO 25010 & Chrome, Edge y Safari en sus dos versiones vigentes; resolución 360-1920 px. \\
+		RNF-08 & Eficiencia de desempeño & Must & EV-Enf-01 & Tiempo $\leq$ 3 s en el 95 \% de las consultas. \\
+		RNF-09 & Fiabilidad & Must & EV-Enf-01 & Disponibilidad mensual $\geq$ 99 \%. \\
+		RNF-10 & Seguridad / RBAC & Must & EV-Enf-01 / LOPDP & 100 \% de accesos no autorizados entre especialidades bloqueados y registrados. \\
+		RNF-11 & Compatibilidad / integración & Should & EV-Enf-01 & Propagación $\leq$ 10 s desde el guardado. \\
+		RNF-12 & Usabilidad & Must & EV-Enf-01 & Registro completo $\leq$ 5 min tras 1 h de capacitación; tasa de error $\leq$ 5 \%. \\
+		RNF-13 & Integridad de datos & Must & EV-Enf-01 & 100 \% de registros guardados con cédula válida, nombres, apellidos y fecha de nacimiento completa. \\
+		RNF-14 & Portabilidad & Must & Inventario técnico del centro & 100 \% de equipos inventariados compatibles sin ampliación obligatoria de hardware. \\
+		RNF-15 & Mantenibilidad / eficiencia operativa & Should & EV-Enf-01 & Generación completa $\leq$ 2 min para el conjunto operativo de inventario. \\
+		RNF-16 & Seguridad de datos de menores & Must & EV-Enf-01 / LOPDP & 0 incidentes de asociación errónea en auditorías del flujo de registro. \\
+		RNF-18 & Explicabilidad del asistente & Should & EV-01 / AI Act art. 50 / OMS & Explicación $\leq$ 40 palabras en $\leq$ 2 s; $\geq$ 80 \% de usuarios de validación puntúa $\geq$ 4/5. \\
+		\bottomrule\end{longtable}
 
 
 \end{document}
