@@ -587,7 +587,20 @@
 		\bottomrule
 	\end{tabularx}
 	\clearpage
-
+	\subsubsection{RF-31 - Alertar stock bajo y caducidad}
+	\begin{tabularx}{\textwidth}{p{3.2cm}Y}
+		\toprule
+		\textbf{Atributo} & \textbf{Especificación PE5}\\\midrule
+		Identificador & RF-31\\
+		Prioridad & Could\\
+		Fuente / origen & Enfermería / EV-Enf-01\\
+		Descripción & El sistema debe generar alertas cuando un medicamento o insumo alcance el stock mínimo o se aproxime a su fecha de vencimiento.\\
+		Entradas / salidas & Entrada: existencias, umbral mínimo y fecha de vencimiento. Salida: alerta priorizada y registrada.\\
+		Criterio de verificación & Reducir el stock hasta el umbral o usar un lote próximo a vencer y comprobar que la alerta se genere inmediatamente.\\
+		BDD asociado & Dado que sistema cumple las precondiciones y dispone de los datos válidos, cuando ejecuta "Alertar stock bajo y caducidad", entonces reducir el stock hasta el umbral o usar un lote próximo a vencer y comprobar que la alerta se genere inmediatamente.\\
+		Traza principal & CU-29; US-33; Medicamento, AlertaInventario; P06 Gestionar inventario; CP-RF-31.\\
+		\bottomrule
+	\end{tabularx}
 
 \end{document}
 
