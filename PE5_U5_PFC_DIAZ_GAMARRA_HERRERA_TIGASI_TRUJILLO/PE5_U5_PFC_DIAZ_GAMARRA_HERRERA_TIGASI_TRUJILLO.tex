@@ -1094,7 +1094,33 @@
 		\label{fig:metricas}
 	\end{figure}
 	\clearpage
-
+	\section{Retrospectiva Start--Stop--Continue}
+	La retrospectiva se centra en hechos observables del proyecto: ampliaciones tardías del catálogo, duplicidades de alcance, existencia de evidencia de elicitación y uso sostenido de control de versiones.
+	\begin{longtable}{p{2.2cm}p{8cm}p{5.5cm}}
+		\caption{Retrospectiva PE5 con responsables}\label{tab:retro}\\\toprule\textbf{Categoría}&\textbf{Elemento}&\textbf{Responsable / acción}\\\midrule\endhead
+		Start&Ejecutar un validador de identificadores, referencias y trazas en cada entrega.&Líder + Técnico: incluir revisión antes de cada baseline.\\
+		Start&Calcular M1--M6 desde versiones intermedias para detectar faltantes antes del cierre.&Verificación: mantener hoja de conteos versionada.\\
+		Start&Definir requisitos de IA con datos, equidad y fallback desde que se propone el componente.&Equipo completo: usar ficha IA como criterio de entrada.\\
+		Stop&Declarar que un requisito fue ``fusionado'' mientras el identificador absorbido continúa activo.&Analista: cualquier fusión exige RFC, actualización de matriz y retiro explícito.\\
+		Stop&Usar ``No aplica'' como sustituto de una traza que sí puede identificarse.&Modelado: registrar proceso/clase/estado o justificar realmente la no aplicabilidad.\\
+		Stop&Dejar requisitos cuantificados sin BDD asociado.&Verificación: ningún requisito entra a la línea base sin método de comprobación.\\
+		Continue&Realizar elicitación con personal de múltiples áreas clínicas y administrativas.&Equipo de elicitación: conservar evidencia y consentimiento.\\
+		Continue&Usar GitHub para versionar ERS, modelado y trazabilidad.&Líder: etiquetar líneas base y revisar distribución de commits.\\
+		Continue&Redactar RNF con unidades y umbrales en lugar de términos vagos.&Documentación + verificación: aplicar checklist 29148/25010.\\\bottomrule\end{longtable}
+	\clearpage
+	\section{Conclusiones}
+	\begin{enumerate}
+		\item \textbf{Unidad I - Elicitación y contexto.} La diversidad de áreas del SICM hizo necesario obtener evidencia más allá de una única perspectiva clínica. La combinación de personal médico, enfermería, recepción/recaudación y pacientes permitió identificar problemas distintos: fragmentación del historial, demora en citas, traslado manual de información e inventario. La lección integradora es que la trazabilidad final solo es defendible cuando cada RF puede regresar a una necesidad concreta y no a una suposición del equipo.
+		
+		\item \textbf{Unidad II - Especificación.} El catálogo de 40 RF y 17 RNF activos constituyó una base amplia, pero PE5 demostró que cantidad no equivale a calidad. Los textos que declaraban fusiones mientras mantenían identificadores activos generaban ambigüedad de alcance. Separar RF-01/RF-14, RF-02/RF-36, RF-15/RF-31/RF-32 y otros pares permitió conservar responsabilidades verificables sin romper la historia del proyecto. La versión final añade prioridad, fuente y BDD a todos los requisitos activos.
+		
+		\item \textbf{Unidad III - Modelado y priorización.} Los 33 CU heredados, ampliados a 35, sirven como puente entre la especificación y el diseño conceptual. La integración de Clase UML, proceso DFD y Estado en la matriz evita que los diagramas sean figuras decorativas: ahora cada RF señala qué parte del modelo lo realiza. La priorización mantiene valor cuando está conectada con una historia y un caso de prueba, no cuando existe como tabla independiente.
+		
+		\item \textbf{Unidad IV - Validación y gestión del cambio.} La re-inspección PE5 encontró diez defectos residuales de especificación. Aunque M2 inicial era matemáticamente mayor a 0,98, persistían conflictos abiertos, por lo que no podía considerarse una línea base final. El cierre explícito de cada defecto, la conservación de RNF-17 como identificador retirado y la definición de fronteras de alcance reducen el riesgo de cambios propagados de forma innecesaria y sustentan M5 = 2,8.
+		
+		\item \textbf{Unidad V - Integración, métricas e IA.} La PE5 transforma el SICM en un artefacto auditable: 73 requisitos activos, 45 RF con trazabilidad adelante y atrás completa, BDD para el 100 \% del catálogo y dos componentes de IA limitados a apoyo administrativo. La decisión de prohibir diagnóstico, triaje y cancelación automática mantiene la supervisión humana y permite que las métricas de rendimiento, equidad y explicabilidad funcionen como criterios de aceptación verificables antes de cualquier despliegue.
+	\end{enumerate}
+	\clearpage
 
 \end{document}
 
