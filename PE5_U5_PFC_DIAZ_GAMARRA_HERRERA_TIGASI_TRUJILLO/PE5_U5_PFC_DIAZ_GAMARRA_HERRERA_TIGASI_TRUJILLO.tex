@@ -828,5 +828,63 @@
 	Todo requisito se revisó con cuatro preguntas: existencia de resultado observable o umbral, definición de unidad/estado esperado, escenario o método de comprobación y posibilidad de que dos evaluadores lleguen al mismo veredicto. Los requisitos que no tenían BDD explícito recibieron un escenario BDD asociado en la matriz final.
 	\clearpage
 
+	\section{Gestión, línea base y trazabilidad}
+	\subsection{Línea base y control de cambios}
+	La versión PE5 se identifica como 4.0. La línea base válida debe etiquetarse en Git después de incorporar el PDF, el archivo .tex, la matriz CSV, el instrumento de auditoría y el README actualizado. Para evitar una evidencia falsa, este documento no inventa un hash futuro: el hash definitivo debe ser el del commit real que contenga estos artefactos.
+	
+	\subsection{Diagnóstico de la matriz heredada}
+	La matriz pública previa contenía 57 filas y relacionaba evidencia, RF/RNF, CU, HU, criterios de aceptación, componentes y mockups. Esa estructura demostraba trazabilidad parcial, pero no permitía calcular M4ade conforme a PE5 porque no registraba de forma explícita Clase UML, Proceso DFD, Estado, Caso de prueba ni Estado de la traza. Por ello el valor inicial de cadena completa se registra como 0/40 RF, sin negar la existencia de enlaces parciales.
+	
+	\subsection{Matriz end-to-end PE5}
+	La matriz final contiene 73 filas, una por requisito activo. Para los 45 RF la cadena hacia delante está completa y los 45 poseen fuente identificada. Los RNF también se trazan para facilitar análisis de impacto. La matriz completa se entrega como CSV y se reproduce en el Anexo A en formato legible.
+	
+	\begin{table}[H]\centering\caption{Cobertura de trazabilidad después de la corrección}\label{tab:trazares}
+		\begin{tabular}{lrrr}\toprule\textbf{Indicador}&\textbf{Numerador}&\textbf{Denominador}&\textbf{Cobertura}\\\midrule
+			RF con fuente identificada&45&45&100 \%\\
+			RF con CU&45&45&100 \%\\
+			RF con Clase UML&45&45&100 \%\\
+			RF con proceso DFD&45&45&100 \%\\
+			RF con Estado/Transición&45&45&100 \%\\
+			RF con BDD&45&45&100 \%\\
+			RF con CP conceptual&45&45&100 \%\\
+			RF con Historia&45&45&100 \%\\\bottomrule\end{tabular}\end{table}
+	
+	\subsection{Huérfanos y cadenas rotas}
+	\begin{table}[H]\centering\caption{Cierre de patologías de trazabilidad}\label{tab:huerfanos}
+		\begin{tabularx}{\textwidth}{p{3cm}Y Y}\toprule\textbf{Identificador}&\textbf{Causa inicial}&\textbf{Acción tomada}\\\midrule
+			RF-16&No tenía CU formal en la matriz previa.&Se especificó CU-34 y se enlazó con US-35, clases de IA, P11, BDD y CP.\\
+			RNF sin BDD&Varios RNF se expresaban solo como métrica.&Se creó un escenario BDD conceptual por RNF y su CP correspondiente.\\
+			RF de IA PE5&No existían en la versión previa.&Se añadieron con fuente explícita y trazas a RF/CU existentes y a CU-34/CU-35.\\
+			Matriz PE3&Carecía de Clase, DFD, Estado y CP.&Se migró a la estructura PE5 y cada fila quedó en estado Completa.\\\bottomrule\end{tabularx}\end{table}
+	
+	\subsection{Sincronización backlog--ERS}
+	Los cuarenta RF heredados conservan una historia de usuario asociada en la matriz previa. Para PE5 se definen US-35 a US-38 para los RF nuevos de IA. La condición de sincronización se establece en 45/45 RF con al menos una historia, equivalente a 100 \%. Antes de la entrega al SGA, las historias US-35--US-38 deben existir también en el tablero real para que la evidencia de herramienta coincida con el informe.
+	\clearpage
+	
+	\section{Requisitos de Inteligencia Artificial}
+	\subsection{Principio de diseño}
+	La IA del SICM se limita a apoyo administrativo. No diagnostica, no prescribe, no realiza triaje de emergencia y no decide si una persona recibe atención. Esta frontera reduce el impacto potencial y mantiene supervisión humana. La ingeniería de requisitos para sistemas de aprendizaje automático exige especificar datos, métricas, contexto de evaluación, equidad, explicabilidad y monitoreo, porque el comportamiento depende del conjunto de datos y no es completamente determinista \cite{vogelsang2019,ahmad2023,habibullah2023}.
+	
+	\subsection{Criterio de interpretación de métricas y evidencia}
+	\label{subsec:umbrales-ia}
+	\begin{center}
+		\fcolorbox{uteqgreen}{lightgray}{%
+			\begin{minipage}{0.93\textwidth}
+				\textbf{Distinción obligatoria entre umbral y resultado.} Los valores de precisión, macro-F1, F1, latencia, disponibilidad, equidad, comprensión de explicaciones y usabilidad definidos en los requisitos de esta sección son \textbf{umbrales de aceptación} que deberá alcanzar el sistema cuando los componentes sean implementados y probados. \textbf{No se presentan como resultados experimentales ya obtenidos.} Un requisito se considerará cumplido únicamente cuando exista evidencia de una prueba ejecutada, con conjunto de evaluación identificado, fecha, procedimiento y resultado reproducible. Mientras esa evidencia no exista, el estado correcto es \emph{``especificado, pendiente de validación experimental''}. En esta PE5 se evalúa que el requisito tenga métrica, umbral, unidad y método de comprobación; no se atribuye al modelo un desempeño que todavía no ha sido medido.
+		\end{minipage}}
+	\end{center}
+	
+	\begin{table}[H]\centering
+		\caption{Interpretación de valores cuantitativos en la PE5}\label{tab:interpretacion-ia}
+		\begin{tabularx}{\textwidth}{p{4.1cm}Y Y}\toprule
+			\textbf{Tipo de valor}&\textbf{Cómo se interpreta en este informe}&\textbf{Cuándo puede declararse cumplido}\\\midrule
+			M1--M6 del ERS&Resultados de auditoría documental calculados a partir de conteos del catálogo, matriz y re-inspección documental.&Cuando los conteos y anexos reproducen la aritmética reportada.\\
+			F1, macro-F1, precisión, latencia y disponibilidad de IA&Umbrales de aceptación de los componentes IA; no son resultados medidos en esta entrega.&Después de ejecutar la prueba definida sobre un modelo implementado y conservar su evidencia.\\
+			Brechas de equidad y explicabilidad&Límites máximos o mínimos que la validación deberá comprobar entre los grupos y usuarios definidos.&Después de disponer de una muestra de evaluación válida y registrar los resultados por grupo.\\
+			SUS, tasa de finalización y otras métricas de usabilidad&Objetivos verificables del producto; no se declaran alcanzados sin una prueba de usabilidad ejecutada.&Después de una sesión de validación con participantes, instrumento y resultados documentados.\\\bottomrule
+		\end{tabularx}
+	\end{table}
+
+
 \end{document}
 
