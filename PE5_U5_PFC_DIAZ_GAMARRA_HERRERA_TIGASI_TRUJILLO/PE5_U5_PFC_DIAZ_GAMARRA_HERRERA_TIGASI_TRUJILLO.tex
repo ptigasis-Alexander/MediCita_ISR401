@@ -150,6 +150,167 @@
 	\section{ERS/SRS final integrada}
 	\subsection{Alcance funcional consolidado}
 	El SICM centraliza la gestión clínica y administrativa sin sustituir decisiones clínicas del profesional. La frontera incluye registro de pacientes, historia clínica, citas, personal, enfermería, recaudación, inventario, derivaciones, reportes, seguridad, auditoría y asistencia administrativa basada en IA. Quedan fuera de alcance el diagnóstico autónomo, la prescripción automática, la priorización clínica automática de pacientes y cualquier cancelación o rechazo de atención basado en una predicción de IA.
+\subsection{Catálogo de requisitos funcionales}
+	Cada ficha mantiene identificador, prioridad, fuente y criterio verificable. Además, el Anexo de BDD proporciona un escenario comprobable por requisito.
+	\subsubsection{RF-01 - Registrar historia clínica digital}
+	\begin{tabularx}{\textwidth}{p{3.2cm}Y}
+		\toprule
+		\textbf{Atributo} & \textbf{Especificación PE5}\\\midrule
+		Identificador & RF-01\\
+		Prioridad & Must\\
+		Fuente / origen & Acta de entrevista N°1 (EV-01)\\
+		Descripción & Registrar y consultar la historia clínica digital del paciente; no sustituye el requisito RF-14, que controla la migración de formularios físicos como objetivo independiente.\\
+		Entradas / salidas & Entrada: datos personales y clínicos del paciente. Salida: historia clínica registrada con ID único.\\
+		Criterio de verificación & Registrar una historia clínica y recuperarla por cédula en un tiempo máximo de 2 s; comprobar identificador único y persistencia.\\
+		BDD asociado & Dado que personal médico cumple las precondiciones y dispone de los datos válidos, cuando ejecuta "Registrar historia clínica digital", entonces registrar una historia clínica y recuperarla por cédula en un tiempo máximo de 2 s; comprobar identificador único y persistencia.\\
+		Traza principal & CU-02; US-06; Paciente, HistoriaClinica; P03 Gestionar historia clínica; CP-RF-01.\\
+		\bottomrule
+	\end{tabularx}
+	\subsubsection{RF-02 - Agendar cita médica}
+	\begin{tabularx}{\textwidth}{p{3.2cm}Y}
+		\toprule
+		\textbf{Atributo} & \textbf{Especificación PE5}\\\midrule
+		Identificador & RF-02\\
+		Prioridad & Must\\
+		Fuente / origen & Acta de entrevista N°1, Cuestionario digital (EV-01, EV-02)\\
+		Descripción & Gestionar el agendamiento general de citas solicitado por el paciente. RF-36 conserva el caso operativo de agendamiento por área realizado por recepción o el profesional.\\
+		Entradas / salidas & Entrada: área médica, fecha y turno. Salida: cita registrada y confirmación en pantalla.\\
+		Criterio de verificación & Confirmar la cita en pantalla en un máximo de 3 s, sin solapamiento y con notificación asociada.\\
+		BDD asociado & Dado que paciente cumple las precondiciones y dispone de los datos válidos, cuando ejecuta "Agendar cita médica", entonces confirmar la cita en pantalla en un máximo de 3 s, sin solapamiento y con notificación asociada.\\
+		Traza principal & CU-01; US-01; Paciente, Cita, Horario; P02 Gestionar citas; CP-RF-02.\\
+		\bottomrule
+	\end{tabularx}
+	\clearpage
+	\subsubsection{RF-03 - Buscar pacientes por criterios}
+	\begin{tabularx}{\textwidth}{p{3.2cm}Y}
+		\toprule
+		\textbf{Atributo} & \textbf{Especificación PE5}\\\midrule
+		Identificador & RF-03\\
+		Prioridad & Must\\
+		Fuente / origen & Acta de entrevista N°1 (EV-01)\\
+		Descripción & Permitir búsqueda clínica por múltiples criterios (nombre, iniciales o cédula). RF-27 se mantiene como búsqueda rápida por cédula en el flujo de enfermería/recepción.\\
+		Entradas / salidas & Entrada: cédula o iniciales de nombre. Salida: ficha del paciente encontrado o mensaje de no encontrado.\\
+		Criterio de verificación & Mostrar resultados de búsqueda general en un máximo de 2 s y aplicar control de acceso al expediente.\\
+		BDD asociado & Dado que médico cumple las precondiciones y dispone de los datos válidos, cuando ejecuta "Buscar pacientes por criterios", entonces mostrar resultados de búsqueda general en un máximo de 2 s y aplicar control de acceso al expediente.\\
+		Traza principal & CU-02; US-02; Paciente, HistoriaClinica; P01 Gestionar pacientes; CP-RF-03.\\
+		\bottomrule
+	\end{tabularx}
+	\subsubsection{RF-04 - Emitir receta médica}
+	\begin{tabularx}{\textwidth}{p{3.2cm}Y}
+		\toprule
+		\textbf{Atributo} & \textbf{Especificación PE5}\\\midrule
+		Identificador & RF-04\\
+		Prioridad & Must\\
+		Fuente / origen & Médico (Odontología / Medicina General) / Acta de entrevista N°1 (EV-01)\\
+		Descripción & El sistema deberá permitir registrar recetas médicas asociadas al historial clínico de cada paciente, indicando medicamento, cantidad e indicaciones.\\
+		Entradas / salidas & Entrada: medicamento, cantidad, indicaciones. Salida: receta registrada y vinculada al historial.\\
+		Criterio de verificación & La receta debe quedar visible en el historial del paciente inmediatamente después de su emisión (ver US-3).\\
+		BDD asociado & Dado que médico u odontólogo cumple las precondiciones y dispone de los datos válidos, cuando ejecuta "Emitir receta médica", entonces la receta debe quedar visible en el historial del paciente inmediatamente después de su emisión (ver US-3).\\
+		Traza principal & CU-03; US-03; Receta, Medicamento, HistoriaClinica; P03 Gestionar historia clínica; CP-RF-04.\\
+		\bottomrule
+	\end{tabularx}
+	\clearpage
+	\subsubsection{RF-05 - Actualizar información clínica}
+	\begin{tabularx}{\textwidth}{p{3.2cm}Y}
+		\toprule
+		\textbf{Atributo} & \textbf{Especificación PE5}\\\midrule
+		Identificador & RF-05\\
+		Prioridad & Should\\
+		Fuente / origen & Acta de entrevista N°1 (EV-01)\\
+		Descripción & El sistema deberá permitir actualizar la información clínica de un paciente sin necesidad de volver a registrar todos los datos.\\
+		Entradas / salidas & Entrada: campos clínicos modificados. Salida: historial actualizado con marca de fecha/hora. Atributo Detalle\\
+		Criterio de verificación & El sistema debe registrar la fecha y el usuario que realizó cada modificación (ver US-5).\\
+		BDD asociado & Dado que médico cumple las precondiciones y dispone de los datos válidos, cuando ejecuta "Actualizar información clínica", entonces el sistema debe registrar la fecha y el usuario que realizó cada modificación (ver US-5).\\
+		Traza principal & CU-02; US-05; HistoriaClinica, Auditoria; P03 Gestionar historia clínica; CP-RF-05.\\
+		\bottomrule
+	\end{tabularx}
+	\subsubsection{RF-06 - Cancelar / modificar cita médica}
+	\begin{tabularx}{\textwidth}{p{3.2cm}Y}
+		\toprule
+		\textbf{Atributo} & \textbf{Especificación PE5}\\\midrule
+		Identificador & RF-06\\
+		Prioridad & Must\\
+		Fuente / origen & Acta de entrevista N°1 (EV-01)\\
+		Descripción & Permitir al paciente cancelar o modificar una cita propia. RF-37 mantiene la reprogramación/cancelación operada por recepción o profesional y conserva auditoría del cambio.\\
+		Entradas / salidas & Entrada: selección de la cita, motivo (opcional). Salida: cita cancelada/reprogramada y turno liberado.\\
+		Criterio de verificación & Confirmar la cancelación/modificación y liberar el cupo en un máximo de 2 s, conservando el estado previo en auditoría.\\
+		BDD asociado & Dado que paciente cumple las precondiciones y dispone de los datos válidos, cuando ejecuta "Cancelar / modificar cita médica", entonces confirmar la cancelación/modificación y liberar el cupo en un máximo de 2 s, conservando el estado previo en auditoría.\\
+		Traza principal & CU-04; US-04; Cita, Horario; P02 Gestionar citas; CP-RF-06.\\
+		\bottomrule
+	\end{tabularx}
+	\clearpage
+	\subsubsection{RF-07 - Compartir información clínica entre áreas}
+	\begin{tabularx}{\textwidth}{p{3.2cm}Y}
+		\toprule
+		\textbf{Atributo} & \textbf{Especificación PE5}\\\midrule
+		Identificador & RF-07\\
+		Prioridad & Should\\
+		Fuente / origen & Acta de negociación N°1 (EV-04)\\
+		Descripción & El sistema deberá permitir compartir información clínica relevante entre las distintas áreas médicas autorizadas mediante derivación formal.\\
+		Entradas / salidas & Entrada: paciente, área destino, motivo de derivación. Salida: derivación registrada y notificada al área receptora.\\
+		Criterio de verificación & El área receptora debe poder consultar el historial parcial del paciente derivado, conforme al RNF de control de acceso.\\
+		BDD asociado & Dado que personal médico cumple las precondiciones y dispone de los datos válidos, cuando ejecuta "Compartir información clínica entre áreas", entonces el área receptora debe poder consultar el historial parcial del paciente derivado, conforme al RNF de control de acceso.\\
+		Traza principal & CU-05; US-19; Derivacion, HistoriaClinica, AreaMedica; P04 Gestionar derivaciones; CP-RF-07.\\
+		\bottomrule
+	\end{tabularx}
+	\subsubsection{RF-08 - Generar reportes de atención}
+	\begin{tabularx}{\textwidth}{p{3.2cm}Y}
+		\toprule
+		\textbf{Atributo} & \textbf{Especificación PE5}\\\midrule
+		Identificador & RF-08\\
+		Prioridad & Should\\
+		Fuente / origen & Administrador / Acta de entrevista N°1 (EV-01)\\
+		Descripción & El sistema deberá generar reportes diarios y mensuales de atención por especialidad médica, con filtros por rango de fechas y categoría.\\
+		Entradas / salidas & Entrada: rango de fechas, categoría. Salida: reporte visual/exportable de atenciones.\\
+		Criterio de verificación & El reporte debe generarse en $\leq$5 segundos para rangos de hasta 1 año.\\
+		BDD asociado & Dado que coordinadora cumple las precondiciones y dispone de los datos válidos, cuando ejecuta "Generar reportes de atención", entonces el reporte debe generarse en $\leq$5 segundos para rangos de hasta 1 año.\\
+		Traza principal & CU-05; US-06; Atencion, Reporte; P08 Generar reportes; CP-RF-08.\\
+		\bottomrule
+	\end{tabularx}
+	\clearpage
+	\subsubsection{RF-09 - Autenticación de usuarios}
+	\begin{tabularx}{\textwidth}{p{3.2cm}Y}
+		\toprule
+		\textbf{Atributo} & \textbf{Especificación PE5}\\\midrule
+		Identificador & RF-09\\
+		Prioridad & Must\\
+		Fuente / origen & EV-01 / CU-12\\
+		Descripción & El sistema deberá permitir el inicio de sesión de pacientes y personal mediante credenciales, con recuperación de contraseña y notificación de credenciales incorrectas.\\
+		Entradas / salidas & Entrada: usuario y contraseña. Salida: acceso concedido o mensaje de error.\\
+		Criterio de verificación & El sistema debe bloquear el acceso tras 5 intentos fallidos consecutivos y notificar al usuario. El ciclo de autenticación incluye la recuperación de contraseña mediante enlace temporal y el cierre de sesión con confirmación\\
+		BDD asociado & Dado que todos los actores cumple las precondiciones y dispone de los datos válidos, cuando ejecuta "Autenticación de usuarios", entonces el sistema debe bloquear el acceso tras 5 intentos fallidos consecutivos y notificar al usuario. El ciclo de autenticación incluye la recuperación de contraseña mediante enlace temporal y el cierre de sesión con confirmación.\\
+		Traza principal & CU-12/CU-32/CU-33; US-07/US-31/US-32; Usuario, Sesion; P00 Autenticar y autorizar; CP-RF-09.\\
+		\bottomrule
+	\end{tabularx}
+	\subsubsection{RF-10 - Gestionar permisos y roles}
+	\begin{tabularx}{\textwidth}{p{3.2cm}Y}
+		\toprule
+		\textbf{Atributo} & \textbf{Especificación PE5}\\\midrule
+		Identificador & RF-10\\
+		Prioridad & Must\\
+		Fuente / origen & EV-04\\
+		Descripción & Administrar roles y permisos de usuarios. RF-30 conserva la regla clínica específica que limita la visualización de información entre especialidades.\\
+		Entradas / salidas & Entrada: usuario, rol, área. Salida: permisos actualizados. Atributo Detalle\\
+		Criterio de verificación & Aplicar el cambio de rol y comprobar que todo cambio quede auditado; una sesión nueva debe reflejar los permisos actualizados.\\
+		BDD asociado & Dado que administrador cumple las precondiciones y dispone de los datos válidos, cuando ejecuta "Gestionar permisos y roles", entonces aplicar el cambio de rol y comprobar que todo cambio quede auditado; una sesión nueva debe reflejar los permisos actualizados.\\
+		Traza principal & CU-13/CU-31; US-08/US-30; Usuario, Rol, Permiso; P00 Autenticar y autorizar; CP-RF-10.\\
+		\bottomrule
+	\end{tabularx}
+	\clearpage
+	\subsubsection{RF-11 - Enviar notificaciones automáticas}
+	\begin{tabularx}{\textwidth}{p{3.2cm}Y}
+		\toprule
+		\textbf{Atributo} & \textbf{Especificación PE5}\\\midrule
+		Identificador & RF-11\\
+		Prioridad & Must\\
+		Fuente / origen & Cuestionario digital (EV-02): 100 \% prefiere WhatsApp\\
+		Descripción & El sistema deberá notificar automáticamente a los pacientes sobre citas agendadas, modificadas o canceladas, vía WhatsApp o correo electrónico.\\
+		Entradas / salidas & Entrada: evento de cita (creación/cambio/cancelación). Salida: mensaje enviado y estado de entrega registrado.\\
+		Criterio de verificación & El sistema debe registrar el estado de entrega de cada notificación en un máximo de 1 minuto tras el evento (ver CU-14).\\
+		BDD asociado & Dado que sistema de notificaciones cumple las precondiciones y dispone de los datos válidos, cuando ejecuta "Enviar notificaciones automáticas", entonces el sistema debe registrar el estado de entrega de cada notificación en un máximo de 1 minuto tras el evento (ver CU-14).\\
+		Traza principal & CU-14; US-01; Notificacion, Cita; P09 Notificar; CP-RF-11.\\
+		\bottomrule
+	\end{tabularx}
 
 
 \end{document}
