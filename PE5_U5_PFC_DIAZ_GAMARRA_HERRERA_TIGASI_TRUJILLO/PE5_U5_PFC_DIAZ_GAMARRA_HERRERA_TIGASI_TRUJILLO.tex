@@ -116,7 +116,41 @@
 		\item Especificar dos componentes de IA con rendimiento, equidad, explicabilidad, datos, privacidad, fallback y monitoreo.
 		\item Preparar evidencia y respuestas ancladas en artefactos para la defensa individual.
 	\end{enumerate}
+	\subsection{Estructura del informe}
+	El documento sigue las diez secciones obligatorias de la Guía Ampliada PE5. La ERS se integra en la Sección 3; la Sección 4 resume los modelos; la Sección 5 registra la re-inspección; la Sección 6 presenta gestión y trazabilidad; la Sección 7 desarrolla IA; la Sección 8 calcula las métricas; la Sección 9 documenta la retrospectiva y la Sección 10 contiene cinco conclusiones integradoras.
+	\clearpage
+	\section{Metodología de Ingeniería de Requisitos}
+	\subsection{Proceso seguido de PE1 a PE5}
+	El proceso se organizó de forma incremental. PE1 estableció el contexto, los stakeholders y la evidencia de elicitación. PE2 transformó necesidades en RF y RNF cuantificables y produjo interfaces, priorización y trazabilidad parcial. PE3 amplió el catálogo con Enfermería y Recepción/Recaudación, incorporó historias BDD y casos de uso adicionales. La etapa de validación y gestión revisó consistencia, defectos y cambios. Finalmente, PE5 ejecuta la auditoría cuantitativa, cierra trazas, especifica IA y prepara la defensa.
 	
+	\begin{table}[H]\centering\caption{Síntesis del proceso PE1--PE5}\label{tab:proceso}
+		\begin{tabularx}{\textwidth}{p{1.2cm}p{3cm}Y Y}\toprule
+			\textbf{Etapa}&\textbf{Propósito}&\textbf{Técnicas / decisiones}&\textbf{Artefactos principales}\\\midrule
+			PE1&Elicitación y contexto&Entrevistas, cuestionario, observación, codificación temática&Evidencias EV, stakeholders, requisitos crudos\\
+			PE2&Especificación&Plantilla de atributos, MoSCoW/Kano, BDD inicial&RF/RNF, mockups, historias, matriz parcial\\
+			PE3&Integración de áreas&Segunda ronda de elicitación, WSJF, ampliación UML&40 RF, RNF, 34 US, 33 CU\\
+			Validación&Calidad y cambio&Inspección documental, control de duplicidad y acceso&Registro de defectos, decisiones de alcance\\
+			PE5&Cierre cuantitativo&Métricas M1--M6, E2E, IA, retrospectiva&ERS 4.0, matriz final, auditoría, defensa\\\bottomrule
+	\end{tabularx}\end{table}
+	
+	\subsection{Criterios de calidad}
+	Se adoptan las propiedades operativas de la guía PE5: completitud, consistencia, verificabilidad, trazabilidad, modificabilidad y corrección. Los umbrales se consideran criterios pedagógicos del curso. La norma ISO/IEC/IEEE 29148:2018 se usa para la calidad de la especificación, ISO/IEC 25010:2023 para el marco de calidad y la literatura de trazabilidad para la relación bidireccional entre evidencia, requisitos y artefactos derivados \cite{iso29148,iso25010,gotel1994,ramesh2001}.
+	
+	El fundamento aplicado combina cuatro ejes: (i) ISO/IEC/IEEE 29148:2018, para exigir requisitos completos, correctos, consistentes, verificables y trazables; (ii) ISO/IEC 25010:2023, para traducir calidad documental y de producto en métricas auditables; (iii) modelos de trazabilidad de requisitos, porque un RF sin fuente o sin prueba pierde utilidad para gestión de cambio; y (iv) literatura de requisitos para sistemas de aprendizaje automático, que obliga a fijar datos, métrica, umbral, equidad, explicabilidad y monitoreo desde la especificación y no después de la implementación \cite{pohl,swebok,vogelsang2019,ahmad2023,habibullah2023}.
+	
+	\subsection{Regla de autenticidad aplicada}
+	Los conteos de la auditoría se obtienen del catálogo SICM. No se atribuyen resultados de pruebas de software que no se hayan ejecutado. Los valores que constituyen umbrales de aceptación se identifican como requisitos; los valores de auditoría se calculan únicamente a partir del documento. Para IA, los valores F1, latencia, equidad y disponibilidad son objetivos de aceptación a validar antes de despliegue, no resultados experimentales inventados.
+	
+	\subsection{Actores formales cubiertos}
+	Para M1c se normalizan diez actores: Paciente, Médico, Odontología, Psicología, Nutrición, Terapia Física, Enfermería, Recepción/Recaudación, Coordinación/Administración y Sistema de Notificaciones. Todos poseen al menos un RF asociado. Las especialidades clínicas comparten el supertipo Personal Médico en el modelo conceptual, pero se conservan como actores operativos cuando su flujo es distinto.
+	
+	\subsection{Control de identificadores}
+	El catálogo previo usa RF-01 a RF-40 y RNF-01 a RNF-16 más RNF-18. RNF-17 no se reutiliza en PE5: queda documentado como identificador retirado/no asignado para evitar renumeraciones que rompan trazabilidad histórica. Los requisitos nuevos de IA usan prefijos RF-IA1, RNF-IA1, RF-IA2 y RNF-IA2.
+	\clearpage
+	\section{ERS/SRS final integrada}
+	\subsection{Alcance funcional consolidado}
+	El SICM centraliza la gestión clínica y administrativa sin sustituir decisiones clínicas del profesional. La frontera incluye registro de pacientes, historia clínica, citas, personal, enfermería, recaudación, inventario, derivaciones, reportes, seguridad, auditoría y asistencia administrativa basada en IA. Quedan fuera de alcance el diagnóstico autónomo, la prescripción automática, la priorización clínica automática de pacientes y cualquier cancelación o rechazo de atención basado en una predicción de IA.
+
 
 \end{document}
 
