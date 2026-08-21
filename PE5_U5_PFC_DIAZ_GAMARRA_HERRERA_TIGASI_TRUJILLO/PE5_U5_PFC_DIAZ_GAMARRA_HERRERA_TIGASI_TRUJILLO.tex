@@ -311,6 +311,122 @@
 		Traza principal & CU-14; US-01; Notificacion, Cita; P09 Notificar; CP-RF-11.\\
 		\bottomrule
 	\end{tabularx}
+\subsubsection{RF-12 - Registrar auditoría de acciones}
+	\begin{tabularx}{\textwidth}{p{3.2cm}Y}
+		\toprule
+		\textbf{Atributo} & \textbf{Especificación PE5}\\\midrule
+		Identificador & RF-12\\
+		Prioridad & Must Atributo Detalle\\
+		Fuente / origen & Acta de negociación N°1 (EV-04)\\
+		Descripción & El sistema deberá registrar todo acceso y modificación sensible (historial clínico, permisos) con fecha, hora y usuario responsable.\\
+		Entradas / salidas & Entrada: acción ejecutada por un usuario. Salida: registro de auditoría inmutable.\\
+		Criterio de verificación & El registro debe ser consultable por el administrador y no editable por ningún rol (ver CU-15).\\
+		BDD asociado & Dado que sistema cumple las precondiciones y dispone de los datos válidos, cuando ejecuta "Registrar auditoría de acciones", entonces el registro debe ser consultable por el administrador y no editable por ningún rol (ver CU-15).\\
+		Traza principal & CU-15; US-09; Auditoria, Usuario; P10 Auditar; CP-RF-12.\\
+		\bottomrule
+	\end{tabularx}
+	\clearpage
+	\subsubsection{RF-13 - Consultar disponibilidad de horarios}
+	\begin{tabularx}{\textwidth}{p{3.2cm}Y}
+		\toprule
+		\textbf{Atributo} & \textbf{Especificación PE5}\\\midrule
+		Identificador & RF-13\\
+		Prioridad & Must\\
+		Fuente / origen & Diagrama de CU-01 Agendar cita médica (Figura 12)\\
+		Descripción & El sistema deberá mostrar al paciente los turnos y horarios disponibles por área médica antes de confirmar el agendamiento.\\
+		Entradas / salidas & Entrada: área médica seleccionada. Salida: lista de horarios disponibles o próximas fechas con cupo.\\
+		Criterio de verificación & Si no hay disponibilidad, el sistema debe sugerir automáticamente las próximas 3 fechas con cupo.\\
+		BDD asociado & Dado que paciente cumple las precondiciones y dispone de los datos válidos, cuando ejecuta "Consultar disponibilidad de horarios", entonces si no hay disponibilidad, el sistema debe sugerir automáticamente las próximas 3 fechas con cupo.\\
+		Traza principal & CU-01; US-01; Horario, Cita; P02 Gestionar citas; CP-RF-13.\\
+		\bottomrule
+	\end{tabularx}
+	\subsubsection{RF-14 - Digitalizar la documentación clínica}
+	\begin{tabularx}{\textwidth}{p{3.2cm}Y}
+		\toprule
+		\textbf{Atributo} & \textbf{Especificación PE5}\\\midrule
+		Identificador & RF-14\\
+		Prioridad & Could\\
+		Fuente / origen & EV-01\\
+		Descripción & El sistema deberá sustituir progresivamente los formularios físicos de historial, receta, derivación y atención por equivalentes digitales vinculados al expediente del paciente.\\
+		Entradas / salidas & Entrada: formularios y registros clínicos existentes. Salida: formularios digitales trazables y consultables.\\
+		Criterio de verificación & Al cierre del proyecto, al menos el 80 \% de los formularios físicos identificados debe disponer de un equivalente digital validado por el personal responsable.\\
+		BDD asociado & Dado que personal médico y coordinación cumple las precondiciones y dispone de los datos válidos, cuando ejecuta "Digitalizar la documentación clínica", entonces al cierre del proyecto, al menos el 80 \% de los formularios físicos identificados debe disponer de un equivalente digital validado por el personal responsable.\\
+		Traza principal & CU-22; US-05; DocumentoClinico, HistoriaClinica; P03 Gestionar historia clínica; CP-RF-14.\\
+		\bottomrule
+	\end{tabularx}
+	\clearpage
+	\subsubsection{RF-15 - Gestionar inventario de medicamentos e insumos}
+	\begin{tabularx}{\textwidth}{p{3.2cm}Y}
+		\toprule
+		\textbf{Atributo} & \textbf{Especificación PE5}\\\midrule
+		Identificador & RF-15\\
+		Prioridad & Should\\
+		Fuente / origen & EV-Enf-01\\
+		Descripción & Administrar existencias, entradas y salidas del inventario. RF-31 conserva las alertas y RF-32 la entrega trazable al paciente como comportamientos separados.\\
+		Entradas / salidas & Entrada: medicamento o insumo, nombre, presentación, cantidad, fecha de ingreso, fecha de recepción y fecha de vencimiento. Salida: stock actualizado, informe de inventario disponible para coordinación y alerta automática cuando el nivel de existencias se encuentre por debajo del mínimo configurado.\\
+		Criterio de verificación & Registrar entrada y salida y comprobar saldo exacto; los eventos de umbral y entrega deben activar RF-31/RF-32 según corresponda.\\
+		BDD asociado & Dado que enfermero(a) (registro) cumple las precondiciones y dispone de los datos válidos, cuando ejecuta "Gestionar inventario de medicamentos e insumos", entonces registrar entrada y salida y comprobar saldo exacto; los eventos de umbral y entrega deben activar RF-31/RF-32 según corresponda.\\
+		Traza principal & CU-29; US-33; Inventario, Medicamento, MovimientoInventario; P06 Gestionar inventario; CP-RF-15.\\
+		\bottomrule
+	\end{tabularx}
+	\subsubsection{RF-16 - Asistente virtual con IA (chat box)}
+	\begin{tabularx}{\textwidth}{p{3.2cm}Y}
+		\toprule
+		\textbf{Atributo} & \textbf{Especificación PE5}\\\midrule
+		Identificador & RF-16\\
+		Prioridad & Should\\
+		Fuente / origen & EV-01\\
+		Descripción & El sistema deberá incorporar un asistente virtual basado en Inteligencia Artificial tipo chat box para responder consultas frecuentes de los pacientes (horarios, ubicación, preparación previa a citas).\\
+		Entradas / salidas & Entrada: consulta en lenguaje natural del paciente. Salida: respuesta automática o derivación a un agente humano.\\
+		Criterio de verificación & El asistente debe responder correctamente al menos el 70 \% de las consultas frecuentes predefinidas en pruebas de aceptación.\\
+		BDD asociado & Dado que paciente cumple las precondiciones y dispone de los datos válidos, cuando ejecuta "Asistente virtual con IA (chat box)", entonces el asistente debe responder correctamente al menos el 70 \% de las consultas frecuentes predefinidas en pruebas de aceptación.\\
+		Traza principal & CU-34; US-35; AsistenteVirtual, ConsultaIA; P11 Asistente virtual IA; CP-RF-16.\\
+		\bottomrule
+	\end{tabularx}
+	\clearpage
+	\subsubsection{RF-17 - Gestionar perfil del personal médico}
+	\begin{tabularx}{\textwidth}{p{3.2cm}Y}
+		\toprule
+		\textbf{Atributo} & \textbf{Especificación PE5}\\\midrule
+		Identificador & RF-17\\
+		Prioridad & Must\\
+		Fuente / origen & Coordinadora del centro médico\\
+		Descripción & El sistema deberá permitir registrar y gestionar el perfil del personal médico, incluyendo especialidad, cédula profesional y área asignada.\\
+		Entradas / salidas & Entrada: datos personales, especialidad, cédula profesional y área del personal médico. Salida: perfil de personal médico registrado con ID único.\\
+		Criterio de verificación & Verificar que el perfil creado sea recuperable mediante búsqueda por cédula o nombre en $\leq$2 segundos (ver CU-16).\\
+		BDD asociado & Dado que administrador del sistema cumple las precondiciones y dispone de los datos válidos, cuando ejecuta "Gestionar perfil del personal médico", entonces verificar que el perfil creado sea recuperable mediante búsqueda por cédula o nombre en $\leq$2 segundos (ver CU-16).\\
+		Traza principal & CU-16; US-10; Profesional, AreaMedica; P05 Gestionar personal; CP-RF-17.\\
+		\bottomrule
+	\end{tabularx}
+	\subsubsection{RF-18 - Asignar y consultar turnos del personal médico}
+	\begin{tabularx}{\textwidth}{p{3.2cm}Y}
+		\toprule
+		\textbf{Atributo} & \textbf{Especificación PE5}\\\midrule
+		Identificador & RF-18\\
+		Prioridad & Must Atributo Detalle\\
+		Fuente / origen & Jefatura de área médica\\
+		Descripción & Asignar, modificar y consultar turnos laborales del personal. RF-19 conserva la consulta de disponibilidad derivada de la agenda.\\
+		Entradas / salidas & Entrada: personal médico, área médica, fecha y horario del turno. Salida: turno asignado y visible en el calendario del área correspondiente.\\
+		Criterio de verificación & Un turno asignado debe reflejarse en la agenda en un máximo de 2 s y no permitir solapamiento para el mismo profesional.\\
+		BDD asociado & Dado que administrador del sistema cumple las precondiciones y dispone de los datos válidos, cuando ejecuta "Asignar y consultar turnos del personal médico", entonces un turno asignado debe reflejarse en la agenda en un máximo de 2 s y no permitir solapamiento para el mismo profesional.\\
+		Traza principal & CU-17; US-11; Profesional, TurnoLaboral; P05 Gestionar personal; CP-RF-18.\\
+		\bottomrule
+	\end{tabularx}
+	\clearpage
+	\subsubsection{RF-19 - Consultar disponibilidad del personal médico}
+	\begin{tabularx}{\textwidth}{p{3.2cm}Y}
+		\toprule
+		\textbf{Atributo} & \textbf{Especificación PE5}\\\midrule
+		Identificador & RF-19\\
+		Prioridad & Must\\
+		Fuente / origen & Paciente (módulo de agendamiento)\\
+		Descripción & El sistema deberá permitir consultar en tiempo real la disponibilidad del personal médico según su turno vigente.\\
+		Entradas / salidas & Entrada: área médica y/o médico específico, fecha deseada. Salida: listado de disponibilidad (libre/ocupado) por franja horaria.\\
+		Criterio de verificación & Verificar que la disponibilidad mostrada coincida con el estado real de la agenda con un margen de actualización menor a 1 minuto (ver CU-17).\\
+		BDD asociado & Dado que personal administrativo cumple las precondiciones y dispone de los datos válidos, cuando ejecuta "Consultar disponibilidad del personal médico", entonces verificar que la disponibilidad mostrada coincida con el estado real de la agenda con un margen de actualización menor a 1 minuto (ver CU-17).\\
+		Traza principal & CU-17; US-12; Profesional, TurnoLaboral; P05 Gestionar personal; CP-RF-19.\\
+		\bottomrule
+	\end{tabularx}
 
 
 \end{document}
