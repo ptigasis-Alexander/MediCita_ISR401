@@ -757,7 +757,76 @@
 		RNF-16 & Seguridad de datos de menores & Must & EV-Enf-01 / LOPDP & 0 incidentes de asociación errónea en auditorías del flujo de registro. \\
 		RNF-18 & Explicabilidad del asistente & Should & EV-01 / AI Act art. 50 / OMS & Explicación $\leq$ 40 palabras en $\leq$ 2 s; $\geq$ 80 \% de usuarios de validación puntúa $\geq$ 4/5. \\
 		\bottomrule\end{longtable}
+	\subsection{Casos de uso consolidados}
+	Se conservan CU-01 a CU-33 de la versión previa y se incorporan CU-34 y CU-35 para cerrar la especificación de los componentes de IA. Los treinta y cinco casos de uso están especificados, por lo que M1b alcanza 100 \%.
+	\begin{longtable}{p{2cm}p{5.2cm}p{8.2cm}}
+		\caption{Casos de uso nuevos incorporados en PE5}\label{tab:cunuevos}\\\toprule
+		\textbf{ID}&\textbf{Nombre}&\textbf{Resumen}\\\midrule\endhead
+		CU-34&Atender consulta con asistente virtual&Recibe una consulta administrativa, clasifica la intención, responde desde información institucional aprobada o deriva a recepción cuando la consulta es clínica, ambigua o requiere datos personales.\\
+		CU-35&Estimar riesgo de inasistencia&Calcula un riesgo administrativo de inasistencia, selecciona intensidad de recordatorio y permite supervisión humana; nunca modifica prioridad clínica ni cancela una cita.\\\bottomrule
+	\end{longtable}
+	
+	\subsection{Reglas legales y de privacidad}
+	Los datos de salud y de menores se tratan como información de especial protección. La especificación mantiene consentimiento cuando corresponda, finalidad definida, minimización, control de acceso, registro de auditoría y derechos de acceso/rectificación. La LOPDP ecuatoriana constituye el marco jurídico local; el Reglamento (UE) 2024/1689 se usa en PE5 como referencia de clasificación de riesgo, transparencia y supervisión de IA \cite{loppd,euaiact2024}.
+	\clearpage
+	\section{Modelos UML y lectura interpretativa}
+	La PE5 no reemplaza los modelos previos; verifica su coherencia con el catálogo final. Para la integración se incorporan dos vistas resumidas que conectan requisitos, clases y estados. Las figuras se interpretan en el texto y sus elementos aparecen también en la matriz de trazabilidad.
+	
+	\subsection{Vista resumida de casos de uso}
+	\begin{figure}[H]\centering
+		\includegraphics[width=0.95\textwidth]{D_Casos_Uso_R.png}
+		\caption{Vista resumida de casos de uso relevantes para la integración PE5.}\label{fig:cu}
+	\end{figure}
+	
+	
+	
+	La Figura \ref{fig:cu} muestra que los componentes de IA no quedan aislados: CU-34 se relaciona con el flujo de atención administrativa y CU-35 con citas y notificaciones. Ninguno decide diagnósticos o tratamientos.
+	
+	\subsection{Modelo conceptual de clases}
+	\begin{figure}[H]\centering
+		\includegraphics[width=0.90\textwidth]{D_Conceptual.png}
+		\caption{Clases conceptuales principales del SICM y extensión IA PE5.}\label{fig:clases}
+	\end{figure}
+	
+	\subsection{Estados críticos}
+	\begin{figure}[H]\centering
+		\includegraphics[width=0.95\textwidth]{D_Estado_Critico.png}
+		\caption{Fragmento del diagrama de estados de cita con la extensión IA.}\label{fig:estados}
+	\end{figure}
+	
+	\subsection{Procesos DFD usados en trazabilidad}
+	Los procesos normalizados son P00 Autenticar y autorizar, P01 Gestionar pacientes, P02 Gestionar citas, P03 Gestionar historia clínica, P04 Gestionar derivaciones, P05 Gestionar personal, P06 Gestionar inventario, P07 Gestionar recaudación, P08 Generar reportes, P09 Notificar, P10 Auditar, P11 Asistente virtual IA y P12 Estimar riesgo de inasistencia. Esta nomenclatura permite que cada fila de la matriz tenga una referencia explícita y evita la expresión ambigua ``No aplica'' cuando sí existe un proceso lógico.
 
+	\begin{figure}[H]\centering
+		\includegraphics[width=0.95\textwidth]{D_DFD.png}
+		\caption{Diagrama de DFD con la extensión IA.}\label{fig:DFD}
+	\end{figure}
+	
+	\section{Validación: inspección, defectos y re-inspección}
+	\subsection{Método de re-inspección PE5}
+	Se comparó el catálogo previo con la guía PE5 y se aplicó una revisión sistemática de identificadores, alcance, prioridad, fuente, verificabilidad y trazabilidad. Para consistencia se analizaron los pares del catálogo y se registraron los conflictos de alcance detectados. Para corrección se contabilizaron únicamente defectos residuales de especificación, no errores editoriales externos al requisito.
+	
+	\begin{longtable}{p{1.5cm}p{2cm}p{2.3cm}p{3.5cm}p{4.5cm}p{1.3cm}}
+		\caption{Registro de defectos residuales de especificación PE5}\label{tab:defectos}\\\toprule
+		\textbf{ID}&\textbf{Elemento}&\textbf{Tipo}&\textbf{Hallazgo}&\textbf{Corrección aplicada}&\textbf{Estado}\\\midrule\endhead
+		D-PE5-01 & RF-01/RF-14 & Solapamiento & RF-01 declaraba a RF-14 fusionado aunque RF-14 seguía activo. & Se separó historia clínica de digitalización de formularios. & Cerrado\\
+		D-PE5-02 & RF-02/RF-36 & Solapamiento & RF-02 declaraba absorbido el agendamiento por área. & RF-02 = autoservicio del paciente; RF-36 = operación por área/recepción. & Cerrado\\
+		D-PE5-03 & RF-03/RF-27 & Solapamiento & Búsqueda general y búsqueda operativa por cédula aparecían fusionadas. & Se delimitó búsqueda clínica multícriterio y búsqueda rápida de recepción/enfermería. & Cerrado\\
+		D-PE5-04 & RF-06/RF-37 & Solapamiento & Cancelación del paciente y reprogramación por área estaban fusionadas. & Se separó por actor y responsabilidad de auditoría. & Cerrado\\
+		D-PE5-05 & RF-10/RF-30 & Duplicidad parcial & Gestión de roles incluía restricción clínica que también estaba en RF-30. & RF-10 administra permisos; RF-30 aplica restricción clínica por especialidad. & Cerrado\\
+		D-PE5-06 & RF-15/RF-31/RF-32 & Duplicidad parcial & Inventario declaraba absorbidas alerta y entrega trazable. & Se mantuvieron tres responsabilidades independientes y trazables. & Cerrado\\
+		D-PE5-07 & RF-18/RF-19 & Solapamiento & Asignación de turnos declaraba fusionada la consulta de disponibilidad. & RF-18 administra turnos; RF-19 consulta disponibilidad. & Cerrado\\
+		D-PE5-08 & RF-22/RF-33 & Solapamiento & Pago y cobro por área quedaban sin frontera clara. & RF-22 administra pagos del comprobante; RF-33 habilita flujo de recepción por área. & Cerrado\\
+		D-PE5-09 & RF-24/RF-25 & Solapamiento & Configuración horaria declaraba absorbido el cupo máximo. & RF-24 configura horarios; RF-25 controla capacidad por turno. & Cerrado\\
+		D-PE5-10 & RNF-01..RNF-18 & Completitud & El texto afirmaba 18 RNF aunque RNF-17 no estaba definido. & Se documentó RNF-17 como identificador retirado/no activo y se fijó el catálogo base en 17 RNF activos. & Cerrado\\
+		\bottomrule\end{longtable}
+	
+	\subsection{Resultado de la re-inspección}
+	La versión previa tenía diez defectos residuales de especificación entre 57 requisitos activos. Después de delimitar responsabilidades, normalizar el catálogo de RNF y agregar los requisitos PE5 de IA, se ejecutó una segunda revisión sobre 73 requisitos activos. No quedaron conflictos de alcance abiertos en el catálogo generado. Este resultado documental sustenta M6; no debe confundirse con defectos de implementación del software, que pertenecen a pruebas posteriores.
+	
+	\subsection{Criterio de verificabilidad}
+	Todo requisito se revisó con cuatro preguntas: existencia de resultado observable o umbral, definición de unidad/estado esperado, escenario o método de comprobación y posibilidad de que dos evaluadores lleguen al mismo veredicto. Los requisitos que no tenían BDD explícito recibieron un escenario BDD asociado en la matriz final.
+	\clearpage
 
 \end{document}
 
