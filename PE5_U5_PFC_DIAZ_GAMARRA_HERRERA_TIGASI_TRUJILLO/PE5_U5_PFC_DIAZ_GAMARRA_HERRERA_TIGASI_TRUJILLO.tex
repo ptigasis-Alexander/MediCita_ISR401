@@ -427,6 +427,93 @@
 		Traza principal & CU-17; US-12; Profesional, TurnoLaboral; P05 Gestionar personal; CP-RF-19.\\
 		\bottomrule
 	\end{tabularx}
+\subsubsection{RF-20 - Registrar ausencias y reasignar turnos}
+	\begin{tabularx}{\textwidth}{p{3.2cm}Y}
+		\toprule
+		\textbf{Atributo} & \textbf{Especificación PE5}\\\midrule
+		Identificador & RF-20\\
+		Prioridad & Should\\
+		Fuente / origen & Personal médico\\
+		Descripción & El sistema deberá permitir registrar ausencias, licencias o vacaciones del personal médico y notificar la reasignación de turnos afectados.\\
+		Entradas / salidas & Entrada: tipo de ausencia, fecha de inicio y fin, médico afectado. Salida: turnos reasignados y notificación enviada al personal y pacientes afectados.\\
+		Criterio de verificación & Verificar que, al registrar una ausencia, todas las citas del rango afectado generen una alerta de reasignación en $\leq$1 minuto.\\
+		BDD asociado & Dado que administrador del sistema cumple las precondiciones y dispone de los datos válidos, cuando ejecuta "Registrar ausencias y reasignar turnos", entonces verificar que, al registrar una ausencia, todas las citas del rango afectado generen una alerta de reasignación en $\leq$1 minuto..\\
+		Traza principal & CU-17; US-11; Profesional, Ausencia, TurnoLaboral; P05 Gestionar personal; CP-RF-20.\\
+		\bottomrule
+	\end{tabularx}
+	\clearpage
+	\subsubsection{RF-21 - Emitir comprobantes electrónicos}
+	\begin{tabularx}{\textwidth}{p{3.2cm}Y}
+		\toprule
+		\textbf{Atributo} & \textbf{Especificación PE5}\\\midrule
+		Identificador & RF-21\\
+		Prioridad & Must\\
+		Fuente / origen & Requisito normativo SRI\\
+		Descripción & El sistema deberá permitir generar comprobantes electrónicos (factura/recibo) conforme a la normativa vigente del SRI por consultas, exámenes y procedimientos realizados.\\
+		Entradas / salidas & Entrada: servicios prestados, datos del paciente y forma de pago. Salida: comprobante electrónico (factura/recibo) generado y autorizado.\\
+		Criterio de verificación & Verificar que el comprobante generado cumpla el esquema XML exigido por el SRI y obtenga autorización en $\leq$5 segundos (ver CU-18).\\
+		BDD asociado & Dado que personal de facturación cumple las precondiciones y dispone de los datos válidos, cuando ejecuta "Emitir comprobantes electrónicos", entonces verificar que el comprobante generado cumpla el esquema XML exigido por el SRI y obtenga autorización en $\leq$5 segundos (ver CU-18).\\
+		Traza principal & CU-18; US-13; Comprobante, Paciente; P07 Gestionar recaudación; CP-RF-21.\\
+		\bottomrule
+	\end{tabularx}
+	\subsubsection{RF-22 - Registrar pagos totales o parciales}
+	\begin{tabularx}{\textwidth}{p{3.2cm}Y}
+		\toprule
+		\textbf{Atributo} & \textbf{Especificación PE5}\\\midrule
+		Identificador & RF-22\\
+		Prioridad & Must\\
+		Fuente / origen & EV-Enf-01\\
+		Descripción & Registrar pagos totales o parciales asociados a un comprobante. RF-33 conserva el cobro por área dentro del flujo de recepción.\\
+		Entradas / salidas & Entrada: monto a pagar, método de pago, comprobante asociado. Salida: registro de pago con saldo actualizado.\\
+		Criterio de verificación & Tras un pago parcial, recalcular el saldo con error 0 \% y registrar monto, método y usuario responsable.\\
+		BDD asociado & Dado que personal de facturación cumple las precondiciones y dispone de los datos válidos, cuando ejecuta "Registrar pagos totales o parciales", entonces tras un pago parcial, recalcular el saldo con error 0 \% y registrar monto, método y usuario responsable.\\
+		Traza principal & CU-19; US-14; Pago, Comprobante; P07 Gestionar recaudación; CP-RF-22.\\
+		\bottomrule
+	\end{tabularx}
+	\clearpage
+	\subsubsection{RF-23 - Generar reportes financieros}
+	\begin{tabularx}{\textwidth}{p{3.2cm}Y}
+		\toprule
+		\textbf{Atributo} & \textbf{Especificación PE5}\\\midrule
+		Identificador & RF-23\\
+		Prioridad & Should\\
+		Fuente / origen & EV-Enf-01\\
+		Descripción & El sistema deberá generar reportes de ingresos, cobros pendientes y cartera vencida en rangos de fecha definidos por el usuario.\\
+		Entradas / salidas & Entrada: rango de fechas, filtros de categoría o área. Salida: reporte financiero (ingresos, pendientes, cartera vencida) exportable.\\
+		Criterio de verificación & Verificar que el total del reporte coincida con la suma de los comprobantes y pagos registrados en el rango seleccionado, con un margen de error de 0 \%.\\
+		BDD asociado & Dado que gerencia cumple las precondiciones y dispone de los datos válidos, cuando ejecuta "Generar reportes financieros", entonces verificar que el total del reporte coincida con la suma de los comprobantes y pagos registrados en el rango seleccionado, con un margen de error de 0 \%.\\
+		Traza principal & CU-19; US-14; Pago, ReporteFinanciero; P08 Generar reportes; CP-RF-23.\\
+		\bottomrule
+	\end{tabularx}
+	\subsubsection{RF-24 - Configurar horarios y turnos por área médica}
+	\begin{tabularx}{\textwidth}{p{3.2cm}Y}
+		\toprule
+		\textbf{Atributo} & \textbf{Especificación PE5}\\\midrule
+		Identificador & RF-24\\
+		Prioridad & Must\\
+		Fuente / origen & EV-01\\
+		Descripción & Configurar horarios y turnos por área médica. RF-25 conserva como requisito separado la definición y bloqueo por cupo máximo.\\
+		Entradas / salidas & Entrada: área médica, franjas horarias, días de atención. Salida: configuración de turnos aplicada al área correspondiente.\\
+		Criterio de verificación & Un cambio de horario debe reflejarse en el agendamiento en un máximo de 2 s sin alterar citas confirmadas fuera de la regla definida.\\
+		BDD asociado & Dado que administrador del sistema cumple las precondiciones y dispone de los datos válidos, cuando ejecuta "Configurar horarios y turnos por área médica", entonces un cambio de horario debe reflejarse en el agendamiento en un máximo de 2 s sin alterar citas confirmadas fuera de la regla definida.\\
+		Traza principal & CU-11; US-15; AreaMedica, Horario; P02 Gestionar citas; CP-RF-24.\\
+		\bottomrule
+	\end{tabularx}
+	\clearpage
+	\subsubsection{RF-25 - Definir cupo máximo de citas por turno}
+	\begin{tabularx}{\textwidth}{p{3.2cm}Y}
+		\toprule
+		\textbf{Atributo} & \textbf{Especificación PE5}\\\midrule
+		Identificador & RF-25\\
+		Prioridad & Should\\
+		Fuente / origen & EV-01\\
+		Descripción & El sistema deberá permitir definir el cupo máximo de citas disponibles por turno y área médica.\\
+		Entradas / salidas & Entrada: área médica, turno, número máximo de citas. Salida: cupo configurado que limita el agendamiento disponible.\\
+		Criterio de verificación & Verificar que, al alcanzar el cupo máximo, el sistema bloquee nuevas citas para ese turno y muestre el mensaje correspondiente.)\\
+		BDD asociado & Dado que administrador del sistema cumple las precondiciones y dispone de los datos válidos, cuando ejecuta "Definir cupo máximo de citas por turno", entonces verificar que, al alcanzar el cupo máximo, el sistema bloquee nuevas citas para ese turno y muestre el mensaje correspondiente.).\\
+		Traza principal & CU-11; US-15; Horario, Cupo; P02 Gestionar citas; CP-RF-25.\\
+		\bottomrule
+	\end{tabularx}
 
 
 \end{document}
