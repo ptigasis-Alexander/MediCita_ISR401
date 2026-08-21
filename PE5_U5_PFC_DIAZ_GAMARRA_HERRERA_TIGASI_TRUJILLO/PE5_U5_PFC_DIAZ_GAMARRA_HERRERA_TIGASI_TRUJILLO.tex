@@ -884,6 +884,114 @@
 			SUS, tasa de finalización y otras métricas de usabilidad&Objetivos verificables del producto; no se declaran alcanzados sin una prueba de usabilidad ejecutada.&Después de una sesión de validación con participantes, instrumento y resultados documentados.\\\bottomrule
 		\end{tabularx}
 	\end{table}
+\subsection{IA-01 - Asistente virtual administrativo}
+	\textbf{Tarea y valor.} Responder preguntas frecuentes sobre horarios, servicios, preparación no clínica, ubicación y uso del sistema. Si la consulta exige historial clínico, consejo médico o información no autorizada, deriva a recepción.
+	
+	\textbf{Datos.} La base de conocimiento se construye con horarios, catálogo de servicios, instrucciones administrativas y preguntas frecuentes aprobadas. No se utilizarán historias clínicas para entrenar el componente. Los registros de conversación usados para mejora deben anonimizarse o seudonimizarse y excluir información clínica innecesaria.
+	
+	\textbf{Riesgo y fallback.} En el alcance definido, el asistente interactúa directamente con personas y debe informar que es un sistema de IA; no se diseña como sistema de diagnóstico o triaje. Si el modelo falla o no alcanza confianza suficiente, el comportamiento seguro es derivar a recepción. La clasificación se revisará si el alcance cambia.
+	
+	\begin{longtable}{p{2.5cm}p{3.4cm}p{9.8cm}}
+		\caption{Requisitos y umbrales de aceptación de IA-01}\\\toprule\textbf{ID}&\textbf{Tipo}&\textbf{Requisito / umbral de aceptación}\\\midrule\endhead
+		RF-16&RF&Responder consultas administrativas frecuentes y derivar cuando no pueda resolverlas.\\
+		RF-IA1-02 & RF & El asistente debe clasificar cada consulta administrativa en horario, servicio, preparación, ubicación, cita o fuera de alcance y seleccionar una fuente institucional aprobada. \\
+		RF-IA1-03 & RF & El asistente debe derivar a recepción toda consulta fuera de alcance, clínica, ambigua o que requiera acceso al historial, sin emitir diagnóstico ni recomendación clínica autónoma. \\
+		RNF-IA1-P01 & RNF rendimiento & El clasificador del asistente debe alcanzar macro-F1 $\geq$ 0.90 sobre el conjunto de prueba versionado de intenciones administrativas. \\
+		RNF-IA1-P02 & RNF rendimiento & La respuesta o decisión de escalamiento debe producirse en $\leq$ 2 s en percentil 95 con 50 sesiones concurrentes. \\
+		RNF-IA1-P03 & RNF rendimiento & El asistente debe mantener disponibilidad $\geq$ 99 \% en horario de atención y, ante indisponibilidad, mostrar fallback a recepción en $\leq$ 2 s. \\
+		RNF-IA1-E01 & RNF equidad & La diferencia de tasa de resolución correcta entre usuarios de 18-35 años y mayores de 60 no debe superar 5 puntos porcentuales en la muestra de evaluación. \\
+		RNF-IA1-E02 & RNF equidad & La diferencia de tasa de resolución correcta entre usuarios con baja y alta familiaridad digital no debe superar 5 puntos porcentuales. \\
+		RNF-18&RNF explicabilidad&Explicar el motivo de una derivación en no más de 40 palabras y en no más de 2 s; al menos 80 \% de usuarios de validación debe puntuar la explicación con 4/5 o más.\\\bottomrule\end{longtable}
+	
+	\textbf{Estado de evidencia:} requisitos especificados; validación experimental pendiente hasta disponer de una implementación evaluable. Los umbrales anteriores no se contabilizan como resultados obtenidos.
+	
+	\textbf{Monitoreo.} Una vez implementado y desplegado el componente, cada mes se revisarán macro-F1, tasa de fallback, latencia P95, brechas de equidad y porcentaje de consultas fuera de alcance. Se activa revisión si macro-F1 cae por debajo de 0,90, la brecha supera 5 puntos porcentuales o la tasa de fallback aumenta más de 10 puntos respecto de la línea base operativa.
+	
+	\subsection{IA-02 - Predictor de riesgo de inasistencia para recordatorios}
+	\textbf{Tarea y valor.} Estimar un riesgo administrativo de inasistencia para adaptar la intensidad de recordatorios. El resultado nunca cancela una cita, reduce prioridad clínica o impide atención.
+	
+	\textbf{Datos.} Se usarán únicamente variables administrativas justificadas: anticipación con que se reservó la cita, historial de asistencia/no asistencia, área, franja horaria y confirmación del recordatorio. Diagnósticos, notas clínicas y datos no necesarios quedan fuera del conjunto de características. Los atributos usados para auditoría de equidad pueden mantenerse seudonimizados y no tienen que ser variables predictoras.
+	
+	\textbf{Riesgo y fallback.} Dado que la función propuesta solo ajusta recordatorios y no decide acceso a atención, se documenta como apoyo administrativo. Si en el futuro se usa para triaje, diagnóstico, asignación clínica o denegación de servicios, la clasificación de riesgo y las obligaciones deben reevaluarse. Ante fallo, se aplica el recordatorio estándar configurado en RF-11.
+	
+	\begin{longtable}{p{2.5cm}p{3.4cm}p{9.8cm}}
+		\caption{Requisitos y umbrales de aceptación de IA-02}\\\toprule\textbf{ID}&\textbf{Tipo}&\textbf{Requisito / umbral de aceptación}\\\midrule\endhead
+		RF-IA2-01 & RF & El sistema debe estimar, después de confirmar una cita, un puntaje de riesgo de inasistencia entre 0 y 1 usando únicamente datos administrativos de citas y asistencia previa. \\
+		RF-IA2-02 & RF & El sistema debe clasificar el riesgo en bajo, medio o alto y seleccionar una estrategia de recordatorio; el resultado no puede cancelar, negar ni disminuir la prioridad clínica de una cita. \\
+		RF-IA2-03 & RF & Recepción debe poder visualizar el nivel de riesgo, desactivar el uso de la predicción para una cita y aplicar manualmente una estrategia de recordatorio, dejando registro de auditoría. \\
+		RNF-IA2-P01 & RNF rendimiento & El modelo debe alcanzar F1 $\geq$ 0.80 en el conjunto de prueba temporal definido antes de cada despliegue. \\
+		RNF-IA2-P02 & RNF rendimiento & La inferencia debe completarse en $\leq$ 500 ms en percentil 95 para lotes de hasta 100 citas. \\
+		RNF-IA2-P03 & RNF rendimiento & El servicio predictivo debe alcanzar disponibilidad $\geq$ 99 \%; si falla, el sistema conserva el esquema estándar de recordatorios sin afectar la cita. \\
+		RNF-IA2-E01 & RNF equidad & La diferencia de sensibilidad del modelo entre usuarios de 18-35 años y mayores de 60 no debe superar 5 puntos porcentuales. \\
+		RNF-IA2-E02 & RNF equidad & La diferencia de tasa de falsos positivos entre pacientes nuevos y recurrentes no debe superar 5 puntos porcentuales. \\
+		RNF-IA2-X01 & RNF explicabilidad & Al mostrar un riesgo medio o alto, el sistema debe presentar a recepción al menos dos factores administrativos que influyeron en el resultado y una advertencia de que la predicción no modifica la atención. \\
+		\bottomrule\end{longtable}
+	
+	\textbf{Estado de evidencia:} requisitos especificados; validación experimental pendiente hasta disponer de una implementación evaluable. Los umbrales anteriores no se contabilizan como resultados obtenidos.
+	
+	\textbf{Monitoreo.} Una vez implementado y desplegado el componente, se revisarán mensualmente F1, latencia P95, disponibilidad, diferencia de sensibilidad por edad y falsos positivos por condición nuevo/recurrente. Se requiere reentrenamiento o retirada temporal si F1 cae por debajo de 0,80, una brecha supera 5 puntos porcentuales o se detecta uso de datos fuera de finalidad.
+	
+	\subsection{Privacidad, ética y supervisión humana}
+	La LOPDP se aplica al tratamiento local de datos personales y de salud. Los requisitos de IA siguen finalidad, minimización, seguridad y trazabilidad. El Reglamento (UE) 2024/1689 se emplea como referencia de enfoque basado en riesgo y de transparencia frente a personas. El Artículo 50 exige transparencia para sistemas destinados a interactuar directamente con personas; por ello el asistente debe identificarse como IA. La supervisión humana queda implementada mediante fallback a recepción, anulación de predicciones y registro de auditoría \cite{loppd,euaiact2024,whoai2021}.
+	\clearpage
+	\section{Métricas de calidad del ERS}
+	\subsection{Distinción entre auditoría documental y pruebas del producto}
+	Las métricas M1--M6 de esta sección \textbf{sí son resultados de la auditoría del documento}, porque se calculan mediante conteos verificables del ERS, la matriz de trazabilidad y la re-inspección documental. En cambio, los porcentajes y umbrales de rendimiento, equidad, explicabilidad o usabilidad incluidos en los RNF describen condiciones que el software o los modelos deberán satisfacer posteriormente. Por tanto, un RNF puede estar correctamente especificado y contar para M1/M3 aunque su prueba de producto todavía esté pendiente; no se declara su cumplimiento experimental sin evidencia de ejecución.
+	
+	\subsection{Conteos base auditables}
+	\begin{table}[H]\centering\caption{Conteos base antes y después de PE5}\label{tab:conteos}
+		\begin{tabular}{lrr}\toprule\textbf{Conteo}&\textbf{Antes}&\textbf{Después}\\\midrule
+			RF activos&40&45\\
+			RNF activos&17&28\\
+			Requisitos activos totales&57&73\\
+			CU identificados/especificados&33/33&35/35\\
+			Actores formales cubiertos&10/10&10/10\\
+			Requisitos con 4 atributos PE5&40&73\\
+			Requisitos con BDD comprobable&47&73\\
+			RF con cadena adelante completa&0&45\\
+			RF con fuente identificada&40&45\\
+			Conflictos/solapamientos abiertos&10&0\\\bottomrule\end{tabular}\end{table}
+	
+	\subsection{Tabla de auditoría antes/después}
+	\scriptsize
+	\begin{longtable}{p{2.5cm}p{1.9cm}p{1.3cm}p{1.9cm}p{1.3cm}p{1.5cm}p{4.1cm}}
+		\caption{Auditoría de calidad PE5}\label{tab:auditoria}\\
+		\toprule
+		\textbf{Métrica}&\textbf{Aritmética antes}&\textbf{Antes}&\textbf{Aritmética después}&\textbf{Después}&\textbf{Referencia}&\textbf{Acción}\\\midrule
+		\endfirsthead
+		\multicolumn{7}{c}{\small\textit{Tabla \thetable\ -- continuación}}\\
+		\toprule
+		\textbf{Métrica}&\textbf{Aritmética antes}&\textbf{Antes}&\textbf{Aritmética después}&\textbf{Después}&\textbf{Referencia}&\textbf{Acción}\\\midrule
+		\endhead
+		M1a Completitud de atributos & 40/57 x 100 & 70.2 \% & 73/73 x 100 & 100 \% & $\geq$95 \% & Se normalizaron ID, prioridad, fuente y BDD para todo requisito activo.\\
+		M1b Casos de uso especificados & 33/33 x 100 & 100 \% & 35/35 x 100 & 100 \% & =100 \% & Se añadieron CU-34 y CU-35 para los dos componentes de IA.\\
+		M1c Actores cubiertos & 10/10 x 100 & 100 \% & 10/10 x 100 & 100 \% & =100 \% & Se mantiene al menos un RF por actor formal del catálogo.\\
+		M2 Consistencia & 1 - 10/1596 & 0.9937 & 1 - 0/2628 & 1.0000 & $\geq$0.98 y 0 conflictos abiertos & Se eliminaron diez solapamientos/contradicciones de alcance y se re-inspeccionó el catálogo.\\
+		M3 Verificabilidad & 47/57 x 100 & 82.5 \% & 73/73 x 100 & 100 \% & $\geq$90 \%; críticos 100 \% & Se añadió un BDD comprobable a los RNF sin escenario y a todos los requisitos de IA.\\
+		M4ade Trazabilidad adelante & 0/40 x 100 & 0 \% & 45/45 x 100 & 100 \% & $\geq$90 \% & La matriz heredada no registraba Clase, Estado ni CP; la matriz PE5 incorpora la cadena completa.\\
+		M4atr Trazabilidad atrás & 40/40 x 100 & 100 \% & 45/45 x 100 & 100 \% & =100 \% & Se conserva evidencia/stakeholder de origen y se añade fuente explícita a RF de IA.\\
+		M5 Modificabilidad & No calculada & N/D & (3+3+2+2+4)/5 & 2.8 & $\leq$3.0 & Muestra representativa: RF-02, RF-09, RF-15, RF-26 y RF-16.\\
+		M6 Corrección & 10/57 & 0.1754 & 0/73 & 0.0000 & $\leq$0.05 & Diez defectos residuales de especificación fueron corregidos y la re-inspección final no dejó conflictos abiertos.\\
+		\bottomrule\end{longtable}
+	\normalsize
+	
+	\subsection{Interpretación individual de las métricas}
+	\textbf{M1 - Completitud.} La principal mejora fue convertir la existencia de un requisito en una ficha auditable: todo requisito activo tiene identificador, prioridad, fuente y BDD. Los dos CU de IA se especificaron formalmente y los diez actores del catálogo tienen al menos un RF.
+	
+	\textbf{M2 - Consistencia.} El valor inicial 0,9937 supera numéricamente 0,98, pero no cumplía el requisito adicional de cero conflictos abiertos. La calidad no se consideró aceptable hasta cerrar los diez solapamientos de la Tabla \ref{tab:defectos}. La re-inspección final obtiene 1,0000.
+	
+	\textbf{M3 - Verificabilidad.} La matriz heredada permitía asociar BDD a los 40 RF y a siete RNF, equivalente a 47/57. Los RNF restantes y los requisitos de IA reciben un BDD explícito, por lo que el resultado final es 73/73.
+	
+	\textbf{M4 - Trazabilidad.} El 0 \% inicial no significa que no existiera trazabilidad: significa que ninguna fila podía demostrar la \emph{cadena PE5 completa} por ausencia de columnas obligatorias. La nueva matriz permite recorrer todos los RF hasta un CP conceptual y regresar a la fuente.
+	
+	\textbf{M5 - Modificabilidad.} Se eligieron cinco requisitos representativos de citas, seguridad, inventario, enfermería e IA. Los impactos contados en la matriz fueron 3, 3, 2, 2 y 4, respectivamente. Por tanto, 
+	\[M5=\frac{3+3+2+2+4}{5}=2.8\] 
+	lo cual satisface el umbral de 3,0. 
+	
+	\textbf{M6 - Corrección.} La re-inspección identificó diez defectos residuales de especificación en el catálogo previo: 
+	\[M6_{antes}=\frac{10}{57}=0.1754.\] 
+	Después de las correcciones y de incorporar los requisitos PE5, no quedaron defectos residuales abiertos del tipo auditado: 
+	\[M6_{\text{después}}=\frac{0}{73}=0.0000.\]
 
 
 \end{document}
