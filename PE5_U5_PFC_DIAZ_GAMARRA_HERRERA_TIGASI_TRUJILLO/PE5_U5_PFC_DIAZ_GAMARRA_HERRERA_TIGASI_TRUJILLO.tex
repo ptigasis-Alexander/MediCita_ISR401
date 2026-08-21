@@ -601,6 +601,124 @@
 		Traza principal & CU-29; US-33; Medicamento, AlertaInventario; P06 Gestionar inventario; CP-RF-31.\\
 		\bottomrule
 	\end{tabularx}
+\subsubsection{RF-32 - Registrar entrega trazable de medicamentos}
+	\begin{tabularx}{\textwidth}{p{3.2cm}Y}
+		\toprule
+		\textbf{Atributo} & \textbf{Especificación PE5}\\\midrule
+		Identificador & RF-32\\
+		Prioridad & Should\\
+		Fuente / origen & EV-Enf-01\\
+		Descripción & El sistema debe registrar el medicamento, lote, cantidad, fecha y responsable de cada entrega realizada a un paciente y descontar automáticamente la existencia.\\
+		Entradas / salidas & Entrada: paciente, medicamento, lote y cantidad. Salida: entrega vinculada al historial y stock actualizado.\\
+		Criterio de verificación & Registrar una entrega y comprobar la asociación al paciente, la identificación del responsable y el descuento exacto del inventario.\\
+		BDD asociado & Dado que enfermero(a) cumple las precondiciones y dispone de los datos válidos, cuando ejecuta "Registrar entrega trazable de medicamentos", entonces registrar una entrega y comprobar la asociación al paciente, la identificación del responsable y el descuento exacto del inventario.\\
+		Traza principal & CU-30; US-34; EntregaMedicamento, Medicamento, Paciente; P06 Gestionar inventario; CP-RF-32.\\
+		\bottomrule
+	\end{tabularx}
+	\clearpage
+	\subsubsection{RF-33 - Registrar cobro por área de atención}
+	\begin{tabularx}{\textwidth}{p{3.2cm}Y}
+		\toprule
+		\textbf{Atributo} & \textbf{Especificación PE5}\\\midrule
+		Identificador & RF-33\\
+		Prioridad & Must\\
+		Fuente / origen & EV-Enf-01\\
+		Descripción & El sistema debe permitir a recepción registrar el cobro correspondiente al área solicitada y habilitar el flujo del paciente hacia enfermería o la especialidad.\\
+		Entradas / salidas & Entrada: paciente, área, concepto, valor y forma de pago. Salida: cobro registrado y atención habilitada.\\
+		Criterio de verificación & Registrar un cobro y comprobar que el saldo, el área y el estado de habilitación se actualicen de inmediato.\\
+		BDD asociado & Dado que recepcionista cumple las precondiciones y dispone de los datos válidos, cuando ejecuta "Registrar cobro por área de atención", entonces registrar un cobro y comprobar que el saldo, el área y el estado de habilitación se actualicen de inmediato.\\
+		Traza principal & CU-08; US-20; Pago, AreaMedica, Paciente; P07 Gestionar recaudación; CP-RF-33.\\
+		\bottomrule
+	\end{tabularx}
+	\subsubsection{RF-34 - Asignación de turno de atención}
+	\begin{tabularx}{\textwidth}{p{3.2cm}Y}
+		\toprule
+		\textbf{Atributo} & \textbf{Especificación PE5}\\\midrule
+		Identificador & RF-34\\
+		Prioridad & Must\\
+		Fuente / origen & Recepcionista / Entrevista al personal de Enfermería y Recepción\\
+		Descripción & El sistema debe asignar automáticamente un turno al paciente una vez registrado su cobro en recepción, para ordenar el flujo hacia enfermería y luego hacia el área profesional correspondiente.\\
+		Entradas / salidas & Entrada: registro de cobro del paciente. Salida: número de turno asignado.\\
+		Criterio de verificación & Verificar que, tras registrar un cobro, el sistema asigna un número de turno consecutivo y consultable.\\
+		BDD asociado & Dado que sistema cumple las precondiciones y dispone de los datos válidos, cuando ejecuta "Asignación de turno de atención", entonces verificar que, tras registrar un cobro, el sistema asigna un número de turno consecutivo y consultable.\\
+		Traza principal & CU-08; US-21; TurnoAtencion, Paciente; P07 Gestionar recaudación; CP-RF-34.\\
+		\bottomrule
+	\end{tabularx}
+	\clearpage
+	\subsubsection{RF-35 - Derivación del paciente al área correspondiente}
+	\begin{tabularx}{\textwidth}{p{3.2cm}Y}
+		\toprule
+		\textbf{Atributo} & \textbf{Especificación PE5}\\\midrule
+		Identificador & RF-35\\
+		Prioridad & Should\\
+		Fuente / origen & Profesional del área (destino) / Entrevista al personal de Enfermería y Recepción\\
+		Descripción & El sistema debe permitir derivar al paciente desde enfermería hacia el área profesional que le corresponde, de modo que dicha área lo visualice en espera sin traslado físico de documentos.\\
+		Entradas / salidas & Entrada: turno del paciente, signos vitales registrados, área de destino. Salida: paciente visible en la lista de espera del área destino.\\
+		Criterio de verificación & Derivar un paciente de prueba desde enfermería y confirmar que aparece automáticamente en la lista del área destino.\\
+		BDD asociado & Dado que enfermero(a) (origen) cumple las precondiciones y dispone de los datos válidos, cuando ejecuta "Derivación del paciente al área correspondiente", entonces derivar un paciente de prueba desde enfermería y confirmar que aparece automáticamente en la lista del área destino.\\
+		Traza principal & CU-09; US-19; Derivacion, AreaMedica, Paciente; P04 Gestionar derivaciones; CP-RF-35.\\
+		\bottomrule
+	\end{tabularx}
+	\subsubsection{RF-36 - Agendar citas por área}
+	\begin{tabularx}{\textwidth}{p{3.2cm}Y}
+		\toprule
+		\textbf{Atributo} & \textbf{Especificación PE5}\\\midrule
+		Identificador & RF-36\\
+		Prioridad & Should\\
+		Fuente / origen & Profesional del área / EV-Enf-01\\
+		Descripción & El sistema debe permitir a recepción o al profesional agendar una cita según la modalidad, disponibilidad y duración configuradas para cada área.\\
+		Entradas / salidas & Entrada: paciente, área, profesional, fecha y hora. Salida: cita por área confirmada.\\
+		Criterio de verificación & Agendar una cita por área y comprobar que no exista solapamiento y que la confirmación se muestre en menos de 3 segundos.\\
+		BDD asociado & Dado que recepcionista cumple las precondiciones y dispone de los datos válidos, cuando ejecuta "Agendar citas por área", entonces agendar una cita por área y comprobar que no exista solapamiento y que la confirmación se muestre en menos de 3 segundos.\\
+		Traza principal & CU-01; US-01; Cita, AreaMedica, Profesional; P02 Gestionar citas; CP-RF-36.\\
+		\bottomrule
+	\end{tabularx}
+	\clearpage
+	\subsubsection{RF-37 - Reprogramar o cancelar citas por área}
+	\begin{tabularx}{\textwidth}{p{3.2cm}Y}
+		\toprule
+		\textbf{Atributo} & \textbf{Especificación PE5}\\\midrule
+		Identificador & RF-37\\
+		Prioridad & Could\\
+		Fuente / origen & Profesional del área / EV-Enf-01\\
+		Descripción & El sistema debe permitir reprogramar o cancelar una cita de un área conservando la fecha original, el motivo y el responsable del cambio.\\
+		Entradas / salidas & Entrada: cita, nueva fecha o motivo de cancelación. Salida: cita actualizada y notificación.\\
+		Criterio de verificación & Reprogramar y cancelar citas de prueba, comprobando la liberación del cupo y la conservación del historial del cambio.\\
+		BDD asociado & Dado que recepcionista cumple las precondiciones y dispone de los datos válidos, cuando ejecuta "Reprogramar o cancelar citas por área", entonces reprogramar y cancelar citas de prueba, comprobando la liberación del cupo y la conservación del historial del cambio.\\
+		Traza principal & CU-21; US-23; Cita, Auditoria; P02 Gestionar citas; CP-RF-37.\\
+		\bottomrule
+	\end{tabularx}
+	\subsubsection{RF-38 - Consulta rápida de paciente ya registrado}
+	\begin{tabularx}{\textwidth}{p{3.2cm}Y}
+		\toprule
+		\textbf{Atributo} & \textbf{Especificación PE5}\\\midrule
+		Identificador & RF-38\\
+		Prioridad & Must\\
+		Fuente / origen & Entrevista al personal de Enfermería y Recepción\\
+		Descripción & El sistema debe reconocer a un paciente ya registrado (por ejemplo, afiliado o con convenio) a partir de su cédula, evitando el reingreso completo de sus datos en cada visita.\\
+		Entradas / salidas & Entrada: cédula del paciente. Salida: datos precargados del paciente y habilitación directa del cobro/turno.\\
+		Criterio de verificación & Ingresar la cédula de un paciente ya registrado y confirmar que sus datos se cargan automáticamente sin reingreso manual.\\
+		BDD asociado & Dado que recepcionista cumple las precondiciones y dispone de los datos válidos, cuando ejecuta "Consulta rápida de paciente ya registrado", entonces ingresar la cédula de un paciente ya registrado y confirmar que sus datos se cargan automáticamente sin reingreso manual.\\
+		Traza principal & CU-07; US-22; Paciente, Pago; P01 Gestionar pacientes; CP-RF-38.\\
+		\bottomrule
+	\end{tabularx}
+	\clearpage
+	\subsubsection{RF-39 - Registrar atención clínica integral}
+	\begin{tabularx}{\textwidth}{p{3.2cm}Y}
+		\toprule
+		\textbf{Atributo} & \textbf{Especificación PE5}\\\midrule
+		Identificador & RF-39\\
+		Prioridad & Must\\
+		Fuente / origen & Entrevista al personal médico\\
+		Descripción & El sistema debe permitir registrar de forma integral la atención clínica del paciente, incluyendo el motivo de consulta y hallazgos, el diagnóstico con código CIE-10 y descripción, el tratamiento indicado (medicación, duración e indicaciones) y la evolución del paciente.\\
+		Entradas / salidas & Entrada: información clínica del paciente. Salida: registro completo de la atención clínica almacenado en la historia clínica. Atributo Detalle\\
+		Criterio de verificación & Registrar una atención médica completa y verificar que el motivo de consulta, diagnóstico, tratamiento y evolución se almacenen correctamente en la historia clínica.\\
+		BDD asociado & Dado que médico cumple las precondiciones y dispone de los datos válidos, cuando ejecuta "Registrar atención clínica integral", entonces registrar una atención médica completa y verificar que el motivo de consulta, diagnóstico, tratamiento y evolución se almacenen correctamente en la historia clínica.\\
+		Traza principal & CU-23/CU-24/CU-25/CU-26; US-24/US-25/US-26/US-27; Atencion, Diagnostico, Tratamiento, Evolucion; P03 Gestionar historia clínica; CP-RF-39.\\
+		\bottomrule
+	\end{tabularx}
+
+
 
 \end{document}
 
