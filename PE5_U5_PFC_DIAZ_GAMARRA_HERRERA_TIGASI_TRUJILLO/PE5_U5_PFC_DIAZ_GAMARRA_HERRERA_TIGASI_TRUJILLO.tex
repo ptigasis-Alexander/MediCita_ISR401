@@ -514,6 +514,79 @@
 		Traza principal & CU-11; US-15; Horario, Cupo; P02 Gestionar citas; CP-RF-25.\\
 		\bottomrule
 	\end{tabularx}
+\subsubsection{RF-26 - Registro digital de signos vitales y atención de enfermería}
+	\begin{tabularx}{\textwidth}{p{3.2cm}Y}
+		\toprule
+		\textbf{Atributo} & \textbf{Especificación PE5}\\\midrule
+		Identificador & RF-26\\
+		Prioridad & Must\\
+		Fuente / origen & Entrevista al personal de Enfermería y Recepción\\
+		Descripción & El sistema debe permitir al personal de enfermería registrar en formato digital los signos vitales y los datos de atención de cada paciente, sustituyendo la actual matriz de atención de enfermería en papel.\\
+		Entradas / salidas & Entrada: cédula, signos vitales, fecha y hora de atención, observaciones. Salida: registro guardado en la ficha del paciente, disponible para consulta posterior.\\
+		Criterio de verificación & Registrar un paciente de prueba y confirmar que sus signos vitales quedan almacenados y son recuperables desde el módulo de historial en menos de 5 segundos.\\
+		BDD asociado & Dado que enfermero(a) cumple las precondiciones y dispone de los datos válidos, cuando ejecuta "Registro digital de signos vitales y atención de enfermería", entonces registrar un paciente de prueba y confirmar que sus signos vitales quedan almacenados y son recuperables desde el módulo de historial en menos de 5 segundos.\\
+		Traza principal & CU-06; US-16; SignosVitales, Paciente; P03 Gestionar historia clínica; CP-RF-26.\\
+		\bottomrule
+	\end{tabularx}
+	\clearpage
+	\subsubsection{RF-27 - Búsqueda de paciente por número de cédula}
+	\begin{tabularx}{\textwidth}{p{3.2cm}Y}
+		\toprule
+		\textbf{Atributo} & \textbf{Especificación PE5}\\\midrule
+		Identificador & RF-27\\
+		Prioridad & Must\\
+		Fuente / origen & Recepcionista / Entrevista al personal de Enfermería y Recepción\\
+		Descripción & El sistema debe permitir localizar de forma inmediata el expediente de un paciente ingresando su número de cédula, evitando la búsqueda manual de hojas físicas archivadas por mes.\\
+		Entradas / salidas & Entrada: número de cédula. Salida: ficha del paciente con su historial de atenciones. Atributo Detalle\\
+		Criterio de verificación & La búsqueda de un paciente existente por cédula debe retornar su expediente en menos de 3 segundos, verificado con al menos 20 expedientes de prueba.\\
+		BDD asociado & Dado que enfermero(a) cumple las precondiciones y dispone de los datos válidos, cuando ejecuta "Búsqueda de paciente por número de cédula", entonces la búsqueda de un paciente existente por cédula debe retornar su expediente en menos de 3 segundos, verificado con al menos 20 expedientes de prueba.\\
+		Traza principal & CU-07; US-17; Paciente, HistoriaClinica; P01 Gestionar pacientes; CP-RF-27.\\
+		\bottomrule
+	\end{tabularx}
+	\subsubsection{RF-28 - Registro de datos personales completos del paciente}
+	\begin{tabularx}{\textwidth}{p{3.2cm}Y}
+		\toprule
+		\textbf{Atributo} & \textbf{Especificación PE5}\\\midrule
+		Identificador & RF-28\\
+		Prioridad & Must\\
+		Fuente / origen & Recepcionista / Entrevista al personal de Enfermería y Recepción\\
+		Descripción & El sistema debe capturar y validar los datos indispensables del paciente: cédula, nombres, apellidos completos y fecha de nacimiento completa (día, mes y año), dado que en la práctica actual se suele omitir el día y el mes.\\
+		Entradas / salidas & Entrada: cédula, apellidos, nombres, fecha de nacimiento completa. Salida: ficha de paciente creada o actualizada, con alerta si algún campo obligatorio está incompleto.\\
+		Criterio de verificación & El sistema debe rechazar el guardado de un registro si el campo fecha de nacimiento no contiene día, mes y año, mostrando un mensaje de validación.\\
+		BDD asociado & Dado que enfermero(a) cumple las precondiciones y dispone de los datos válidos, cuando ejecuta "Registro de datos personales completos del paciente", entonces el sistema debe rechazar el guardado de un registro si el campo fecha de nacimiento no contiene día, mes y año, mostrando un mensaje de validación.\\
+		Traza principal & CU-07/CU-20; US-18; Paciente, Representante; P01 Gestionar pacientes; CP-RF-28.\\
+		\bottomrule
+	\end{tabularx}
+	\clearpage
+	\subsubsection{RF-29 - Registro de menores de edad sin cédula propia}
+	\begin{tabularx}{\textwidth}{p{3.2cm}Y}
+		\toprule
+		\textbf{Atributo} & \textbf{Especificación PE5}\\\midrule
+		Identificador & RF-29\\
+		Prioridad & Should Atributo Detalle\\
+		Fuente / origen & Recepcionista / Entrevista al personal de Enfermería y Recepción\\
+		Descripción & El sistema debe permitir registrar a un paciente menor de edad utilizando la cédula del padre, madre o representante como dato de vínculo, cuando el menor no cuenta con cédula propia o esta no es conocida por el acompañante.\\
+		Entradas / salidas & Entrada: cédula del representante, datos del menor. Salida: ficha del menor vinculada a la del representante.\\
+		Criterio de verificación & Registrar un menor sin cédula propia usando la cédula de un representante y comprobar que ambos expedientes quedan vinculados y diferenciados en el sistema.\\
+		BDD asociado & Dado que enfermero(a) cumple las precondiciones y dispone de los datos válidos, cuando ejecuta "Registro de menores de edad sin cédula propia", entonces registrar un menor sin cédula propia usando la cédula de un representante y comprobar que ambos expedientes quedan vinculados y diferenciados en el sistema.\\
+		Traza principal & CU-20; US-18; Paciente, Representante; P01 Gestionar pacientes; CP-RF-29.\\
+		\bottomrule
+	\end{tabularx}
+	\subsubsection{RF-30 - Restricción de acceso a la información clínica por rol}
+	\begin{tabularx}{\textwidth}{p{3.2cm}Y}
+		\toprule
+		\textbf{Atributo} & \textbf{Especificación PE5}\\\midrule
+		Identificador & RF-30\\
+		Prioridad & Must\\
+		Fuente / origen & Administrador del sistema / Entrevista al personal de Enfermería y Recepción\\
+		Descripción & El sistema debe restringir la visualización del contenido clínico (notas y diagnósticos de otras especialidades) según el rol del usuario, de modo que enfermería y recepción solo accedan al área a la que deriva el paciente.\\
+		Entradas / salidas & Entrada: credenciales de usuario y rol asignado. Salida: vista de la ficha del paciente limitada a los campos permitidos por el rol.\\
+		Criterio de verificación & Con un usuario de rol “recepción”, intentar abrir una nota clínica de otra especialidad y comprobar que el sistema deniega el acceso.\\
+		BDD asociado & Dado que sistema (control de acceso) cumple las precondiciones y dispone de los datos válidos, cuando ejecuta "Restricción de acceso a la información clínica por rol", entonces con un usuario de rol “recepción”, intentar abrir una nota clínica de otra especialidad y comprobar que el sistema deniega el acceso.\\
+		Traza principal & CU-10; US-19; Usuario, Rol, HistoriaClinica; P00 Autenticar y autorizar; CP-RF-30.\\
+		\bottomrule
+	\end{tabularx}
+	\clearpage
 
 
 \end{document}
