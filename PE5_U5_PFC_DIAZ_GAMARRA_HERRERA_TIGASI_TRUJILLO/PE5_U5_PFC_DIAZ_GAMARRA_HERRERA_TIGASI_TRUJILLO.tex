@@ -1145,5 +1145,52 @@
 		\subsection{Instrumento de auditoría}
 		La Tabla \ref{tab:auditoria} constituye el instrumento aplicado. Los archivos entregables incluyen además \texttt{instrumento\_auditoria\_PE5.csv} con la misma aritmética para revisión independiente.
 
+
+				\subsection{Catálogo BDD complementario para RNF e IA}
+		La matriz señala el identificador BDD de cada requisito. Los 40 RF heredados conservan su BDD dentro de la ficha funcional; la Tabla \ref{tab:bddcomplementario} explicita los escenarios que completan la evidencia para los 17 RNF base, los cinco RF nuevos de IA y los once RNF nuevos de IA. Los valores cuantitativos de producto se interpretan como umbrales de aceptación según la Sección \ref{subsec:umbrales-ia}.
+		\scriptsize
+		\begin{longtable}{p{2.8cm}p{10.6cm}p{2cm}}
+			\caption{BDD complementarios de RNF y requisitos de IA}\label{tab:bddcomplementario}\\
+			\toprule\textbf{ID BDD}&\textbf{Escenario Dado-Cuando-Entonces}&\textbf{CP}\\\midrule
+			\endfirsthead
+			\multicolumn{3}{c}{\small\textit{Tabla \thetable\ -- continuación}}\\
+			\toprule\textbf{ID BDD}&\textbf{Escenario Dado-Cuando-Entonces}&\textbf{CP}\\\midrule
+			\endhead
+			BDD-RNF-01 & Dado que hasta 50 usuarios concurrentes consultan historiales clínicos, cuando se mide el tiempo de respuesta, entonces al menos el 95 \% de las consultas debe completarse en 2 s o menos. & CP-RNF-01\\
+			BDD-RNF-02 & Dado que se transmiten y almacenan datos clínicos en el ambiente de prueba, cuando se verifican los controles de seguridad, entonces la comunicación usa TLS 1.2 o superior, el almacenamiento usa AES-256 y los accesos no autorizados son rechazados. & CP-RNF-02\\
+			BDD-RNF-03 & Dado un grupo de usuarios de validación y tareas representativas del SICM, cuando se ejecuta la prueba de usabilidad, entonces la tasa de finalización debe ser al menos 90 \% y la puntuación SUS al menos 75/100. & CP-RNF-03\\
+			BDD-RNF-04 & Dado el horario institucional de 07h00 a 18h00 de lunes a viernes, cuando se monitorea la operación durante el periodo definido, entonces la disponibilidad debe ser al menos 99 \% y el MTTR no superar 30 min. & CP-RNF-04\\
+			BDD-RNF-05 & Dado un cambio funcional aprobado, cuando se ejecuta la compilación y la suite automatizada, entonces la cobertura debe ser al menos 70 \% y el cambio debe quedar confinado a los módulos previstos por la arquitectura. & CP-RNF-05\\
+			BDD-RNF-06 & Dado un usuario sin autorización sobre una historia clínica, cuando intenta acceder al recurso protegido, entonces el acceso debe ser rechazado y el evento registrado en auditoría en el 100 \% de los casos de prueba. & CP-RNF-06\\
+			BDD-RNF-07 & Dado cada navegador y resolución declarados, cuando se recorren los flujos críticos del SICM, entonces las funciones deben operar sin pérdida de contenido ni acciones inaccesibles. & CP-RNF-07\\
+			BDD-RNF-08 & Dado un conjunto de expedientes válidos, cuando se consulta por cédula, entonces al menos el 95 \% de las búsquedas debe devolver el expediente en 3 s o menos. & CP-RNF-08\\
+			BDD-RNF-09 & Dado el periodo mensual de operación de Enfermería y Recepción, cuando se calcula el tiempo disponible del servicio, entonces la disponibilidad debe ser al menos 99 \%. & CP-RNF-09\\
+			BDD-RNF-10 & Dado un usuario de una especialidad sin permiso sobre información clínica de otra área, cuando intenta consultarla, entonces el 100 \% de los accesos no autorizados debe bloquearse y registrarse en bitácora. & CP-RNF-10\\
+			BDD-RNF-11 & Dado un registro clínico guardado en un módulo origen, cuando otro módulo autorizado consulta la actualización, entonces los datos deben propagarse en 10 s o menos. & CP-RNF-11\\
+			BDD-RNF-12 & Dado un usuario sin experiencia previa que recibió 1 h de capacitación, cuando registra un paciente nuevo, entonces debe completar la tarea en 5 min o menos con una tasa de error no superior al 5 \%. & CP-RNF-12\\
+			BDD-RNF-13 & Dado un formulario de paciente con campos obligatorios, cuando se intenta guardar información inválida o incompleta, entonces el sistema la rechaza; todo registro aceptado debe cumplir el 100 \% de las validaciones definidas. & CP-RNF-13\\
+			BDD-RNF-14 & Dado el inventario de equipos actuales del centro, cuando se ejecutan los flujos esenciales del SICM en cada equipo, entonces el 100 \% debe funcionar sin requerir ampliación obligatoria de hardware. & CP-RNF-14\\
+			BDD-RNF-15 & Dado el conjunto operativo de inventario, cuando un usuario autorizado solicita el informe, entonces la generación completa debe finalizar en 2 min o menos. & CP-RNF-15\\
+			BDD-RNF-16 & Dado un conjunto de casos de menores y representantes con identidades diferenciadas, cuando se registra y consulta la relación, entonces no debe producirse ninguna asociación errónea en los casos de prueba. & CP-RNF-16\\
+			BDD-RNF-18 & Dado que el asistente deriva una consulta a recepción, cuando presenta la explicación al paciente, entonces debe mostrarla en 2 s o menos, usar como máximo 40 palabras y alcanzar al menos 80 \% de valoraciones de 4/5 o más en la validación definida. & CP-RNF-18\\
+			BDD-RF-IA1-02 & Dado una consulta administrativa dentro del alcance, cuando el asistente la procesa, entonces debe clasificarla en una intención definida y utilizar una fuente institucional aprobada. & CP-RF-IA1-02\\
+			BDD-RF-IA1-03 & Dado una consulta clínica, ambigua o fuera de alcance, cuando el asistente detecta esa condición, entonces debe derivarla a recepción sin emitir diagnóstico ni recomendación clínica autónoma. & CP-RF-IA1-03\\
+			BDD-RNF-IA1-P01 & Dado el conjunto de prueba versionado de intenciones administrativas, cuando se evalúa el clasificador, entonces el macro-F1 debe ser al menos 0.90. & CP-RNF-IA1-P01\\
+			BDD-RNF-IA1-P02 & Dado 50 sesiones concurrentes, cuando el asistente responde o decide escalar una consulta, entonces la latencia P95 debe ser 2 s o menor. & CP-RNF-IA1-P02\\
+			BDD-RNF-IA1-P03 & Dado el horario de atención, cuando se monitorea el servicio del asistente, entonces la disponibilidad debe ser al menos 99 \% y, ante fallo, el fallback a recepción debe mostrarse en 2 s o menos. & CP-RNF-IA1-P03\\
+			BDD-RNF-IA1-E01 & Dado una muestra de evaluación con usuarios de 18-35 años y mayores de 60, cuando se calcula la tasa de resolución correcta por grupo, entonces la diferencia no debe superar 5 puntos porcentuales. & CP-RNF-IA1-E01\\
+			BDD-RNF-IA1-E02 & Dado una muestra con usuarios de baja y alta familiaridad digital, cuando se compara la tasa de resolución correcta, entonces la diferencia no debe superar 5 puntos porcentuales. & CP-RNF-IA1-E02\\
+			BDD-RF-IA2-01 & Dado una cita confirmada con datos administrativos permitidos, cuando se solicita la predicción, entonces el sistema debe generar un puntaje de riesgo de inasistencia entre 0 y 1 sin usar datos clínicos. & CP-RF-IA2-01\\
+			BDD-RF-IA2-02 & Dado un puntaje de riesgo generado, cuando el sistema selecciona una estrategia de recordatorio, entonces debe clasificar el riesgo y no cancelar, negar ni reducir la prioridad clínica de la cita. & CP-RF-IA2-02\\
+			BDD-RF-IA2-03 & Dado una predicción disponible para una cita, cuando recepción decide anularla o aplicar una estrategia manual, entonces el sistema debe respetar la decisión humana y registrar la acción en auditoría. & CP-RF-IA2-03\\
+			BDD-RNF-IA2-P01 & Dado el conjunto de prueba temporal definido antes del despliegue, cuando se evalúa el predictor de inasistencia, entonces el F1 debe ser al menos 0.80. & CP-RNF-IA2-P01\\
+			BDD-RNF-IA2-P02 & Dado un lote de hasta 100 citas, cuando se ejecuta la inferencia, entonces la latencia P95 debe ser 500 ms o menor. & CP-RNF-IA2-P02\\
+			BDD-RNF-IA2-P03 & Dado el servicio predictivo en horario operativo, cuando se monitorea su disponibilidad, entonces debe alcanzar al menos 99 \% y, si falla, conservar el recordatorio estándar sin afectar la cita. & CP-RNF-IA2-P03\\
+			BDD-RNF-IA2-E01 & Dado una muestra de evaluación con usuarios de 18-35 años y mayores de 60, cuando se calcula la sensibilidad por grupo, entonces la diferencia no debe superar 5 puntos porcentuales. & CP-RNF-IA2-E01\\
+			BDD-RNF-IA2-E02 & Dado una muestra con pacientes nuevos y recurrentes, cuando se calcula la tasa de falsos positivos por grupo, entonces la diferencia no debe superar 5 puntos porcentuales. & CP-RNF-IA2-E02\\
+			BDD-RNF-IA2-X01 & Dado un riesgo medio o alto mostrado a recepción, cuando se presenta la predicción, entonces el sistema debe indicar al menos dos factores administrativos influyentes y advertir que la predicción no modifica la atención. & CP-RNF-IA2-X01\\
+			\bottomrule\end{longtable}
+		\normalsize
+
 \end{document}
 
