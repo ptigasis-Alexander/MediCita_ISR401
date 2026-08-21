@@ -17,7 +17,21 @@
 </div>
 
 ---
+## 🆕 Entrega vigente en revisión: PE5 — Unidad 5 (Ingeniería de Requisitos)
 
+> **Esto es lo que se está calificando actualmente.** Todo lo correspondiente al PE5 (cierre integrador de ERS/SRS, UML, validación, línea base, requisitos de IA, métricas, auditoría y banco de defensa) vive en la carpeta [`PE5_U5_PFC_DIAZ_GAMARRA_HERRERA_TIGASI_TRUJILLO/`](PE5_U5_PFC_DIAZ_GAMARRA_HERRERA_TIGASI_TRUJILLO/).
+
+| Recurso | Enlace |
+|---|---|
+| 📘 Guía de clonado, compilación y revisión (empezar aquí) | [`PE5_U5_README.md`](PE5_U5_PFC_DIAZ_GAMARRA_HERRERA_TIGASI_TRUJILLO/PE5_U5_README.md) |
+| 📄 PDF a calificar | [`PE5_U5_PFC_DIAZ_GAMARRA_HERRERA_TIGASI_TRUJILLO.pdf`](PE5_U5_PFC_DIAZ_GAMARRA_HERRERA_TIGASI_TRUJILLO/PE5_U5_PFC_DIAZ_GAMARRA_HERRERA_TIGASI_TRUJILLO.pdf) |
+| 📝 Fuente LaTeX (reproducible) | [`PE5_U5_PFC_DIAZ_GAMARRA_HERRERA_TIGASI_TRUJILLO.tex`](PE5_U5_PFC_DIAZ_GAMARRA_HERRERA_TIGASI_TRUJILLO/PE5_U5_PFC_DIAZ_GAMARRA_HERRERA_TIGASI_TRUJILLO.tex) |
+| 🎓 Banco de defensa oral | [`Banco_Defensa_PE5_SICM_.md`](PE5_U5_PFC_DIAZ_GAMARRA_HERRERA_TIGASI_TRUJILLO/Banco_Defensa_PE5_SICM_.md) |
+| 🔗 Matriz de trazabilidad (73 requisitos) | [`matriz_trazabilidad_PE5.csv`](PE5_U5_PFC_DIAZ_GAMARRA_HERRERA_TIGASI_TRUJILLO/matriz_trazabilidad_PE5.csv) |
+| 📊 Instrumento de auditoría M1–M6 | [`instrumento_auditoria_PE5_.csv`](PE5_U5_PFC_DIAZ_GAMARRA_HERRERA_TIGASI_TRUJILLO/instrumento_auditoria_PE5_.csv) |
+| 📋 Backlog sincronizado (US-01 a US-38) | [`backlog_sincronizado_PE5.csv`](PE5_U5_PFC_DIAZ_GAMARRA_HERRERA_TIGASI_TRUJILLO/backlog_sincronizado_PE5.csv) |
+
+---
 ## ✅ Estado de avance por sección
 
 | Sección | Estado |
