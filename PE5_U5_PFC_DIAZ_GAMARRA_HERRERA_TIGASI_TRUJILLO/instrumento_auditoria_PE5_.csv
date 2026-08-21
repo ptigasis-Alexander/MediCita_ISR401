@@ -1,0 +1,12 @@
+﻿Instrumento de Auditoria;;;;;;
+;;;;;;
+Métrica;Aritmética antes;Valor antes;Aritmética después;Valor después;Referencia;Acción de mejora
+M1a Completitud de atributos;40/57 x 100;70.2 %;73/73 x 100;100%;>=95 %;Se normalizaron ID, prioridad, fuente y BDD para todo requisito activo.
+M1b Casos de uso especificados;33/33 x 100;100%;35/35 x 100;100%;1;Se añadieron CU-34 y CU-35 para los dos componentes de IA.
+M1c Actores cubiertos;10/10 x 100;100%;10/10 x 100;100%;1;Se mantiene al menos un RF por actor formal del catálogo.
+M2 Consistencia;1 - 10/1596;0.9937;1 - 0/2628;10.000;>=0.98 y 0 conflictos abiertos;Se eliminaron diez solapamientos/contradicciones de alcance y se re-inspeccionó el catálogo.
+M3 Verificabilidad;47/57 x 100;82.5 %;73/73 x 100;100%;">=90 %; críticos 100 %";Se añadió un BDD comprobable a los RNF sin escenario y a todos los requisitos de IA.
+M4ade Trazabilidad adelante;0/40 x 100;0%;45/45 x 100;100%;>=90 %;"La matriz heredada no registraba Clase, Estado ni CP; la matriz PE5 incorpora la cadena completa."
+M4atr Trazabilidad atrás;40/40 x 100;100%;45/45 x 100;100%;1;Se conserva evidencia/stakeholder de origen y se añade fuente explícita a RF de IA.
+M5 Modificabilidad;No calculada;N/D;(3+3+2+2+4)/5;2.8;<=3.0;Muestra representativa: RF-02, RF-09, RF-15, RF-26 y RF-16.
+M6 Corrección;10/57;0.1754;0/73;0.0000;<=0.05;Diez defectos residuales de especificación fueron corregidos y la re-inspección final no dejó conflictos abiertos.
