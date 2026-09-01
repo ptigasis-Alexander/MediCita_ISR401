@@ -34,9 +34,8 @@ keywords:
   - sistema de gestión médica
   - producto mínimo viable
 
-# Agregar después de publicar en Zenodo:
-# doi: '10.5281/zenodo.XXXXXXXX'
-#
+doi: '10.5281/zenodo.22236373'
+
 # Agregar después de archivar en Software Heritage (Save code now):
 # identifiers:
 #   - type: swh
