@@ -1,0 +1,23 @@
+﻿RF;Observaciones_originales;Uso_correcto_de_la_evidencia;Estado_final
+RF-01;"OBS-007; OBS-018";"La observación documenta el hallazgo/necesidad; no se presenta como prueba de la corrección posterior.";PASA_TECNICO
+RF-02;"OBS-006; OBS-026";"La observación documenta el hallazgo/necesidad; no se presenta como prueba de la corrección posterior.";PASA_TECNICO
+RF-03;OBS-002;"La observación documenta el hallazgo/necesidad; no se presenta como prueba de la corrección posterior.";PASA_TECNICO
+RF-06;;"Sin observación específica enlazada; el cierre se sustenta en verificación técnica.";PASA_TECNICO
+RF-09;;"Sin observación específica enlazada; el cierre se sustenta en verificación técnica.";NO_CERRADO
+RF-10;"OBS-017; OBS-030";"La observación documenta el hallazgo/necesidad; no se presenta como prueba de la corrección posterior.";PASA_TECNICO
+RF-11;OBS-013;"La observación documenta el hallazgo/necesidad; no se presenta como prueba de la corrección posterior.";PASA_TECNICO
+RF-12;;"Sin observación específica enlazada; el cierre se sustenta en verificación técnica.";PASA_TECNICO
+RF-13;OBS-026;"La observación documenta el hallazgo/necesidad; no se presenta como prueba de la corrección posterior.";PASA_TECNICO
+RF-17;"OBS-015; OBS-016";"La observación documenta el hallazgo/necesidad; no se presenta como prueba de la corrección posterior.";PASA_TECNICO
+RF-18;OBS-028;"La observación documenta el hallazgo/necesidad; no se presenta como prueba de la corrección posterior.";NO_CERRADO
+RF-19;OBS-028;"La observación documenta el hallazgo/necesidad; no se presenta como prueba de la corrección posterior.";PASA_TECNICO
+RF-21;;"Sin observación específica enlazada; el cierre se sustenta en verificación técnica.";PASA_TECNICO
+RF-22;OBS-022;"La observación documenta el hallazgo/necesidad; no se presenta como prueba de la corrección posterior.";PASA_TECNICO
+RF-24;"OBS-014; OBS-028";"La observación documenta el hallazgo/necesidad; no se presenta como prueba de la corrección posterior.";PASA_TECNICO
+RF-26;"OBS-001; OBS-003";"La observación documenta el hallazgo/necesidad; no se presenta como prueba de la corrección posterior.";PASA_TECNICO
+RF-27;OBS-002;"La observación documenta el hallazgo/necesidad; no se presenta como prueba de la corrección posterior.";PASA_TECNICO
+RF-28;"OBS-002; OBS-004; OBS-011";"La observación documenta el hallazgo/necesidad; no se presenta como prueba de la corrección posterior.";PASA_TECNICO
+RF-30;"OBS-017; OBS-030";"La observación documenta el hallazgo/necesidad; no se presenta como prueba de la corrección posterior.";PASA_TECNICO
+RF-33;OBS-022;"La observación documenta el hallazgo/necesidad; no se presenta como prueba de la corrección posterior.";PASA_TECNICO
+RF-34;;"Sin observación específica enlazada; el cierre se sustenta en verificación técnica.";PASA_TECNICO
+RF-38;OBS-002;"La observación documenta el hallazgo/necesidad; no se presenta como prueba de la corrección posterior.";PASA_TECNICO
