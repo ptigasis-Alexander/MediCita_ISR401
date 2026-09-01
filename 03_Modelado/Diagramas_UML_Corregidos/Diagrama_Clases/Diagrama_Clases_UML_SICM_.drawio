@@ -1,0 +1,577 @@
+<mxfile host="app.diagrams.net" agent="ChatGPT Codex" compressed="false" pages="10">
+  <diagram id="00-GENERAL-LEGIBLE" name="00 Modelo general legible">
+    <mxGraphModel dx="2828" dy="1486" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3400" pageHeight="2250" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontStyle=1;fontSize=16;fontColor=#000000;fontFamily=Times New Roman;" value="Diagrama de clases UML general — SICM" vertex="1">
+          <mxGeometry height="50" width="2230" x="60" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="c-Usuario" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=16;fontFamily=Times New Roman;" value="&lt;div style=&quot;text-align: center; font-weight: bold;&quot;&gt;Usuario&lt;/div&gt;&lt;hr&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idUsuario: int&lt;br&gt;- usuario: string&lt;br&gt;- correo: string&lt;br&gt;- claveHash: string&lt;br&gt;- estado: EstadoUsuario&lt;/div&gt;&lt;hr&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ autenticar(): bool&lt;br&gt;+ cambiarClave(): void&lt;br&gt;+ cerrarSesion(): void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="220" width="160" x="1280" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="c-UsuarioRol" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=16;fontFamily=Times New Roman;" value="&lt;div style=&quot;text-align: center; font-weight: bold;&quot;&gt;UsuarioRol&lt;/div&gt;&lt;hr&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idAsignacion: int&lt;br&gt;- fechaAsignacion: datetime&lt;br&gt;- estado: string&lt;/div&gt;&lt;hr&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ asignar(): void&lt;br&gt;+ revocar(): void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="190" x="1680" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="c-Rol" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=16;fontFamily=Times New Roman;" value="&lt;div style=&quot;text-align: center; font-weight: bold;&quot;&gt;Rol&lt;/div&gt;&lt;hr&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idRol: int&lt;br&gt;- nombre: string&lt;br&gt;- descripcion: string&lt;/div&gt;&lt;hr&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ registrar(): void&lt;br&gt;+ actualizar(): void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="150" x="2020" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="c-Paciente" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=16;fontFamily=Times New Roman;" value="&lt;div style=&quot;text-align: center; font-weight: bold;&quot;&gt;Paciente&lt;/div&gt;&lt;hr&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idPaciente: int&lt;br&gt;- cedula: string&lt;br&gt;- nombres: string&lt;br&gt;- apellidos: string&lt;br&gt;- fechaNacimiento: date&lt;br&gt;- telefono: string&lt;br&gt;- direccion: string&lt;/div&gt;&lt;hr&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ registrar(): void&lt;br&gt;+ actualizar(): void&lt;br&gt;+ consultar(): Paciente&lt;/div&gt;" vertex="1">
+          <mxGeometry height="260" width="170" x="420" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="c-Cita" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=16;fontFamily=Times New Roman;" value="&lt;div style=&quot;text-align: center; font-weight: bold;&quot;&gt;Cita&lt;/div&gt;&lt;hr&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idCita: int&lt;br&gt;- fechaHora: datetime&lt;br&gt;- motivo: string&lt;br&gt;- estado: EstadoCita&lt;br&gt;- observaciones: string&lt;/div&gt;&lt;hr&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ agendar(): void&lt;br&gt;+ confirmar(): void&lt;br&gt;+ reagendar(): void&lt;br&gt;+ cancelar(): void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="245" width="160" x="830" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="c-ProfesionalSalud" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=16;fontFamily=Times New Roman;" value="&lt;div style=&quot;text-align: center; font-weight: bold;&quot;&gt;ProfesionalSalud&lt;/div&gt;&lt;hr&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idProfesional: int&lt;br&gt;- cedulaProfesional: string&lt;br&gt;- nombres: string&lt;br&gt;- apellidos: string&lt;br&gt;- cargo: string&lt;br&gt;- estado: string&lt;/div&gt;&lt;hr&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ actualizarPerfil(): void&lt;br&gt;+ consultarAgenda(): List&amp;lt;Cita&amp;gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="230" width="210" x="1140" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="c-Especialidad" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=16;fontFamily=Times New Roman;" value="&lt;div style=&quot;text-align: center; font-weight: bold;&quot;&gt;Especialidad&lt;/div&gt;&lt;hr&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idEspecialidad: int&lt;br&gt;- nombre: string&lt;br&gt;- descripcion: string&lt;/div&gt;&lt;hr&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ registrar(): void&lt;br&gt;+ actualizar(): void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="140" x="1480" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="c-HistoriaClinica" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=16;fontFamily=Times New Roman;" value="&lt;div style=&quot;text-align: center; font-weight: bold;&quot;&gt;HistoriaClinica&lt;/div&gt;&lt;hr&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idHistoria: int&lt;br&gt;- numeroHistoria: string&lt;br&gt;- fechaApertura: date&lt;br&gt;- alergias: string&lt;br&gt;- antecedentes: string&lt;br&gt;- estado: string&lt;/div&gt;&lt;hr&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ abrir(): void&lt;br&gt;+ actualizar(): void&lt;br&gt;+ consultar(): HistoriaClinica&lt;/div&gt;" vertex="1">
+          <mxGeometry height="245" width="210" x="190" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="c-Consultorio" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=16;fontFamily=Times New Roman;" value="&lt;div style=&quot;text-align: center; font-weight: bold;&quot;&gt;Consultorio&lt;/div&gt;&lt;hr&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idConsultorio: int&lt;br&gt;- nombre: string&lt;br&gt;- ubicacion: string&lt;br&gt;- estado: string&lt;/div&gt;&lt;hr&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ reservar(): bool&lt;br&gt;+ liberar(): void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="190" width="160" x="530" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="c-Notificacion" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=16;fontFamily=Times New Roman;" value="&lt;div style=&quot;text-align: center; font-weight: bold;&quot;&gt;Notificacion&lt;/div&gt;&lt;hr&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idNotificacion: int&lt;br&gt;- canal: CanalNotificacion&lt;br&gt;- asunto: string&lt;br&gt;- mensaje: string&lt;br&gt;- fechaHora: datetime&lt;br&gt;- estado: EstadoEnvio&lt;br&gt;- leida: boolean&lt;/div&gt;&lt;hr&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ enviar(): void&lt;br&gt;+ reintentar(): void&lt;br&gt;+ marcarLeida(): void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="260" width="180" x="1680" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="c-SignosVitales" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=16;fontFamily=Times New Roman;" value="&lt;div style=&quot;text-align: center; font-weight: bold;&quot;&gt;SignosVitales&lt;/div&gt;&lt;hr&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idSignos: int&lt;br&gt;- temperatura: decimal&lt;br&gt;- presionArterial: string&lt;br&gt;- frecuenciaCardiaca: int&lt;br&gt;- frecuenciaRespiratoria: int&lt;br&gt;- saturacionO2: int&lt;br&gt;- peso: decimal&lt;/div&gt;&lt;hr&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ validarRangos(): bool&lt;br&gt;+ registrar(): void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="245" width="190" x="330" y="1180" as="geometry" />
+        </mxCell>
+        <mxCell id="c-Atencion" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=16;fontFamily=Times New Roman;" value="&lt;div style=&quot;text-align: center; font-weight: bold;&quot;&gt;Atencion&lt;/div&gt;&lt;hr&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idAtencion: int&lt;br&gt;- fechaHora: datetime&lt;br&gt;- motivoConsulta: string&lt;br&gt;- hallazgos: string&lt;br&gt;- observaciones: string&lt;br&gt;- estado: string&lt;/div&gt;&lt;hr&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ iniciar(): void&lt;br&gt;+ registrar(): void&lt;br&gt;+ cerrar(): void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="245" width="160" x="620" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="c-Diagnostico" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=16;fontFamily=Times New Roman;" value="&lt;div style=&quot;text-align: center; font-weight: bold;&quot;&gt;Diagnostico&lt;/div&gt;&lt;hr&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idDiagnostico: int&lt;br&gt;- codigoCIE10: string&lt;br&gt;- descripcion: string&lt;br&gt;- tipo: string&lt;br&gt;- fecha: date&lt;/div&gt;&lt;hr&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ validarCIE10(): bool&lt;br&gt;+ registrar(): void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="210" width="170" x="1090" y="960" as="geometry" />
+        </mxCell>
+        <mxCell id="c-Tratamiento" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=16;fontFamily=Times New Roman;" value="&lt;div style=&quot;text-align: center; font-weight: bold;&quot;&gt;Tratamiento&lt;/div&gt;&lt;hr&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idTratamiento: int&lt;br&gt;- fechaInicio: date&lt;br&gt;- fechaFin: date&lt;br&gt;- indicaciones: string&lt;br&gt;- estado: string&lt;/div&gt;&lt;hr&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ registrar(): void&lt;br&gt;+ finalizar(): void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="210" width="150" x="1290" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="c-Receta" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=16;fontFamily=Times New Roman;" value="&lt;div style=&quot;text-align: center; font-weight: bold;&quot;&gt;Receta&lt;/div&gt;&lt;hr&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idReceta: int&lt;br&gt;- fechaEmision: datetime&lt;br&gt;- observaciones: string&lt;br&gt;- estado: string&lt;/div&gt;&lt;hr&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ emitir(): void&lt;br&gt;+ anular(): void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="230" width="180" x="1560" y="805" as="geometry" />
+        </mxCell>
+        <mxCell id="c-DetalleReceta" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=16;fontFamily=Times New Roman;" value="&lt;div style=&quot;text-align: center; font-weight: bold;&quot;&gt;DetalleReceta&lt;/div&gt;&lt;hr&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idDetalle: int&lt;br&gt;- dosis: string&lt;br&gt;- frecuencia: string&lt;br&gt;- duracion: string&lt;br&gt;- cantidad: int&lt;/div&gt;&lt;hr&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ validarCantidad(): bool&lt;/div&gt;" vertex="1">
+          <mxGeometry height="200" width="220" x="2060" y="827.5" as="geometry" />
+        </mxCell>
+        <mxCell id="c-Medicamento" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=16;fontFamily=Times New Roman;" value="&lt;div style=&quot;text-align: center; font-weight: bold;&quot;&gt;Medicamento&lt;/div&gt;&lt;hr&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idMedicamento: int&lt;br&gt;- nombre: string&lt;br&gt;- principioActivo: string&lt;br&gt;- presentacion: string&lt;br&gt;- stockActual: int&lt;br&gt;- stockMinimo: int&lt;br&gt;- estado: string&lt;/div&gt;&lt;hr&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ ajustarStock(): void&lt;br&gt;+ verificarDisponibilidad(): bool&lt;/div&gt;" vertex="1">
+          <mxGeometry height="245" width="240" x="1920" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="g1" edge="1" parent="1" source="c-Paciente" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;rounded=0;html=1;endArrow=block;endFill=0;strokeColor=#000000;strokeWidth=1.2;startLabel=;endLabel=;fontColor=#000000;fontSize=16;labelBackgroundColor=#ffffff;fontFamily=Times New Roman;" target="c-Usuario" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1080" y="190" />
+              <mxPoint x="1080" y="190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="g2" edge="1" parent="1" source="c-ProfesionalSalud" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;rounded=0;html=1;endArrow=block;endFill=0;strokeColor=#000000;strokeWidth=1.2;startLabel=;endLabel=;fontColor=#000000;fontSize=16;labelBackgroundColor=#ffffff;fontFamily=Times New Roman;" target="c-Usuario" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1240" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r1" edge="1" parent="1" source="c-Usuario" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;rounded=0;html=1;startArrow=diamond;startFill=1;endArrow=none;strokeColor=#000000;strokeWidth=1.2;startLabel=1;endLabel=0..*;fontColor=#000000;fontSize=16;labelBackgroundColor=#ffffff;fontFamily=Times New Roman;" target="c-UsuarioRol" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1570" y="200" />
+              <mxPoint x="1570" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r2" edge="1" parent="1" source="c-Rol" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=1.2;startLabel=1;endLabel=0..*;fontColor=#000000;fontSize=16;labelBackgroundColor=#ffffff;fontFamily=Times New Roman;" target="c-UsuarioRol" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2095" y="195" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r3" edge="1" parent="1" source="c-Usuario" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=1.2;startLabel=1;endLabel=0..*;fontColor=#000000;fontSize=16;labelBackgroundColor=#ffffff;fontFamily=Times New Roman;" target="c-Notificacion" value="destinatario">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1530" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r5" edge="1" parent="1" source="c-Paciente" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;rounded=0;html=1;startArrow=diamond;startFill=1;endArrow=none;strokeColor=#000000;strokeWidth=1.2;startLabel=1;endLabel=0..1;fontColor=#000000;fontSize=16;labelBackgroundColor=#ffffff;fontFamily=Times New Roman;" target="c-HistoriaClinica" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="340" y="290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r6" edge="1" parent="1" source="c-Paciente" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=1.2;startLabel=1;endLabel=0..*;fontColor=#000000;fontSize=16;labelBackgroundColor=#ffffff;fontFamily=Times New Roman;" target="c-Cita" value="solicita">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r8" edge="1" parent="1" source="c-ProfesionalSalud" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=1.2;startLabel=0..1;endLabel=0..*;fontColor=#000000;fontSize=16;labelBackgroundColor=#ffffff;fontFamily=Times New Roman;" target="c-Cita" value="atiende">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r9" edge="1" parent="1" source="c-Consultorio" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=1.2;startLabel=0..1;endLabel=0..*;fontColor=#000000;fontSize=16;labelBackgroundColor=#ffffff;fontFamily=Times New Roman;" target="c-Cita" value="se realiza en">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r10" edge="1" parent="1" source="c-ProfesionalSalud" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=1.2;startLabel=0..*;endLabel=1..*;fontColor=#000000;fontSize=16;labelBackgroundColor=#ffffff;fontFamily=Times New Roman;" target="c-Especialidad" value="acredita">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r17" edge="1" parent="1" source="c-HistoriaClinica" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;rounded=0;html=1;startArrow=diamond;startFill=1;endArrow=none;strokeColor=#000000;strokeWidth=1.2;startLabel=1;endLabel=0..*;fontColor=#000000;fontSize=16;labelBackgroundColor=#ffffff;fontFamily=Times New Roman;" target="c-Atencion" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="295.06" y="970" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r18" edge="1" parent="1" source="c-ProfesionalSalud" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=1.2;startLabel=1;endLabel=0..*;fontColor=#000000;fontSize=16;labelBackgroundColor=#ffffff;fontFamily=Times New Roman;" target="c-Atencion" value="registra">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1210.08" y="790.08" />
+              <mxPoint x="700.08" y="790.08" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r19" edge="1" parent="1" source="c-Atencion" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;rounded=0;html=1;startArrow=diamond;startFill=1;endArrow=none;strokeColor=#000000;strokeWidth=1.2;startLabel=1;endLabel=0..1;fontColor=#000000;fontSize=16;labelBackgroundColor=#ffffff;fontFamily=Times New Roman;" target="c-SignosVitales" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="425" y="1040.08" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r20" edge="1" parent="1" source="c-Atencion" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;rounded=0;html=1;startArrow=diamond;startFill=1;endArrow=none;strokeColor=#000000;strokeWidth=1.2;startLabel=1;endLabel=0..*;fontColor=#000000;fontSize=16;labelBackgroundColor=#ffffff;fontFamily=Times New Roman;" target="c-Diagnostico" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="935" y="1000.08" />
+              <mxPoint x="935" y="1065" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r21" edge="1" parent="1" source="c-Atencion" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;rounded=0;html=1;startArrow=diamond;startFill=1;endArrow=none;strokeColor=#000000;strokeWidth=1.2;startLabel=1;endLabel=0..*;fontColor=#000000;fontSize=16;labelBackgroundColor=#ffffff;fontFamily=Times New Roman;" target="c-Tratamiento" value="indica">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="950" y="855" />
+              <mxPoint x="950" y="855" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r22" edge="1" parent="1" source="c-Atencion" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;rounded=0;html=1;startArrow=diamond;startFill=1;endArrow=none;strokeColor=#000000;strokeWidth=1.2;startLabel=1;endLabel=0..*;fontColor=#000000;fontSize=16;labelBackgroundColor=#ffffff;fontFamily=Times New Roman;" target="c-Receta" value="emite">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1000" y="927.44" />
+              <mxPoint x="1000" y="927.44" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r23" edge="1" parent="1" source="c-Receta" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;rounded=0;html=1;startArrow=diamond;startFill=1;endArrow=none;strokeColor=#000000;strokeWidth=1.2;startLabel=1;endLabel=1..*;fontColor=#000000;fontSize=16;labelBackgroundColor=#ffffff;fontFamily=Times New Roman;" target="c-DetalleReceta" value="contiene">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r24" edge="1" parent="1" source="c-Medicamento" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=1.2;startLabel=1;endLabel=0..*;fontColor=#000000;fontSize=16;labelBackgroundColor=#ffffff;fontFamily=Times New Roman;" target="c-DetalleReceta" value="prescrito como">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;dashed=1;align=center;fontSize=16;fontColor=#000000;fontFamily=Times New Roman;" value="◆ composición   △ generalización   — asociación   |   0..1 opcional   1 exactamente uno   0..* ninguno o muchos   1..* uno o muchos" vertex="1">
+          <mxGeometry height="45" width="1470" x="610" y="1260" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="00-Vista-general-esencial" name="00 Vista general esencial">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2400" pageHeight="1500" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Diagrama de clases UML — Vista general esencial" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontStyle=1;fontSize=22;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="250" y="20" width="1900" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="c-Paciente" value="&lt;div style=&quot;text-align:center;font-weight:bold;font-size:14px&quot;&gt;Paciente&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idPaciente: int&lt;br/&gt;- cedula: string&lt;br/&gt;- nombres: string&lt;br/&gt;- apellidos: string&lt;br/&gt;- fechaNacimiento: date&lt;br/&gt;- telefono: string&lt;br/&gt;- direccion: string&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ registrar(): void&lt;br/&gt;+ actualizar(): void&lt;br/&gt;+ consultar(): Paciente&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="100" y="600" width="320" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="c-Cita" value="&lt;div style=&quot;text-align:center;font-weight:bold;font-size:14px&quot;&gt;Cita&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idCita: int&lt;br/&gt;- fechaHora: datetime&lt;br/&gt;- motivo: string&lt;br/&gt;- estado: EstadoCita&lt;br/&gt;- observaciones: string&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ agendar(): void&lt;br/&gt;+ confirmar(): void&lt;br/&gt;+ reagendar(): void&lt;br/&gt;+ cancelar(): void&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="560" y="600" width="320" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="c-Atencion" value="&lt;div style=&quot;text-align:center;font-weight:bold;font-size:14px&quot;&gt;Atencion&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idAtencion: int&lt;br/&gt;- fechaHora: datetime&lt;br/&gt;- motivoConsulta: string&lt;br/&gt;- hallazgos: string&lt;br/&gt;- observaciones: string&lt;br/&gt;- estado: string&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ iniciar(): void&lt;br/&gt;+ registrar(): void&lt;br/&gt;+ cerrar(): void&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="1040" y="600" width="320" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="c-HistoriaClinica" value="&lt;div style=&quot;text-align:center;font-weight:bold;font-size:14px&quot;&gt;HistoriaClinica&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idHistoria: int&lt;br/&gt;- numeroHistoria: string&lt;br/&gt;- fechaApertura: date&lt;br/&gt;- alergias: string&lt;br/&gt;- antecedentes: string&lt;br/&gt;- estado: string&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ abrir(): void&lt;br/&gt;+ actualizar(): void&lt;br/&gt;+ consultar(): HistoriaClinica&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="1520" y="600" width="320" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="c-AreaMedica" value="&lt;div style=&quot;text-align:center;font-weight:bold;font-size:14px&quot;&gt;AreaMedica&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idArea: int&lt;br/&gt;- nombre: string&lt;br/&gt;- descripcion: string&lt;br/&gt;- estado: string&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ registrar(): void&lt;br/&gt;+ listarActivas(): List&amp;lt;AreaMedica&amp;gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="560" y="130" width="320" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="c-ProfesionalSalud" value="&lt;div style=&quot;text-align:center;font-weight:bold;font-size:14px&quot;&gt;ProfesionalSalud&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idProfesional: int&lt;br/&gt;- cedulaProfesional: string&lt;br/&gt;- nombres: string&lt;br/&gt;- apellidos: string&lt;br/&gt;- cargo: string&lt;br/&gt;- estado: string&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ actualizarPerfil(): void&lt;br/&gt;+ consultarAgenda(): List&amp;lt;Cita&amp;gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="1040" y="130" width="320" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="r6" value="solicita" style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=1.3;startLabel=1;endLabel=0..*;fontColor=#000000;fontSize=12;labelBackgroundColor=#ffffff;" parent="1" source="c-Paciente" target="c-Cita" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r7" value="solicitada para" style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=1.3;startLabel=1;endLabel=0..*;fontColor=#000000;fontSize=12;labelBackgroundColor=#ffffff;" parent="1" source="c-AreaMedica" target="c-Cita" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r8" value="atiende" style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=1.3;startLabel=0..1;endLabel=0..*;fontColor=#000000;fontSize=12;labelBackgroundColor=#ffffff;" parent="1" source="c-ProfesionalSalud" target="c-Cita" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r14" value="origina" style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=1.3;startLabel=0..1;endLabel=0..1;fontColor=#000000;fontSize=12;labelBackgroundColor=#ffffff;" parent="1" source="c-Cita" target="c-Atencion" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r17" value="" style="edgeStyle=none;rounded=0;html=1;startArrow=diamond;startFill=1;endArrow=none;strokeColor=#000000;strokeWidth=1.3;startLabel=1;endLabel=0..*;fontColor=#000000;fontSize=12;labelBackgroundColor=#ffffff;" parent="1" source="c-HistoriaClinica" target="c-Atencion" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" value="◆ composición   △ generalización   — asociación   |   Las multiplicidades se muestran junto a cada extremo" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;dashed=1;align=center;verticalAlign=middle;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="420" y="1390" width="1560" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="01-Identidad-y-seguridad" name="01 Identidad y seguridad">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2400" pageHeight="1500" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Diagrama de clases UML — Identidad y seguridad" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontStyle=1;fontSize=22;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="250" y="20" width="1900" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="c-Usuario" value="&lt;div style=&quot;text-align:center;font-weight:bold;font-size:14px&quot;&gt;Usuario&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idUsuario: int&lt;br/&gt;- usuario: string&lt;br/&gt;- correo: string&lt;br/&gt;- claveHash: string&lt;br/&gt;- estado: EstadoUsuario&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ autenticar(): bool&lt;br/&gt;+ cambiarClave(): void&lt;br/&gt;+ cerrarSesion(): void&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="1040" y="120" width="320" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="c-Paciente" value="&lt;div style=&quot;text-align:center;font-weight:bold;font-size:14px&quot;&gt;Paciente&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idPaciente: int&lt;br/&gt;- cedula: string&lt;br/&gt;- nombres: string&lt;br/&gt;- apellidos: string&lt;br/&gt;- fechaNacimiento: date&lt;br/&gt;- telefono: string&lt;br/&gt;- direccion: string&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ registrar(): void&lt;br/&gt;+ actualizar(): void&lt;br/&gt;+ consultar(): Paciente&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="500" y="500" width="320" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="c-ProfesionalSalud" value="&lt;div style=&quot;text-align:center;font-weight:bold;font-size:14px&quot;&gt;ProfesionalSalud&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idProfesional: int&lt;br/&gt;- cedulaProfesional: string&lt;br/&gt;- nombres: string&lt;br/&gt;- apellidos: string&lt;br/&gt;- cargo: string&lt;br/&gt;- estado: string&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ actualizarPerfil(): void&lt;br/&gt;+ consultarAgenda(): List&amp;lt;Cita&amp;gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="1580" y="500" width="320" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="c-Rol" value="&lt;div style=&quot;text-align:center;font-weight:bold;font-size:14px&quot;&gt;Rol&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idRol: int&lt;br/&gt;- nombre: string&lt;br/&gt;- descripcion: string&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ registrar(): void&lt;br/&gt;+ actualizar(): void&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="120" y="980" width="320" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="c-UsuarioRol" value="&lt;div style=&quot;text-align:center;font-weight:bold;font-size:14px&quot;&gt;UsuarioRol&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idAsignacion: int&lt;br/&gt;- fechaAsignacion: datetime&lt;br/&gt;- estado: string&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ asignar(): void&lt;br/&gt;+ revocar(): void&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="600" y="980" width="320" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="c-Notificacion" value="&lt;div style=&quot;text-align:center;font-weight:bold;font-size:14px&quot;&gt;Notificacion&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idNotificacion: int&lt;br/&gt;- canal: CanalNotificacion&lt;br/&gt;- asunto: string&lt;br/&gt;- mensaje: string&lt;br/&gt;- fechaHora: datetime&lt;br/&gt;- estado: EstadoEnvio&lt;br/&gt;- leida: boolean&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ enviar(): void&lt;br/&gt;+ reintentar(): void&lt;br/&gt;+ marcarLeida(): void&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="1240" y="980" width="320" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="c-Auditoria" value="&lt;div style=&quot;text-align:center;font-weight:bold;font-size:14px&quot;&gt;Auditoria&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idEvento: int&lt;br/&gt;- fechaHora: datetime&lt;br/&gt;- modulo: string&lt;br/&gt;- accion: string&lt;br/&gt;- resultado: string&lt;br/&gt;- ipOrigen: string&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ registrarEvento(): void&lt;br/&gt;+ consultar(): List&amp;lt;Auditoria&amp;gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="1780" y="980" width="320" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="g1" value="" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=0;strokeColor=#000000;strokeWidth=1.3;startLabel=;endLabel=;fontColor=#000000;fontSize=12;labelBackgroundColor=#ffffff;" parent="1" source="c-Paciente" target="c-Usuario" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g2" value="" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=0;strokeColor=#000000;strokeWidth=1.3;startLabel=;endLabel=;fontColor=#000000;fontSize=12;labelBackgroundColor=#ffffff;" parent="1" source="c-ProfesionalSalud" target="c-Usuario" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r1" value="" style="edgeStyle=none;rounded=0;html=1;startArrow=diamond;startFill=1;endArrow=none;strokeColor=#000000;strokeWidth=1.3;startLabel=1;endLabel=0..*;fontColor=#000000;fontSize=12;labelBackgroundColor=#ffffff;" parent="1" source="c-Usuario" target="c-UsuarioRol" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r2" value="" style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=1.3;startLabel=1;endLabel=0..*;fontColor=#000000;fontSize=12;labelBackgroundColor=#ffffff;" parent="1" source="c-Rol" target="c-UsuarioRol" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r3" value="destinatario" style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=1.3;startLabel=1;endLabel=0..*;fontColor=#000000;fontSize=12;labelBackgroundColor=#ffffff;" parent="1" source="c-Usuario" target="c-Notificacion" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r4" value="responsable" style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=1.3;startLabel=0..1;endLabel=0..*;fontColor=#000000;fontSize=12;labelBackgroundColor=#ffffff;" parent="1" source="c-Usuario" target="c-Auditoria" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" value="◆ composición   △ generalización   — asociación   |   Las multiplicidades se muestran junto a cada extremo" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;dashed=1;align=center;verticalAlign=middle;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="420" y="1390" width="1560" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="02-Organización-médica" name="02 Organización médica">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2400" pageHeight="1500" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Diagrama de clases UML — Organización médica" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontStyle=1;fontSize=22;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="250" y="20" width="1900" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="c-AreaMedica" value="&lt;div style=&quot;text-align:center;font-weight:bold;font-size:14px&quot;&gt;AreaMedica&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idArea: int&lt;br/&gt;- nombre: string&lt;br/&gt;- descripcion: string&lt;br/&gt;- estado: string&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ registrar(): void&lt;br/&gt;+ listarActivas(): List&amp;lt;AreaMedica&amp;gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="980" y="130" width="320" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="c-Especialidad" value="&lt;div style=&quot;text-align:center;font-weight:bold;font-size:14px&quot;&gt;Especialidad&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idEspecialidad: int&lt;br/&gt;- nombre: string&lt;br/&gt;- descripcion: string&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ registrar(): void&lt;br/&gt;+ actualizar(): void&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="200" y="720" width="320" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="c-Consultorio" value="&lt;div style=&quot;text-align:center;font-weight:bold;font-size:14px&quot;&gt;Consultorio&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idConsultorio: int&lt;br/&gt;- nombre: string&lt;br/&gt;- ubicacion: string&lt;br/&gt;- estado: string&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ reservar(): bool&lt;br/&gt;+ liberar(): void&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="720" y="720" width="320" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="c-ProfesionalSalud" value="&lt;div style=&quot;text-align:center;font-weight:bold;font-size:14px&quot;&gt;ProfesionalSalud&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idProfesional: int&lt;br/&gt;- cedulaProfesional: string&lt;br/&gt;- nombres: string&lt;br/&gt;- apellidos: string&lt;br/&gt;- cargo: string&lt;br/&gt;- estado: string&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ actualizarPerfil(): void&lt;br/&gt;+ consultarAgenda(): List&amp;lt;Cita&amp;gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="1340" y="720" width="320" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="c-HorarioProfesional" value="&lt;div style=&quot;text-align:center;font-weight:bold;font-size:14px&quot;&gt;HorarioProfesional&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idHorario: int&lt;br/&gt;- diaSemana: int&lt;br/&gt;- horaInicio: time&lt;br/&gt;- horaFin: time&lt;br/&gt;- estado: string&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ validarSolapamiento(): bool&lt;br/&gt;+ habilitar(): void&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="1880" y="720" width="320" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="r10" value="acredita" style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=1.3;startLabel=0..*;endLabel=1..*;fontColor=#000000;fontSize=12;labelBackgroundColor=#ffffff;" parent="1" source="c-ProfesionalSalud" target="c-Especialidad" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r10a" value="agrupa" style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=1.3;startLabel=1;endLabel=0..*;fontColor=#000000;fontSize=12;labelBackgroundColor=#ffffff;" parent="1" source="c-AreaMedica" target="c-Especialidad" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r10b" value="adscribe" style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=1.3;startLabel=1;endLabel=0..*;fontColor=#000000;fontSize=12;labelBackgroundColor=#ffffff;" parent="1" source="c-AreaMedica" target="c-ProfesionalSalud" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r10c" value="dispone de" style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=1.3;startLabel=1;endLabel=0..*;fontColor=#000000;fontSize=12;labelBackgroundColor=#ffffff;" parent="1" source="c-AreaMedica" target="c-Consultorio" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r11" value="define" style="edgeStyle=none;rounded=0;html=1;startArrow=diamond;startFill=1;endArrow=none;strokeColor=#000000;strokeWidth=1.3;startLabel=1;endLabel=0..*;fontColor=#000000;fontSize=12;labelBackgroundColor=#ffffff;" parent="1" source="c-ProfesionalSalud" target="c-HorarioProfesional" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" value="◆ composición   △ generalización   — asociación   |   Las multiplicidades se muestran junto a cada extremo" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;dashed=1;align=center;verticalAlign=middle;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="420" y="1390" width="1560" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="03-Citas-y-turnos" name="03 Citas y turnos">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2400" pageHeight="1500" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Diagrama de clases UML — Citas y turnos" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontStyle=1;fontSize=22;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="250" y="20" width="1900" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="c-Paciente" value="&lt;div style=&quot;text-align:center;font-weight:bold;font-size:14px&quot;&gt;Paciente&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idPaciente: int&lt;br/&gt;- cedula: string&lt;br/&gt;- nombres: string&lt;br/&gt;- apellidos: string&lt;br/&gt;- fechaNacimiento: date&lt;br/&gt;- telefono: string&lt;br/&gt;- direccion: string&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ registrar(): void&lt;br/&gt;+ actualizar(): void&lt;br/&gt;+ consultar(): Paciente&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="100" y="180" width="320" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="c-Cita" value="&lt;div style=&quot;text-align:center;font-weight:bold;font-size:14px&quot;&gt;Cita&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idCita: int&lt;br/&gt;- fechaHora: datetime&lt;br/&gt;- motivo: string&lt;br/&gt;- estado: EstadoCita&lt;br/&gt;- observaciones: string&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ agendar(): void&lt;br/&gt;+ confirmar(): void&lt;br/&gt;+ reagendar(): void&lt;br/&gt;+ cancelar(): void&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="1030" y="420" width="320" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="c-ProfesionalSalud" value="&lt;div style=&quot;text-align:center;font-weight:bold;font-size:14px&quot;&gt;ProfesionalSalud&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idProfesional: int&lt;br/&gt;- cedulaProfesional: string&lt;br/&gt;- nombres: string&lt;br/&gt;- apellidos: string&lt;br/&gt;- cargo: string&lt;br/&gt;- estado: string&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ actualizarPerfil(): void&lt;br/&gt;+ consultarAgenda(): List&amp;lt;Cita&amp;gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="1960" y="180" width="320" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="c-AreaMedica" value="&lt;div style=&quot;text-align:center;font-weight:bold;font-size:14px&quot;&gt;AreaMedica&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idArea: int&lt;br/&gt;- nombre: string&lt;br/&gt;- descripcion: string&lt;br/&gt;- estado: string&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ registrar(): void&lt;br/&gt;+ listarActivas(): List&amp;lt;AreaMedica&amp;gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="100" y="930" width="320" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="c-Consultorio" value="&lt;div style=&quot;text-align:center;font-weight:bold;font-size:14px&quot;&gt;Consultorio&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idConsultorio: int&lt;br/&gt;- nombre: string&lt;br/&gt;- ubicacion: string&lt;br/&gt;- estado: string&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ reservar(): bool&lt;br/&gt;+ liberar(): void&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="1030" y="930" width="320" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="c-TurnoAtencion" value="&lt;div style=&quot;text-align:center;font-weight:bold;font-size:14px&quot;&gt;TurnoAtencion&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idTurno: int&lt;br/&gt;- numero: int&lt;br/&gt;- fecha: date&lt;br/&gt;- estado: EstadoTurno&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ generarConsecutivo(): int&lt;br/&gt;+ llamar(): void&lt;br/&gt;+ finalizar(): void&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="1960" y="930" width="320" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="r6" value="solicita" style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=1.3;startLabel=1;endLabel=0..*;fontColor=#000000;fontSize=12;labelBackgroundColor=#ffffff;" parent="1" source="c-Paciente" target="c-Cita" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r7" value="solicitada para" style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=1.3;startLabel=1;endLabel=0..*;fontColor=#000000;fontSize=12;labelBackgroundColor=#ffffff;" parent="1" source="c-AreaMedica" target="c-Cita" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r8" value="atiende" style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=1.3;startLabel=0..1;endLabel=0..*;fontColor=#000000;fontSize=12;labelBackgroundColor=#ffffff;" parent="1" source="c-ProfesionalSalud" target="c-Cita" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r9" value="se realiza en" style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=1.3;startLabel=0..1;endLabel=0..*;fontColor=#000000;fontSize=12;labelBackgroundColor=#ffffff;" parent="1" source="c-Consultorio" target="c-Cita" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r13" value="genera" style="edgeStyle=none;rounded=0;html=1;startArrow=diamond;startFill=1;endArrow=none;strokeColor=#000000;strokeWidth=1.3;startLabel=1;endLabel=0..1;fontColor=#000000;fontSize=12;labelBackgroundColor=#ffffff;" parent="1" source="c-Cita" target="c-TurnoAtencion" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" value="◆ composición   △ generalización   — asociación   |   Las multiplicidades se muestran junto a cada extremo" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;dashed=1;align=center;verticalAlign=middle;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="420" y="1390" width="1560" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="04-Derivación-entre-áreas" name="04 Derivación entre áreas">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2400" pageHeight="1500" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Diagrama de clases UML — Derivación entre áreas" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontStyle=1;fontSize=22;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="250" y="20" width="1900" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="c-Atencion" value="&lt;div style=&quot;text-align:center;font-weight:bold;font-size:14px&quot;&gt;Atencion&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idAtencion: int&lt;br/&gt;- fechaHora: datetime&lt;br/&gt;- motivoConsulta: string&lt;br/&gt;- hallazgos: string&lt;br/&gt;- observaciones: string&lt;br/&gt;- estado: string&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ iniciar(): void&lt;br/&gt;+ registrar(): void&lt;br/&gt;+ cerrar(): void&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="220" y="500" width="320" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="c-Derivacion" value="&lt;div style=&quot;text-align:center;font-weight:bold;font-size:14px&quot;&gt;Derivacion&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idDerivacion: int&lt;br/&gt;- fechaHora: datetime&lt;br/&gt;- motivo: string&lt;br/&gt;- estado: string&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ registrar(): void&lt;br/&gt;+ aceptar(): void&lt;br/&gt;+ reasignar(): void&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="1040" y="500" width="320" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="c-AreaMedica" value="&lt;div style=&quot;text-align:center;font-weight:bold;font-size:14px&quot;&gt;AreaMedica&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idArea: int&lt;br/&gt;- nombre: string&lt;br/&gt;- descripcion: string&lt;br/&gt;- estado: string&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ registrar(): void&lt;br/&gt;+ listarActivas(): List&amp;lt;AreaMedica&amp;gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="1860" y="500" width="320" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="r15" value="" style="edgeStyle=none;rounded=0;html=1;startArrow=diamond;startFill=1;endArrow=none;strokeColor=#000000;strokeWidth=1.3;startLabel=1;endLabel=0..*;fontColor=#000000;fontSize=12;labelBackgroundColor=#ffffff;" parent="1" source="c-Atencion" target="c-Derivacion" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r16" value="destino" style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=1.3;startLabel=1;endLabel=0..*;fontColor=#000000;fontSize=12;labelBackgroundColor=#ffffff;" parent="1" source="c-AreaMedica" target="c-Derivacion" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" value="◆ composición   △ generalización   — asociación   |   Las multiplicidades se muestran junto a cada extremo" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;dashed=1;align=center;verticalAlign=middle;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="420" y="1390" width="1560" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="05-Atención-clínica" name="05 Atención clínica">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2400" pageHeight="1500" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Diagrama de clases UML — Atención clínica" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontStyle=1;fontSize=22;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="250" y="20" width="1900" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="c-HistoriaClinica" value="&lt;div style=&quot;text-align:center;font-weight:bold;font-size:14px&quot;&gt;HistoriaClinica&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idHistoria: int&lt;br/&gt;- numeroHistoria: string&lt;br/&gt;- fechaApertura: date&lt;br/&gt;- alergias: string&lt;br/&gt;- antecedentes: string&lt;br/&gt;- estado: string&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ abrir(): void&lt;br/&gt;+ actualizar(): void&lt;br/&gt;+ consultar(): HistoriaClinica&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="100" y="130" width="320" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="c-Atencion" value="&lt;div style=&quot;text-align:center;font-weight:bold;font-size:14px&quot;&gt;Atencion&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idAtencion: int&lt;br/&gt;- fechaHora: datetime&lt;br/&gt;- motivoConsulta: string&lt;br/&gt;- hallazgos: string&lt;br/&gt;- observaciones: string&lt;br/&gt;- estado: string&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ iniciar(): void&lt;br/&gt;+ registrar(): void&lt;br/&gt;+ cerrar(): void&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="1040" y="300" width="320" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="c-ProfesionalSalud" value="&lt;div style=&quot;text-align:center;font-weight:bold;font-size:14px&quot;&gt;ProfesionalSalud&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idProfesional: int&lt;br/&gt;- cedulaProfesional: string&lt;br/&gt;- nombres: string&lt;br/&gt;- apellidos: string&lt;br/&gt;- cargo: string&lt;br/&gt;- estado: string&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ actualizarPerfil(): void&lt;br/&gt;+ consultarAgenda(): List&amp;lt;Cita&amp;gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="1980" y="130" width="320" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="c-Paciente" value="&lt;div style=&quot;text-align:center;font-weight:bold;font-size:14px&quot;&gt;Paciente&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idPaciente: int&lt;br/&gt;- cedula: string&lt;br/&gt;- nombres: string&lt;br/&gt;- apellidos: string&lt;br/&gt;- fechaNacimiento: date&lt;br/&gt;- telefono: string&lt;br/&gt;- direccion: string&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ registrar(): void&lt;br/&gt;+ actualizar(): void&lt;br/&gt;+ consultar(): Paciente&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="100" y="600" width="320" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="c-SignosVitales" value="&lt;div style=&quot;text-align:center;font-weight:bold;font-size:14px&quot;&gt;SignosVitales&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idSignos: int&lt;br/&gt;- temperatura: decimal&lt;br/&gt;- presionArterial: string&lt;br/&gt;- frecuenciaCardiaca: int&lt;br/&gt;- frecuenciaRespiratoria: int&lt;br/&gt;- saturacionO2: int&lt;br/&gt;- peso: decimal&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ validarRangos(): bool&lt;br/&gt;+ registrar(): void&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="360" y="1040" width="320" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="c-Diagnostico" value="&lt;div style=&quot;text-align:center;font-weight:bold;font-size:14px&quot;&gt;Diagnostico&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idDiagnostico: int&lt;br/&gt;- codigoCIE10: string&lt;br/&gt;- descripcion: string&lt;br/&gt;- tipo: string&lt;br/&gt;- fecha: date&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ validarCIE10(): bool&lt;br/&gt;+ registrar(): void&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="840" y="1040" width="320" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="c-Tratamiento" value="&lt;div style=&quot;text-align:center;font-weight:bold;font-size:14px&quot;&gt;Tratamiento&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idTratamiento: int&lt;br/&gt;- fechaInicio: date&lt;br/&gt;- fechaFin: date&lt;br/&gt;- indicaciones: string&lt;br/&gt;- estado: string&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ registrar(): void&lt;br/&gt;+ finalizar(): void&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="1320" y="1040" width="320" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="c-EvolucionClinica" value="&lt;div style=&quot;text-align:center;font-weight:bold;font-size:14px&quot;&gt;EvolucionClinica&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idEvolucion: int&lt;br/&gt;- fechaHora: datetime&lt;br/&gt;- descripcion: string&lt;br/&gt;- estadoPaciente: string&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ registrar(): void&lt;br/&gt;+ validarCronologia(): bool&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="1800" y="1040" width="320" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="r5" value="" style="edgeStyle=none;rounded=0;html=1;startArrow=diamond;startFill=1;endArrow=none;strokeColor=#000000;strokeWidth=1.3;startLabel=1;endLabel=0..1;fontColor=#000000;fontSize=12;labelBackgroundColor=#ffffff;" parent="1" source="c-Paciente" target="c-HistoriaClinica" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r17" value="" style="edgeStyle=none;rounded=0;html=1;startArrow=diamond;startFill=1;endArrow=none;strokeColor=#000000;strokeWidth=1.3;startLabel=1;endLabel=0..*;fontColor=#000000;fontSize=12;labelBackgroundColor=#ffffff;" parent="1" source="c-HistoriaClinica" target="c-Atencion" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r18" value="registra" style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=1.3;startLabel=1;endLabel=0..*;fontColor=#000000;fontSize=12;labelBackgroundColor=#ffffff;" parent="1" source="c-ProfesionalSalud" target="c-Atencion" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r19" value="" style="edgeStyle=none;rounded=0;html=1;startArrow=diamond;startFill=1;endArrow=none;strokeColor=#000000;strokeWidth=1.3;startLabel=1;endLabel=0..1;fontColor=#000000;fontSize=12;labelBackgroundColor=#ffffff;" parent="1" source="c-Atencion" target="c-SignosVitales" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r20" value="" style="edgeStyle=none;rounded=0;html=1;startArrow=diamond;startFill=1;endArrow=none;strokeColor=#000000;strokeWidth=1.3;startLabel=1;endLabel=0..*;fontColor=#000000;fontSize=12;labelBackgroundColor=#ffffff;" parent="1" source="c-Atencion" target="c-Diagnostico" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r21" value="indica" style="edgeStyle=none;rounded=0;html=1;startArrow=diamond;startFill=1;endArrow=none;strokeColor=#000000;strokeWidth=1.3;startLabel=1;endLabel=0..*;fontColor=#000000;fontSize=12;labelBackgroundColor=#ffffff;" parent="1" source="c-Atencion" target="c-Tratamiento" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r25" value="documenta" style="edgeStyle=none;rounded=0;html=1;startArrow=diamond;startFill=1;endArrow=none;strokeColor=#000000;strokeWidth=1.3;startLabel=1;endLabel=0..*;fontColor=#000000;fontSize=12;labelBackgroundColor=#ffffff;" parent="1" source="c-Atencion" target="c-EvolucionClinica" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r26" value="registra" style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=1.3;startLabel=1;endLabel=0..*;fontColor=#000000;fontSize=12;labelBackgroundColor=#ffffff;" parent="1" source="c-ProfesionalSalud" target="c-EvolucionClinica" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" value="◆ composición   △ generalización   — asociación   |   Las multiplicidades se muestran junto a cada extremo" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;dashed=1;align=center;verticalAlign=middle;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="420" y="1390" width="1560" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="06-Prescripción-y-servicios-especializados" name="06 Prescripción y servicios especializados">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2400" pageHeight="1500" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Diagrama de clases UML — Prescripción y servicios especializados" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontStyle=1;fontSize=22;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="250" y="20" width="1900" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="c-Atencion" value="&lt;div style=&quot;text-align:center;font-weight:bold;font-size:14px&quot;&gt;Atencion&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idAtencion: int&lt;br/&gt;- fechaHora: datetime&lt;br/&gt;- motivoConsulta: string&lt;br/&gt;- hallazgos: string&lt;br/&gt;- observaciones: string&lt;br/&gt;- estado: string&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ iniciar(): void&lt;br/&gt;+ registrar(): void&lt;br/&gt;+ cerrar(): void&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="1030" y="100" width="320" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="c-Receta" value="&lt;div style=&quot;text-align:center;font-weight:bold;font-size:14px&quot;&gt;Receta&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idReceta: int&lt;br/&gt;- fechaEmision: datetime&lt;br/&gt;- observaciones: string&lt;br/&gt;- estado: string&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ emitir(): void&lt;br/&gt;+ anular(): void&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="260" y="520" width="320" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="c-PlanNutricional" value="&lt;div style=&quot;text-align:center;font-weight:bold;font-size:14px&quot;&gt;PlanNutricional&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idPlan: int&lt;br/&gt;- objetivos: string&lt;br/&gt;- planAlimenticio: string&lt;br/&gt;- fechaSeguimiento: date&lt;br/&gt;- estado: string&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ validarRestricciones(): bool&lt;br/&gt;+ actualizar(): void&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="1030" y="520" width="320" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="c-SesionTerapia" value="&lt;div style=&quot;text-align:center;font-weight:bold;font-size:14px&quot;&gt;SesionTerapia&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idSesion: int&lt;br/&gt;- fechaHora: datetime&lt;br/&gt;- ejercicios: string&lt;br/&gt;- observaciones: string&lt;br/&gt;- asistencia: boolean&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ registrar(): void&lt;br/&gt;+ marcarInasistencia(): void&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="1800" y="520" width="320" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="c-DetalleReceta" value="&lt;div style=&quot;text-align:center;font-weight:bold;font-size:14px&quot;&gt;DetalleReceta&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idDetalle: int&lt;br/&gt;- dosis: string&lt;br/&gt;- frecuencia: string&lt;br/&gt;- duracion: string&lt;br/&gt;- cantidad: int&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ validarCantidad(): bool&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="470" y="1030" width="320" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="c-Medicamento" value="&lt;div style=&quot;text-align:center;font-weight:bold;font-size:14px&quot;&gt;Medicamento&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idMedicamento: int&lt;br/&gt;- nombre: string&lt;br/&gt;- principioActivo: string&lt;br/&gt;- presentacion: string&lt;br/&gt;- stockActual: int&lt;br/&gt;- stockMinimo: int&lt;br/&gt;- estado: string&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ ajustarStock(): void&lt;br/&gt;+ verificarDisponibilidad(): bool&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="1570" y="1030" width="320" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="r22" value="emite" style="edgeStyle=none;rounded=0;html=1;startArrow=diamond;startFill=1;endArrow=none;strokeColor=#000000;strokeWidth=1.3;startLabel=1;endLabel=0..*;fontColor=#000000;fontSize=12;labelBackgroundColor=#ffffff;" parent="1" source="c-Atencion" target="c-Receta" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r23" value="contiene" style="edgeStyle=none;rounded=0;html=1;startArrow=diamond;startFill=1;endArrow=none;strokeColor=#000000;strokeWidth=1.3;startLabel=1;endLabel=1..*;fontColor=#000000;fontSize=12;labelBackgroundColor=#ffffff;" parent="1" source="c-Receta" target="c-DetalleReceta" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r24" value="prescrito como" style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=1.3;startLabel=1;endLabel=0..*;fontColor=#000000;fontSize=12;labelBackgroundColor=#ffffff;" parent="1" source="c-Medicamento" target="c-DetalleReceta" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r27" value="define" style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=1.3;startLabel=1;endLabel=0..1;fontColor=#000000;fontSize=12;labelBackgroundColor=#ffffff;" parent="1" source="c-Atencion" target="c-PlanNutricional" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r28" value="registra" style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=1.3;startLabel=1;endLabel=0..*;fontColor=#000000;fontSize=12;labelBackgroundColor=#ffffff;" parent="1" source="c-Atencion" target="c-SesionTerapia" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" value="◆ composición   △ generalización   — asociación   |   Las multiplicidades se muestran junto a cada extremo" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;dashed=1;align=center;verticalAlign=middle;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="420" y="1390" width="1560" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="07-Facturación-y-pagos" name="07 Facturación y pagos">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2400" pageHeight="1500" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Diagrama de clases UML — Facturación y pagos" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontStyle=1;fontSize=22;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="250" y="20" width="1900" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="c-Paciente" value="&lt;div style=&quot;text-align:center;font-weight:bold;font-size:14px&quot;&gt;Paciente&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idPaciente: int&lt;br/&gt;- cedula: string&lt;br/&gt;- nombres: string&lt;br/&gt;- apellidos: string&lt;br/&gt;- fechaNacimiento: date&lt;br/&gt;- telefono: string&lt;br/&gt;- direccion: string&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ registrar(): void&lt;br/&gt;+ actualizar(): void&lt;br/&gt;+ consultar(): Paciente&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="120" y="500" width="320" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="c-Cita" value="&lt;div style=&quot;text-align:center;font-weight:bold;font-size:14px&quot;&gt;Cita&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idCita: int&lt;br/&gt;- fechaHora: datetime&lt;br/&gt;- motivo: string&lt;br/&gt;- estado: EstadoCita&lt;br/&gt;- observaciones: string&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ agendar(): void&lt;br/&gt;+ confirmar(): void&lt;br/&gt;+ reagendar(): void&lt;br/&gt;+ cancelar(): void&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="650" y="150" width="320" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="c-Comprobante" value="&lt;div style=&quot;text-align:center;font-weight:bold;font-size:14px&quot;&gt;Comprobante&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idComprobante: int&lt;br/&gt;- numero: string&lt;br/&gt;- fechaEmision: datetime&lt;br/&gt;- subtotal: decimal&lt;br/&gt;- total: decimal&lt;br/&gt;- saldo: decimal&lt;br/&gt;- estado: string&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ generarXML(): string&lt;br/&gt;+ autorizar(): void&lt;br/&gt;+ recalcularSaldo(): void&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="1190" y="500" width="320" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="c-Pago" value="&lt;div style=&quot;text-align:center;font-weight:bold;font-size:14px&quot;&gt;Pago&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idPago: int&lt;br/&gt;- fechaHora: datetime&lt;br/&gt;- monto: decimal&lt;br/&gt;- metodo: MetodoPago&lt;br/&gt;- estado: string&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ registrar(): void&lt;br/&gt;+ validarMonto(): bool&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="1900" y="500" width="320" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="r29" value="genera" style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=1.3;startLabel=1;endLabel=0..1;fontColor=#000000;fontSize=12;labelBackgroundColor=#ffffff;" parent="1" source="c-Cita" target="c-Comprobante" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r29a" value="titular" style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=1.3;startLabel=1;endLabel=0..*;fontColor=#000000;fontSize=12;labelBackgroundColor=#ffffff;" parent="1" source="c-Paciente" target="c-Comprobante" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r30" value="recibe" style="edgeStyle=none;rounded=0;html=1;startArrow=diamond;startFill=1;endArrow=none;strokeColor=#000000;strokeWidth=1.3;startLabel=1;endLabel=0..*;fontColor=#000000;fontSize=12;labelBackgroundColor=#ffffff;" parent="1" source="c-Comprobante" target="c-Pago" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" value="◆ composición   △ generalización   — asociación   |   Las multiplicidades se muestran junto a cada extremo" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;dashed=1;align=center;verticalAlign=middle;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="420" y="1390" width="1560" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="08-Inventario-y-entrega-de-medicamentos" name="08 Inventario y entrega de medicamentos">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2400" pageHeight="1500" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Diagrama de clases UML — Inventario y entrega de medicamentos" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontStyle=1;fontSize=22;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="250" y="20" width="1900" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="c-Medicamento" value="&lt;div style=&quot;text-align:center;font-weight:bold;font-size:14px&quot;&gt;Medicamento&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idMedicamento: int&lt;br/&gt;- nombre: string&lt;br/&gt;- principioActivo: string&lt;br/&gt;- presentacion: string&lt;br/&gt;- stockActual: int&lt;br/&gt;- stockMinimo: int&lt;br/&gt;- estado: string&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ ajustarStock(): void&lt;br/&gt;+ verificarDisponibilidad(): bool&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="1040" y="120" width="320" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="c-MovimientoInventario" value="&lt;div style=&quot;text-align:center;font-weight:bold;font-size:14px&quot;&gt;MovimientoInventario&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idMovimiento: int&lt;br/&gt;- tipo: TipoMovimiento&lt;br/&gt;- cantidad: int&lt;br/&gt;- lote: string&lt;br/&gt;- fechaCaducidad: date&lt;br/&gt;- fechaHora: datetime&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ registrarEntrada(): void&lt;br/&gt;+ registrarSalida(): void&lt;br/&gt;+ registrarBaja(): void&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="180" y="850" width="320" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="c-DetalleReceta" value="&lt;div style=&quot;text-align:center;font-weight:bold;font-size:14px&quot;&gt;DetalleReceta&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idDetalle: int&lt;br/&gt;- dosis: string&lt;br/&gt;- frecuencia: string&lt;br/&gt;- duracion: string&lt;br/&gt;- cantidad: int&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ validarCantidad(): bool&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="820" y="850" width="320" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="c-EntregaMedicamento" value="&lt;div style=&quot;text-align:center;font-weight:bold;font-size:14px&quot;&gt;EntregaMedicamento&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;- idEntrega: int&lt;br/&gt;- fechaHora: datetime&lt;br/&gt;- cantidadEntregada: int&lt;br/&gt;- cantidadPendiente: int&lt;/div&gt;&lt;hr/&gt;&lt;div style=&quot;padding:4px&quot;&gt;+ registrar(): void&lt;br/&gt;+ validarStock(): bool&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;align=left;verticalAlign=top;spacing=0;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="1640" y="850" width="320" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="r24" value="prescrito como" style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=1.3;startLabel=1;endLabel=0..*;fontColor=#000000;fontSize=12;labelBackgroundColor=#ffffff;" parent="1" source="c-Medicamento" target="c-DetalleReceta" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r31" value="registra" style="edgeStyle=none;rounded=0;html=1;startArrow=diamond;startFill=1;endArrow=none;strokeColor=#000000;strokeWidth=1.3;startLabel=1;endLabel=0..*;fontColor=#000000;fontSize=12;labelBackgroundColor=#ffffff;" parent="1" source="c-Medicamento" target="c-MovimientoInventario" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r32" value="origina" style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=1.3;startLabel=1;endLabel=0..*;fontColor=#000000;fontSize=12;labelBackgroundColor=#ffffff;" parent="1" source="c-DetalleReceta" target="c-EntregaMedicamento" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r33" value="corresponde" style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=1.3;startLabel=1;endLabel=0..*;fontColor=#000000;fontSize=12;labelBackgroundColor=#ffffff;" parent="1" source="c-Medicamento" target="c-EntregaMedicamento" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" value="◆ composición   △ generalización   — asociación   |   Las multiplicidades se muestran junto a cada extremo" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;dashed=1;align=center;verticalAlign=middle;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="420" y="1390" width="1560" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
