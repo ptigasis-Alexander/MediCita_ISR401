@@ -1,0 +1,7 @@
+﻿Indicador;Valor
+RF Must totales;22
+RF Must con verificación técnica reproducible;20
+RF Must no cerrados;2
+Cobertura técnica (%);90.91
+Umbral C3 (%);80.00
+RF no cerrados;RF-01, RF-02, RF-03, RF-06, RF-10, RF-11, RF-12, RF-13, RF-17, RF-19, RF-21, RF-22, RF-24, RF-26, RF-27, RF-28, RF-30, RF-33, RF-34, RF-38
