@@ -1,0 +1,65 @@
+V Simulador (Paciente)
+Transcripción anonimizada
+Etapa: Validación del prototipo
+
+Transcripción
+Buenas tardes, mi nombre es Paul Alexander Tigasi Sampedro de Ingeniería de Software de cuarto semestre. Hoy vamos a hacer la validación de requerimientos y prueba del prototipo del sistema de gestión inteligente para un centro médico simulando a un paciente para realizar las pruebas. Puede iniciar sesión.
+
+A continuación puede probar cada una de las funciones, darnos su opinión y crítica acerca de cómo se desarrollaron todos los requerimientos levantados anteriormente. La verdad en esto no puedo observar muy bien las letras, debería haber otra opción, como agrandar las letras, no entiendo mucho. Es decir, debería haber una opción para que usted pueda ajustar el tamaño de la letra, ya que actualmente el tipo y el tamaño de letra que tiene es poco visible para usted.
+
+Así es correcto, porque yo no veo y tampoco comprendo mucho porque las letras son muy pequeñas, por eso debería haber una opción para agrandar las letras o de pronto algún micrófono para yo pedirle para que me agrande las letras automáticamente. Ah, ya, sí, es algo que hay que tomar en consideración para poder corregir. Puede seguir probando las siguientes opciones.
+
+Mis datos. Este es el apartado para registrar sus datos, puede completarlos o verificar que estén completos en la parte donde dice completar datos en el botoncito azul que tiene ahí. Aquí dice crear mis datos, lo cual mis datos están aquí, pero ¿qué significa crear mis datos? Ahí es donde va a registrar todos sus datos completos.
+
+Actualmente todavía no se han registrado ninguno como es un prototipo, pero en sí ahí es donde debe registrarse su cédula, nombre, apellido, fecha de nacimiento, teléfono y correo para que esos datos que usted va a registrar ahí se reflejen al personal médico que lo va a atender y va a recibir. Bueno, ¿entonces qué? ¿Puedo escribir ya mi nombre donde dice título identificador? Ah, no. ¿O donde dice nombres? Es donde dice nombre.
+
+Ah, ya, ¿pero qué? ¿Lo escribo o qué pasas? Ahí lo tiene que escribir. Listo. Entonces, por decir, el título identificador está por gusto, debería ser eliminado.
+
+Tiene razón, es algo que considerar, sería eliminarlo ya que no representa nada descriptivo. Puede seguir avanzando. Representante legal, pero yo como soy representante y quiero agendar para crear datos para mi hijo como es menor de edad, debería haber un apartado donde dice menor de edad para yo poder registrarlo.
+
+Sí, tiene razón, debería haber una parte donde se registre o se identifique que esa persona es menor de edad y está bajo la tutela de un representante legal. Son acciones que deberían corregirse. Voy a continuar, ¿alguna observación más? Ahora está en la parte de sección de citas.
+
+Aquí dice mis citas. ¿Y cómo hago para yo agendarme o saber si tengo cita a la hora que tengo? Porque la verdad aquí no comprendo. Debería haber una mejor explicación.
+
+Sí, tiene razón. Hay en la parte donde dice mi próxima cita, se puede ver un número, una hora y un pequeño extracto de los detalles de la cita. También hay una sección que nos indica los pasos a seguir para realizar la cita y arriba al lado derecho tiene la opción de solicitar una cita.
+
+Acá puedes revisar. Listo, entonces voy a ver donde dice solicitar una cita. Ahí dice crear mis citas.
+
+Bueno, pero ¿cómo creo una cita? Yo quiero crear mi cita, pero lo mismo está que aquí no comprendo nada porque dice paciente, área. Ahí está el paciente, es usted. El área es a donde usted se dirige. 
+
+¿A qué área quiere ser atendida? Pero aquí no hay una opción por decir que yo quiero ir por decir a la ododontología. ¿A dónde voy? Ahí en donde dice seleccionar un área y aplasta. Correcto, aquí dice medicina general, enfermería, fisiología, nutrición, terapia física, ododontología.
+
+Entonces yo tendría que elegir a ododontología. ¿Cómo sé cuándo me toca, a la hora que toca y qué día me toca? Usted puede agregar la hora, ahí está en la parte donde dice hora. Aquí donde quiero saber la hora, la verdad aquí no entiendo cómo puedo poner la hora.
+
+Debería haber un formato o un número que yo pueda elegir el horario. Aquí hay nomás 18, 19, pero yo no entiendo nada de eso. ¿Cómo puedo saber la hora que yo quiero? Debería haber una mejor opción.
+
+Tiene razón, se podrían chocar las horas. Debería estar solo los horarios disponibles de atención que tiene para que usted los pueda seleccionar. Gran observación, es lo que hay que corregir y mejorar.
+
+Ya, podemos continuar. Aquí dice historial clínica general. Buscar historial clínica, pero ¿cómo yo voy a buscar la historial clínica? Debería haber algo así como ChatGPT para que me ayude buscando, porque la verdad yo no entiendo nada.
+
+¿Cómo buscar esto? ¿De qué se trata todo esto? Esos son sus registros, sus datos de historial clínico. Como el peso, la talla, el IMC, todo eso. Lo que le registra el enfermero al momento de registrarse para una atención clínica.
+
+Ahí le registran todos esos datos y usted puede revisarlos desde la aplicación. Entonces este historial debería ser eliminado, ya que esto... Esta búsqueda debería ser eliminada, ya que en este historial solo pueden andar los enfermeros, todo eso. En cambio, debería ser eliminado este historial.
+
+Sí, tiene razón. Sí, puede continuar. Desde su perspectiva, ¿qué le parece los diseños de la interfase o las letras? ¿Le parece amigable e intuitiva? Las letras no concuerdan con... Digamos, para poder leer, visualizar o cambiar de color sería mejor opción.
+
+Aquí dice notificaciones. Es para cuando usted, como paciente, quiere realizar una notificación o mandar un mensaje a algún médico donde realizó una cita y decirle que por algún motivo ya no podrá asistir y quisiera reagendar su cita. Cosas así.
+
+Entonces, ¿qué opción debo tomar yo? ¿Qué es lo que debo adoptar? ¿Dónde debo escribir todo eso? ¿En cuál de estos lugares? En donde dice nuevo mensaje, ahí está. De color azul con más. Aquí dice nuevo mensaje. 
+
+Correo, destinario, asunto. Ahí debo ser enviado lo que yo necesito. Sí, ahí debe enviar a la persona o el doctor al que va dirigido y el asunto por qué no va a asistir o faltará a su cita médica programada.
+
+Ah, muy bien. Entonces, está bien. Pero en esto de escribir o enviar mensaje, como habemos personas que no entendemos o no podemos escribir correctamente, debería haber como un mensaje de voz para uno nomás hablar y enviar.
+
+Ah, tipo así que se pueda por medio de comandos de voz realizar los mensajes y enviarles al destinatario. Correcto. Sería ideal agregar eso para las personas que tienen ese tipo de dificultad.
+
+Aquí dice asistente virtual. En sí no es como tal un asistente con IA, sino solamente un asistente interno que le puede comunicar lo que hay dentro del sistema, netamente dentro del sistema. Por ejemplo, preguntas como cuántas áreas hay, cuántas citas están disponibles y demás.
+
+Para que se pueda convertir en un asistente virtual completo, si usted lo desea y quiere hacer consultas más amplias y más relacionadas a todo el sistema y fuera del sistema, se tendría la opción de agregar inteligencia artificial, en este caso con una API sea de Cloud, Gemini o ChatGPT. ¿Eso qué da consideración de usted? Si es que desea que se lo implemente, si está conforme con eso o se siente cómoda. Buena la idea de que haya algo como ChatGPT para pedir ayuda para que él haga lo que pide en esta página.
+
+En sí, ChatGPT le podría ayudar a realizar sus citas con mayor facilidad para que no tenga que estar escribiendo o buscando las secciones. ¿Sería ideal para, se sentiría más cómoda utilizando eso? Sí. Muy bien, hemos terminado. 
+
+Muchas gracias por sus observaciones, recomendaciones y sugerencias para una mejor experiencia y para las futuras mejoras del sistema.
+
+Nota de edición
+Se unificó el formato de presentación y se corrigieron únicamente errores evidentes de escritura o transcripción. No se añadieron respuestas, preguntas, observaciones ni contenido nuevo.

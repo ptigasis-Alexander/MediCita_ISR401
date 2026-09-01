@@ -1,0 +1,85 @@
+V Recepcion
+Transcripción anonimizada
+Etapa: Validación del prototipo
+
+Transcripción
+Buenas tardes, mi nombre es Paulo Alexander Tigasi Sampedro de Ingeniería de Software de cuarto semestre. Estamos aquí con la encargada de recepción o recaudación para la validación de requisitos y la prueba del prototipo para el sistema de gestión inteligente del centro médico. Puede iniciar sesión.
+
+Puede ir revisando todas las funciones que tiene en el lado izquierdo. Es para hacer citas, ¿no? Sí, en sí es de recaudación. Usted registra a los pacientes que llegan y el cobro y los envía al área destinada dentro del centro médico.
+
+Y eso es mensual. ¿Pero solo registra cuánto paga o aquí también como algo para cobrar? Ahí está. Pagos y presupuestos, creo que dice.
+
+¿Pero los datos de la tarjeta las coge o...? ¿Los datos de la tarjeta? En sí solo son como ejemplos, pero todavía no se ha decidido cuál de esos métodos se usaría dentro del centro. En su caso, cuál sería mejor o más efectivo o cuáles deberían más aceptarse. Depende de usted.
+
+Pero este mismo lo llenamos nosotros mismos, ¿no? Sí, claro. Porque ahorita creo que más llenan en mi perspectivo, creo. Vamos a seguir acá.
+
+Observaciones, críticas, mejoras acerca del sistema. Aquí se puede poner más áreas, ¿no? Solo hay dos, ¿no? Cierto. Eso toca mejorar y agregar todas las áreas porque en sí son muchas.
+
+Sí. Bueno. ¿Cómo se registraría aquí un paciente? ¿Admitir pacientes? Bueno, yo también.
+
+¿Antecedentes qué? Antecedentes médicos que tiene. Algunas observaciones más sobre el sistema. ¿En cuanto al perfil? ¿En qué parte no? No, la pregunta es toda la respuesta.
+
+Ah, eso no tiene. Hasta el momento no cuenta con un apartado para agregar las fotos de perfil o editar sus datos personales. Es algo que se tomaría en consideración para poder mejorar y agregar en las próximas.
+
+¿Y noche? En este caso solo se maneja en la tarde, en el día y en la tarde. No hay un turno nocturno. ¿Cómo funciona eso de la cita? Porque eso no entiendo.
+
+¿De la cita? No, porque usted es la recepcionista, la que ingresa al paciente, así que usted es la que registra la cita. De un paciente que le llegue, por ejemplo, puede haber una persona que no esté registrada o no tenga creado una cuenta dentro del sistema y usted la registra. ¿Y para registrar algo de la gravedad del paciente? Triaje.
+
+Ah, respecto al triaje. Hasta el momento no cuenta con eso, pero sería ideal agregar esa nueva parte. Porque, por ejemplo, hay sistemas como que, porque si ya es triaje, se le va a registrar signos vitales y todo, sobre todo eso, cuando llega el paciente.
+
+Bueno, ya eso del registro de signos vitales y el triaje sería para el área, por ejemplo, de enfermería, medicina general o odontología y las demás. En el área de recepción no tendría mucho sentido agregarlo. Las áreas, sí, yo creo que sí. 
+
+Más áreas que agregarían. Sí, eso es un fallo. Toca agregarlo.
+
+Puede revisar la sección de notificaciones también que tiene. Por correo. ¿Aquí qué sería en esta parte de aquí? Ahí se pueden enviar mensajes, pero solamente dentro del sistema. 
+
+Por ejemplo, usted como recepcionista quiere mandar un mensaje, sea a algún personal médico o paciente, y lo puede hacer y le va a llegar al paciente o médico que tiene el mismo sistema. Y si me equivoco al escribir, ya no puedo elegir el correo. Intente enviar un correo.
+
+Primero debe... El destinatario y el asunto que va a tratar. Cualquier cosa, ponga prueba o lo que sea. Ya, por ejemplo, lo envío.
+
+Ya, en la parte de enviados... Y si escribí mal... Ya no se puede editar. Así queda. Así queda.
+
+¿Consideraría que sería necesaria una parte de edición para el mensaje? Claro, eso sí. Tenía la idea de agregar esa parte de edición. ¿Y este asistente? Virtual.
+
+Es como una IA. No. Hasta el momento, ese asistente sólo está dentro del sistema.
+
+Sólo puede responder preguntas que son en relación al sistema, o cuántos cargos hay, o qué funciones no más tiene el sistema. En sí eso. No puede contestar preguntas externas o preguntas abiertas respecto a medicina o medicamentos o otra clase de preguntas.
+
+Sólo es de aquí misma la información que ya... Sí, ya existe. ¿Pero cuántas preguntas se le puede hacer? ¿Hay un máximo? En sí no tiene ningún nivel de preguntas ni palabras. Es como quiera, ilimitado.
+
+¿Y aquí qué preguntas le podría hacer? En sí, para que le responda, hasta el momento sólo preguntas del sistema. Por ejemplo, puede consultar cuántas áreas hay o dónde se puede realizar el registro de una cita. Ah.
+
+En todo caso, si es que quisiera algo mucho mejor, se podría agregar, por ejemplo, una IA con una API. Ya sea utilizando Cloud, Gemini o ChatGPT, o cualquier otra IA que usted quisiera. Pero es que sólo le ayudaría a la persona que maneja este tipo de plataformas, ¿no? Para que... En sí, el asistente está pensado para que esté en todas las áreas médicas.
+
+Sea en resección, en medicina general, ododontología y demás. Para ayudarle al día a día a cada personal. Sea para consultas triviales o consultas relacionadas a la atención médica y demás.
+
+¿Qué tipo de pregunta podría hacer? Es que, ¿le puede preguntar cuántas citas tiene esta área? Puede probar. ¿Puede probar? Sí, pregúntale. ¿Pero la información de dónde en sí la sacan? Porque como sólo hay dos áreas registradas... ¿Cómo hace eso? ¿Cómo hace eso de ahí? ¿Mande? Pero eso lo dice de las funciones, ¿no? Sí.
+
+Claro, sí. Usted sólo dijo que sólo era información de aquí, de las áreas. ¿Pero también se le puede preguntar la historia clínica de un paciente en específico o no? No, esa información ya no se maneja porque en sí es privacidad y sólo deberían manejarlo los doctores, ¿no? Médicos en relación, nadie más.
+
+Eso es más informativo de las áreas. Prueba de examen. Más observaciones que desea realizar o sugerencias de mejoras o campos que se deberían agregar.
+
+¿Cómo sería esta aplicación? Está pensada para todo el personal médico y para los pacientes en sí también para que puedan registrar su cita. En este caso, esta sección es para recaudación y resección, es decir, las funciones que cumplen de registrar los pagos y la atención al área que va dirigida. Esta, por ejemplo, entre el paciente y yo veo aquí agendó la cita... Sí.
+
+...con información relacionada al paciente, la cédula. ¿Sólo la cédula sería importante en este número de teléfono, más datos, no? Siempre va a aparecer lo que son pacientes, los pacientes que ya están registrados como quiera dentro del sistema, es decir, los que ya tienen creado una cuenta para el sistema. Por eso al momento que usted selecciona donde dice cédula, nombre del paciente, le aparecen sólo dos.
+
+Porque hasta el momento sólo existen dos. ¿Qué le parece el sistema? ¿Las letras, el diseño o organización de información? Sí, el color está bonito, sí creo que las letras deben ser un poquito más grandes, diría yo. Sí, porque hay cositas que deben ser bien pequeñitas. 
+
+Pequeñitas, así, esto de aquí. Pero los colores siento que lo maneja bien porque se ve bien como formal y el tipo de escografía de letras también. Esas serían todas sus observaciones.
+
+¿Algo más que desea agregar? En este apartado de aquí, de crear pagos y comprobantes, también como que el método de pago me dice como tarjeta. Pero no me está pidiendo como número de cuenta, bueno las células las está haciendo, pero sólo es como un método de pago. El turno asignado como que sólo registra horas o no tiene así como un, esto de aquí, estos cuadritos así para seleccionar.
+
+Bueno, porque el valor total parece que no se puede poner. En la parte del concepto, ¿qué se pondría en este concepto aquí? ¿A qué se refiere con concepto? El concepto sería, creo que es un campo vacío, no refleja nada. En sí sería eliminarlo ya que no ofrece ninguna información.
+
+Sí, eso sería. ¿Monto pago de valor total es como lo mismo? ¿Por qué registraría dos veces? ¿Por qué no sólo un cuadrito de valor total? O no, mejor sería el monto pagado. O aquí monto pagado por diferentes... Por ejemplo, no, por ejemplo el valor total se refiere a lo que sería el total de cobro por la atención.
+
+Monto pagado vendría a ser lo que es cuánto dinero da en efectivo la persona y lo que se regresa. Faltaría un apartado del sueldo total, sería algo más descriptivo. Sí, yo creo que sí.
+
+En la parte del estado pendiente que la persona puede... ¿Se le puede poner inactivo? ¿Qué se refiere como inactivo? Que como quiera que no funcione, o sea ya está cancelado. ¿Y pendiente, si pueden dejarlo pendiente para que luego pague o cómo es en ese aspecto de ahí? ¿Le dan un plazo para que pague o...? ¿Usted consideraría que se debería tener todas esas acciones o estados? ¿O debería registrarse el pago inmediatamente, no permitir que se pueda...? Yo creo que el pago inmediatamente, creo yo, sí. Entonces eso sería considerar.
+
+O aquí nomás como que, ajá, está activo, todavía como que no ha pagado y ya cuando ya esté, ya se le ponga cancelado. Para que ya no la parezca como que sea un tipo de deuda que tiene por la atención recibida. ¿Alguna otra observación? Bueno, si no hay más... No tiene más.
+
+Muchas gracias por sus observaciones y...
+
+Nota de edición
+Se unificó el formato de presentación y se corrigieron únicamente errores evidentes de escritura o transcripción. No se añadieron respuestas, preguntas, observaciones ni contenido nuevo.

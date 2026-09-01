@@ -1,0 +1,49 @@
+V TerapiaFisica
+Transcripción anonimizada
+Etapa: Validación del prototipo
+
+Transcripción
+Buenas tardes, mi nombre es Taí Gerrera Ramos, estudiante de ingeniería de software, cuarto semestre. Vamos a realizar la validación de requerimientos mediante un prototipo para el sistema de gestión de un centro médico en el cargo de terapia física. Ya, primeramente tenemos una pantalla que nos presenta datos, pero no se divisa bien lo que son las letras ni los detalles de lo que representa, además de que hay muy poca descripción de lo que se está mostrando.
+
+Eso sería un detalle a corregir, lo que son lo que está filtrándose por semanas, meses, también debería estar por día o por fecha, sería ideal para un mejor control. Lo que son las citas, asimismo las letras están muy pequeñas, cuadros muy grandes y además vacíos que no se pueden visibilizar bien. Eso como primer punto a considerar de mejora.
+
+Como médico en el área de terapia física, al momento de registrar o realizar la atención a los pacientes, pues debo saber qué horarios voy a tener disponibles para cada uno. Como en este caso no veo ninguno de eso, sería ideal que hubiera una sección donde esté todas las citas que voy a tener y en qué horario se van a ir atendiendo. Se ve a veces porque hasta el momento no logro ver dónde están, eso es a considerar.
+
+Aquí dice paciente asignado, supongo que aquí es donde van a aparecer todos, pero bueno, eso tiene que considerar. Iniciar atención, no comprendo mucho qué quiere decir eso de la valoración física que representa. Debería detallarse mejor lo que se está realizando en la valoración física, es decir al momento que se comienza con las terapias de cada paciente, qué ejercicios se realizaron, cuánto tiempo y cuántas actividades o sesiones se lleva realizando.
+
+Eso debería mejorarse en la descripción de todo lo que está ocurriendo y la valoración. Y deben ampliarse las letras sobre todo, no se divisa bien. Entre otras, el historial general.
+
+Bueno, está bien, esto es esencial ya que se va a revisar. También debería considerarse tener una sección por nivel de prioridad para la atención de los pacientes, además de, como ya le dije, la tabla de registros de las citas que se tienen asignadas en ese día. Esa parte y... Están como repetidas dos sesiones.
+
+Eso no entiendo. Bueno, hay que corregirse. Esto de notificaciones, pues nosotros mayormente nos comunicamos mediante Whatsapp.
+
+Y... A veces las personas no saben escribir, entonces lo que está es escribir. Sería ideal que tenga otro método de comunicación para que las personas que no manejan muy bien la escritura, por ejemplo los adultos mayores, puedan enviar mensajes de voz o correos que ya se escriban solos con dictado. Ya que está muy complejo la acción de mandar mensajes o notificaciones por cualquier inquietud o reagendamiento del sitio.
+
+Eso hay que corregir. También, a la vez, esta parte de buscar paciente y cita de pago. En lo que es terapia física no se revisan pagos, así que no sé por qué está eso ahí.
+
+Además, no veo ninguna sección donde yo pueda ver mis datos como médico y editarlos. Por ejemplo, que cambie mi especialidad o mis datos. Eso de cambiar de color es muy oscuro, no lo veo muy bien.
+
+Ya que no alcanzo a ver con ese color. Esto de asistente. Bueno.
+
+Sería ideal que pueda hacer consultas, pero consultas externas, no solamente referente al sistema. También podría hacer las consultas sobre qué terapias serían buenas para un paciente que, por ejemplo, haya tenido una lesión de un esquince o un ligamento dañado. Cosas así.
+
+En sí, lo que hay que mejorar es, como ya le dije, el tipo de letra y el tamaño. Además de crear ese apartado de una lista completa de la tablita de todos los pacientes que tengo por atender. Su fecha de atención ahora y las acciones que se van a realizar. 
+
+En este caso, los ejercicios de terapia física que se van a realizar. También hay que tener en cuenta lo que es el agendamiento de las citas. Esa parte no la logro ver. 
+
+¿Dónde estará? Esa parte también, por ejemplo, hay pacientes que no utilizan este sistema y vienen personalmente para realizar un agendamiento. Entonces debería haber un apartado para esas partes donde uno mismo tiene que registrarle la próxima cita. Y reagendar citas también.
+
+Así que eso podría ser algo que deberían considerar y agregar para que sea más completo. Y facilite mejor la atención. En esto... En el plan de tratamiento dicen que son viales, diagnósticos... Diagnósticos e índoles... Estos datos, como quiera, ya deberían estar llenados porque de eso se encarga la enfermería.
+
+Lo único que sería aquí es actualizarlo. Pero veo que falta llenar todavía. Eso hay que considerar. 
+
+Y aquí todos los del área médica están encargados de eso. Principalmente la enfermería, quien es el principal registrador del historial clínico. El resto de médicos, lo único que hacemos es editar los datos que van cambiando con el tiempo.
+
+Además, debería haber un apartado de reportes también para descargar o enviar reportes de todas las atenciones que se han registrado. Y los tratamientos que se han dado a cada persona. Eso sería... Lo que yo observo o debería mejorar.
+
+Además... Bueno, eso sería todo. Ah, ya. Está bien. 
+
+Muchas gracias por las recomendaciones. Se tomarán en cuenta para arreglar el sistema.
+
+Nota de edición
+Se unificó el formato de presentación y se corrigieron únicamente errores evidentes de escritura o transcripción. No se añadieron respuestas, preguntas, observaciones ni contenido nuevo.
