@@ -22,8 +22,8 @@ authors:
   - family-names: Trujillo Vega
     given-names: Mayummy Jailly
     orcid: 'https://orcid.org/0009-0009-5157-290X'
-version: 3.0.0
-date-released: '2026-08-02'
+version: 4.0.0
+date-released: '2026-09-01'
 repository-code: 'https://github.com/ptigasis-Alexander/MediCita_ISR401'
 license: MIT
 keywords:
@@ -36,6 +36,11 @@ keywords:
 
 # Agregar después de publicar en Zenodo:
 # doi: '10.5281/zenodo.XXXXXXXX'
+#
+# Agregar después de archivar en Software Heritage (Save code now):
+# identifiers:
+#   - type: swh
+#     value: 'swh:1:dir:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
 #
 # El campo license identifica la licencia del software citado. La documentación
 # y el dataset anonimizado usan CC BY 4.0. El contenido de
