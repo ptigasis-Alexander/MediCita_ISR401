@@ -1,0 +1,71 @@
+﻿Fila;Ley/Art.;Objetivo;Interesado;ID-EV;ID-RF/RNF;ID-CU;ID-HU;ID-CA;ID-Componente;ID-Mockup
+1;Art. 13/25/31 LOPDP;Digitalizar historia clinica;Medico;EV-01;RF-01;CU-02;US-06;CA-01 a CA-03;COMP-MedicoGeneral;MU-03
+2;No aplica;Agendar citas;Paciente;EV-01/EV-02;RF-02;CU-01;US-01;CA-01 a CA-04;COMP-Paciente;MU-30
+3;No aplica;Buscar pacientes;Medico;EV-01;RF-03;CU-02;US-02;CA-01 a CA-04;COMP-MedicoGeneral;MU-04
+4;No aplica;Emitir recetas;Medico;EV-01;RF-04;CU-03;US-03;CA-01 a CA-04;COMP-MedicoGeneral;MU-05
+5;Art. 14 LOPDP;Actualizar historial;Medico;EV-01;RF-05;CU-02;US-05;CA-01 a CA-04;COMP-MedicoGeneral;MU-03
+6;No aplica;Cancelar citas;Paciente;EV-01;RF-06;CU-04;US-04;CA-01 a CA-04;COMP-Paciente;MU-29
+7;Art. 31 LOPDP;Compartir informacion entre areas;Personal medico;EV-04;RF-07;CU-05;US-19;CA-01 a CA-03;COMP-MedicoGeneral;MU-06 / MU-15
+8;No aplica;Generar reportes de atencion;Coordinadora;EV-01;RF-08;CU-05;US-06;CA-01 a CA-03;COMP-MedicoGeneral;MU-07
+9;Art. 8 LOPDP;Autenticar usuarios;Todos;CU-12 Iniciar sesion;RF-09;CU-12;US-07;CA-01 a CA-03;COMP-Login;MU-01
+10;Art. 10 LOPDP;Gestionar permisos;Coordinacion;EV-04 / CU-13;RF-10;CU-13;US-08;CA-01 a CA-03;COMP-Login;MU-01
+11;No aplica;Notificar automaticamente;Sistema de Notificaciones;EV-02: 100% prefiere WhatsApp;RF-11;CU-14;US-01;CA-01 a CA-04;COMP-Paciente;MU-31
+12;Art. 10 LOPDP;Auditar acciones;Sistema;EV-04;RF-12;CU-15;US-09;CA-01 a CA-03;Servicio de auditoria;No requiere interfaz
+13;No aplica;Consultar disponibilidad horaria;Paciente;EV-01 / CU-01;RF-13;CU-01;US-01;CA-01 a CA-04;COMP-Odontologia;MU-09
+14;No aplica;Reducir documentacion fisica;Personal medico;EV-01;RF-14;CU-22;US-05;CA-01 a CA-04;COMP-MedicoGeneral;MU-03
+15;No aplica;Gestionar inventario;Enfermeria/Coordinacion;CU Gestionar Inventario (Fig. 9);RF-15;CU-29;US-33;CA-01 a CA-02;COMP-Enfermeria;MU-19
+16;No aplica;Asistente virtual con IA;Paciente;"EV-01: ""el sistema debe permitir funcionalidades de IA""";RF-16 / RNF-18;Flujo documentado en RF-16;Especifico del RF-16;Criterio de RF-16/RNF-18;COMP-Paciente;MU-32
+17;No aplica;Gestionar perfil del personal medico;Coordinadora;EV-01;RF-17;CU-16;US-10;CA-01 a CA-03;COMP-MedicoGeneral;MU-07
+18;No aplica;Asignar turnos del personal medico;Coordinacion;EV-01;RF-18;CU-17;US-11;CA-01 a CA-03;COMP-MedicoGeneral;MU-07
+19;No aplica;Consultar disponibilidad del personal;Recepcionista/Paciente;EV-01;RF-19;CU-17;US-12;CA-01 a CA-03;COMP-MedicoGeneral;MU-07
+20;No aplica;Reasignar turnos ante ausencias;Coordinador;EV-01;RF-20;CU-17;US-11;CA-01 a CA-03;COMP-MedicoGeneral;MU-07
+21;No aplica;Emitir comprobantes electronicos;Personal de facturacion;Requisito normativo SRI;RF-21;CU-18;US-13;CA-01 a CA-03;Modulo de Recepcion (CU-07/CU-08);MU-17
+22;No aplica;Registrar pagos;Personal de facturacion/Paciente;EV-Enf-01;RF-22;CU-19;US-14;CA-01 a CA-03;Modulo de Recepcion (CU-07/CU-08);MU-17
+23;No aplica;Generar reportes financieros;Gerencia;EV-Enf-01;RF-23;CU-19;US-14;CA-01 a CA-03;Modulo de Recepcion (CU-07/CU-08);MU-17
+24;No aplica;Configurar horarios por area;Coordinadora;EV-01;RF-24;CU-11;US-15;CA-01 a CA-03;Modulo de Recepcion (CU-07/CU-08);MU-17
+25;No aplica;Definir cupo maximo por turno;Coordinadora;EV-01;RF-25;CU-11;US-15;CA-01 a CA-03;Modulo de Recepcion (CU-07/CU-08);MU-17
+26;Art. 25/31 LOPDP;Registrar signos vitales;Enfermero;EV-Enf-01;RF-26;CU-06;US-16;CA-01 a CA-03;COMP-Enfermeria;MU-18
+27;Art. 13 LOPDP;Buscar paciente por cedula;Enfermero/Recepcionista;EV-Enf-01;RF-27;CU-07;US-17;CA-01 a CA-03;COMP-Enfermeria;MU-17
+28;Art. 8/13/14 LOPDP;Registrar datos personales;Recepcionista;EV-Enf-01;RF-28;CU-07;US-18;CA-01 a CA-03;Modulo de Recepcion (CU-07/CU-08);MU-17
+29;Art. 21/25 LOPDP;Registrar menores sin cedula propia;Recepcionista;EV-Enf-01;RF-29;CU-20;US-18;CA-01 a CA-02;Modulo de Recepcion (CU-07/CU-08);MU-17
+30;Art. 26/31 LOPDP;Restringir acceso clinico por rol;Sistema;EV-Enf-01;RF-30;CU-10;US-19;CA-01 a CA-03;COMP-Psicologia;MU-14
+31;No aplica;Alertar medicamentos por agotarse/caducar;Sistema;EV-Enf-01;RF-31;CU-29;US-33;CA-01 a CA-02;COMP-Enfermeria;MU-19
+32;No aplica;Registrar entrega trazable de medicamentos;Enfermero(a);EV-Enf-01;RF-32;CU-30;US-34;CA-01 a CA-02;COMP-Enfermeria;MU-19
+33;No aplica;Registrar cobro por area;Recepcionista;EV-Enf-01;RF-33;CU-08;US-20;CA-01 a CA-03;Modulo de Recepcion (CU-07/CU-08);MU-17
+34;No aplica;Asignar turno automaticamente;Sistema;EV-Enf-01;RF-34;CU-08;US-21;CA-01 a CA-03;Modulo de Recepcion (CU-07/CU-08);MU-17
+35;No aplica;Derivar paciente entre areas;Enfermero;EV-Enf-01;RF-35;CU-09;US-19;CA-01 a CA-03;COMP-Enfermeria;MU-20
+36;No aplica;Agendar citas por area;Recepcionista/Profesional;EV-Enf-01;RF-36;CU-01;US-01;CA-01 a CA-04;COMP-TerapiaFisica;MU-26
+37;No aplica;Reprogramar/cancelar citas por area;Recepcionista/Profesional;EV-Enf-01;RF-37;CU-21;US-23;CA-01 a CA-02;COMP-TerapiaFisica;MU-28
+38;No aplica;Consultar rapido paciente registrado;Recepcionista;EV-Enf-01;RF-38;CU-07;US-22;CA-01 a CA-03;Modulo de Recepcion (CU-07/CU-08);MU-17
+39;Art. 13/25/31 LOPDP;Registrar atencion clinica integral;Personal medico;EV-01;RF-39;CU-23/CU-24/CU-25/CU-26;US-24 a US-27;CA-01 a CA-02;COMP-MedicoGeneral;MU-03
+40;No aplica;Tiempo de respuesta de consultas;Sistema;EV-02;RNF-01;No aplica — RNF transversal;No aplica — RNF;Métrica RNF-01;Sistema / historial clínico;No aplica
+41;Art. 10/26 LOPDP;Confidencialidad: TLS 1.2+ y AES-256;Sistema;EV-01;RNF-02;CU-12/CU-13;No aplica — RNF;Métrica RNF-02;Servicio de seguridad;No aplica
+42;No aplica;Usabilidad y finalización de tareas;Usuarios;EV-01 / ISO 9241-11;RNF-03;No aplica — prueba de usabilidad;No aplica — RNF;Métrica RNF-03;Interfaz transversal;No aplica
+43;No aplica;Disponibilidad del sistema;Sistema;EV-02;RNF-04;No aplica — RNF transversal;No aplica — RNF;Métrica RNF-04;Infraestructura / aplicación;No aplica
+44;No aplica;Mantenibilidad y arquitectura modular;Equipo técnico;EV-04;RNF-05;No aplica — RNF transversal;No aplica — RNF;Métrica RNF-05;Arquitectura por capas;No aplica
+45;Art. 25/26/31 LOPDP;Control de acceso al historial;Personal clínico;EV-02 / EV-04;RNF-06;CU-02;No aplica — RNF;Métrica RNF-06;Servicio de seguridad / historial;No aplica
+46;No aplica;Compatibilidad y portabilidad;Usuarios;N/A — criterio técnico de compatibilidad;RNF-07;No aplica — RNF transversal;No aplica — RNF;Métrica RNF-07;Cliente web;No aplica
+47;No aplica;Búsqueda de expediente por cédula <= 3 s;Enfermería/Recepción;EV-04;RNF-08;CU-07;No aplica — RNF;Métrica RNF-08;Registro / búsqueda de pacientes;MU-17
+48;No aplica;Disponibilidad mensual >= 99%;Sistema;EV-Enf-01;RNF-09;No aplica — RNF transversal;No aplica — RNF;Métrica RNF-09;Infraestructura / aplicación;No aplica
+49;Art. 10/26 LOPDP;Autenticación individual y RBAC;Sistema;EV-Enf-01;RNF-10;CU-12/CU-13;No aplica — RNF;Métrica RNF-10;COMP-Login / seguridad;MU-01
+50;No aplica;Propagación de datos entre módulos <= 10 s;Áreas clínicas;EV-Enf-01;RNF-11;No aplica — integración interna;No aplica — RNF;Métrica RNF-11;Integración entre módulos;No aplica
+51;No aplica;Registro de paciente <= 5 min con error <= 5%;Recepción;EV-Enf-01;RNF-12;CU-20;US-18;Métrica RNF-12;Módulo de Recepción;MU-17
+52;Art. 13/14 LOPDP;Integridad de datos obligatorios;Recepción;EV-Enf-01;RNF-13;CU-20;US-18;Métrica RNF-13;Módulo de Recepción;MU-17
+53;No aplica;Portabilidad en equipos actuales;Usuarios;EV-Enf-01;RNF-14;No aplica — RNF transversal;No aplica — RNF;Métrica RNF-14;Cliente web;No aplica
+54;No aplica;Informe de inventario <= 2 min;Enfermería/Coordinación;EV-Enf-01;RNF-15;CU-29;US-33;Métrica RNF-15;COMP-Enfermeria;MU-19
+55;Art. 21/25/26 LOPDP;Identidad de menores sin asociación errónea;Recepción/Sistema;EV-Enf-01;RNF-16;CU-20;US-18;Métrica RNF-16;Módulo de Recepción;MU-17
+56;No aplica;Explicabilidad y supervisión del asistente IA;Paciente;EV-01;RNF-18;No aplica — flujo definido en RF-16;No aplica — RNF;Métrica RNF-18;COMP-Paciente / asistente IA;MU-32
+57;Art. 8/13/14 LOPDP;Registrar paciente nuevo;Recepcionista;EV-Enf-01;RF-28/RF-29;CU-20;US-18;CA-01 a CA-03;Modulo de Recepcion (CU-07/CU-08);MU-17
+58;No aplica;Reagendar cita;Recepcionista;EV-Enf-01;RF-37;CU-21;US-23;CA-01 a CA-02;COMP-TerapiaFisica;MU-28
+59;Art. 14 LOPDP;Actualizar historia clinica;Personal medico;EV-01;RF-01/RF-05;CU-22;US-05;CA-01 a CA-04;COMP-MedicoGeneral;MU-03
+60;Art. 13/25 LOPDP;Registrar atencion medica;Personal medico;EV-01;RF-39;CU-23;US-24;CA-01 a CA-02;COMP-MedicoGeneral;MU-03
+61;Art. 13/25 LOPDP;Registrar diagnostico;Medico;EV-01;RF-39;CU-24;US-25;CA-01 a CA-02;COMP-MedicoGeneral;MU-03
+62;Art. 13/25 LOPDP;Registrar tratamiento;Medico;EV-01;RF-39;CU-25;US-26;CA-01 a CA-02;COMP-MedicoGeneral;MU-05
+63;Art. 13/25 LOPDP;Registrar evolucion clinica;Medico/Nutricionista/Terapeuta;EV-01/EV-Enf-01;RF-39;CU-26;US-27;CA-01 a CA-02;COMP-MedicoGeneral;MU-03
+64;Art. 13/25 LOPDP;Registrar plan nutricional;Nutricionista;EV-01;RF-40;CU-27;US-28;CA-01 a CA-02;Modulo de Nutricion (CU-27);MU-15
+65;Art. 13/25 LOPDP;Registrar sesion de terapia;Terapeuta fisico;EV-Enf-01;RF-40;CU-28;US-29;CA-01 a CA-02;COMP-TerapiaFisica;MU-26
+66;No aplica;Gestionar inventario;Enfermeria;EV-Enf-01;RF-15/RF-31;CU-29;US-33;CA-01 a CA-02;COMP-Enfermeria;MU-19
+67;Art. 25 LOPDP;Registrar entrega trazable de medicamentos;Enfermero;EV-Enf-01;RF-32;CU-30;US-34;CA-01 a CA-02;COMP-Enfermeria;MU-19
+68;No aplica;Gestionar cuentas de usuario;Administrador;EV-04;RF-10;CU-31;US-30;CA-01 a CA-02;COMP-Login;MU-01
+69;No aplica;Recuperar contrasena;Usuario;EV-01;RF-09;CU-32;US-31;CA-01 a CA-02;COMP-Login;MU-01
+70;No aplica;Cerrar sesion;Usuario;EV-01;RF-09;CU-33;US-32;CA-01 a CA-02;COMP-Login;MU-01
