@@ -1,0 +1,11 @@
+MEDICITA — LLM-P03: Trazado de observaciones a requisitos
+
+Fuente(s) de revisión: ficha_observacion_COMPLETA_TRAZADA.csv
+Objetivo verificable: Relacionar observaciones humanas disponibles con RF/RNF sin inventar requisitos ni resultados.
+
+Reglas de ejecución:
+- Trabajar únicamente con evidencia documental disponible.
+- No inventar participantes, entrevistas, minutos, resultados, métricas, requisitos, citas o evidencias.
+- Distinguir requisito/umbral de resultado observado.
+- Señalar cuando una comprobación queda pendiente.
+- La IA actúa como apoyo documental y no como participante humano.

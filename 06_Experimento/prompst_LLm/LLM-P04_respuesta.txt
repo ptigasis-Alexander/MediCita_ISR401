@@ -1,0 +1,9 @@
+RESULTADO LLM-P04 — Control de integridad de métricas
+
+Fuente revisada: ERS/SRS + PE5 + protocolo
+Acción realizada: Comprobar que umbrales de aceptación no se presenten como resultados experimentales.
+Resultado documentado: Se mantuvieron SUS y métricas IA como umbrales/criterios; no se declararon como resultados medidos.
+Estado: EJECUTADO
+
+Control de interpretación:
+Este registro documenta una acción de revisión asistida por IA. No sustituye evidencia primaria ni demuestra por sí solo cumplimiento experimental.

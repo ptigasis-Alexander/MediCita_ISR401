@@ -1,0 +1,9 @@
+RESULTADO LLM-P03 — Trazado de observaciones a requisitos
+
+Fuente revisada: ficha_observacion_COMPLETA_TRAZADA.csv
+Acción realizada: Relacionar observaciones humanas disponibles con RF/RNF sin inventar requisitos ni resultados.
+Resultado documentado: Se sustituyeron ND por relaciones RF/RNF justificadas y se separó el contexto ELI-* de OBS-*.
+Estado: EJECUTADO_CON_REVISION_HUMANA
+
+Control de interpretación:
+Este registro documenta una acción de revisión asistida por IA. No sustituye evidencia primaria ni demuestra por sí solo cumplimiento experimental.
