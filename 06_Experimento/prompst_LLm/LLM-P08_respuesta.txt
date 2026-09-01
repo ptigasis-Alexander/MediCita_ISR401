@@ -1,0 +1,9 @@
+RESULTADO LLM-P08 — Revisión de supervisión humana de IA
+
+Fuente revisada: PE5
+Acción realizada: Identificar controles de supervisión humana que deberán comprobarse cuando exista implementación evaluable.
+Resultado documentado: Se identificaron identificación del asistente como IA, fallback, anulación de predicciones y auditoría como controles a verificar.
+Estado: VERIFICACION_FUTURA
+
+Control de interpretación:
+Este registro documenta una acción de revisión asistida por IA. No sustituye evidencia primaria ni demuestra por sí solo cumplimiento experimental.

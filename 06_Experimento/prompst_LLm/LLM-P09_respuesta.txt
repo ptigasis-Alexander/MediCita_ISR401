@@ -1,0 +1,9 @@
+RESULTADO LLM-P09 — Control de procedencia de evidencia
+
+Fuente revisada: transcripciones + ficha
+Acción realizada: Evitar que observaciones de primera ronda se contabilicen como resultados del prototipo.
+Resultado documentado: ELI-* quedó como contexto de elicitación y OBS-* como evidencia de validación.
+Estado: EJECUTADO
+
+Control de interpretación:
+Este registro documenta una acción de revisión asistida por IA. No sustituye evidencia primaria ni demuestra por sí solo cumplimiento experimental.

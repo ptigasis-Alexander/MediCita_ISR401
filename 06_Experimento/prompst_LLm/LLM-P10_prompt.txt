@@ -1,0 +1,11 @@
+MEDICITA — LLM-P10: Control de sesiones pendientes
+
+Fuente(s) de revisión: transcripciones disponibles
+Objetivo verificable: Evitar completar observaciones de sesiones que todavía no tienen evidencia real disponible.
+
+Reglas de ejecución:
+- Trabajar únicamente con evidencia documental disponible.
+- No inventar participantes, entrevistas, minutos, resultados, métricas, requisitos, citas o evidencias.
+- Distinguir requisito/umbral de resultado observado.
+- Señalar cuando una comprobación queda pendiente.
+- La IA actúa como apoyo documental y no como participante humano.

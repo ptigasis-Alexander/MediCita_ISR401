@@ -1,0 +1,9 @@
+RESULTADO LLM-P10 — Control de sesiones pendientes
+
+Fuente revisada: transcripciones disponibles
+Acción realizada: Evitar completar observaciones de sesiones que todavía no tienen evidencia real disponible.
+Resultado documentado: No se generaron observaciones ficticias para sesiones/transcripciones pendientes.
+Estado: EJECUTADO
+
+Control de interpretación:
+Este registro documenta una acción de revisión asistida por IA. No sustituye evidencia primaria ni demuestra por sí solo cumplimiento experimental.
