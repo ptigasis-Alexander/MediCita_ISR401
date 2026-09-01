@@ -21,7 +21,7 @@
 
 <div align="center">
 
-### 👉 [**https://ptigasis-alexander.github.io/MediCita_ISR401/05_MVP/**](https://ptigasis-alexander.github.io/MediCita_ISR401/05_MVP/)
+### 👉 [https://ptigasis-alexander.github.io/MediCita_ISR401/?utm_source=chatgpt.com)
 
 </div>
 
