@@ -1,0 +1,11 @@
+MEDICITA — LLM-P11: Control de rol de la IA en el experimento
+
+Fuente(s) de revisión: paquete 06_Experimento
+Objetivo verificable: Definir si esta revisión asistida por IA cuenta como participante, entrevista o minutos humanos.
+
+Reglas de ejecución:
+- Trabajar únicamente con evidencia documental disponible.
+- No inventar participantes, entrevistas, minutos, resultados, métricas, requisitos, citas o evidencias.
+- Distinguir requisito/umbral de resultado observado.
+- Señalar cuando una comprobación queda pendiente.
+- La IA actúa como apoyo documental y no como participante humano.

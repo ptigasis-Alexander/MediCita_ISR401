@@ -1,0 +1,9 @@
+RESULTADO LLM-P12 — Integridad verificable de archivos LLM
+
+Fuente revisada: archivos prompts_llm
+Acción realizada: Generar huellas criptográficas de los registros para detectar modificaciones posteriores.
+Resultado documentado: Se generan SHA-256 de los archivos de evidencia del registro LLM.
+Estado: EJECUTADO
+
+Control de interpretación:
+Este registro documenta una acción de revisión asistida por IA. No sustituye evidencia primaria ni demuestra por sí solo cumplimiento experimental.

@@ -1,0 +1,9 @@
+RESULTADO LLM-P11 — Control de rol de la IA en el experimento
+
+Fuente revisada: paquete 06_Experimento
+Acción realizada: Definir si esta revisión asistida por IA cuenta como participante, entrevista o minutos humanos.
+Resultado documentado: La revisión se clasificó como evidencia secundaria de proceso; no cuenta como participante, entrevista ni minutos humanos.
+Estado: EJECUTADO
+
+Control de interpretación:
+Este registro documenta una acción de revisión asistida por IA. No sustituye evidencia primaria ni demuestra por sí solo cumplimiento experimental.
