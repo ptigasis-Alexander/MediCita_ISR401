@@ -1,0 +1,73 @@
+﻿id_registro;codigo_sesion;area;requisito;estado_tarea;fuente_evidencia
+OBS-001;VAL-ENF;Enfermería;RF-26;COMPLETADA_CON_OBSERVACION;V Enfermeria.txt
+OBS-001;VAL-ENF;Enfermería;RF-39;COMPLETADA_CON_OBSERVACION;V Enfermeria.txt
+OBS-002;VAL-ENF;Enfermería;RF-03;COMPLETADA_CON_OBSERVACION;V Enfermeria.txt
+OBS-002;VAL-ENF;Enfermería;RF-27;COMPLETADA_CON_OBSERVACION;V Enfermeria.txt
+OBS-002;VAL-ENF;Enfermería;RF-28;COMPLETADA_CON_OBSERVACION;V Enfermeria.txt
+OBS-003;VAL-ENF;Enfermería;RF-26;COMPLETADA_CON_OBSERVACION;V Enfermeria.txt
+OBS-004;VAL-ENF;Enfermería;RF-28;COMPLETADA_CON_OBSERVACION;V Enfermeria.txt
+OBS-005;VAL-ENF;Enfermería;RF-32;COMPLETADA_CON_OBSERVACION;V Enfermeria.txt
+OBS-006;VAL-MG;Medicina General;RF-02;COMPLETADA_CON_OBSERVACION;V Medicina General.txt
+OBS-006;VAL-MG;Medicina General;RF-36;COMPLETADA_CON_OBSERVACION;V Medicina General.txt
+OBS-007;VAL-MG;Medicina General;RF-01;COMPLETADA_CON_OBSERVACION;V Medicina General.txt
+OBS-007;VAL-MG;Medicina General;RF-39;COMPLETADA_CON_OBSERVACION;V Medicina General.txt
+OBS-008;VAL-MG;Medicina General;RF-35;NO_COMPLETADA;V Medicina General.txt
+OBS-008;VAL-MG;Medicina General;RNF-13;NO_COMPLETADA;V Medicina General.txt
+OBS-009;VAL-MG;Medicina General;RF-35;COMPLETADA_CON_OBSERVACION;V Medicina General.txt
+OBS-010;VAL-MG;Medicina General;RNF-03;COMPLETADA_CON_OBSERVACION;V Medicina General.txt
+OBS-011;VAL-NUT;Nutrición;RF-28;COMPLETADA_CON_OBSERVACION;V Nutricion.txt
+OBS-011;VAL-NUT;Nutrición;RNF-13;COMPLETADA_CON_OBSERVACION;V Nutricion.txt
+OBS-012;VAL-NUT;Nutrición;RF-36;COMPLETADA_CON_OBSERVACION;V Nutricion.txt
+OBS-012;VAL-NUT;Nutrición;RF-37;COMPLETADA_CON_OBSERVACION;V Nutricion.txt
+OBS-013;VAL-NUT;Nutrición;RF-11;COMPLETADA;V Nutricion.txt
+OBS-014;VAL-COORD;Coordinación;RF-24;COMPLETADA_CON_OBSERVACION;V Odontologia Coordinacion (1).txt
+OBS-014;VAL-COORD;Coordinación;RF-36;COMPLETADA_CON_OBSERVACION;V Odontologia Coordinacion (1).txt
+OBS-015;VAL-COORD;Coordinación;RF-17;COMPLETADA_CON_OBSERVACION;V Odontologia Coordinacion (1).txt
+OBS-016;VAL-COORD;Coordinación;RF-17;COMPLETADA_CON_OBSERVACION;V Odontologia Coordinacion (1).txt
+OBS-016;VAL-COORD;Coordinación;RF-20;COMPLETADA_CON_OBSERVACION;V Odontologia Coordinacion (1).txt
+OBS-017;VAL-COORD;Coordinación;RF-10;NO_COMPLETADA;V Odontologia Coordinacion (1).txt
+OBS-017;VAL-COORD;Coordinación;RF-15;NO_COMPLETADA;V Odontologia Coordinacion (1).txt
+OBS-017;VAL-COORD;Coordinación;RF-30;NO_COMPLETADA;V Odontologia Coordinacion (1).txt
+OBS-018;VAL-ODO;Odontología;RF-01;COMPLETADA_CON_OBSERVACION;V Odontologia Coordinacion.txt
+OBS-018;VAL-ODO;Odontología;RF-39;COMPLETADA_CON_OBSERVACION;V Odontologia Coordinacion.txt
+OBS-019;VAL-ODO;Odontología;RF-39;COMPLETADA_CON_OBSERVACION;V Odontologia Coordinacion.txt
+OBS-020;VAL-REC;Recepción/Recaudación;RF-36;COMPLETADA_CON_OBSERVACION;V Recepcion.txt
+OBS-021;VAL-REC;Recepción/Recaudación;RNF-03;COMPLETADA_CON_OBSERVACION;V Recepcion.txt
+OBS-022;VAL-REC;Recepción/Recaudación;RF-22;COMPLETADA_CON_OBSERVACION;V Recepcion.txt
+OBS-022;VAL-REC;Recepción/Recaudación;RF-33;COMPLETADA_CON_OBSERVACION;V Recepcion.txt
+OBS-023;VAL-PAC;Paciente (simulación);RNF-03;COMPLETADA_CON_OBSERVACION;V Simulador (Paciente).txt
+OBS-024;VAL-PAC;Paciente (simulación);RNF-03;COMPLETADA_CON_OBSERVACION;V Simulador (Paciente).txt
+OBS-025;VAL-PAC;Paciente (simulación);RF-29;COMPLETADA_CON_OBSERVACION;V Simulador (Paciente).txt
+OBS-025;VAL-PAC;Paciente (simulación);RNF-16;COMPLETADA_CON_OBSERVACION;V Simulador (Paciente).txt
+OBS-026;VAL-PAC;Paciente (simulación);RF-02;NO_COMPLETADA;V Simulador (Paciente).txt
+OBS-026;VAL-PAC;Paciente (simulación);RF-13;NO_COMPLETADA;V Simulador (Paciente).txt
+OBS-027;VAL-TF;Terapia Física;RNF-03;COMPLETADA_CON_OBSERVACION;V TerapiaFisica.txt
+OBS-028;VAL-TF;Terapia Física;RF-18;COMPLETADA_CON_OBSERVACION;V TerapiaFisica.txt
+OBS-028;VAL-TF;Terapia Física;RF-19;COMPLETADA_CON_OBSERVACION;V TerapiaFisica.txt
+OBS-028;VAL-TF;Terapia Física;RF-24;COMPLETADA_CON_OBSERVACION;V TerapiaFisica.txt
+OBS-029;VAL-TF;Terapia Física;RF-40;COMPLETADA_CON_OBSERVACION;V TerapiaFisica.txt
+OBS-030;VAL-TF;Terapia Física;RF-10;COMPLETADA_CON_OBSERVACION;V TerapiaFisica.txt
+OBS-030;VAL-TF;Terapia Física;RF-30;COMPLETADA_CON_OBSERVACION;V TerapiaFisica.txt
+OBS-031;VAL-PSI;Psicología;RNF-03;COMPLETADA_CON_OBSERVACION;09_V_Psicologia.txt
+OBS-032;VAL-PSI;Psicología;RF-01;COMPLETADA_CON_OBSERVACION;09_V_Psicologia.txt
+OBS-032;VAL-PSI;Psicología;RF-39;COMPLETADA_CON_OBSERVACION;09_V_Psicologia.txt
+OBS-033;VAL-PSI;Psicología;RF-40;COMPLETADA_CON_OBSERVACION;09_V_Psicologia.txt
+OBS-033;VAL-PSI;Psicología;RNF-03;COMPLETADA_CON_OBSERVACION;09_V_Psicologia.txt
+OBS-034;VAL-PSI;Psicología;RF-39;COMPLETADA_CON_OBSERVACION;09_V_Psicologia.txt
+OBS-034;VAL-PSI;Psicología;RNF-03;COMPLETADA_CON_OBSERVACION;09_V_Psicologia.txt
+OBS-035;VAL-PSI;Psicología;RNF-03;COMPLETADA_CON_OBSERVACION;09_V_Psicologia.txt
+OBS-036;VAL-PSI;Psicología;RF-01;COMPLETADA_CON_OBSERVACION;09_V_Psicologia.txt
+OBS-036;VAL-PSI;Psicología;RF-39;COMPLETADA_CON_OBSERVACION;09_V_Psicologia.txt
+OBS-037;VAL-PSI;Psicología;RF-35;COMPLETADA_CON_OBSERVACION;09_V_Psicologia.txt
+OBS-038;VAL-PSI;Psicología;RF-19;COMPLETADA;09_V_Psicologia.txt
+OBS-038;VAL-PSI;Psicología;RF-24;COMPLETADA;09_V_Psicologia.txt
+OBS-039;VAL-PAC02;Paciente simulado;RNF-03;COMPLETADA_CON_OBSERVACION;10_V_Simulador_Paciente02.txt
+OBS-040;VAL-PAC02;Paciente simulado;RF-11;COMPLETADA_CON_OBSERVACION;10_V_Simulador_Paciente02.txt
+OBS-041;VAL-PAC02;Paciente simulado;RF-28;COMPLETADA_CON_OBSERVACION;10_V_Simulador_Paciente02.txt
+OBS-042;VAL-PAC02;Paciente simulado;RF-02;COMPLETADA_CON_OBSERVACION;10_V_Simulador_Paciente02.txt
+OBS-042;VAL-PAC02;Paciente simulado;RF-13;COMPLETADA_CON_OBSERVACION;10_V_Simulador_Paciente02.txt
+OBS-043;VAL-PAC02;Paciente simulado;RF-01;NO_COMPLETADA;10_V_Simulador_Paciente02.txt
+OBS-043;VAL-PAC02;Paciente simulado;RF-39;NO_COMPLETADA;10_V_Simulador_Paciente02.txt
+OBS-044;VAL-PAC02;Paciente simulado;RNF-13;COMPLETADA_CON_OBSERVACION;10_V_Simulador_Paciente02.txt
+OBS-045;VAL-PAC02;Paciente simulado;RNF-03;COMPLETADA_CON_OBSERVACION;10_V_Simulador_Paciente02.txt
+OBS-046;VAL-PAC02;Paciente simulado;RNF-18;NO_COMPLETADA;10_V_Simulador_Paciente02.txt
