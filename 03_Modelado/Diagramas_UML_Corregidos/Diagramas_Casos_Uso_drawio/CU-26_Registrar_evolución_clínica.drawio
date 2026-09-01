@@ -1,0 +1,92 @@
+<mxfile host="app.diagrams.net" agent="ChatGPT Codex" compressed="false">
+  <diagram id="CU-26" name="CU-26 Registrar evolución clínica">
+    <mxGraphModel dx="1664" dy="874" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;strokeWidth=2;verticalAlign=top;align=left;spacingTop=8;spacingLeft=10;fontStyle=1;fontSize=16;fontFamily=Times New Roman;" value="SICM - Sistema de Gestión Inteligente" vertex="1">
+          <mxGeometry height="590" width="910" x="370" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;fontColor=#000000;fontSize=14;fontStyle=1;fontSize=16;fontFamily=Times New Roman;" value="&amp;nbsp;Registrar evolución clínica" vertex="1">
+          <mxGeometry height="110" width="360" x="600" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=15;fontFamily=Times New Roman;" value="Medico General /Odontologa" vertex="1">
+          <mxGeometry height="150" width="90" x="190" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=15;fontFamily=Times New Roman;" value="Nutricionista" vertex="1">
+          <mxGeometry height="150" width="90" x="210" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="6" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=15;fontFamily=Times New Roman;" value="Terapeuta físico" vertex="1">
+          <mxGeometry height="150" width="90" x="1320" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="7" edge="1" parent="1" source="4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeColor=#000000;strokeWidth=1.5;fontFamily=Times New Roman;" target="3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8" edge="1" parent="1" source="5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeColor=#000000;strokeWidth=1.5;fontFamily=Times New Roman;" target="3" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="740" y="504.94" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9" edge="1" parent="1" source="6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeColor=#000000;strokeWidth=1.5;fontFamily=Times New Roman;" target="3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="10" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;fontColor=#000000;fontSize=14;fontFamily=Times New Roman;" value="Consultar historial" vertex="1">
+          <mxGeometry height="85" width="340" x="380" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="11" edge="1" parent="1" source="3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;endArrow=open;endFill=0;strokeColor=#000000;strokeWidth=1.5;fontSize=13;labelBackgroundColor=#ffffff;fontFamily=Times New Roman;" target="10" value="«include»">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="680" y="310" />
+              <mxPoint x="530" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="12" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;fontColor=#000000;fontSize=14;fontFamily=Times New Roman;" value="Registrar observaciones" vertex="1">
+          <mxGeometry height="85" width="340" x="390" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="13" edge="1" parent="1" source="3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;endArrow=open;endFill=0;strokeColor=#000000;strokeWidth=1.5;fontSize=13;labelBackgroundColor=#ffffff;fontFamily=Times New Roman;" target="12" value="«include»">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="780" y="602.47" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="14" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;fontColor=#000000;fontSize=14;fontFamily=Times New Roman;" value="Actualizar línea de tiempo" vertex="1">
+          <mxGeometry height="85" width="340" x="860" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="15" edge="1" parent="1" source="3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;endArrow=open;endFill=0;strokeColor=#000000;strokeWidth=1.5;fontSize=13;labelBackgroundColor=#ffffff;fontFamily=Times New Roman;" target="14" value="«include»">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="820" y="490" />
+              <mxPoint x="1070" y="490" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;fontColor=#000000;fontSize=14;fontFamily=Times New Roman;" value="Confirmar fecha no cronológica" vertex="1">
+          <mxGeometry height="85" width="340" x="930" y="305" as="geometry" />
+        </mxCell>
+        <mxCell id="17" edge="1" parent="1" source="16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;endArrow=open;endFill=0;strokeColor=#000000;strokeWidth=1.5;fontSize=13;labelBackgroundColor=#ffffff;fontFamily=Times New Roman;" target="3" value="«extend»">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1100" y="280" />
+              <mxPoint x="920" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vuFhty0PVVBKmg4eu9ay-17" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=15;fontFamily=Times New Roman;" value="Psicólogo&amp;nbsp;" vertex="1">
+          <mxGeometry height="150" width="90" x="1320" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="vuFhty0PVVBKmg4eu9ay-19" edge="1" parent="1" source="vuFhty0PVVBKmg4eu9ay-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;fontFamily=Times New Roman;" target="3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="860" y="440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

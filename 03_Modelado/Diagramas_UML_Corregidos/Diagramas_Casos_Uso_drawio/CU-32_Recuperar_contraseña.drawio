@@ -1,0 +1,72 @@
+<mxfile host="app.diagrams.net" agent="ChatGPT Codex" compressed="false">
+  <diagram id="CU-32" name="CU-32 Recuperar contraseña">
+    <mxGraphModel dx="1664" dy="874" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;strokeWidth=2;verticalAlign=top;align=left;spacingTop=8;spacingLeft=10;fontStyle=1;fontSize=16;fontFamily=Times New Roman;" value="SICM - Sistema de Gestión Inteligente" vertex="1">
+          <mxGeometry height="550" width="930" x="310" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="3" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;fontColor=#000000;fontSize=14;fontStyle=1;fontSize=16;fontFamily=Times New Roman;" value="&amp;nbsp;Recuperar contraseña" vertex="1">
+          <mxGeometry height="110" width="360" x="600" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=15;fontFamily=Times New Roman;" value="Usuario del sistema" vertex="1">
+          <mxGeometry height="150" width="90" x="150" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=15;fontFamily=Times New Roman;" value="Sistema de Notificaciones" vertex="1">
+          <mxGeometry height="150" width="110" x="1280" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="6" edge="1" parent="1" source="4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeColor=#000000;strokeWidth=1.5;fontFamily=Times New Roman;" target="3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7" edge="1" parent="1" source="5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeColor=#000000;strokeWidth=1.5;fontFamily=Times New Roman;" target="3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;fontColor=#000000;fontSize=14;fontFamily=Times New Roman;" value="Validar cuenta" vertex="1">
+          <mxGeometry height="85" width="340" x="340" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="9" edge="1" parent="1" source="3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;endArrow=open;endFill=0;strokeColor=#000000;strokeWidth=1.5;fontSize=13;labelBackgroundColor=#ffffff;fontFamily=Times New Roman;" target="8" value="«include»">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="680" y="280" />
+              <mxPoint x="490" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="10" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;fontColor=#000000;fontSize=14;fontFamily=Times New Roman;" value="Enviar enlace de recuperación" vertex="1">
+          <mxGeometry height="85" width="340" x="340" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="11" edge="1" parent="1" source="3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;endArrow=open;endFill=0;strokeColor=#000000;strokeWidth=1.5;fontSize=13;labelBackgroundColor=#ffffff;fontFamily=Times New Roman;" target="10" value="«include»">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="730" y="480" />
+              <mxPoint x="470" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="12" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;fontColor=#000000;fontSize=14;fontFamily=Times New Roman;" value="Definir nueva contraseña" vertex="1">
+          <mxGeometry height="85" width="340" x="830" y="505" as="geometry" />
+        </mxCell>
+        <mxCell id="13" edge="1" parent="1" source="3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;endArrow=open;endFill=0;strokeColor=#000000;strokeWidth=1.5;fontSize=13;labelBackgroundColor=#ffffff;fontFamily=Times New Roman;" target="12" value="«include»">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="780" y="470" />
+              <mxPoint x="980" y="470" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="14" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;fontColor=#000000;fontSize=14;fontFamily=Times New Roman;" value="Cuenta no valida" vertex="1">
+          <mxGeometry height="85" width="340" x="860" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="15" edge="1" parent="1" source="14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;endArrow=open;endFill=0;strokeColor=#000000;strokeWidth=1.5;fontSize=13;labelBackgroundColor=#ffffff;fontFamily=Times New Roman;" target="3" value="«extend»">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1030" y="300" />
+              <mxPoint x="880" y="300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
