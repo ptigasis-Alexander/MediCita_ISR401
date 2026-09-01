@@ -1,0 +1,48 @@
+{
+  "fuente_observaciones": "06_Experimento/datos_procesados/observaciones_validacion_procesadas.csv",
+  "fuente_relaciones": "06_Experimento/datos_procesados/observacion_requisito_long.csv",
+  "observaciones": 46,
+  "relaciones_observacion_requisito": 72,
+  "estados_observacion": {
+    "COMPLETADA_CON_OBSERVACION": 39,
+    "NO_COMPLETADA": 5,
+    "COMPLETADA": 2
+  },
+  "grupos_tabla_3x2": [
+    "Clínico",
+    "Administrativo",
+    "Paciente simulado"
+  ],
+  "tabla_sin_hallazgo_con_hallazgo": [
+    [
+      3,
+      41
+    ],
+    [
+      0,
+      12
+    ],
+    [
+      0,
+      16
+    ]
+  ],
+  "chi_cuadrado": 1.992095,
+  "frecuencia_esperada_minima": 0.5,
+  "replicas_monte_carlo": 100000,
+  "semilla": 42,
+  "p_permutacion": 0.413086,
+  "v_cramer": 0.166337,
+  "rf_must_aprobados": 20,
+  "rf_must_total": 22,
+  "cobertura_rf_must_porcentaje": 90.91,
+  "power_calculation": {
+    "prueba": "t bilateral de dos muestras independientes, grupos iguales",
+    "cohen_d": 0.5,
+    "alpha": 0.05,
+    "potencia": 0.8,
+    "n_requerido_por_grupo": 64,
+    "n_total_requerido": 128,
+    "nota": "Cálculo de referencia; no convierte las sesiones disponibles en una muestra suficiente."
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "archivo": "05_MVP/index.html",
+  "fecha_ejecucion": "2026-09-01T10:27:35.750Z",
+  "nota": "Pruebas técnicas reproducibles con datos sintéticos. No sustituyen ni modifican las sesiones humanas ya realizadas.",
+  "total_pruebas": 20,
+  "rf_must_pasa_tecnicamente": 20,
+  "rf_pasa": [
+    "RF-01",
+    "RF-02",
+    "RF-03",
+    "RF-06",
+    "RF-10",
+    "RF-11",
+    "RF-12",
+    "RF-13",
+    "RF-17",
+    "RF-19",
+    "RF-21",
+    "RF-22",
+    "RF-24",
+    "RF-26",
+    "RF-27",
+    "RF-28",
+    "RF-30",
+    "RF-33",
+    "RF-34",
+    "RF-38"
+  ],
+  "resultados": [
+    {
+      "rf": "RF-01",
+      "estado": "PASA",
+      "tipo": "verificacion_tecnica",
+      "tiempo_ms": 0.246,
+      "criterio": "Recuperar historia por cédula entre 20 expedientes en <=2000 ms",
+      "detalle": "Recuperar historia por cédula entre 20 expedientes en <=2000 ms"
+    },
+    {
+      "rf": "RF-02",
+      "estado": "PASA",
+      "tipo": "verificacion_tecnica",
+      "tiempo_ms": 0.139,
+      "criterio": "Registrar cita y propagarla a agenda/gestión en <=3000 ms",
+      "detalle": "Registrar cita y propagarla a agenda/gestión en <=3000 ms"
+    },
+    {
+      "rf": "RF-03",
+      "estado": "PASA",
+      "tipo": "verificacion_tecnica",
+      "tiempo_ms": 0.012,
+      "criterio": "El código de búsqueda global contempla coincidencia por cualquier dato serializado",
+      "detalle": "El código de búsqueda global contempla coincidencia por cualquier dato serializado"
+    },
+    {
+      "rf": "RF-06",
+      "estado": "PASA",
+      "tipo": "verificacion_tecnica",
+      "tiempo_ms": 0.329,
+      "criterio": "Cancelar cita y propagar estado a módulos relacionados",
+      "detalle": "Cancelar cita y propagar estado a módulos relacionados"
+    },
+    {
+      "rf": "RF-10",
+      "estado": "PASA",
+      "tipo": "verificacion_tecnica",
+      "tiempo_ms": 0.024,
+      "criterio": "Existe control de acceso por rol también al navegar por código",
+      "detalle": "Existe control de acceso por rol también al navegar por código"
+    },
+    {
+      "rf": "RF-11",
+      "estado": "PASA",
+      "tipo": "verificacion_tecnica",
+      "tiempo_ms": 0.162,
+      "criterio": "Generar notificación automática al crear/actualizar cita",
+      "detalle": "Generar notificación automática al crear/actualizar cita"
+    },
+    {
+      "rf": "RF-12",
+      "estado": "PASA",
+      "tipo": "verificacion_tecnica",
+      "tiempo_ms": 0.035,
+      "criterio": "Auditoría conserva usuario, módulo, elemento y fecha",
+      "detalle": "Auditoría conserva usuario, módulo, elemento y fecha"
+    },
+    {
+      "rf": "RF-13",
+      "estado": "PASA",
+      "tipo": "verificacion_tecnica",
+      "tiempo_ms": 0.218,
+      "criterio": "Calcular horarios disponibles desde configuración y agenda",
+      "detalle": "Calcular horarios disponibles desde configuración y agenda"
+    },
+    {
+      "rf": "RF-17",
+      "estado": "PASA",
+      "tipo": "verificacion_tecnica",
+      "tiempo_ms": 0.019,
+      "criterio": "Recuperar perfil profesional activo por área",
+      "detalle": "Recuperar perfil profesional activo por área"
+    },
+    {
+      "rf": "RF-19",
+      "estado": "PASA",
+      "tipo": "verificacion_tecnica",
+      "tiempo_ms": 0.078,
+      "criterio": "Disponibilidad refleja inmediatamente franja ocupada",
+      "detalle": "Disponibilidad refleja inmediatamente franja ocupada"
+    },
+    {
+      "rf": "RF-21",
+      "estado": "PASA",
+      "tipo": "verificacion_tecnica",
+      "tiempo_ms": 0.201,
+      "criterio": "Generar ID único de comprobante interno y disponer de consulta/impresión",
+      "detalle": "Generar ID único de comprobante interno y disponer de consulta/impresión"
+    },
+    {
+      "rf": "RF-22",
+      "estado": "PASA",
+      "tipo": "verificacion_tecnica",
+      "tiempo_ms": 0.027,
+      "criterio": "Pago parcial recalcula saldo y pago total deja saldo en cero",
+      "detalle": "Pago parcial recalcula saldo y pago total deja saldo en cero"
+    },
+    {
+      "rf": "RF-24",
+      "estado": "PASA",
+      "tipo": "verificacion_tecnica",
+      "tiempo_ms": 0.052,
+      "criterio": "Horario y cupo configurados modifican la disponibilidad usada por agenda",
+      "detalle": "Horario y cupo configurados modifican la disponibilidad usada por agenda"
+    },
+    {
+      "rf": "RF-26",
+      "estado": "PASA",
+      "tipo": "verificacion_tecnica",
+      "tiempo_ms": 0.118,
+      "criterio": "Registro de signos vitales está incluido en sincronización automática hacia historia clínica",
+      "detalle": "Registro de signos vitales está incluido en sincronización automática hacia historia clínica"
+    },
+    {
+      "rf": "RF-27",
+      "estado": "PASA",
+      "tipo": "verificacion_tecnica",
+      "tiempo_ms": 0.048,
+      "criterio": "Localizar paciente por número de cédula entre 20 expedientes en <=3000 ms",
+      "detalle": "Localizar paciente por número de cédula entre 20 expedientes en <=3000 ms"
+    },
+    {
+      "rf": "RF-28",
+      "estado": "PASA",
+      "tipo": "verificacion_tecnica",
+      "tiempo_ms": 0.131,
+      "criterio": "Rechazar cédula inválida y aceptar cédula ecuatoriana válida",
+      "detalle": "Rechazar cédula inválida y aceptar cédula ecuatoriana válida"
+    },
+    {
+      "rf": "RF-30",
+      "estado": "PASA",
+      "tipo": "verificacion_tecnica",
+      "tiempo_ms": 0.196,
+      "criterio": "Restricción clínica por rol está aplicada en navegación y catálogo ACCESS",
+      "detalle": "Restricción clínica por rol está aplicada en navegación y catálogo ACCESS"
+    },
+    {
+      "rf": "RF-33",
+      "estado": "PASA",
+      "tipo": "verificacion_tecnica",
+      "tiempo_ms": 0.107,
+      "criterio": "Cobro por área habilita registro del paciente en admisión/turnos",
+      "detalle": "Cobro por área habilita registro del paciente en admisión/turnos"
+    },
+    {
+      "rf": "RF-34",
+      "estado": "PASA",
+      "tipo": "verificacion_tecnica",
+      "tiempo_ms": 0.067,
+      "criterio": "Generar turno consecutivo automáticamente después del cobro",
+      "detalle": "Generar turno consecutivo automáticamente después del cobro"
+    },
+    {
+      "rf": "RF-38",
+      "estado": "PASA",
+      "tipo": "verificacion_tecnica",
+      "tiempo_ms": 0.042,
+      "criterio": "Consulta rápida recupera paciente ya registrado sin reingreso manual",
+      "detalle": "Consulta rápida recupera paciente ya registrado sin reingreso manual"
+    }
+  ]
+}
