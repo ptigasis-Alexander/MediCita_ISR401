@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" agent="ChatGPT Codex" version="24.7.17" type="device" compressed="false">
+  <diagram id="ACT-CU-20" name="CU-20 - Registrar paciente">
+    <mxGraphModel dx="1100" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1500" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lane-a" value="Recepcionista" style="swimlane;html=1;horizontal=1;startSize=42;fillColor=#ffffff;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=15;" parent="1" vertex="1">
+          <mxGeometry x="80" y="80" width="480" height="1300" as="geometry" />
+        </mxCell>
+        <mxCell id="lane-s" value="SICM / Sistema" style="swimlane;html=1;horizontal=1;startSize=42;fillColor=#ffffff;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=15;" parent="1" vertex="1">
+          <mxGeometry x="560" y="80" width="560" height="1300" as="geometry" />
+        </mxCell>
+        <mxCell id="title" value="Diagrama de actividades UML - CU-20: Registrar paciente" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontStyle=1;fontSize=19;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="100" y="20" width="1000" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="start" value="" style="ellipse;html=1;aspect=fixed;fillColor=#000000;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="300" y="145" width="26" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="step-0" value="Abrir registro de pacientes" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="170" y="215" width="300" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="e-0" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=12;" parent="1" source="start" target="step-0" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="step-1" value="Ingresar datos personales y clínicos básicos" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="170" y="320" width="300" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="e-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=12;" parent="1" source="step-0" target="step-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="step-2" value="Validar campos y consultar cédula" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="660" y="425" width="300" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="e-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=12;" parent="1" source="step-1" target="step-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="decision" value="¿Cédula nueva y datos completos?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="630" y="530" width="140" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="e-decision" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=12;" parent="1" source="step-2" target="decision" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yes" value="Crear paciente e historia clínica única" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="620" y="695" width="350" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="no" value="Mostrar registro existente o campos faltantes" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="150" y="695" width="350" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="e-yes" value="[Sí]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=12;" parent="1" source="decision" target="yes" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-no" value="[No]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=12;" parent="1" source="decision" target="no" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="final-outer" value="" style="ellipse;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="538" y="830" width="34" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="final-inner" value="" style="ellipse;html=1;aspect=fixed;fillColor=#000000;strokeColor=#000000;perimeter=ellipsePerimeter;" parent="1" vertex="1">
+          <mxGeometry x="546" y="838" width="18" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="e-final-yes" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=12;" parent="1" source="yes" target="final-outer" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-final-no" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=12;" parent="1" source="no" target="final-outer" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

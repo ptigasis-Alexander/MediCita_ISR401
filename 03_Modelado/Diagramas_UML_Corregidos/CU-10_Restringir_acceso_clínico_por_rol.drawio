@@ -1,0 +1,80 @@
+<mxfile host="app.diagrams.net" agent="ChatGPT Codex" compressed="false">
+  <diagram id="ACT-CU-10" name="CU-10 - Restringir acceso clínico por rol">
+    <mxGraphModel dx="393" dy="206" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1500" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lane-a" parent="1" style="swimlane;html=1;horizontal=1;startSize=42;fillColor=#ffffff;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=15;" value="Sistema de control de acceso" vertex="1">
+          <mxGeometry height="1300" width="480" x="80" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="final-outer" parent="lane-a" style="ellipse;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="34" width="34" x="330" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="final-inner" parent="lane-a" style="ellipse;html=1;aspect=fixed;fillColor=#000000;strokeColor=#000000;perimeter=ellipsePerimeter;" value="" vertex="1">
+          <mxGeometry height="18" width="18" x="338" y="828" as="geometry" />
+        </mxCell>
+        <mxCell id="lane-s" parent="1" style="swimlane;html=1;horizontal=1;startSize=42;fillColor=#ffffff;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=15;" value="SICM / Sistema" vertex="1">
+          <mxGeometry height="1300" width="560" x="560" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontStyle=1;fontSize=19;fontColor=#000000;" value="Diagrama de actividades UML - CU-10: Restringir acceso clínico por rol" vertex="1">
+          <mxGeometry height="40" width="1000" x="100" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="start" parent="1" style="ellipse;html=1;aspect=fixed;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="26" width="26" x="300" y="145" as="geometry" />
+        </mxCell>
+        <mxCell id="step-0" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontSize=13;" value="Solicitar acceso a información clínica" vertex="1">
+          <mxGeometry height="64" width="300" x="170" y="215" as="geometry" />
+        </mxCell>
+        <mxCell id="e-0" edge="1" parent="1" source="start" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=12;" target="step-0" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="step-1" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontSize=13;" value="Identificar usuario y rol" vertex="1">
+          <mxGeometry height="64" width="300" x="660" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="e-1" edge="1" parent="1" source="step-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=12;" target="step-1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="step-2" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontSize=13;" value="Verificar permisos y derivación activa" vertex="1">
+          <mxGeometry height="64" width="300" x="660" y="425" as="geometry" />
+        </mxCell>
+        <mxCell id="e-2" edge="1" parent="1" source="step-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=12;" target="step-2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="decision" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontSize=12;" value="¿Acceso autorizado?" vertex="1">
+          <mxGeometry height="100" width="140" x="630" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="e-decision" edge="1" parent="1" source="step-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=12;" target="decision" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yes" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontSize=13;" value="Mostrar información permitida" vertex="1">
+          <mxGeometry height="70" width="350" x="620" y="695" as="geometry" />
+        </mxCell>
+        <mxCell id="no" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontSize=13;" value="Denegar acceso y registrar intento en auditoría" vertex="1">
+          <mxGeometry height="70" width="350" x="150" y="695" as="geometry" />
+        </mxCell>
+        <mxCell id="e-yes" edge="1" parent="1" source="decision" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=12;" target="yes" value="[Sí]">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-no" edge="1" parent="1" source="decision" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=12;" target="no" value="[No]">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-final-yes" edge="1" parent="1" source="yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=12;" target="final-outer" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="795" y="800" />
+              <mxPoint x="427" y="800" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-final-no" edge="1" parent="1" source="no" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=12;" target="final-outer" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="325" y="800" />
+              <mxPoint x="427" y="800" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
