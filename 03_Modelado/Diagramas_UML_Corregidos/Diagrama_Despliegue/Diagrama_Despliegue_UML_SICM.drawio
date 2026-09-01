@@ -1,0 +1,149 @@
+<mxfile host="app.diagrams.net" agent="ChatGPT Codex" compressed="false">
+  <diagram id="DEP-SICM-01" name="Despliegue UML - SICM">
+    <mxGraphModel dx="2571" dy="1351" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1350" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontStyle=1;fontSize=21;fontColor=#000000;" value="Diagrama de despliegue UML — Sistema Integral del Centro Médico (SICM)" vertex="1">
+          <mxGeometry height="42" width="1460" x="170" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="patientDevice" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=18;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;verticalAlign=top;spacingTop=10;fontSize=13;" value="&lt;b&gt;«device»&lt;/b&gt;&lt;br&gt;Dispositivo del paciente" vertex="1">
+          <mxGeometry height="300" width="350" x="50" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="patientOS" parent="patientDevice" style="swimlane;horizontal=1;startSize=48;rounded=0;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.2;fontSize=11;" value="&lt;b&gt;«executionEnvironment»&lt;/b&gt;&lt;br&gt;Navegador web / PWA" vertex="1">
+          <mxGeometry height="145" width="265" x="35" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="patientUI" parent="patientOS" style="shape=note;whiteSpace=wrap;html=1;size=16;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="&lt;b&gt;«artifact»&lt;/b&gt;&lt;br&gt;SICM-Web-Paciente&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Registro, cuenta, citas, historial y notificaciones&lt;/font&gt;" vertex="1">
+          <mxGeometry height="62" width="220" x="22" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="staffDevice" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=18;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;verticalAlign=top;spacingTop=10;fontSize=13;" value="&lt;b&gt;«device»&lt;/b&gt;&lt;br&gt;Estación del personal" vertex="1">
+          <mxGeometry height="355" width="350" x="50" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="staffSpec" parent="staffDevice" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=10;align=left;spacing=8;" value="&lt;b&gt;«deploymentSpec»&lt;/b&gt;&lt;br&gt;PC institucional&lt;br&gt;CPU ≥ 2 núcleos · RAM ≥ 4 GB&lt;br&gt;Windows/Linux · navegador actualizado" vertex="1">
+          <mxGeometry height="85" width="265" x="35" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="staffOS" parent="staffDevice" style="swimlane;horizontal=1;startSize=44;rounded=0;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.2;fontSize=11;" value="&lt;b&gt;«executionEnvironment»&lt;/b&gt;&lt;br&gt;Navegador web" vertex="1">
+          <mxGeometry height="115" width="265" x="35" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="staffUI" parent="staffOS" style="shape=note;whiteSpace=wrap;html=1;size=16;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="&lt;b&gt;«artifact»&lt;/b&gt;&lt;br&gt;SICM-Web-Personal" vertex="1">
+          <mxGeometry height="40" width="215" x="25" y="62" as="geometry" />
+        </mxCell>
+        <mxCell id="appServer" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=20;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.7;verticalAlign=top;spacingTop=12;fontSize=14;" value="&lt;b&gt;«node»&lt;/b&gt;&lt;br&gt;Servidor de aplicaciones SICM" vertex="1">
+          <mxGeometry height="800" width="660" x="510" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="webRuntime" parent="appServer" style="swimlane;horizontal=1;startSize=48;rounded=0;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.3;fontSize=11;" value="&lt;b&gt;«executionEnvironment»&lt;/b&gt;&lt;br&gt;Servidor web HTTPS" vertex="1">
+          <mxGeometry height="145" width="580" x="40" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="webArtifact" parent="webRuntime" style="shape=note;whiteSpace=wrap;html=1;size=16;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="&lt;b&gt;«artifact»&lt;/b&gt;&lt;br&gt;sicm-web.html / recursos UI" vertex="1">
+          <mxGeometry height="52" width="230" x="35" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="reverseProxy" parent="webRuntime" style="shape=component;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="&lt;b&gt;«component»&lt;/b&gt;&lt;br&gt;Proxy inverso y TLS" vertex="1">
+          <mxGeometry height="52" width="220" x="320" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="apiRuntime" parent="appServer" style="swimlane;horizontal=1;startSize=48;rounded=0;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.3;fontSize=11;" value="&lt;b&gt;«executionEnvironment»&lt;/b&gt;&lt;br&gt;Runtime de servicios / API REST" vertex="1">
+          <mxGeometry height="420" width="580" x="40" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="apiArtifact" parent="apiRuntime" style="shape=note;whiteSpace=wrap;html=1;size=16;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="&lt;b&gt;«artifact»&lt;/b&gt;&lt;br&gt;sicm-api" vertex="1">
+          <mxGeometry height="52" width="155" x="30" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="authComp" parent="apiRuntime" style="shape=component;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=10;" value="&lt;b&gt;«component»&lt;/b&gt;&lt;br&gt;Autenticación y roles" vertex="1">
+          <mxGeometry height="58" width="155" x="215" y="68" as="geometry" />
+        </mxCell>
+        <mxCell id="auditComp" parent="apiRuntime" style="shape=component;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=10;" value="&lt;b&gt;«component»&lt;/b&gt;&lt;br&gt;Auditoría" vertex="1">
+          <mxGeometry height="58" width="145" x="400" y="68" as="geometry" />
+        </mxCell>
+        <mxCell id="clinicalComp" parent="apiRuntime" style="shape=component;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=10;" value="&lt;b&gt;«component»&lt;/b&gt;&lt;br&gt;Historia clínica y atención" vertex="1">
+          <mxGeometry height="62" width="155" x="30" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="appointmentComp" parent="apiRuntime" style="shape=component;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=10;" value="&lt;b&gt;«component»&lt;/b&gt;&lt;br&gt;Citas, agendas y derivaciones" vertex="1">
+          <mxGeometry height="62" width="155" x="215" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="billingComp" parent="apiRuntime" style="shape=component;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=10;" value="&lt;b&gt;«component»&lt;/b&gt;&lt;br&gt;Cobros y comprobantes" vertex="1">
+          <mxGeometry height="62" width="145" x="400" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="inventoryComp" parent="apiRuntime" style="shape=component;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=10;" value="&lt;b&gt;«component»&lt;/b&gt;&lt;br&gt;Inventario y medicamentos" vertex="1">
+          <mxGeometry height="62" width="155" x="30" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="reportsComp" parent="apiRuntime" style="shape=component;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=10;" value="&lt;b&gt;«component»&lt;/b&gt;&lt;br&gt;Reportes e indicadores" vertex="1">
+          <mxGeometry height="62" width="155" x="215" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="notifyComp" parent="apiRuntime" style="shape=component;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=10;" value="&lt;b&gt;«component»&lt;/b&gt;&lt;br&gt;Notificaciones" vertex="1">
+          <mxGeometry height="62" width="145" x="400" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="mailNode" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=18;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;verticalAlign=top;spacingTop=10;fontSize=13;" value="&lt;b&gt;«external node»&lt;/b&gt;&lt;br&gt;Proveedor de correo" vertex="1">
+          <mxGeometry height="235" width="420" x="1290" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="smtpEnv" parent="mailNode" style="swimlane;horizontal=1;startSize=48;rounded=0;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="&lt;b&gt;«executionEnvironment»&lt;/b&gt;&lt;br&gt;Servicio SMTP / API de correo" vertex="1">
+          <mxGeometry height="100" width="325" x="45" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="smtpComp" parent="smtpEnv" style="shape=component;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=10;" value="&lt;b&gt;«component»&lt;/b&gt;&lt;br&gt;Entrega de mensajes" vertex="1">
+          <mxGeometry height="32" width="215" x="55" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sriNode" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=18;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;verticalAlign=top;spacingTop=10;fontSize=13;" value="&lt;b&gt;«external node»&lt;/b&gt;&lt;br&gt;Servicios del SRI" vertex="1">
+          <mxGeometry height="210" width="420" x="1290" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="sriService" parent="sriNode" style="shape=component;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="&lt;b&gt;«service»&lt;/b&gt;&lt;br&gt;Autorización de comprobantes electrónicos" vertex="1">
+          <mxGeometry height="65" width="300" x="60" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="dbServer" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=18;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.6;verticalAlign=top;spacingTop=10;fontSize=13;" value="&lt;b&gt;«node»&lt;/b&gt;&lt;br&gt;Servidor de base de datos" vertex="1">
+          <mxGeometry height="355" width="420" x="1290" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="dbEnv" parent="dbServer" style="swimlane;horizontal=1;startSize=48;rounded=0;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.2;fontSize=11;" value="&lt;b&gt;«executionEnvironment»&lt;/b&gt;&lt;br&gt;SGBD relacional" vertex="1">
+          <mxGeometry height="190" width="325" x="45" y="88" as="geometry" />
+        </mxCell>
+        <mxCell id="dbArtifact" parent="dbEnv" style="shape=note;whiteSpace=wrap;html=1;size=16;fillColor=#ffffff;strokeColor=#000000;fontSize=10;" value="&lt;b&gt;«artifact»&lt;/b&gt;&lt;br&gt;sicm_database&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Usuarios, pacientes, historia clínica, citas, pagos, inventario y auditoría&lt;/font&gt;" vertex="1">
+          <mxGeometry height="82" width="255" x="35" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="backupNode" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=18;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;verticalAlign=top;spacingTop=10;fontSize=13;" value="&lt;b&gt;«node»&lt;/b&gt;&lt;br&gt;Almacenamiento de respaldo" vertex="1">
+          <mxGeometry height="215" width="390" x="780" y="1040" as="geometry" />
+        </mxCell>
+        <mxCell id="backupArtifact" parent="backupNode" style="shape=note;whiteSpace=wrap;html=1;size=16;fillColor=#ffffff;strokeColor=#000000;fontSize=10;" value="&lt;b&gt;«artifact»&lt;/b&gt;&lt;br&gt;backup_sicm_encrypted&lt;br&gt;Copias programadas y registro de restauración" vertex="1">
+          <mxGeometry height="70" width="255" x="65" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="clientPath1" edge="1" parent="1" source="patientDevice" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=none;startArrow=none;fontSize=11;labelBackgroundColor=#ffffff;" target="appServer" value="HTTPS / TLS 1.3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="455" y="300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="clientPath2" edge="1" parent="1" source="staffDevice" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=none;startArrow=none;fontSize=11;labelBackgroundColor=#ffffff;" target="appServer" value="HTTPS / TLS 1.3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="455.05" y="700" />
+              <mxPoint x="455.05" y="590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mailPath" edge="1" parent="1" source="appServer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.4;endArrow=none;startArrow=none;fontSize=11;labelBackgroundColor=#ffffff;" target="mailNode" value="SMTP/TLS o API HTTPS">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1230" y="390" />
+              <mxPoint x="1230" y="237.47" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sriPath" edge="1" parent="1" source="appServer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.4;endArrow=none;startArrow=none;fontSize=11;labelBackgroundColor=#ffffff;" target="sriNode" value="HTTPS / servicios web">
+          <mxGeometry relative="1" x="0.0396" y="-15" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dbPath" edge="1" parent="1" source="appServer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.6;endArrow=none;startArrow=none;fontSize=11;labelBackgroundColor=#ffffff;" target="dbServer" value="SQL sobre TLS">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1215" y="820" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="backupPath" edge="1" parent="1" source="dbServer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.3;endArrow=none;startArrow=none;fontSize=11;labelBackgroundColor=#ffffff;" target="backupNode" value="SFTP/TLS · respaldo programado">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1240" y="930" />
+              <mxPoint x="1240" y="1135.05" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
