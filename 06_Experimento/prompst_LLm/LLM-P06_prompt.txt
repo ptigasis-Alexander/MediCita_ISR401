@@ -1,0 +1,11 @@
+MEDICITA — LLM-P06: Separación de líneas base 2B y PE5
+
+Fuente(s) de revisión: ERS/SRS 2B + PE5
+Objetivo verificable: Identificar si la matriz 2B y la trazabilidad PE5 pueden fusionarse sin control de configuración.
+
+Reglas de ejecución:
+- Trabajar únicamente con evidencia documental disponible.
+- No inventar participantes, entrevistas, minutos, resultados, métricas, requisitos, citas o evidencias.
+- Distinguir requisito/umbral de resultado observado.
+- Señalar cuando una comprobación queda pendiente.
+- La IA actúa como apoyo documental y no como participante humano.

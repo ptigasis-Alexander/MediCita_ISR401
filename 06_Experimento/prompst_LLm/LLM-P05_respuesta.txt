@@ -1,0 +1,9 @@
+RESULTADO LLM-P05 — Control metodológico de SUS
+
+Fuente revisada: protocolo + ficha de observación
+Acción realizada: Verificar si SUS fue realmente aplicado en el walkthrough disponible.
+Resultado documentado: No existe evidencia de aplicación SUS en la ronda documentada; no corresponde calcular ni declarar puntuación SUS.
+Estado: NO_MEDIDO
+
+Control de interpretación:
+Este registro documenta una acción de revisión asistida por IA. No sustituye evidencia primaria ni demuestra por sí solo cumplimiento experimental.

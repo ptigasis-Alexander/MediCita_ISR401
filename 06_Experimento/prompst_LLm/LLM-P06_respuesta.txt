@@ -1,0 +1,9 @@
+RESULTADO LLM-P06 — Separación de líneas base 2B y PE5
+
+Fuente revisada: ERS/SRS 2B + PE5
+Acción realizada: Identificar si la matriz 2B y la trazabilidad PE5 pueden fusionarse sin control de configuración.
+Resultado documentado: Se determinó que corresponden a líneas base distintas; se evitó una fusión silenciosa.
+Estado: CONTROL_REQUERIDO
+
+Control de interpretación:
+Este registro documenta una acción de revisión asistida por IA. No sustituye evidencia primaria ni demuestra por sí solo cumplimiento experimental.
