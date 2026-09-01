@@ -1,0 +1,11 @@
+MEDICITA — LLM-P01: Revisión de consistencia del ERS/SRS
+
+Fuente(s) de revisión: ERS_SRS_2B_V2.0_CORREGIDO.tex
+Objetivo verificable: Detectar contradicciones internas de identificadores, conteos y definiciones de RF/RNF.
+
+Reglas de ejecución:
+- Trabajar únicamente con evidencia documental disponible.
+- No inventar participantes, entrevistas, minutos, resultados, métricas, requisitos, citas o evidencias.
+- Distinguir requisito/umbral de resultado observado.
+- Señalar cuando una comprobación queda pendiente.
+- La IA actúa como apoyo documental y no como participante humano.
