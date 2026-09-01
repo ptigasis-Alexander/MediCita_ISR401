@@ -24,15 +24,18 @@ Este documento presenta los resultados **completos** del cuestionario aplicado a
 
 > 🔒 **Nota de privacidad:** los nombres de los participantes fueron omitidos de este resumen público. El archivo CSV original (uso interno del equipo) sí contiene esa información para trazabilidad académica.
 
+> ⚠️ **Nota de reproducibilidad sobre el formulario en vivo:** el enlace de Google Forms requiere iniciar sesión con la cuenta propietaria para ver la vista de edición o de respuestas, por lo que **no es verificable por el tribunal ni por terceros**. Se recomienda exportar el cuestionario a PDF (Google Forms → imprimir formulario) y añadirlo como instrumento estático en `06_Experimento/instrumentos/`, junto con `ficha_observacion.csv`, para que la guía y las preguntas exactas queden archivadas de forma independiente de la cuenta de Google.
+
 ## 📌 Ficha técnica de la encuesta
 
 | Indicador | Valor |
 |:--|:--|
 | Total de respuestas | **66** |
 | Período de recolección | 13/06/2026 — 29/07/2026 |
-| Edad promedio | 27.2 años |
+| Edad promedio | 27.2 años (n=65 respuestas numéricas válidas) |
 | Rango de edad | 14 — 80 años |
-| Preguntas totales | 35 |
+| Preguntas del cuestionario | **33** |
+| Columnas totales del CSV (incluye metadatos) | 35 (`Marca temporal`, `Codigo_Participante` + 33 preguntas) |
 
 ## 📑 Índice
 
@@ -50,17 +53,20 @@ Este documento presenta los resultados **completos** del cuestionario aplicado a
 
 ### Género
 
-| Opción | Respuestas | % | |
+*61 de 66 participantes respondieron esta pregunta; 5 la dejaron en blanco. Porcentajes calculados sobre las 61 respuestas registradas.*
+
+| Opción | Respuestas | % (sobre 61 registradas) | |
 |:--|--:|--:|:--|
 | Femenino | 40 | 65.6% | `█████████████░░░░░░░` |
 | Masculino | 20 | 32.8% | `███████░░░░░░░░░░░░░` |
 | Prefiero no decir | 1 | 1.6% | `░░░░░░░░░░░░░░░░░░░░` |
+| *(sin responder)* | 5 | — | *no incluido en el %* |
 
 ### Edad
 
-- **Promedio:** 27.2 años  
-- **Rango:** 14 a 80 años  
-- **Total de participantes con edad registrada:** 65
+- **Promedio:** 27.2 años (calculado sobre 65 respuestas numéricas)
+- **Rango:** 14 a 80 años
+- **Total de participantes con edad registrada como número:** 65 de 66 (1 participante escribió "19 años" en formato texto en vez de solo el número; su valor no se sumó al promedio para evitar un error de conversión, pero si se incluye da un promedio equivalente)
 
 ---
 
@@ -204,7 +210,9 @@ Este documento presenta los resultados **completos** del cuestionario aplicado a
 
 ### ¿Le gustaría que las interfaces del sistema fuesen intuitivas, fáciles de entender y animadas con dibujos o iconos representativos?
 
-| Opción | Respuestas | % | |
+*⚠️ Solo 6 de 66 participantes respondieron esta pregunta de escala (60 la dejaron en blanco). Los porcentajes siguientes se calculan sobre esas 6 respuestas — la base es demasiado pequeña para generalizar y debe tratarse como indicativa, no concluyente.*
+
+| Opción | Respuestas | % (sobre 6 registradas) | |
 |:--|--:|--:|:--|
 | 5.0 | 3 | 50.0% | `██████████░░░░░░░░░░` |
 | 3.0 | 2 | 33.3% | `███████░░░░░░░░░░░░░` |
@@ -225,7 +233,7 @@ Este documento presenta los resultados **completos** del cuestionario aplicado a
 | No estoy seguro(a) | 7 | 11.5% | `██░░░░░░░░░░░░░░░░░░` |
 | No | 6 | 9.8% | `██░░░░░░░░░░░░░░░░░░` |
 
-> ℹ️ Las preguntas *"Tiene algún tipo de seguro"*, *"Ha utilizado antes alguna app similar"*, *"Comodidad con apps digitales"*, *"Dispositivo principal"* y *"Conexión a internet estable"* no registraron respuestas en este levantamiento (campo vacío en el 100% de los casos).
+> ℹ️ Las preguntas *"Tiene algún tipo de seguro"*, *"Ha utilizado antes alguna app similar"*, *"Comodidad con apps digitales"*, *"Dispositivo principal"* y *"Conexión a internet estable"* no registraron respuestas en este levantamiento (campo vacío en el 100% de los casos). Estas preguntas existen en el instrumento pero no fueron respondidas por ningún participante — no se reportan resultados para ellas porque n=0.
 
 ---
 
@@ -293,7 +301,9 @@ Este documento presenta los resultados **completos** del cuestionario aplicado a
 
 ### ¿Recomendaría el centro médico a un familiar o amigo?
 
-| Opción | Respuestas | % | |
+*⚠️ Solo 1 de 66 participantes respondió esta pregunta (65 la dejaron en blanco, probablemente por un salto de lógica del formulario o porque se agregó tarde en la recolección). Con n=1 este resultado no es representativo y no debe citarse como hallazgo del estudio — se deja registrado únicamente por transparencia con el dato crudo.*
+
+| Opción | Respuestas | % (sobre n=1) | |
 |:--|--:|--:|:--|
 | Sí | 1 | 100.0% | `████████████████████` |
 
@@ -518,9 +528,9 @@ Estas preguntas eran de respuesta abierta. Se listan **todas** las respuestas re
 
 | Archivo | Tipo | Estado |
 |:--|:--:|:--:|
-| `Resultado_Cuestionario_IR_SGICM.csv` | CSV | ✅ Disponible |
+| `Resultado_Cuestionario_IR_SGICM.csv` | CSV | ✅ Disponible, verificado fila por fila (66 respuestas, 35 columnas, UTF-8) |
 | `README.md` (este documento) | Markdown | ✅ Vista completa sin descarga |
-| Link (vínculo) | [Google Forms](https://docs.google.com/forms/d/1Sk_SVewfrvQNsEZfYCj2jLrMzXFU9n0m5O9oQhZNmgI/viewanalytics) | ✅ Vista completa sin descarga |
+| Instrumento (formulario) | Google Forms — enlace requiere cuenta propietaria | ⚠️ Exportar copia en PDF a `06_Experimento/instrumentos/` para verificabilidad independiente |
 
 **Proyecto PFC – Ingeniería de Requerimientos (ISR-401)**  
 Sistema de Gestión Inteligente para un Centro Médico (SGICM) — UTEQ
