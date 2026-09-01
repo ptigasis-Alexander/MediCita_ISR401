@@ -47,10 +47,11 @@ git clone --filter=blob:none https://github.com/ptigasis-Alexander/MediCita_ISR4
 | `04_Trazabilidad/` | Matriz de trazabilidad original, matriz actualizada y priorización MoSCoW/Kano | 🟢 Completo |
 | `05_MVP/` | Demo guiada publicada en GitHub Pages + `MediCita_prototipo_final_actualizado.html` | 🟢 Completo |
 | `06_Experimento/` | Datos, instrumentos, prompts LLM, resultados, scripts, protocolo, registro OSF y desviaciones | 🟢 Completo en repositorio |
-| `07_Publicacion/` | Manuscrito (`.tex`), referencias, figuras, tablas y paquete de datos para Zenodo | 🟡 Falta compilar el PDF final del manuscrito y completar el depósito final |
+| `07_Publicacion/` | Manuscrito (`.tex`/`.pdf`, compilado con DOI de Zenodo incorporado), referencias, figuras, tablas y paquete de datos ya depositado en Zenodo | 🟢 Completo |
 | `08_Etica/` | Documentación ética completa (Anexos A1–A13 y documentos complementarios) | 🟢 Completo |
 | `09_Defensa/` | Actualmente solo contiene `defensa.md` como marcador | 🔴 Pendiente |
-| Depósito Zenodo + SWHID | DOI persistente y archivado en Software Heritage | 🔴 Pendiente (acción final) |
+| Depósito Zenodo | DOI persistente: [10.5281/zenodo.22236373](https://doi.org/10.5281/zenodo.22236373) | 🟢 Publicado |
+| Archivado Software Heritage (SWHID) | Identificador persistente del código | 🔴 Pendiente |
 | `checksums.sha256` / `fair_assessment.pdf` (raíz) | Integridad y autoevaluación FAIR | 🔴 Pendientes de generar/subir |
 
 > Este cuadro se actualiza en cada commit relevante. Si algún estado no coincide con el contenido real de una carpeta, prevalece el contenido real, no este resumen.
@@ -89,7 +90,7 @@ git clone --filter=blob:none https://github.com/ptigasis-Alexander/MediCita_ISR4
 | 📄 Protocolo experimental | [`06_Experimento/protocolo.pdf`](06_Experimento/protocolo.pdf) | 🟢 Disponible |
 | 📄 Registro OSF en PDF | [`06_Experimento/osf_registration.pdf`](06_Experimento/osf_registration.pdf) | 🟢 Disponible |
 | 📄 Desviaciones del protocolo | [`06_Experimento/osf_deviations.pdf`](06_Experimento/osf_deviations.pdf) | 🟢 Disponible |
-| 📦 Depósito Zenodo (dataset con DOI) | *(pendiente de publicar)* | 🔴 Pendiente |
+| 📦 Depósito Zenodo (dataset con DOI) | [10.5281/zenodo.22236373](https://doi.org/10.5281/zenodo.22236373) | 🟢 Publicado |
 | 🗄️ Archivado Software Heritage (SWHID) | *(pendiente de generar)* | 🔴 Pendiente |
 | 📜 Cómo citar este repositorio | [`CITATION.cff`](CITATION.cff) | 🟢 Disponible |
 | ⚖️ Licencia | [`LICENSE`](LICENSE) | 🟢 Disponible |
@@ -163,3 +164,4 @@ pdflatex -interaction=nonstopmode manuscrito_final.tex
 ⭐ Repositorio elaborado con fines exclusivamente académicos.
 
 </div>
+
