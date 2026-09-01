@@ -1,0 +1,288 @@
+<mxfile host="app.diagrams.net" agent="ChatGPT Codex" compressed="false">
+  <diagram id="COMP-SICM-V2" name="Componentes UML - SICM (ordenado)">
+    <mxGraphModel dx="1347" dy="708" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2400" pageHeight="1800" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontStyle=1;fontSize=22;fontColor=#000000;" value="Diagrama de componentes UML - SICM" vertex="1">
+          <mxGeometry height="45" width="1800" x="250" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="presentacion" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;verticalAlign=top;align=left;spacingTop=8;spacingLeft=12;fontStyle=1;fontSize=16;fontColor=#000000;" value="1. Presentación" vertex="1">
+          <mxGeometry height="250" width="1660" x="100" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="aplicacion" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;verticalAlign=top;align=left;spacingTop=8;spacingLeft=12;fontStyle=1;fontSize=16;fontColor=#000000;" value="2. Aplicación" vertex="1">
+          <mxGeometry height="720" width="1660" x="100" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="infraestructura" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;verticalAlign=top;align=left;spacingTop=8;spacingLeft=12;fontStyle=1;fontSize=16;fontColor=#000000;" value="3. Infraestructura y persistencia" vertex="1">
+          <mxGeometry height="480" width="1660" x="100" y="1140" as="geometry" />
+        </mxCell>
+        <mxCell id="externos" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;verticalAlign=top;align=left;spacingTop=8;spacingLeft=12;fontStyle=1;fontSize=16;fontColor=#000000;" value="4. Sistemas externos" vertex="1">
+          <mxGeometry height="1240" width="450" x="1810" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="ui-p" parent="1" style="shape=component;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontSize=12;spacingLeft=8;" value="«component»&#xa;Portal del Paciente" vertex="1">
+          <mxGeometry height="75" width="270" x="180" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="ui-m" parent="1" style="shape=component;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontSize=12;spacingLeft=8;" value="«component»&#xa;Panel del Personal Médico" vertex="1">
+          <mxGeometry height="75" width="270" x="570" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="ui-r" parent="1" style="shape=component;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontSize=12;spacingLeft=8;" value="«component»&#xa;Panel de Recepción" vertex="1">
+          <mxGeometry height="75" width="270" x="960" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="ui-c" parent="1" style="shape=component;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontSize=12;spacingLeft=8;" value="«component»&#xa;Panel de Coordinación" vertex="1">
+          <mxGeometry height="75" width="270" x="1350" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="api" parent="1" style="shape=component;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontSize=12;spacingLeft=8;" value="«component»&#xa;API SICM / Controladores" vertex="1">
+          <mxGeometry height="65" width="560" x="650" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="ui-api-0" edge="1" parent="1" source="ui-p" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeColor=#000000;fontColor=#000000;fontSize=11;dashed=1;dashPattern=6 4;" target="api" value="«use»">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="315" y="302.48" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ui-api-1" edge="1" parent="1" source="ui-m" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeColor=#000000;fontColor=#000000;fontSize=11;dashed=1;dashPattern=6 4;" target="api" value="«use»">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="705" y="250" />
+              <mxPoint x="889.97" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ui-api-2" edge="1" parent="1" source="ui-r" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeColor=#000000;fontColor=#000000;fontSize=11;dashed=1;dashPattern=6 4;" target="api" value="«use»">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1095" y="250" />
+              <mxPoint x="959.97" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ui-api-3" edge="1" parent="1" source="ui-c" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeColor=#000000;fontColor=#000000;fontSize=11;dashed=1;dashPattern=6 4;" target="api" value="«use»">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1485" y="300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="core" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;dashed=1;verticalAlign=top;align=left;spacingTop=7;spacingLeft=10;fontStyle=1;fontSize=14;fontColor=#000000;" value="Subsistema de servicios de aplicación" vertex="1">
+          <mxGeometry height="540" width="1570" x="145" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="citas" parent="1" style="shape=component;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontSize=12;spacingLeft=8;" value="«component»&#xa;Citas y turnos" vertex="1">
+          <mxGeometry height="70" width="235" x="190" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="pacientes" parent="1" style="shape=component;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontSize=12;spacingLeft=8;" value="«component»&#xa;Pacientes" vertex="1">
+          <mxGeometry height="70" width="235" x="480" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="historia" parent="1" style="shape=component;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontSize=12;spacingLeft=8;" value="«component»&#xa;Historia clínica" vertex="1">
+          <mxGeometry height="70" width="235" x="950" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="atencion" parent="1" style="shape=component;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontSize=12;spacingLeft=8;" value="«component»&#xa;Atención médica" vertex="1">
+          <mxGeometry height="70" width="235" x="1330" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="enfermeria" parent="1" style="shape=component;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontSize=12;spacingLeft=8;" value="«component»&#xa;Enfermería" vertex="1">
+          <mxGeometry height="70" width="235" x="900" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="facturacion" parent="1" style="shape=component;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontSize=12;spacingLeft=8;" value="«component»&#xa;Pagos y facturación" vertex="1">
+          <mxGeometry height="70" width="235" x="190" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="inventario" parent="1" style="shape=component;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontSize=12;spacingLeft=8;" value="«component»&#xa;Inventario" vertex="1">
+          <mxGeometry height="70" width="235" x="1340" y="725" as="geometry" />
+        </mxCell>
+        <mxCell id="personal" parent="1" style="shape=component;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontSize=12;spacingLeft=8;" value="«component»&#xa;Personal y horarios" vertex="1">
+          <mxGeometry height="70" width="235" x="490" y="675" as="geometry" />
+        </mxCell>
+        <mxCell id="reportes" parent="1" style="shape=component;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontSize=12;spacingLeft=8;" value="«component»&#xa;Reportes" vertex="1">
+          <mxGeometry height="70" width="235" x="1150" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="seguridad" parent="1" style="shape=component;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontSize=12;spacingLeft=8;" value="«component»&#xa;Autenticación y RBAC" vertex="1">
+          <mxGeometry height="70" width="235" x="197.5" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="notificaciones" parent="1" style="shape=component;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontSize=12;spacingLeft=8;" value="«component»&#xa;Notificaciones" vertex="1">
+          <mxGeometry height="70" width="235" x="1320" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="auditoria" parent="1" style="shape=component;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontSize=12;spacingLeft=8;" value="«component»&#xa;Auditoría" vertex="1">
+          <mxGeometry height="70" width="235" x="935" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="services" parent="1" style="shape=component;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontSize=12;spacingLeft=8;" value="«component»&#xa;Fachada de servicios SICM" vertex="1">
+          <mxGeometry height="65" width="260" x="290" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="facade" parent="1" style="rounded=1;arcSize=50;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontStyle=1;fontSize=12;" value="«interface»&#xa;IAplicacionSICM" vertex="1">
+          <mxGeometry height="55" width="310" x="650" y="1025" as="geometry" />
+        </mxCell>
+        <mxCell id="api-facade" edge="1" parent="1" source="api" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeColor=#000000;fontColor=#000000;fontSize=11;dashed=1;dashPattern=6 4;" target="facade" value="«use»">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="810" y="860" />
+              <mxPoint x="810" y="860" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="citas-pacientes" edge="1" parent="1" source="citas" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeColor=#000000;fontColor=#000000;fontSize=11;dashed=1;dashPattern=6 4;" target="pacientes" value="«use»">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="atencion-historia" edge="1" parent="1" source="atencion" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeColor=#000000;fontColor=#000000;fontSize=11;dashed=1;dashPattern=6 4;" target="historia" value="«use»">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="enfermeria-historia" edge="1" parent="1" source="enfermeria" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeColor=#000000;fontColor=#000000;fontSize=11;dashed=1;dashPattern=6 4;" target="historia" value="«use»">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="880" y="725" />
+              <mxPoint x="880" y="535" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="facturacion-citas" edge="1" parent="1" source="facturacion" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeColor=#000000;fontColor=#000000;fontSize=11;dashed=1;dashPattern=6 4;" target="citas" value="«use»">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inventario-atencion" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeColor=#000000;fontColor=#000000;fontSize=11;dashed=1;dashPattern=6 4;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="atencion" value="«use»">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="1450" y="725" as="sourcePoint" />
+            <mxPoint x="1480" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="personal-citas" edge="1" parent="1" source="personal" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeColor=#000000;fontColor=#000000;fontSize=11;dashed=1;dashPattern=6 4;" target="citas" value="«use»">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="610" y="620" />
+              <mxPoint x="370" y="620" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="reportes-historia" edge="1" parent="1" source="reportes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeColor=#000000;fontColor=#000000;fontSize=11;dashed=1;dashPattern=6 4;" target="historia" value="«use»">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1067.5" y="650" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="services-facade" edge="1" parent="1" source="services" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;strokeColor=#000000;fontColor=#000000;fontSize=11;dashed=1;dashPattern=6 4;" target="facade" value="«realize»">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="640" y="912.49" />
+              <mxPoint x="640" y="1052.49" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="persist-if" parent="1" style="rounded=1;arcSize=50;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontStyle=1;fontSize=12;" value="«interface»&#xa;IPersistencia" vertex="1">
+          <mxGeometry height="55" width="520" x="250" y="1195" as="geometry" />
+        </mxCell>
+        <mxCell id="events" parent="1" style="shape=component;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontSize=12;spacingLeft=8;" value="«component»&#xa;Bus de Eventos" vertex="1">
+          <mxGeometry height="70" width="300" x="910" y="1190" as="geometry" />
+        </mxCell>
+        <mxCell id="adapter" parent="1" style="shape=component;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontSize=12;spacingLeft=8;" value="«component»&#xa;Adaptador de Integraciones" vertex="1">
+          <mxGeometry height="70" width="320" x="1360" y="1190" as="geometry" />
+        </mxCell>
+        <mxCell id="repositories" parent="1" style="shape=component;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontSize=12;spacingLeft=8;" value="«component»&#xa;Repositorios" vertex="1">
+          <mxGeometry height="75" width="300" x="250" y="1350" as="geometry" />
+        </mxCell>
+        <mxCell id="db" parent="1" style="shape=component;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontSize=12;spacingLeft=8;" value="«database»&#xa;BD CentroMedico" vertex="1">
+          <mxGeometry height="75" width="300" x="650" y="1350" as="geometry" />
+        </mxCell>
+        <mxCell id="documents" parent="1" style="shape=component;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontSize=12;spacingLeft=8;" value="«component»&#xa;Documentos clínicos" vertex="1">
+          <mxGeometry height="75" width="300" x="1050" y="1350" as="geometry" />
+        </mxCell>
+        <mxCell id="eventlog" parent="1" style="shape=component;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontSize=12;spacingLeft=8;" value="«component»&#xa;Registro de eventos" vertex="1">
+          <mxGeometry height="75" width="250" x="1450" y="1350" as="geometry" />
+        </mxCell>
+        <mxCell id="services-persist" edge="1" parent="1" source="services" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeColor=#000000;fontColor=#000000;fontSize=11;dashed=1;dashPattern=6 4;" target="persist-if" value="«use»">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="510" y="950" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="repo-persist" edge="1" parent="1" source="repositories" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;strokeColor=#000000;fontColor=#000000;fontSize=11;dashed=1;dashPattern=6 4;" target="persist-if" value="«realize»">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="repo-db" edge="1" parent="1" source="repositories" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeColor=#000000;fontColor=#000000;fontSize=11;dashed=1;dashPattern=6 4;" target="db" value="«use»">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="repo-docs" edge="1" parent="1" source="repositories" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeColor=#000000;fontColor=#000000;fontSize=11;dashed=1;dashPattern=6 4;" target="documents" value="«use»">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="400" y="1480" />
+              <mxPoint x="1200" y="1480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="notify-events" edge="1" parent="1" source="notificaciones" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeColor=#000000;fontColor=#000000;fontSize=11;dashed=1;dashPattern=6 4;" target="events" value="«subscribe»">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1280" y="865" />
+              <mxPoint x="1280" y="1225" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="audit-events" edge="1" parent="1" source="auditoria" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeColor=#000000;fontColor=#000000;fontSize=11;dashed=1;dashPattern=6 4;" target="events" value="«subscribe»">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1052.52" y="1120" />
+              <mxPoint x="1052.52" y="1120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="events-log" edge="1" parent="1" source="events" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeColor=#000000;fontColor=#000000;fontSize=11;dashed=1;dashPattern=6 4;" target="eventlog" value="«use»">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1060" y="1290" />
+              <mxPoint x="1575" y="1290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="notify-adapter" edge="1" parent="1" source="notificaciones" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeColor=#000000;fontColor=#000000;fontSize=11;dashed=1;dashPattern=6 4;" target="adapter" value="«use»">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1447.5" y="1120" />
+              <mxPoint x="1447.5" y="1120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="billing-adapter" edge="1" parent="1" source="facturacion" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeColor=#000000;fontColor=#000000;fontSize=11;dashed=1;dashPattern=6 4;" target="adapter" value="«use»">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="170" y="685" />
+              <mxPoint x="170" y="470" />
+              <mxPoint x="1600" y="470" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="payment" parent="1" style="shape=component;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontSize=12;spacingLeft=8;" value="«external»&#xa;Pasarela de Pago" vertex="1">
+          <mxGeometry height="80" width="250" x="1910" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="smtp" parent="1" style="shape=component;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontSize=12;spacingLeft=8;" value="«external»&#xa;Correo SMTP" vertex="1">
+          <mxGeometry height="80" width="250" x="1910" y="1020" as="geometry" />
+        </mxCell>
+        <mxCell id="wa" parent="1" style="shape=component;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontSize=12;spacingLeft=8;" value="«external»&#xa;WhatsApp Business API" vertex="1">
+          <mxGeometry height="80" width="250" x="1900" y="1270" as="geometry" />
+        </mxCell>
+        <mxCell id="adapter-payment" edge="1" parent="1" source="adapter" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeColor=#000000;fontColor=#000000;fontSize=11;dashed=1;dashPattern=6 4;" target="payment" value="«use»">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1670" y="760" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="adapter-smtp" edge="1" parent="1" source="adapter" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeColor=#000000;fontColor=#000000;fontSize=11;dashed=1;dashPattern=6 4;" target="smtp" value="«use»">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1730" y="1225" />
+              <mxPoint x="1730" y="1190" />
+              <mxPoint x="2035" y="1190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="adapter-wa" edge="1" parent="1" source="adapter" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeColor=#000000;fontColor=#000000;fontSize=11;dashed=1;dashPattern=6 4;" target="wa" value="«use»">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1640" y="1300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;dashed=1;fontColor=#000000;fontSize=12;align=left;verticalAlign=top;spacing=10;" value="Notación UML&#xa;Componente: rectángulo con símbolo de componente&#xa;«interface»: contrato entre capas&#xa;«use»: dependencia discontinua dirigida&#xa;Marco discontinuo: subsistema funcional" vertex="1">
+          <mxGeometry height="130" width="360" x="1855" y="1430" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
