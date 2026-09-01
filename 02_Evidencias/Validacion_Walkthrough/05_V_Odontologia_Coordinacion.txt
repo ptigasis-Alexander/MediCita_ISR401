@@ -1,0 +1,37 @@
+V Odontologia Coordinacion
+Transcripción anonimizada
+Etapa: Validación del prototipo
+
+Transcripción
+Muy buenas tardes, mi nombre es Paul Alexander Tigasi Sampedro, soy estudiante de la ingeniería de software de cuarto semestre. Estamos en la validación de requerimientos en base a un prototipo de un sistema inteligente para la gestión de un centro médico. Nos encontramos con la coordinadora y odontóloga del área médica que va a iniciar con la prueba del prototipo.
+
+Puede ir probando cualquiera de las opciones que se encuentran en el menú izquierdo. ¿La historia clínica del paciente se va a buscar por el nombre del paciente o por el médico acá? Por el nombre. ¿Por el nombre del paciente? Sí.
+
+¿Y en aquello puede también seleccionar lo que es la historia clínica del paciente, o sea su nombre de centro? No, solo se busca por el nombre en este caso. ¿En cuanto al plan de tratamientos, que nomás se va a ver reflejado aquí? Solo el diagnóstico, aquí menciona tres puntos, diagnósticos, sesiones estimadas y próximos días. ¿También se va a ver lo que es los medicamentos? Sí.
+
+¿En cuanto al tratamiento? Sí, también van a quedar registrados, se puede ver en el registro. Ahí lo que va a estar, perdón. ¿En cuanto a los antecedentes, qué se va a reflejar? ¿Antecedentes personales o antecedentes familiares o va a ir todo en conjunto? ¿En sí qué le parecería mejor? Porque en la descripción serían como los antecedentes del paciente.
+
+Por ejemplo, si es alérgico a alguna medicina o tiene una alergia a alguna anestesia o qué sé yo. Yo consideraría que sería bueno que se pare por antecedentes, por ejemplo, antecedentes personales del paciente. Como ya mencioné, lo que es de alergias, a su vez antecedentes ya sea de familiares, que conlleven todo aquello para que vaya en sección inicial de manera organizada.
+
+En cuanto a la evaluación, igualmente sería bueno que sea por horas. Nosotros prácticamente sabemos tratar lo que es por horas y a su vez por lo que es responsable. ¿En documentos qué se asignaría? ¿En documentos? ¿Sería de alguna manera general? Sí.
+
+¿De algún tipo de cirugía, de algún tipo de centro? ¿Qué sería para derivar de algún centro más... No, para derivarlo a otra área médica dentro del mismo. ¿Y si existe tal vez que yo quiera derivar a otro centro de más capacidad? No, porque en sí se maneja solamente dentro del mismo centro. ¿Aquí se va a reflejar también lo que es la cara del paciente? Sí.
+
+¿Y cómo se lo va a registrar de esa manera? Eso tendría que hacerlo el mismo paciente ya que está en la sección de... Entonces esta aplicación también tendría el paciente y también el médico. Ajá. En este caso está en la sección para ododontología, que es a la que usted pertenece, y sólo va a revisar esos datos y ya lo que viene siendo la sección del paciente.
+
+Eso depende del propio paciente si desea poner una foto o no. Entonces menciona que el paciente también va a tener un correo electrónico asignado para eso. Sí.
+
+¿Y quién le va a asignar el correo electrónico? ¿Va a ser exclusivo? Por ejemplo, como nosotros tenemos lo que son los correos exclusivos, digamos, yo soy la coordinadora, pues tengo un correo exclusivo, que es muy diferente, digamos, para un trabajador. Sí, van a ser correos exclusivos del centro normal, que se lo maneja el interno. Aquí sólo se va a demostrar lo que es por semana, porque aquí menciona sábado, domingo, puede ver lo que es... Está por mes y también en esa parte que ahí está.
+
+¿Qué observaciones o mejoras positivas tiene planteado para esta sección? Yo mencionaría más que todo sobre lo que es... ¿Dónde mencionamos? ¿Del lado? ¿Los antecedentes? Aquí. Los antecedentes y evolución. Separarlo por lo que es categorías.
+
+Como mencioné en el ejemplo, ponerle lo que es antecedentes personales, antecedentes que son familiares, ya que eso también es un poquito importante a la hora de tratar al paciente. En cuanto a la evolución, pues recomendaría poner lo que es por horas y documentos, pues lo mismo. Derivación, bueno, aquí como menciono, pues sólo es para tratar a lo que es dentro del hospital todavía.
+
+En cuanto a esto, me causa un poquito de duda acerca de cómo el paciente, pues, no sé, va a tener la responsabilidad de asignar lo que es su foto de perfil, ¿no? Porque generalmente sabemos que los pacientes no suelen asignar esto. Y también lo que me causó intriga un poquito fue quién le iba a asignar lo que es el correo electrónico. Sí, tal vez va a ser un correo electrónico, ya sea de manera general, como lo es de Gmail, ¿no es cierto? Eso, de hecho, está muy bien. 
+
+Me parece muy bonito, muy interesante y muy productivo. ¿Puede revisar la parte de notificaciones, que está en la parte última? ¿Le parece bien? ¿Aquí puedo yo eliminar mensajes? No, en este caso no se pueden eliminar, siempre van a quedar registrados, además de que se lleva una auditoría de todo lo que se realiza, sea consultas, agendas o alguna eliminación de un archivo. Esto es como una modalidad tipo Gmail, porque ahí tampoco se puede eliminar mensajes.
+
+Muchas gracias por sus observaciones y críticas ante el nuevo prototipo del sistema. Muchas gracias.
+
+Nota de edición
+Se unificó el formato de presentación y se corrigieron únicamente errores evidentes de escritura o transcripción. No se añadieron respuestas, preguntas, observaciones ni contenido nuevo.

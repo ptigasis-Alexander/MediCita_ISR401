@@ -1,0 +1,87 @@
+V Odontologia Coordinacion
+Transcripción anonimizada
+Etapa: Validación del prototipo
+
+Transcripción
+Buenas tardes, mi nombre es Pablo Alexander Tigasi Sampedro, estudiante de Ingeniería de Software de cuarto semestre. Estamos aquí con la coordinadora de área médica para la validación de requisitos y la prueba del prototipo del Sistema Inteligente de Gestión del Centro Médico. Pueden ir probando todas las opciones que están viendo a mi izquierda.
+
+Aquí mencionan lo que es el apartado de citas. Tengo una duda, digamos por un ejemplo que la paciente no asiste a su cita correspondiente. Entonces yo, ¿cómo registraría? ¿Pongo pendiente muy bien y eso se reasignaría a una cita? ¿La aplicación la reasigna o cómo sería el caso? En este caso no, porque la reasignación de cita puede estar por parte del paciente.
+
+O usted también, pero... O sea, en la aplicación de citas tendría que ser automático, no sería automático, sería por parte de la coordinadora. Ahora en semanas, en semanas, ¿cuántas semanas? No se puede poner por meses, porque generalmente sabemos que el sistema de salud tiende a colapsarse. Y por ende las citas suelen desplazarse no a la misma semana, sino a diferentes semanas.
+
+Por ende sería una recomendación de que se avisara el día no solo por semana, sino también por meses, ya que eso crearía... Sí, ya le agregaría eso. En cuanto a la mañana y tarde, no sé cómo se trata, ya que en cuanto a lo que es el área de salud, generalmente solemos pasar los horarios como de la mañana. La mañana corresponde desde 7 de la mañana hasta las 16 horas 59, entonces no sé si se basaría el mismo.
+
+Aquí veo que se basa en diferentes horarios, que mañana lo corresponde de 8 a 2. Menciono eso ya que en las historias clínicas de los pacientes tratamos así, ¿no? ¿Canceladas? Ah, bien. ¿Canceladas? ¿Papagos? Ah, también puedo visualizar los papagos. ¿Qué es esto? ¿Y esto puedo ponerlo de forma automática? ¿O es que en las computadoras generalmente se activa esto cuando llega a las 6 de la tarde? Ah, sí. 
+
+En este caso solo es un módulo de cambiar de tono, sea de blanco o oscuro. Pero sería ideal agregar esa sección para que baje la intensidad al llegar a una hora de la tarde. Ahora, en cuanto al asistente. 
+
+¿Cuántas preguntas puede realizar el asistente? ¿Existe algún límite? Sí, no tiene ningún límite. Ah, muy bien. ¿Tampoco existe límite en cuanto a las palabras que yo escriba? No, tampoco.
+
+Muy bien. ¿Y qué tipo de información nomás me va a brindar el asistente? Actualmente solo está dentro del sistema en sí, solo va a responder lo que está dentro del prototipo. No lo que sea algo externo como preguntas abiertas sobre medicina.
+
+Claro, porque eso le corresponde a la persona. Ahora, ¿cuál es el propósito de usted para crear lo que es este asistente? ¿Qué lo hace diferente de las otras inteligencias artificiales? En sí era para mejorar la... La presentación. Ah, muy bien. 
+
+Muy agradable. Un poquito las horas antes de que se pueda escribir la letra. Y también sería bueno ponerle lo que es la hora, ¿no? Implementar la hora, qué hora se envía el mensaje, también.
+
+¿Y aquí existe algún apartado donde yo pueda ver mi configuración? O sea, ¿dónde puedo subir mi foto de perfil? ¿Dónde la subo mi foto de perfil? ¿En configuración Ruiz? No, no hay. Sería bueno que implemente en un apartado donde yo pueda subir mi foto de perfil, mis datos, mi cédula como profesional, ¿verdad? Sí, sería interesante. Muy bien.
+
+También sería interesante, como ya menciona, que en el caso de que yo soy coordinadora, pues, también, pues, implementar los datos de los demás funcionales, es decir, sus nombres, para derivarlos. Eso sería algo de agregar. Inventa. 
+
+Vamos a cuestiones. Cuestiones. No, mira, ahí están las claves. 
+
+Sí, personalidad área. Ahí se encuentran todas. Sí, muy interesante.
+
+Aquí. Sería también que implementen lo que es más áreas, ya que, pues, sólo encontramos dos, cuatro, seis áreas. Existe una variedad de áreas también.
+
+No sé quién implementaría las áreas. O sea, nosotros o el creador. Ah, nosotros podríamos implementar. 
+
+Muy interesante. ¿A qué se refiere con estado activo e inactivo? Por ejemplo, este, que alguno de los doctores o médicos que estén ahí, se les surgió un contratiempo o pidieron un permiso, en ese caso, su cuenta y sus credenciales dentro del sistema van a estar en estado inactivo para que nadie pueda ingresar a esos datos. ¿Y quién registraría eso? Eso sería usted, porque se encuentra dentro de eso, ¿no? Entonces, ¿tendría que informarme el médico por una llamada o sería algo más formal como un registro? Un formulario que presente profesionalmente.
+
+¿Y dónde subiría yo esa evidencia? O sea, porque asumo que, digamos, que el profesional, pues, falta, digamos, por alguna calamidad doméstica, por ejemplo, ¿no? Y yo, pues, tengo que avalarlo, ver que no haya ninguna mentira, nada de eso. O sea, sería bueno que haya implementado una área también donde se pueda revisar el motivo de por qué el profesional estaba, pues, inactivo. Ah, está bien.
+
+Ah, aquí se puede registrar el profesional. Muy bien, muy bien. En América, inicio de turno.
+
+Ah, inicio de turno. Yo puedo iniciar el turno. ¿A qué se refiere con título identificado? ¿El cargo, tal vez? Podría ser, no. 
+
+El título, ni idea. Bueno, asumo que es el cargo, sí, el cargo. Muy bien.
+
+Ah, y aquí se encuentra la área que se especializa. Muy bien, muy bien. El título vendría a ser como en qué se graduó especializado.
+
+Ah, ya. Ya, ahora las derivaciones. Vamos con las derivaciones.
+
+Origen. Origen, o sea, desde qué área inició, asumo, ¿no? Destino, asumo que sería mi área, o al área que yo lo voy a mandar. Seguimiento.
+
+Seguimiento, este, se puede decir el proceso que ha seguido desde el origen al destino. Todas las acciones que se han realizado, o los medicamentos, o las observaciones que le han dado cada área. ¿Y si el paciente es extranjero? ¿Por qué solo tenemos cédula? Usted sabe que cédula solo se maneja a nivel regional, que sería Ecuador.
+
+También sería bueno que implementen lo que es pasaporte. Ah, ya, el destino. Ya, el destino, igual implementan más áreas aquí como mencioné.
+
+Coordinación, obviamente soy yo. Origen, motivo, motivo, motivo asumo que se refiere al diagnóstico, ¿no? Sí, porque lo está derivando hacia la otra área. Las causas de eso.
+
+Fecha. ¿Cómo registro la fecha? Eso ya es automático porque es en el momento que usted va a hacer la derivación, entonces ya está marcada la fecha. Ah, seleccionar el destino. 
+
+También se calcula automáticamente, seleccionar el destino. Sí, al seleccionar el área. Ah, listo.
+
+Turno asignado, igual automáticamente el turno asignado. Sí, por ejemplo, puede que la otra área ya tenga algunos pacientes y entonces ya se registra como el último después del finalizar. Muy bien, muy bien.
+
+Esto, agregar a lo que es pasaporte. Y aquí no todos los, pues, existe en Venezuela, no sabemos muy bien, ¿no es cierto? Entonces no tienen lo que es la escena y la editorial. Entonces sí, interesante, agregar eso.
+
+A ver, ah, podemos editar. Inventar. Medicamentos insumos.
+
+En cuanto a medicamentos insumos, pues sería por área. En este caso, quien se encarga del inventario y los medicamentos es el área de enfermería. Exacto, y también el área de farmacología.
+
+Muy bien. Entonces... Ah, el código del programa, muy bien, presentación. ¿Por qué solo aparece esto en la sección de los...? Debería agregar lo que es más opciones, ya que los lotes, pues, suelen verificarse los medicamentos.
+
+Entonces esto sería más que todo para escribir, para tipear. Sería bueno. Todo, muy bien, escribir, vencimiento, responsable.
+
+El responsable ya sería el personal médico, lo menciona muy bien. Entonces aquí más que todo yo solo podría visualizar, ¿verdad? Porque dicen que el responsable es el enfermero. Sí, en este caso.
+
+Si yo solo puedo visualizar, ¿por qué puedo llenar a estas áreas? Si me mencionan que solo puedo visualizar. Eso ya sería un error, tendrías que corregirse esa parte para que solo el personal encargado pueda editar y registrar esos datos. Y usted solamente visualizar.
+
+En cuanto a deportes... En cuanto a detalles, ¿qué se refiere con detalle por área? O sea, ¿qué me va a detallar? Por ejemplo, ¿cuántos registros ha hecho, cuántas citas ha atendido pacientes tiene cada uno? Por ejemplo, en el área médica, ¿cuántos registros realizó y cuántos pacientes atendió en todo el tiempo? Las últimas atenciones registradas... ¿Y cómo guardo? ¿Qué cosa? Las últimas atenciones registradas, solo hay imprimir reportes. Esos se guardan automáticamente, como ahora solo es un prototipo, no hay registros agregados ni nada por el estilo. Cuando ya se comiencen a registrar los datos y llenar las atenciones, ya se genera automáticamente y ya puede imprimir.
+
+¿En qué nube se guarda esto? Hasta el momento está localmente, pero se lo planea hacer con base de datos y si es que quiere, se lo puede llevar a la nube. Sería lo ideal. Claro, sería lo ideal, porque existen un sinnúmero de pacientes, ¿no es cierto? Auditoría, vamos a Auditoría.
+
+Configuración, como mencioné, poder poner nuestros datos, obviamente es importante, ¿no? ¿Y qué más podemos mencionar? Interesante, interesante. Bueno, muchas gracias por sus observaciones y detalles a corregir, especialmente sobre la configuración y lo de los inventarios. Gracias.
+
+Nota de edición
+Se unificó el formato de presentación y se corrigieron únicamente errores evidentes de escritura o transcripción. No se añadieron respuestas, preguntas, observaciones ni contenido nuevo.

@@ -1,0 +1,101 @@
+V Nutricion
+Transcripción anonimizada
+Etapa: Validación del prototipo
+
+Transcripción
+Buenas tardes, gracias por su tiempo. Mi nombre es Steven Díaz, soy estudiante de Ingeniería de Software de la UTEQ. Estamos validando el modelo de nutrición del prototipo MediCita. 
+
+Esto tomará entre 15 y 20 minutos. Antes de comenzar, le pido que revise y firme este formulario de consentimiento. Aquí se explica el objetivo de la prueba, que su participación es voluntaria y que si autoriza, grabaremos la sesión sólo con fines académicos.
+
+¿Tienes la prueba? Sí, también tiene que tener los demás datos. Bueno, le voy a mostrar el módulo de nutrición del sistema y le pediré que realice un par de tareas sencillas, como si estuviera atendiendo a un paciente en su jornada habitual. No hay respuestas correctas ni incorrectas, lo que buscamos es conocer su opinión sobre el sistema. 
+
+No iba a hablarlo usted. Ya, primero inicia sesión en el sistema. Pide contraseña.
+
+Ya, ahí ya le probé la contraseña. Esta es la pantalla de inicio. ¿Qué cree que le muestra? Le muestra lo básico, lo que uno quiere ver al momento que inicia en una página.
+
+Ya, ahora ubique al paciente que tiene pendiente el día de hoy. En qué menú cree que... Pacientes asignados. Aquí está, si sale el paciente. 
+
+Sí, para poder iniciar la atención en qué apartado de la unidad prestada. En pacientes asignados y en verde, ahí dice acciones verdes. También podemos ver que dice iniciar atención, de ella sale la evaluación nutricional, el peso, la talla, la cintura, el IMC. 
+
+Se puede poner el desayuno, almuerzo, merienda, objetivo, adherencia. Próximo control en 15 días. Lo veo completo. 
+
+Ahora, registra una evaluación nutricional para este paciente. En qué apartado cree que debería realizarse. Ahí dice no evaluación, entonces se puede llenar lo de los pacientes, el peso, la talla, el IMC, los hábitos, el diagnóstico y el estado del paciente. 
+
+Si está activo, pendiente, confirmado, cancelado, completado y inactivo. Ahora revise su agenda profesional. Nos podría decir qué ve ubicado. 
+
+Veo que está distribuido por día, semana, disponibilidad y cancelado. Y en cada uno qué ubica. En el día está el paciente, a las 3 de la tarde dice pendiente.
+
+Está lo de ver, editar, eliminar. Bueno, creo que habría que eliminar cuando el paciente ya haya ingresado a su evaluación, para ella saber que ya pasó eso. Sigue la semana, está distribuida por lunes, martes, miércoles, jueves, viernes.
+
+Ahí para agendar cita. Ahí se puede poner aquí agendar cita y se agrega y ya saldría en el día o en la semana que tengo disponibilidad. Y las canceladas también.
+
+No hay citas canceladas, dice. Pero aquí supongo se podría poner lo que es ya una cita que ya terminó y ya si ya me cancelaron. Ahí también acá arriba vemos el correo electrónico, que hay mensajes.
+
+Podemos poner en modo oscuro también. Uy, qué bonito, vamos a poner en modo oscuro. Ya, ahora puede dirigirse a ver si hay pacientes derivados hacia el área de nutrición.
+
+Derivaciones, aquí dice. Sistema integral de derivaciones, origen, nutrición, profesión responsable, destinos, seguimiento. No, no hay ningún paciente aquí. 
+
+Se puede agregar, obvio sí, porque dice nueva derivación. Paciente, origen y destino, estado y acciones. Y ahora puede revisar sus notificaciones.
+
+Notificaciones. No hay ninguna notificación. A los lados sale lo que es la cuenta de correo, que me parece correcto que salga ahí.
+
+Porque a veces uno como que se olvida cuál es el correo. Entonces tenerlo a los lados me parece correcto. Dice envío real pendiente de configurar, respuesta permitida.
+
+Ok, ya en general, ya después de haber usado todos los módulos, algún módulo faltó de observar que usted diga cuál es. Planes nutricionales, no, no, sí vimos planes nutricionales. Historia clínica general, ese no vimos ahorita.
+
+Aquí también se puede agregar lo que son signos vitales. Eso me parece correcto, no lo había visto. Antecedentes, atenciones, diagnósticos, tratamientos, recetas y derivaciones.
+
+Ah, se puede buscar la historia clínica del paciente. El paciente se puede buscar aquí, si es que ya está agregado, obviamente. Si no, pues ya se puede registrar la evolución.
+
+Ahí dice acceso clínico autorizado. Sí, me parece correcto. Ya, luego de haber usado todas las opciones, ¿qué le pareció usar el módulo nutrición de todo lo que probamos? La evaluación, el plan nutricional, las derivaciones o algo que le resultó confuso o difícil.
+
+¿Y qué le gustaría que el sistema tuviera o hiciera diferente? En esta parte vamos a recibir las críticas de parte suya para poder saber si tenemos que mejorar alguna cosa. Pero no he visto... Bueno, ya para las correcciones vamos a empezar con la página de inicio que creo que deberíamos mejorar o algo. Planes activos, evaluaciones pendientes, derivación nueva.
+
+Comportamiento de citas, atendidas, canceladas, ingresos mensuales. Atendidas, pendientes, canceladas. Ay, aquí sí.
+
+Ya, me parece un poco confuso que yo coja y agregue un paciente y se agregue el mismo. Pero aquí dice actividad reciente y se ve el mismo, el mismo, el mismo paciente. Pero también dice citas de hoy y se ve el mismo paciente pero dos veces puesto.
+
+Ah, y guardé un paciente con un número de cédula pero se guardó con el número uno. No se guardó el número de cédula. Entonces, eso creo que está un poco confuso en la página de inicio.
+
+Ya, vamos a seguir con el módulo de pacientes asignados. Ya, este... Ah, lo de pacientes asignados dice derivados de nutrición, buscar por cédula, todo lo que he estado hoy a actualizar. Ya, esto está bien. 
+
+No, no creo que haya ninguna falla. Aquí, la historia se verifica únicamente cuando existe derivación de cita autorizada. Esto me parece innecesario porque dice pacientes seleccionados.
+
+La historia se habilita únicamente porque la historia clínica ya está acá aparte. Entonces, me parece innecesario que esté una ventanita acá que diga que la historia clínica va a estar a los lados porque ya la tengo acá en el menú para poderla ver de manera general en toda la pantalla y no en un pedacito. Ok, y ahora vamos a seguir con el... Agenda profesional.
+
+Ya, en la agenda profesional... Este... Resumen de agenda... Semana. No me gusta que cuando yo ingreso, no puedo coger e ingresar aquí, donde dice paciente demo aplasta y no puedo ver nada de ese paciente o algo así, no puedo hacer nada. Acá abajo dice ver, editar, eliminar, pero uno ingresa ahí e igual se queda un poquito como que bugueado.
+
+Acá en lunes, martes, miércoles, jueves y viernes... Tampoco me parece correcto que no pueda ingresar. Aquí dice dos espacios, pero supongo que la descripción sale acá abajo, pero sería muy tedioso estar bajando totalmente para poder ver toda la descripción de las citas. En disponibilidad, mañana, tarde, 30 minutos, 5 espacios... Esto me parece correcto, eso está bien.
+
+Y canceladas... Bueno, aquí no aparece ninguna cita cancelada. Ajá, me parece correcto. Esto de resumen de agenda también me gusta, pero aquí no me gusta que dice confirmadas hoy y disponibles hoy.
+
+Siento que es muy repetitivo. Este otro error que veo aquí en la misma sección es cuando uno quiere agendar cita y uno quiere poner a un paciente nuevo, no lo puede hacer porque al momento que uno pone guardar registro, no se guarda. No se guarda y no aparece en ningún lado.
+
+Y si se guarda, creo que se guarda como apareció en el inicio, con el número 1. Ah, y otra cosa es que no me gusta que venga directamente la derivación de la parte así de nutrición, porque hay pacientes que pueden venir directamente conmigo y no tienen disponibilidad de tecnología o cosas así, entonces me gustaría poder agendarlos yo mismo y no que venga solo por derivación. Me gustaría que tenga las dos opciones. Vamos, creo que supongo a historia clínica general, ¿no? Esta parte sí me gustó, esta parte sí me parece que está bien.
+
+Aquí no tengo ninguna acotación porque sí me gusta. Creo que está conciso, preciso, pero aquí dice selección del paciente, por ejemplo, paciente demo, buscar historial y aquí aparece todo el historial. Me parece muy bien, paciente demo, cédula, fecha, tipo de sangre, alergias, peso, todo está muy bien.
+
+Ya vamos a continuar con la evaluación nutricional. Aquí no sé si se llega a actualizar ya cuando uno agrega un nuevo paciente en la parte de acá arriba, el peso, talla, porque intenta agregar un paciente, como dije anteriormente, y al momento de ingresar el paciente esto de aquí no se actualizó, pero el paciente sí se guardó, se guardó con el número 1, pero no se actualizó. Bueno, aquí dice número 1 y está la cédula del paciente que trate de agendar, pero no me gustó porque sale el número 1, pero no sale lo que es el número de cédula del paciente y no se actualizan los datos de la parte de arriba.
+
+Ahora vamos con planes nutricionales. Bueno, aquí está lo mismo, cuando uno actualiza, pone un nuevo paciente, no se actualiza la parte de arriba. También intenta hacerlo y no se puede.
+
+Por ejemplo, aquí dice nuevo plan, quiero agregar algún nuevo plan, supongo que es para el mismo paciente, eso no tengo muy entendido porque como dije anteriormente, no pude agregar otro paciente y ver si es que es el del paciente que ya está aquí o es del paciente mío. Entonces eso de ahí es lo que me tiene como con dudas. De ahí esto de seguimiento entre controles sí me gusta, me gusta que esté ahí, que diga próximo control, valores bioquímicos y el objetivo del paciente.
+
+Ahí están las derivaciones. Esto de aquí supongo que es la derivación que me viene directamente del centro médico. Un origen, destino, seguimiento.
+
+Ah, son las derivaciones también de que yo mando al centro médico a la otra persona, a algún otro especialista que vaya después de mí. Me gusta, me gusta. Ya continuamos con notificaciones.
+
+Notificaciones, como dije anteriormente, me gusta esto que está lo que es el correo aquí a los lados porque al momento de que está el correo a los lados ya uno no tiene que estarlo buscando por acá arriba en otras opciones, sino que a los lados ya está porque a veces uno con tantas cosas en la cabeza se le olvida el correo y ya con verlo ahí a los lados es más fácil para uno como profesional. Bueno, como estábamos hablando de la parte de notificaciones, agregó un mensaje porque me llamó la atención eso que dice nuevo mensaje. Al momento de agregar el mensaje sí se puede enviar, pero aquí hay algo que dice configuración en envío real.
+
+Al momento de ingresar aquí para configurar el correo me salen palabras que obviamente yo entiendo poco porque no es mi rama, pero son palabras de software informática y cosas que creo que definitivamente se tendrían que corregir porque dice service ID y public key. Bueno, es clave publica, pero da igual. Esto de aquí al momento de guardar configuración o cosas así si no completo el campo del service, pues no puedo guardar nada.
+
+Pero es que esa palabra no me gusta, no me gusta esa palabra, siento que para mi campo y para lo que estoy tratando de hacer no está bien ese pedacito. Ya, viendo todo lo que es el ámbito general ya para poder finalizar, me di cuenta que acá arriba hay un signo de interrogación, aplasté y es un asistente virtual. El asistente virtual se supone que debe facilitarme lo que es el avance de la página, pero al momento que le pregunto que cita tengo mañana me dice que yo misma tengo que consultar y registrar la cita.
+
+Entonces eso me parece un poquito ilógico porque eso no es lo que hace un asistente virtual. Ahora le dije, puedes decírmelo tú y me dice que me puede ayudar con áreas médicas, horarios, citas, pagos, notificaciones al sistema, que le pregunte que áreas médicas tienen. Pero se supone que este de aquí es el sistema de gestión inteligente para un centro médico, pero estoy ya metida en nutrición, entonces que me pregunte que áreas médicas tengo es un poquito también como que irrelevante e ilógico.
+
+Pero de ahí si mejoran este asistente, me parece que sí, sí podría ser un buen asistente virtual. Bueno, muchas gracias por su tiempo y por sus comentarios. Nos son útiles para mejorar el sistema.
+
+Si tiene alguna otra observación, luego puede contactarnos y muchas gracias por su tiempo.
+
+Nota de edición
+Se unificó el formato de presentación y se corrigieron únicamente errores evidentes de escritura o transcripción. No se añadieron respuestas, preguntas, observaciones ni contenido nuevo.

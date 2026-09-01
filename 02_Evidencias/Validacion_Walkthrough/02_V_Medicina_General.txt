@@ -1,0 +1,105 @@
+V Medicina General
+Transcripción anonimizada
+Etapa: Validación del prototipo
+
+Transcripción
+Buenas tardes, mi nombre es Pablo Alexander Tigasi Sampedro. Soy estudiante de Ingeniería de Software de cuarto semestre. Estamos con la encargada de Medicina General, la cual va a ser la prueba de la validación de requerimientos a través del prototipo de gestión inteligente para un centro médico.
+
+Pueden revisar todas las opciones o menús que se encuentran en el lado izquierdo. También incluye el mes, o sea, días, semanas. Todo me parece bien.
+
+No va aquí también el mes. Sería ideal agregarlo. ¿Usted considera que debería agregarse eso? Sí, ideal.
+
+Sería ideal. Sí, aquí también. Aquí también podría agregar otros temas.
+
+Por ejemplo, si es que tengo aquí un psicólogo conmigo. No, no, sí está bien. Aquí podemos agregar los ensayos.
+
+Hay muchos ensayos. ¿Observaciones tiene o mejoramos? ¿Es algo que no comprendió o no está claro? En el historial clínico podría aumentar más. Por ejemplo, motivos emocionales.
+
+El antecedente personal del paciente. También tenemos en la hoja de registro. Tenemos en los hospitales también.
+
+Entonces, aquí también está. Leí la aplicación. Sí, sí me gustó porque está aquí.
+
+Sí, está... ¿Cómo es? Tiene un buen diseño. Solo le faltaría algo que le mencione. ¿Nada más que decir? Que es un proyecto que se debería dar avance.
+
+Que sí se debería dar a conocer aquí en el hospital. Que... Y sí nos parece muy importante también que se aprenda este diseño. Por ejemplo, aquí en el inicio.
+
+Dice que usted va a tener acceso al paciente. Pero ¿cómo el paciente va a observar estos ensayos? Esto debería de durar 3 o 5 días. Luego de esto también.
+
+En las citas de hoy, por ejemplo. Esto va a tener algo de visibilidad. Vamos a observar durante 7 días.
+
+Va a durar un mes. ¿Cuántos días va a durar esto? En sí, solamente se verían dos partes de lo actualmente que se está realizando en el día. Pero si quiere ver las que pasaron anteriormente o todas.
+
+Ahí está la sección de ver todo. En la parte de aquí. Para que pueda ver todas las que están registradas.
+
+Y ahí ya le lleva el apartado de la sección. Ya, después. Ah, aquí también va a agregar entonces el mes.
+
+Y aquí tenemos un mapa que me dice ayuda y asistente. Aquí cuáles son las instrucciones. ¿Cómo me voy a ayudar? ¿Cómo me va a ayudar esto? En sí, eso está pensado para, por ejemplo, ahí en algún caso.
+
+Que haya un personal que sea un poco mayor. Se puede decir una persona adulta. Y entonces puede preguntarle al asistente sobre las funciones que está dentro del programa.
+
+Y dónde encontrarlas o no sabe cuántas áreas médicas están dentro del sistema. Solamente pregunte y le responde. Por ejemplo, pregúntele.
+
+¿Cómo puedo preguntarle? Puede preguntarle cuántas áreas médicas existen o dónde puedo realizar alguna cita. ¿Sólo me va a servir para esta área? ¿O también puedo consultar alguna otra área? Hasta el momento sólo está pensado para lo que está dentro del sistema. Pero, por ejemplo, si quisiera que esté conectado ya con una inteligencia artificial en sí.
+
+¿Qué consideraría que fuera bueno que tenga? Por ejemplo, que fuera bueno que se agregaran las patologías. Por ejemplo, las patologías del paciente. Por ejemplo, podría ser insuficiencia renal.
+
+Yo quisiera saber algo de insuficiencia renal para que puedan tener patologías. Entonces, eso también. En la parte de los historiales clínicos que usted mencionó.
+
+Decir qué no más, qué datos deberían registrarse. O qué datos, aparte de los que ya se encuentran, serían convenientes agregar. El historial general de esto.
+
+Sí, es el historial clínico. Ahí, el registro de consultas. Aquí en el historial clínico, sí, o sea, le veo un diseño que está bien.
+
+Pero lo que haría falta aquí es aumentar el día. Ya que nosotros evaluamos el cliente de más de dos horas. Y de ahí vamos nosotros a ver la categoría que necesita nuestra paciente.
+
+Aquí sería, bueno, mendares. Ya, recetas médicas, consulta. Y en esta parte, digamos, en el BCE 10.
+
+Si yo voy a mi asistente. Le puedo preguntar sobre la enfermedad. Si me registra o no me registra.
+
+No, en sí, el asistente sólo está dentro del sistema. O sea, sólo contesta las preguntas que están. En el caso de que se quisiera consultar algo externo a lo que es ahí.
+
+Por ejemplo, sean enfermedades, diagnósticos o alguna otra cosa. Se tendría que conectar con alguna inteligencia artificial o API. O alguna herramienta así.
+
+Como lo son Claude, Gemini o ChatGPT. Pero, ¿qué guía usted recomienda que le abarcaría a todo este sistema? Porque hay muchos guías, pero no algunas son buenas. O sea, nunca le da una verificación.
+
+Sí, en todo caso, la guía no se consideraría como decir que dé la respuesta correcta. Sino como una ayuda hacia el personal que ya es capacitado en sí. Pero, ¿qué guía usted implementaría? Bueno, dependiendo del uso que su persona requiera.
+
+Por ejemplo, nosotros recomendaríamos que use Claude o si no, ChatGPT. También podría ser Gemini. Dependiendo del caso en el cual se sienta mejor.
+
+Sí, a ver. Profecciona el destino, se calcula automáticamente. Estas son para las derivaciones.
+
+Por ejemplo, usted como está en el área de medicina general. Puede derivarlo ya sea ododontología, psicología o nutrición. Dependiendo del diagnóstico que usted haya realizado.
+
+Y decida que requiere una derivación hacia otro lado, a otra área. Este no me aparece para la otra. Ahí en el botoncito, en el círculo que está como el reloj.
+
+Ahí, ya. Eso, ya. Ya está la hora.
+
+Aquí, paciente, voy a poner. Aquí, estado. En los que son pacientes, por ejemplo, no puede agregar usted.
+
+Sino los que ya están registrados dentro del sistema. Si usted regresa nuevamente donde está el paciente, verá que le hace una línea. Ah, ya.
+
+Y... Entonces, es que no le guardo nada. No me va a aparecer. O sea, si ahorita yo quiero mandar, no me va a aparecer.
+
+¿Sí? Sí, va a venir. Pero, o sea... O sea, ¿qué me recomienda? ¿El estado? No lo entiendo muy bien. Sería el estado del paciente.
+
+Sería yo con... O sea, el diagnóstico, sí. No se registra. No lleno todos los campos.
+
+Esa también es otra excepción. Debería no poder registrarse. Otra cosa que corregir.
+
+Aunque sí fuera, ¿sabe? Al fin, una recomendación sería que uno mismo pueda registrar la hora. Porque... Para mí, recomendación es más rápido. Sí, sí.
+
+Ya dice. Teleconsulta. ¿Cómo sería eso? ¿Cómo el teleconsulta? Por ejemplo, vía telefónica o por mensajes de texto.
+
+Ah, ya veo. Ahí voy a registrar. ¿No se lo registra? Sí, ya está.
+
+Está para mañana. El tamaño de las letras, entonces, también. El tamaño de las letras.
+
+¿Alguna otra observación más o ya sería todo eso? Ya. Así, el tamaño de las letras. También como recomendación, el riesgo de mal.
+
+Entonces, las clasificaciones de pacientes. Y demás. No puedo dar tiro aquí.
+
+Ay, eso es un error. Ya tendría que corregirse eso. Porque igual de manera que me tendría que aparecerlo.
+
+Y no está. Bueno, muchas gracias por sus críticas y observaciones para la mejora del prototipo.
+
+Nota de edición
+Se unificó el formato de presentación y se corrigieron únicamente errores evidentes de escritura o transcripción. No se añadieron respuestas, preguntas, observaciones ni contenido nuevo.
