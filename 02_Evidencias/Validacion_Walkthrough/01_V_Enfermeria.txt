@@ -1,0 +1,99 @@
+V Enfermeria
+Transcripción anonimizada
+Etapa: Validación del prototipo
+
+Transcripción
+Mi nombre es Pablo Alexander Tigasi Sampedro, de Ingeniería de Software, de cuarto semestre, y estamos en la validación de requisitos para el sistema del prototipo de gestión del Centro Médico, en el apartado ahora de Enfermería. Puede iniciar sesión para ver las siguientes funciones dentro del sistema. Bueno, ya aquí, para iniciar, tenemos la pantalla de inicio, tenemos las estadísticas, los comportamientos de citas atendidas, tenemos ingresos mensuales, algo más que tenemos, citas de hoy, en la actividad reciente, en la agenda, en la actividad reciente, podrías también, no sé, se me ocurre que pongas, incluir los procedimientos que se le haya realizado al momento del paciente, aparte del diagnóstico, el día que lo hiciste, como tu enfermero, pues yo que sé, sería un mini, sería un reporte de notas, de como qué hiciste, si canalizaste, si hiciste duración de heridas, todo eso, pero aparte de, ¿cómo se llama? Ah, solo de su área, como quiera, un listado de las acciones que usted realiza dentro del sistema o al paciente.
+
+Uno, una nota de enfermería. Ah, ya, sería del agregado. Sí, el agregado.
+
+También nos va a jugar con pacientes asignados, en este caso, la búsqueda, buscar por nombre, número de cédula, yo pienso que tendrías que tener como que un apartado, o sea, que te seleccione de que él agregue su pasaporte, por A o B razón, porque a veces hay personas extranjeras que vienen a veces por vacunación misma, para viajar, y así facilita, en todos los estadios de hoy, los que se atendían, esperan, el día hoy, o esa semana, aquí podrías añadirle la fecha, y la fecha en la que se realizó, autorizar, iniciar atención. Iniciamos, tenemos vacunación odontológica, para tratamiento. En esa parte estoy equivocado, creo que no está mal.
+
+Tengo que corregir eso, no sé por qué salió así. Aquí, por parte de enfermería, salió lo que es valores o parámetros antropométricos, que vendría a ser peso, talla, todo eso. ¿Eso se encuentra en el registro de signos vitales, o en el historial clínico que se encuentra al lado izquierdo? Ahí está.
+
+¿Se puede revisar? Ahí está. Historia clínica, selección del paciente. Selección, Oscar, está del fin.
+
+En caso de emergencia, por ejemplo, digamos que tiene un diagnóstico muy complicado, o que esté grave el paciente, o sea, que tiene que estar en constante atención, podrías poner aquí un número telefónico de emergencia, o de una persona, para que te puedas referir en caso de emergencia que el paciente no se encuentre, o sea, no venga a la atención médica. O sea, un dato o una información de un familiar, más que todo. Signos vitales.
+
+No ha venido de confianza. Signos vitales, tenemos presión arterial, frecuencia cardíaca, temperatura, peso. Está bien.
+
+Aquí lo que faltaría es la frecuencia respiratoria también. De igual manera, la saturación añadida. La temperatura dentro de todo, los signos vitales, el registro de signos vitales, los calor pacientes.
+
+Aquí buscas, o te pregunto, buscas, colocas el nombre del paciente o la cédula? El nombre saludable. Ok. O sería más cómodo buscarlo por cédula? Existe el sistema de bicester salud que puedes hacerlo por nombre, por apellidos y por cédula, que de igual manera te facilita en caso de que a veces esté mal, se le escriba mal el nombre o esté así.
+
+Ya. Por todas esas direcciones. El paciente, mediciones, el estado y las acciones.
+
+Nueva medicación. Nueva medicación. Aquí tenemos signos vitales, paciente, presión, frecuencia.
+
+Entonces lo que te dije anteriormente, añadiría esto para que quede más completo la información. Atención de enfermería. El paciente, procedimientos realizados, el estado, las acciones, registro de procedimientos, funciones autorizadas, el procedimiento de recetas médicas.
+
+Me imagino que igualmente también tienes un apartado cuando lo derriban. ¿Cuándo? Cuando un paciente lo derriba. Sí.
+
+Y bueno, ahí está. Entrega de medicamentos, recetas pendientes, procedimientos entregados, total de recetas recibidas. Y pacientes con recetas.
+
+¿En este caso recetas de envíos? No, si tienes fecha porque a veces, más que todo al momento de hacer lo que es el reporte de los medicamentos, entonces te va a servir la fecha y todo eso para que se contabilicen y no se pierda. Origen de estado, entrega, de la consulta. Tenemos dos derivaciones que estamos usando.
+
+Ahí son distintos seguimientos. Ahí son de una derivación. Yo diría que aquí ya podrías ver la nueva derivación.
+
+¿Qué la das? Área de uso. Consumiría, motivo, fecha. Área de uso.
+
+Área de uso. Con el diagnóstico. Fecha.
+
+Profesional. Destino. Próxima terminación.
+
+Aquí sería, por ejemplo, añaden el profesional que lo mandó y al profesional que está destinado. O solo tienes el destino, pero no hay quien lo derriba. En este caso... Ah, el nombre.
+
+El nombre. En este caso sería del doctor, porque él es el que te da. Entonces, profesional que lo evalúa.
+
+Sí, eso hay que ver. Al nivel de atención, ¿qué sería? Por ejemplo, hay hospitales de segundo nivel como de tercer nivel. O sea, para tener más información.
+
+No entendí eso. O sea, cuando te derriban, puedes derivarte a un hospital de segundo nivel. Ah, en este caso no se maneja eso, porque en sí las derivaciones ocurren solamente dentro del mismo centro médico.
+
+Ah, ¿eh? Ok. Sí, no es externo. Ok, ok.
+
+En esa parte del profesional no es que recalcar. Eh... Gendarsita. Aquí podrías ponerme como que la foto del paciente para identificación.
+
+O también para mayor... En tal caso de que se necesite buscar al paciente, puedes poner lo que es la dirección de donde se encuentra el paciente. Por ejemplo, la calle tal, tal, tal. Ah, ya.
+
+Y una referencia, o sea, al frente del parque del paciente. Como los datos del paciente, todo. Ajá, sí.
+
+Sí, en general. Y, notificaciones. Entonces el correo.
+
+Nuevo mensaje. Correo destinatario. Y aquí en tal caso que sea una persona adulta mayor, si no tiene correo, ¿cómo le avisas? Bueno, en el aspecto de los adultos mayores, como también de los niños, tendrías que tener una información adicional.
+
+El tutor o el padre encargado, como decir el tutor. Exacto. Algo más que desea observar o analizar.
+
+Más que todo... Puedes revisar las secciones de la parte de arriba. Buscar pacientes, sí. Podría ser, por ejemplo... Podría ser la foto del perfil del profesional tratante.
+
+Una recomendación para que pueda... Sí, como tiene el acceso el usuario, entonces para ver por quién fue atendido, ¿no? Entonces eso y... Esto y... Los mensajes que se reciben. Y la asistencia, sí. Nada más, por ejemplo... Al momento de buscar, ¿cómo, por ejemplo, digamos que quieres ver, por alguna razón, el paciente no vino y quieres ver qué fecha tuvo o qué fecha tiene para que vuelva nuevamente a atenderse? ¿Ya existe algún...? No, en esa parte no hay.
+
+¿Sería que le gustaría añadir eso? Y, por ejemplo, ahí lo que trae el diagnóstico y la medicación que tiene presente ahí para tener así como que en evidencia. Ahí sería como las recomendaciones y los argumentos de eso sería bien. Y un poco como que para terminar la... El diseño podría ser más... En vez de horizontal que sea vertical, podría ser, o sea, activa.
+
+No sé. Para no emprender, llenar rápido los precios. Esas serían todas sus observaciones.
+
+Sí. Muchas gracias por sus observaciones, sugerencias y nuevas mejoras para el prototipo. Gracias.
+
+En este apartado, para iniciar o ver qué... ¿A dónde me dijo? Disculpa? ¿A dónde me dijo para ver los apartados? Sí. En el lado izquierdo ahí están todas las secciones o funciones que tiene el sistema. Esta semana.
+
+Y, por ejemplo, en esta sería la fecha. O sea, si tengo... No puedes poner alguna fecha en específico. Podría ser.
+
+O sea, te pones hoy y pones 5 de junio y así. Sería ideal agregar ese campo atrás. Ajá, ese campo.
+
+Y paciente, motivo, derivación, estado y acciones. Me imagino que motivo y derivación, aquí ya pones el diagnóstico. Sí, por qué se deriva esa área.
+
+La diminución de tensión. Esto no. ¿Esto no? Sí.
+
+Sí. Entendí. Y aquí tenemos la variación física, movilidad del hombro, rehabilitación de la rodilla.
+
+En esta aplicación te va a dar referente a lo que ya tiene un diagnóstico, se te va a habilitar esto. Sí. Porque viene de derivaciones de otras áreas, como quieras aceptarlo.
+
+Ahí te viene, exacto. Tienes una movilidad del hombro y rehabilitación de la rodilla. Eso está mal, de verdad.
+
+Yo mismo me voy a criticar. Eso está mal porque en sí ese apartado debería ir en el área de terapia física. Es algo que hay que corregir y eliminarlo, como quiera, de esa parte.
+
+Más que eliminarlo sería adaptarlo mejor. Habilitar más el diagnóstico. La sección de terapia que sería la sección de alimentos.
+
+Ah, lo mismo.
+
+Nota de edición
+Se unificó el formato de presentación y se corrigieron únicamente errores evidentes de escritura o transcripción. No se añadieron respuestas, preguntas, observaciones ni contenido nuevo.
