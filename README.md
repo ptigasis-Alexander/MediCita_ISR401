@@ -41,17 +41,17 @@ git clone --filter=blob:none https://github.com/ptigasis-Alexander/MediCita_ISR4
 
 | Sección | Contenido | Estado |
 |---|---|:---:|
-| `01_ERS/` | `ERS_SRS_2B_V2.0.tex` (fuente) | 🟡 En cierre — falta compilar el PDF; `Imagenes_IR_PFC/` aún sin las figuras |
-| `02_Evidencias/` | Consentimientos, transcripciones, codificación, cuestionario, entorno, restringido cifrado | 🟢 Sustancialmente completo |
+| `01_ERS/` | ERS 2A (`.tex` + `.pdf`), `ERS_SRS_2B_V2.0.tex`, referencias, `Imagenes_DCF_IR_LATEX/` e `Imagenes_IR_PFC/` | 🟡 En cierre — las imágenes ya están presentes; falta compilar y subir el PDF final del ERS 2B |
+| `02_Evidencias/` | Consentimientos, transcripciones, codificación, cuestionario, entorno, validación walkthrough y restringido cifrado | 🟢 Sustancialmente completo |
 | `03_Modelado/` | Diagramas UML, diagramas corregidos, mockups/interfaces finales | 🟢 Completo |
-| `04_Trazabilidad/` | Matriz de trazabilidad (70 filas, RF-01–RF-40 y RNF-01–RNF-18 con cobertura completa) y priorización MoSCoW/Kano | 🟢 Completo |
-| `05_MVP/` | Producto Mínimo Viable navegable, publicado en GitHub Pages | 🟢 Completo |
-| `06_Experimento/` | Datos procesados, prompts LLM, resultados estadísticos reproducibles, scripts | 🟡 Protocolo, registro OSF y desviaciones existen localmente en edición; aún no subidos |
-| `07_Publicacion/` | Manuscrito (`.tex`) y paquete de datos para Zenodo | 🟡 Falta compilar el PDF del manuscrito |
-| `08_Etica/` | Documentación ética completa (Anexo A.1–A.13, Categoría A, adendas) | 🟢 Completo |
-| `09_Defensa/` | Materiales de la defensa oral | 🔴 Pendiente |
+| `04_Trazabilidad/` | Matriz de trazabilidad original, matriz actualizada y priorización MoSCoW/Kano | 🟢 Completo |
+| `05_MVP/` | Demo guiada publicada en GitHub Pages + `MediCita_prototipo_final_actualizado.html` | 🟢 Completo |
+| `06_Experimento/` | Datos, instrumentos, prompts LLM, resultados, scripts, protocolo, registro OSF y desviaciones | 🟢 Completo en repositorio |
+| `07_Publicacion/` | Manuscrito (`.tex`), referencias, figuras, tablas y paquete de datos para Zenodo | 🟡 Falta compilar el PDF final del manuscrito y completar el depósito final |
+| `08_Etica/` | Documentación ética completa (Anexos A1–A13 y documentos complementarios) | 🟢 Completo |
+| `09_Defensa/` | Actualmente solo contiene `defensa.md` como marcador | 🔴 Pendiente |
 | Depósito Zenodo + SWHID | DOI persistente y archivado en Software Heritage | 🔴 Pendiente (acción final) |
-| `checksums.sha256` / `fair_assessment.pdf` (raíz) | Integridad y autoevaluación FAIR | 🔴 Pendientes de generar/ejecutar |
+| `checksums.sha256` / `fair_assessment.pdf` (raíz) | Integridad y autoevaluación FAIR | 🔴 Pendientes de generar/subir |
 
 > Este cuadro se actualiza en cada commit relevante. Si algún estado no coincide con el contenido real de una carpeta, prevalece el contenido real, no este resumen.
 
@@ -59,7 +59,7 @@ git clone --filter=blob:none https://github.com/ptigasis-Alexander/MediCita_ISR4
 
 ## 📖 Resumen del dominio
 
-**SICM (Sistema de Gestión Inteligente para un Centro Médico)** es el sistema especificado y prototipado en este repositorio. Su dominio es la gestión operativa de un centro médico ambulatorio, con las siguientes áreas identificadas mediante entrevistas de elicitación: Medicina General, Terapia Física, Nutrición, Odontología/Coordinación, Enfermería, Psicología, Recepción/Recaudación y la perspectiva del paciente.
+**SICM (Sistema de Gestión Inteligente para un Centro Médico)** es el sistema especificado y prototipado en este repositorio. Su dominio es la gestión operativa de un centro médico ambulatorio, con las siguientes áreas identificadas mediante entrevistas de elicitación y sesiones posteriores de validación: Medicina General, Terapia Física, Nutrición, Odontología/Coordinación, Enfermería, Psicología, Recepción/Recaudación y la perspectiva del paciente.
 
 ---
 
@@ -81,9 +81,14 @@ git clone --filter=blob:none https://github.com/ptigasis-Alexander/MediCita_ISR4
 
 | Recurso | Enlace | Estado |
 |---|---|:---:|
-| 📄 ERS/SRS 2B (fuente) | [`01_ERS/ERS_SRS_2B_V2.0.tex`](01_ERS/) | 🟡 Falta compilar PDF |
-| 💻 MVP funcional (demo en vivo) | [ptigasis-alexander.github.io/MediCita_ISR401/05_MVP/](https://ptigasis-alexander.github.io/MediCita_ISR401/05_MVP/) | 🟢 Disponible |
+| 📄 ERS/SRS 2A | [`01_ERS/ERS_SRS_2A_v1.0.pdf`](01_ERS/ERS_SRS_2A_v1.0.pdf) | 🟢 Disponible |
+| 📄 ERS/SRS 2B (fuente) | [`01_ERS/ERS_SRS_2B_V2.0.tex`](01_ERS/ERS_SRS_2B_V2.0.tex) | 🟡 Falta compilar PDF final |
+| 💻 MVP funcional (demo en vivo) | [ptigasis-alexander.github.io/MediCita_ISR401/](https://ptigasis-alexander.github.io/MediCita_ISR401/) | 🟢 Disponible |
+| 🖥️ Prototipo final revisado | [`05_MVP/MediCita_prototipo_final_actualizado.html`](05_MVP/MediCita_prototipo_final_actualizado.html) | 🟢 Disponible |
 | 📝 Registro OSF | [10.17605/OSF.IO/DTYNC](https://doi.org/10.17605/OSF.IO/DTYNC) | 🟢 Público |
+| 📄 Protocolo experimental | [`06_Experimento/protocolo.pdf`](06_Experimento/protocolo.pdf) | 🟢 Disponible |
+| 📄 Registro OSF en PDF | [`06_Experimento/osf_registration.pdf`](06_Experimento/osf_registration.pdf) | 🟢 Disponible |
+| 📄 Desviaciones del protocolo | [`06_Experimento/osf_deviations.pdf`](06_Experimento/osf_deviations.pdf) | 🟢 Disponible |
 | 📦 Depósito Zenodo (dataset con DOI) | *(pendiente de publicar)* | 🔴 Pendiente |
 | 🗄️ Archivado Software Heritage (SWHID) | *(pendiente de generar)* | 🔴 Pendiente |
 | 📜 Cómo citar este repositorio | [`CITATION.cff`](CITATION.cff) | 🟢 Disponible |
@@ -108,28 +113,34 @@ pip install scipy matplotlib --break-system-packages
 | Qué quiero verificar | Dónde | Cómo |
 |---|---|---|
 | Requisitos funcionales y no funcionales | `01_ERS/` | Ver "Cómo compilar el ERS/SRS" abajo — requiere pasos específicos, no alcanza con un solo `xelatex`. |
-| Trazabilidad Ley→RF→CU→Mockup | `04_Trazabilidad/` | Abrir `matriz_trazabilidad.csv` (70 filas). Verificar cobertura completa: `cut -d';' -f6 matriz_trazabilidad.csv \| tr '/' '\n' \| sort -u`. |
-| Diagramas UML y mockups | `03_Modelado/` | `Diagramas_UML/`, `Diagramas_UML_Corregidos/` (`.drawio`/`.png`), `Mockups_Prototipo_Final/` (set vigente; `Mockups/` es el histórico) |
-| Prototipo funcional | `05_MVP/` | Enlace de GitHub Pages, o local: `cd 05_MVP && python3 -m http.server 8000` |
-| Evidencia de campo | `02_Evidencias/` | Cada subcarpeta tiene su propio README con checklist de verificación |
-| Evidencia restringida (audio/video originales) | `02_Evidencias/00_Restringido/` | Requiere contraseña entregada por el docente vía SGA. Ver procedimiento de verificación en el README de esa carpeta. |
-| Análisis experimental reproducible | `06_Experimento/scripts_analisis/run_all.py` | `cd 06_Experimento/scripts_analisis && python3 run_all.py` — regenera `resultados_estadisticos.json`; comparar con `diff` contra el archivo ya guardado en `06_Experimento/resultados/` |
-| Manuscrito de publicación | `07_Publicacion/manuscrito_final.tex` | Ver "Cómo compilar el manuscrito" abajo |
-| Documentación ética | `08_Etica/` | Ver `08_Etica_.md` |
-| Integridad de archivos | raíz | `sh GENERA_CHEDKSUMS.sh` desde la raíz ya clonada; verificar con `sha256sum --check checksums.sha256` |
+| ERS 2A compilado | `01_ERS/ERS_SRS_2A_v1.0.pdf` | Abrir directamente el PDF disponible en el repositorio. |
+| Imágenes del ERS 2A | `01_ERS/Imagenes_DCF_IR_LATEX/` | Contiene las figuras utilizadas por `ERS_SRS_2A_v1.0.tex`. |
+| Imágenes del ERS 2B | `01_ERS/Imagenes_IR_PFC/` | Carpeta de figuras utilizada por la versión 2B. |
+| Trazabilidad Ley→RF→CU→Mockup | `04_Trazabilidad/` | Abrir preferentemente `matriz_trazabilidad_ACTUALIZADA.csv`; también se conserva la matriz anterior como evidencia de evolución. |
+| Diagramas UML y mockups | `03_Modelado/` | Revisar diagramas UML, versiones corregidas y `Mockups_Prototipo_Final/`. |
+| Demo guiada del MVP | `05_MVP/` | Abrir GitHub Pages o ejecutar localmente con `python3 -m http.server 8000`. |
+| Prototipo final revisado | `05_MVP/MediCita_prototipo_final_actualizado.html` | Abrir el HTML directamente en el navegador. |
+| Evidencia de campo | `02_Evidencias/` | Revisar consentimientos, transcripciones, codificación y sesiones de validación walkthrough. |
+| Evidencia restringida (audio/video originales) | `02_Evidencias/00_Restringido/` | Requiere contraseña autorizada para los contenedores cifrados. |
+| Análisis experimental reproducible | `06_Experimento/scripts_analisis/run_all.py` | `cd 06_Experimento/scripts_analisis && python3 run_all.py` |
+| Protocolo y registro OSF | `06_Experimento/` | Abrir `protocolo.pdf`, `osf_registration.pdf` y `osf_deviations.pdf`. |
+| Manuscrito de publicación | `07_Publicacion/manuscrito_final.tex` | Ver "Cómo compilar el manuscrito" abajo. |
+| Documentación ética | `08_Etica/` | Ver `08_Etica_.md` y los anexos A1–A13. |
+| Defensa | `09_Defensa/` | Actualmente solo contiene `defensa.md`; faltan los materiales finales. |
+| Integridad de archivos | raíz | `sh GENERA_CHEDKSUMS.sh`; luego verificar con `sha256sum --check checksums.sha256`. |
 
 ### Cómo compilar el ERS/SRS
 
 ```bash
 cd 01_ERS
-# Requiere que Imagenes_IR_PFC/ ya tenga las figuras (ver estado arriba)
+
 xelatex -interaction=nonstopmode ERS_SRS_2B_V2.0.tex
 bibtex ERS_SRS_2B_V2.0
 xelatex -interaction=nonstopmode ERS_SRS_2B_V2.0.tex
 xelatex -interaction=nonstopmode ERS_SRS_2B_V2.0.tex
 ```
 
-Usa `xelatex`, no `pdflatex` (el documento requiere `fontspec`). Se necesitan las 3 pasadas + `bibtex` para que el índice y las referencias bibliográficas queden bien enlazados — con una sola pasada no alcanza.
+Usa `xelatex`, no `pdflatex` (el documento requiere `fontspec`). Las carpetas de imágenes ya están presentes en `01_ERS/`, por lo que el pendiente de esta sección es compilar correctamente y subir el PDF final del ERS 2B.
 
 ### Cómo compilar el manuscrito
 
