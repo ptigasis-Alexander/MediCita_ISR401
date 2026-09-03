@@ -131,7 +131,7 @@
 		3.1 & 01/08/2026 & Entrega 3 (2A) --- revisión de concordancia & Normalización definitiva de la numeración: el catálogo contiene exactamente RF-01 a RF-40. Las funciones que aparecían como RF-39 a RF-09 se consolidaron en RF-39, RF-40, RF-10 y RF-09, según su alcance. Se completaron las fichas RF-14, RF-31, RF-32, RF-33, RF-36 y RF-37, la tabla WSJF y la matriz de trazabilidad extendida sin celdas vacías. & Equipo PFC \\
 		\addlinespace
 		
-		4.0 & 31/08/2026 & Entrega 4 (2B) --- cierre documental & Se consolida la línea base final del ERS/SRS para la defensa. Se mantiene el catálogo RF-01--RF-40 y 17 RNF activos (RNF-01--RNF-16 y RNF-18; RNF-17 permanece retirado para preservar la trazabilidad histórica). La primera ronda conserva la codificación temática C01--C49; la segunda ronda de validación se registra de forma separada mediante observaciones OBS y transcripciones. El MVP se verifica técnicamente sobre los 22 RF Must: 20 cumplen la comprobación técnica reproducible (90,91\,\%), mientras RF-09 y RF-18 no se declaran cerrados. Este porcentaje expresa cobertura técnica del MVP y no satisfacción, SUS ni validación humana. El prerregistro OSF quedó público con DOI \url{https://doi.org/10.17605/OSF.IO/DTYNC}. Los resultados posteriores al prerregistro se documentan en los artefactos de experimento y desviaciones, sin modificar retrospectivamente el plan registrado. & Equipo PFC \\
+		4.0 & 31/08/2026 & Entrega 4 (2B) --- cierre documental & Se consolida la línea base final del ERS/SRS para la defensa. Se mantiene el catálogo RF-01--RF-40 y 19 RNF activos (RNF-01--RNF-16, RNF-18, RNF-19 y RNF-20; RNF-17 permanece retirado para preservar la trazabilidad histórica). Se incorporan RNF-19 (equidad en el acceso a la cita) y RNF-20 (monitoreo posterior al despliegue del componente de IA), ambos exigidos por la Guía de Desarrollo del 02/09/2026 y pendientes de validación de campo. La primera ronda conserva la codificación temática C01--C49; la segunda ronda de validación se registra de forma separada mediante observaciones OBS y transcripciones. El MVP se verifica técnicamente sobre los 22 RF Must: 20 cumplen la comprobación técnica reproducible (90,91\,\%), mientras RF-09 y RF-18 no se declaran cerrados. Este porcentaje expresa cobertura técnica del MVP y no satisfacción, SUS ni validación humana. El prerregistro OSF quedó público con DOI \url{https://doi.org/10.17605/OSF.IO/DTYNC}. Los resultados posteriores al prerregistro se documentan en los artefactos de experimento y desviaciones, sin modificar retrospectivamente el plan registrado. & Equipo PFC \\
 		\bottomrule
 	\end{longtable}
 	
@@ -1696,7 +1696,7 @@
 	
 	\subsection{ Requisitos no funcionales cuantificables (ISO/IEC 25010)}
 	
-	Se documentan 17 RNF activos (RNF-01 a RNF-16 y RNF-18); RNF-17 se conserva como identificador retirado/no activo para no romper la trazabilidad histórica. Cada RNF activo se asocia con una característica de calidad de ISO/IEC 25010:2023 \cite{iso25010} y se expresa mediante una métrica y un criterio de verificación cuantificable; no se aceptan términos vagos sin cuantificar.
+	Se documentan 19 RNF activos (RNF-01 a RNF-16, RNF-18, RNF-19 y RNF-20); RNF-17 se conserva como identificador retirado/no activo para no romper la trazabilidad histórica. Cada RNF activo se asocia con una característica de calidad de ISO/IEC 25010:2023 \cite{iso25010} y se expresa mediante una métrica y un criterio de verificación cuantificable; no se aceptan términos vagos sin cuantificar.
 	
 	
 	\begin{longtable}{
@@ -1807,6 +1807,62 @@
 	
 	\begin{quote}
 		\textbf{Pendiente para el equipo:} este RNF-18 es la base normativa; su validación real (las dos rondas con 6 participantes por ronda que exige la Sección 5.3 de la guía) requiere trabajo de campo que aún no se ha ejecutado 
+	\end{quote}
+	
+	\subsubsection{ Requisito de equidad en el acceso a la cita (obligatorio --- componente de IA)}
+	
+	El componente de asignación/recomendación automática de citas (RF-02, apoyado por RF-13 para sugerir fechas alternativas) debe garantizar que ninguna variable protegida introduzca una diferencia sistemática e injustificada en el acceso al servicio \cite{whoai2021,euaiact2024}.
+	
+	\begin{longtable}{p{0.28\textwidth} p{0.67\textwidth}}
+		
+		\toprule
+		\textbf{Atributo} & \textbf{Detalle} \\
+		\midrule
+		\endhead
+		
+		Identificador & RNF-19 \\
+		Característica & Equidad (no discriminación) en la asignación o recomendación automática de citas, tratada como propiedad verificable del módulo de agendamiento \\
+		Componente asociado & RF-02 --- Agendar cita médica; RF-13 --- Sugerencia de fechas alternativas \\
+		Usuarios afectados & Paciente (usuario que solicita la cita) \\
+		Variable controlada & Tipo de área médica solicitada, franja horaria de la solicitud y canal de acceso (web/WhatsApp); no se contemplan variables sensibles (género, etnia, condición socioeconómica) por no ser recolectadas por el sistema \\
+		Métrica y umbral & Diferencia en el tiempo medio de asignación de cita entre grupos definidos por la variable controlada \(\leq\) 10\,\% respecto al grupo con menor tiempo de espera \\
+		Prioridad (MoSCoW) & Should \\
+		Método de verificación & Análisis estadístico comparativo (prueba de proporciones o equivalente) sobre los registros de asignación de citas de un período de referencia \\
+		Responsable & Equipo de desarrollo, con revisión del responsable del tratamiento de datos declarado en la Sección de ética \\
+		Frecuencia de medición & Cada corte de entrega y, en producción, trimestral \\
+		\bottomrule
+	\end{longtable}
+	
+	\begin{quote}
+		\textbf{Pendiente para el equipo:} este RNF-19 define el requisito y su métrica; la medición real requiere datos de asignación de citas en volumen suficiente, que aún no existen porque el sistema no está en operación. No se reporta ningún resultado de equidad hasta contar con esos datos.
+	\end{quote}
+	
+	\subsubsection{ Requisito de monitoreo posterior al despliegue (obligatorio --- componente de IA)}
+	
+	Todo componente de IA/AA en producción debe contar con monitoreo continuo de su comportamiento, independiente de la validación previa al despliegue \cite{whoai2021,euaiact2024}.
+	
+	\begin{longtable}{p{0.28\textwidth} p{0.67\textwidth}}
+		
+		\toprule
+		\textbf{Atributo} & \textbf{Detalle} \\
+		\midrule
+		\endhead
+		
+		Identificador & RNF-20 \\
+		Característica & Monitoreo posterior al despliegue del componente de IA \\
+		Componente asociado & RF-16 --- Asistente virtual con IA (chat box) \\
+		Usuarios afectados & Paciente (usuario directo); Personal de recepción (receptor de derivaciones) \\
+		Indicadores & (a) Tasa de derivaciones del asistente a un agente humano; (b) tasa de consultas sin respuesta o con error; (c) tiempo medio de respuesta del asistente \\
+		Umbral & Tasa de error o falta de respuesta \(\leq\) 5\,\%; tiempo medio de respuesta \(\leq\) 2 segundos (hereda el umbral de RNF-18) \\
+		Prioridad (MoSCoW) & Should \\
+		Método de verificación & Registro automático de los tres indicadores en cada interacción del asistente, con panel de revisión periódica \\
+		Responsable & Equipo de desarrollo (rol de mantenimiento post-entrega) \\
+		Frecuencia de medición & Mensual mientras el componente esté en producción \\
+		\bottomrule
+	\end{longtable}
+	
+	\begin{quote}
+		\textbf{Pendiente para el equipo:} este RNF-20 define el requisito, los indicadores y su umbral; el monitoreo real solo puede ejecutarse una vez el asistente esté desplegado en producción, lo cual está fuera del alcance de este corte del PFC.
 	\end{quote}
 	
 	\subsubsection{ Requisitos legales explícitos (LOPDP)}
@@ -3849,8 +3905,8 @@
 	
 	\subsection{Matriz de trazabilidad extendida}
 	
-			La matriz canónica de cierre contiene 70 filas: una fila por cada uno de los 40 RF, una fila individual por cada uno de los 17 RNF activos (RNF-01 a RNF-16 y RNF-18), y filas adicionales que registran relaciones RF-caso de uso adicionales identificadas durante la segunda ronda de elicitación. Cada celda \texttt{ID-RF/RNF} contiene un único identificador; se eliminaron identificadores compuestos que impedían el contraste automático. Cuando un RNF es transversal y no posee CU, HU o mockup propio, se declara explícitamente \textit{No aplica} en lugar de inventar una asociación.
-		
+	La matriz canónica de cierre contiene 72 filas: una fila por cada uno de los 40 RF, una fila individual por cada uno de los 19 RNF activos (RNF-01 a RNF-16, RNF-18, RNF-19 y RNF-20), y filas adicionales que registran relaciones RF-caso de uso adicionales identificadas durante la segunda ronda de elicitación. Cada celda \texttt{ID-RF/RNF} contiene un único identificador; se eliminaron identificadores compuestos que impedían el contraste automático. Cuando un RNF es transversal y no posee CU, HU o mockup propio, se declara explícitamente \textit{No aplica} en lugar de inventar una asociación.
+	
 	\begingroup
 	\scriptsize
 	\setlength{\LTleft}{-1.5cm}
@@ -3940,6 +3996,8 @@
 		68 & No aplica & Gestionar cuentas de usuario & Administrador & EV-04 & RF-10 & CU-31 & US-30 & CA-01 a CA-02 & COMP-Login & MU-01 \\
 		69 & No aplica & Recuperar contrasena & Usuario & EV-01 & RF-09 & CU-32 & US-31 & CA-01 a CA-02 & COMP-Login & MU-01 \\
 		70 & No aplica & Cerrar sesion & Usuario & EV-01 & RF-09 & CU-33 & US-32 & CA-01 a CA-02 & COMP-Login & MU-01 \\
+		71 & No aplica & Equidad en la asignación de cita & Paciente & EV-Enf-01 & RNF-19 & CU-01 & US-01 & Métrica RNF-19 & Módulo de Agendamiento (RF-02/RF-13) & MU-01 \\
+		72 & No aplica & Monitoreo posterior al despliegue del asistente IA & Paciente/Recepción & EV-01 & RNF-20 & No aplica — flujo definido en RF-16 & No aplica — RNF & Métrica RNF-20 & COMP-Paciente / asistente IA & MU-32 \\
 		\bottomrule
 	\end{longtable}
 	\endgroup
@@ -4187,7 +4245,7 @@
 		\label{fig:evidenciaentrevista-4}
 	\end{figure}
 	
-
+	
 	
 	\subsubsection{B.5 Sesión de brainstorming grupal}
 	
@@ -4270,7 +4328,7 @@
 	\subsection{Apéndice B. Clasificación y priorización (MoSCoW / Kano)}
 	
 	\subsubsection{C.1 Clasificación RF / RNF (referencia vigente)}
-	Para evitar duplicidades y contradicciones, este apéndice no vuelve a enumerar un catálogo histórico. La clasificación normativa vigente es la de las Secciones 3.2 y 3.4: \textbf{40 RF} (RF-01--RF-40) y \textbf{17 RNF activos} (RNF-01--RNF-16 y RNF-18), con RNF-17 retirado.
+	Para evitar duplicidades y contradicciones, este apéndice no vuelve a enumerar un catálogo histórico. La clasificación normativa vigente es la de las Secciones 3.2 y 3.4: \textbf{40 RF} (RF-01--RF-40) y \textbf{19 RNF activos} (RNF-01--RNF-16, RNF-18, RNF-19 y RNF-20), con RNF-17 retirado.
 	
 	\subsubsection{C.2 Priorización MoSCoW (referencia vigente)}
 	La priorización vigente es exclusivamente la tabla completa de la Sección 5.1. En ella existen \textbf{22 RF Must}; cualquier tabla parcial de entregas anteriores queda sustituida por dicha línea base. Esta decisión evita divergencias como clasificar RF-11 o RF-13 con una prioridad distinta a la utilizada para calcular la cobertura del MVP.
@@ -4565,7 +4623,7 @@
 	
 	\section{Conclusiones}
 	
-	La línea base final del SICM/MediCita consolida un catálogo de 40 requisitos funcionales y 17 requisitos no funcionales activos. La numeración RNF-17 se conserva como identificador retirado para no romper la trazabilidad histórica; RNF-18 corresponde a explicabilidad del componente de IA. Esta decisión elimina la contradicción de versiones anteriores que describían 18 RNF activos. La especificación mantiene criterios verificables y diferencia explícitamente entre umbrales de aceptación y resultados realmente observados.
+	La línea base final del SICM/MediCita consolida un catálogo de 40 requisitos funcionales y 19 requisitos no funcionales activos. La numeración RNF-17 se conserva como identificador retirado para no romper la trazabilidad histórica; RNF-18 corresponde a explicabilidad, RNF-19 a equidad en el acceso a la cita y RNF-20 a monitoreo posterior al despliegue del componente de IA. Esta decisión elimina la contradicción de versiones anteriores que describían 18 RNF activos y responde a las tres carencias señaladas por la Guía de Desarrollo del 02/09/2026 (equidad, monitoreo y explicabilidad ya cubierta). La especificación mantiene criterios verificables y diferencia explícitamente entre umbrales de aceptación y resultados realmente observados.
 	
 	La primera ronda de levantamiento y la segunda ronda de validación cumplen funciones metodológicas distintas. Los códigos C01--C49 pertenecen a la codificación temática del levantamiento, mientras las observaciones OBS pertenecen al walkthrough del prototipo. Mantener ambos conjuntos separados evita presentar hallazgos posteriores como si hubieran formado parte de la elicitación inicial y permite conservar trazabilidad desde la necesidad hasta el requisito y su evidencia de validación.
 	
@@ -4615,6 +4673,6 @@
 	\addcontentsline{toc}{section}{Referencias bibliográficas}
 	\bibliographystyle{ieeetr}
 	\bibliography{referencias_usadas}
-
+	
 	
 \end{document}
