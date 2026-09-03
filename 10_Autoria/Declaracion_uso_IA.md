@@ -48,22 +48,25 @@ Fuente: [`06_Experimento/prompst_LLm/registro_uso_llm.csv`](../06_Experimento/pr
 
 ## 2️⃣ Redacción de documentos y análisis de datos recolectados — uso combinado GPT-5.6 Sol + Claude Sonnet 5
 
-| Actividad | Herramientas usadas | Quién verificó | Método de verificación |
+| Actividad | Herramientas usadas | Quién participó / verificó | Método de verificación |
 |---|---|---|---|
-| Redacción de documentos y análisis de los datos recolectados | ChatGPT (GPT-5.6 Sol) y Claude Sonnet 5 (Anthropic) | Paul Alexander Tigasi Sampedro y Steven Santiago Díaz Pontón (principal) | Se revisó lo que ya se tenía contra lo que generaba cada herramienta, verificando si existía coherencia o relación exacta con los datos originales. Adicionalmente, se contrastó cruzando la respuesta de una herramienta contra la opinión de la otra (de ChatGPT a Claude y viceversa) antes de aceptar cualquier contenido. |
+| Redacción y elaboración de documentos | ChatGPT (GPT-5.6 Sol) y Claude Sonnet 5 (Anthropic) | Los 5 integrantes del equipo (Paul Alexander Tigasi Sampedro, Steven Santiago Díaz Pontón, Jamileth Estefanía Gamarra Zárate, Thais Melanie Herrera Ramos, Mayummy Jailly Trujillo Vega) | No aplica (actividad de redacción, no de verificación) |
+| Verificación y análisis de coherencia de los datos generados | ChatGPT (GPT-5.6 Sol) y Claude Sonnet 5 (Anthropic) | Steven Santiago Díaz Pontón (principal) y Paul Alexander Tigasi Sampedro | Se revisó lo que ya se tenía contra lo que generaba cada herramienta, verificando si existía coherencia o relación exacta con los datos originales. Adicionalmente, se contrastó cruzando la respuesta de una herramienta contra la opinión de la otra (de ChatGPT a Claude y viceversa) antes de aceptar cualquier contenido. |
 
 ---
 
 ## 3️⃣ Asistencia de IA en la corrección final del repositorio — Claude Sonnet 5 (Anthropic), agosto-septiembre 2026
 
+> **Sobre la columna "Quién verificó":** la interacción directa con la IA la realizó Paul Alexander Tigasi Sampedro. Sin embargo, los cambios propuestos no se aceptaron de forma unilateral: cada integrante revisaba el repositorio en sus propios días, se discutían los cambios en conjunto y se comparaban criterios entre todos antes de darlos por definitivos. Por eso cada fila indica ambos niveles: quién interactuó directamente con la IA, y que la validación final fue colectiva.
+
 | Tarea | Para qué se usó | Quién verificó | Método de verificación |
 |---|---|---|---|
-| Auditoría del repositorio contra la Guía de Desarrollo | Contrastar el estado real del repositorio contra la guía y el informe del docente | Paul Alexander Tigasi Sampedro | Verificación directa sobre el repositorio clonado (conteos, hashes, compilación real del LaTeX) |
-| Redacción de RNF-19 (equidad) y RNF-20 (monitoreo) | Especificar dos requisitos no funcionales exigidos por la guía, no declarados previamente | Paul Alexander Tigasi Sampedro | Revisión de que la métrica y el umbral fueran razonables para el dominio del proyecto; compilación real del documento sin errores |
-| Corrección de rutas en `run_all.py` | Reparar el pipeline tras mover archivos de `06_Experimento` a `07_Datos` | Paul Alexander Tigasi Sampedro | Ejecución real del script, confirmando que reproduce las mismas cifras ya publicadas en el manuscrito |
-| Migración de evidencia audiovisual a GitHub Release | Reducir el peso de clonado del repositorio sin eliminar evidencia | Paul Alexander Tigasi Sampedro | Verificación de que los hashes SHA-256 del Release coinciden con `fichas_tecnicas.csv` |
-| Redacción de plantillas de `10_Autoria/` (A8, A9, A10) | Generar el formato exigido por la guía, con datos reales del historial de Git y de los documentos de correspondencia | Paul Alexander Tigasi Sampedro | Contraste de las cifras (commits, fechas) contra `git log` y contra los PDF originales directamente |
-| Redacción de oficios corregidos (Oficio de Respaldo, Aval CategoriaA_A3) | Actualizar los 5 integrantes del equipo y corregir la inconsistencia de nombre de firmante | Paul Alexander Tigasi Sampedro | Contraste línea por línea contra el texto original antes de aceptar cada cambio |
+| Auditoría del repositorio contra la Guía de Desarrollo | Contrastar el estado real del repositorio contra la guía y el informe del docente | Paul Alexander Tigasi Sampedro (interacción directa) — validado en conjunto con el equipo | Verificación directa sobre el repositorio clonado (conteos, hashes, compilación real del LaTeX) |
+| Redacción de RNF-19 (equidad) y RNF-20 (monitoreo) | Especificar dos requisitos no funcionales exigidos por la guía, no declarados previamente | Paul Alexander Tigasi Sampedro (interacción directa) — validado en conjunto con el equipo | Revisión de que la métrica y el umbral fueran razonables para el dominio del proyecto; compilación real del documento sin errores |
+| Corrección de rutas en `run_all.py` | Reparar el pipeline tras mover archivos de `06_Experimento` a `07_Datos` | Paul Alexander Tigasi Sampedro (interacción directa) — validado en conjunto con el equipo | Ejecución real del script, confirmando que reproduce las mismas cifras ya publicadas en el manuscrito |
+| Migración de evidencia audiovisual a GitHub Release | Reducir el peso de clonado del repositorio sin eliminar evidencia | Paul Alexander Tigasi Sampedro (interacción directa) — validado en conjunto con el equipo | Verificación de que los hashes SHA-256 del Release coinciden con `fichas_tecnicas.csv` |
+| Redacción de plantillas de `10_Autoria/` (A8, A9, A10) | Generar el formato exigido por la guía, con datos reales del historial de Git y de los documentos de correspondencia | Paul Alexander Tigasi Sampedro (interacción directa) — validado en conjunto con el equipo | Contraste de las cifras (commits, fechas) contra `git log` y contra los PDF originales directamente |
+| Redacción de oficios corregidos (Oficio de Respaldo, Aval CategoriaA_A3) | Actualizar los 5 integrantes del equipo y corregir la inconsistencia de nombre de firmante | Paul Alexander Tigasi Sampedro (interacción directa) — validado en conjunto con el equipo | Contraste línea por línea contra el texto original antes de aceptar cada cambio |
 
 ---
 
