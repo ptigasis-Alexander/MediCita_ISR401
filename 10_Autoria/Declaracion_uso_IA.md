@@ -75,7 +75,7 @@ Fuente: [`06_Experimento/prompst_LLm/registro_uso_llm.csv`](../06_Experimento/pr
 | Actividad | Responsable(s) |
 |---|---|
 | Recolección de datos en campo (entrevistas, observación del walkthrough) | Equipo completo, en persona |
-| Firma de consentimientos y trámites institucionales (solicitudes, avales) | Paul Alexander Tigasi Sampedro, Steven Santiago Díaz Pontón |
+| Firma de consentimientos y trámites institucionales (solicitudes, avales) | Paul Alexander Tigasi Sampedro,  Steven Santiago Díaz Pontón ,Thais Melanie Herrera Ramos |
 
 ---
 
