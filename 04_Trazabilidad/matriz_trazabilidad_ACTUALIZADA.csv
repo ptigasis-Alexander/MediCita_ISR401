@@ -69,3 +69,5 @@
 68;No aplica;Gestionar cuentas de usuario;Administrador;EV-04;RF-10;CU-31;US-30;CA-01 a CA-02;COMP-Login;MU-01
 69;No aplica;Recuperar contrasena;Usuario;EV-01;RF-09;CU-32;US-31;CA-01 a CA-02;COMP-Login;MU-01
 70;No aplica;Cerrar sesion;Usuario;EV-01;RF-09;CU-33;US-32;CA-01 a CA-02;COMP-Login;MU-01
+71;No aplica;Equidad en la asignación de cita;Paciente;EV-Enf-01;RNF-19;CU-01;US-01;Métrica RNF-19;Módulo de Agendamiento (RF-02/RF-13);MU-01
+72;No aplica;Monitoreo posterior al despliegue del asistente IA;Paciente/Recepción;EV-01;RNF-20;No aplica — flujo definido en RF-16;No aplica — RNF;Métrica RNF-20;COMP-Paciente / asistente IA;MU-32
