@@ -20,8 +20,8 @@ from scipy.stats import nct, t
 
 
 ROOT = Path(__file__).resolve().parents[2]
-DATA = ROOT / "06_Experimento" / "datos_procesados"
-RESULTS = ROOT / "06_Experimento" / "resultados"
+DATA = ROOT / "07_Datos" / "datos_procesados"
+RESULTS = ROOT / "07_Datos" / "resultados"
 FIGURES = ROOT / "07_Publicacion" / "figuras"
 TABLES = ROOT / "07_Publicacion" / "tablas"
 ZENODO = ROOT / "07_Publicacion" / "dataset_zenodo"
