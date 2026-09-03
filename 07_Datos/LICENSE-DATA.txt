@@ -1,0 +1,29 @@
+LICENCIA DE LOS DATOS — 07_Datos/
+
+Esta licencia aplica únicamente al contenido de 07_Datos/ (datos crudos,
+datos procesados y resultados). Es distinta de la licencia del código
+del repositorio (MIT, ver LICENSE en la raíz).
+
+Los datos de esta carpeta se distribuyen bajo:
+
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/
+
+Esta es la misma licencia bajo la cual está publicado el depósito
+"Replication package for MediCita/SICM" en Zenodo
+(DOI 10.5281/zenodo.22236373), para mantener coherencia entre el
+repositorio y el depósito externo.
+
+Copyright (c) 2026 Paul Alexander Tigasi Sampedro, Steven Santiago Díaz
+Pontón, Jamileth Estefanía Gamarra Zárate, Thais Melanie Herrera Ramos y
+Mayummy Jailly Trujillo Vega.
+
+Bajo esta licencia usted es libre de compartir y adaptar los datos,
+siempre que otorgue el crédito correspondiente a los autores.
+
+NOTA: esta licencia cubre exclusivamente los datos anonimizados
+publicados en 07_Datos/. No cubre el contenido de
+02_Evidencias/00_Restringido/, que permanece bajo acceso restringido
+por contener datos personales sin anonimizar, según lo declarado en
+08_Etica/ y en la Ley Orgánica de Protección de Datos Personales del
+Ecuador.
