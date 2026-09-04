@@ -89,4 +89,4 @@ Al firmar, cada integrante confirma que la información de esta declaración es 
 | Steven Santiago Díaz Pontón | | |
 | Jamileth Estefanía Gamarra Zárate | Jamileth Gamarra | 03/09/2026 18:38 |
 | Thais Melanie Herrera Ramos | | |
-| Mayummy Jailly Trujillo Vega | | |
+| Mayummy Jailly Trujillo Vega |Trujillo Mayummy |03/09/2026 23:09 |
