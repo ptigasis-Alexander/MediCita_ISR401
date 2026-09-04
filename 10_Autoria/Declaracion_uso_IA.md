@@ -86,7 +86,7 @@ Al firmar, cada integrante confirma que la información de esta declaración es 
 | Integrante | Firma | Fecha |
 |---|---|---|
 | Paul Alexander Tigasi Sampedro | Alexander Sampedro | 03/09/2026 17:29 |
-| Steven Santiago Díaz Pontón | | |
+| Steven Santiago Díaz Pontón | Steven Diaz | 03/09/2026 23:31 |
 | Jamileth Estefanía Gamarra Zárate | Jamileth Gamarra | 03/09/2026 18:38 |
 | Thais Melanie Herrera Ramos | | |
 | Mayummy Jailly Trujillo Vega |Trujillo Mayummy |03/09/2026 23:09 |
