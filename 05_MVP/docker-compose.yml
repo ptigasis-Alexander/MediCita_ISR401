@@ -1,0 +1,7 @@
+services:
+  medicita:
+    build: .
+    container_name: medicita_mvp
+    ports:
+      - "8080:80"
+    restart: unless-stopped
