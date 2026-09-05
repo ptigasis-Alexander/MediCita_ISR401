@@ -1,40 +1,40 @@
-archivo;columna;tipo;unidad;rango_admisible;codificacion_valores_perdidos;procedencia
-datos_crudos/ficha_observacion.csv;id_registro;texto;identificador;ELI-### o OBS-###;no aplica (obligatorio);instrumento de campo, sin edición manual
-datos_crudos/ficha_observacion.csv;codigo_sesion;texto;identificador;ej. ELIC-P01, VAL-ENF;no aplica (obligatorio);instrumento de campo
-datos_crudos/ficha_observacion.csv;codigo_participante;texto;identificador;ej. P01..P08;vacío si no aplica al registro;instrumento de campo
-datos_crudos/ficha_observacion.csv;area;texto;categoría;rol clínico/administrativo del participante;no aplica (obligatorio);instrumento de campo
-datos_crudos/ficha_observacion.csv;fuente_evidencia;texto;nombre de archivo;nombre de transcripción asociada;no aplica (obligatorio);instrumento de campo
-datos_crudos/ficha_observacion.csv;tarea_funcion;texto;descripción libre;texto libre;vacío si no observado;instrumento de campo
-datos_crudos/ficha_observacion.csv;requisito_relacionado;texto;lista de IDs;uno o más RF- separados por ";";vacío si no se identificó relación;instrumento de campo
-datos_crudos/ficha_observacion.csv;estado_tarea;texto;categoría cerrada;CONTEXTO_ELICITACION / COMPLETADA_CON_OBSERVACION / etc.;no aplica (obligatorio);instrumento de campo
-datos_crudos/ficha_observacion.csv;dificultad_incidente;texto;descripción libre;texto libre;vacío si no hubo incidente;instrumento de campo
-datos_crudos/ficha_observacion.csv;comentario_participante;texto;descripción libre;texto libre;vacío si el participante no comentó;instrumento de campo
-datos_crudos/ficha_observacion.csv;observacion_investigador;texto;descripción libre;texto libre;vacío si no aplica;instrumento de campo
-datos_crudos/ficha_observacion.csv;recomendacion;texto;descripción libre;texto libre;vacío si no se generó recomendación;instrumento de campo
-datos_crudos/ficha_observacion.csv;referencia_evidencia;texto;nombre de archivo;coincide con fuente_evidencia;no aplica (obligatorio);instrumento de campo
-datos_crudos/ficha_observacion.csv;estado_revision;texto;categoría cerrada;REVISADO / PENDIENTE;no aplica (obligatorio);instrumento de campo
-datos_crudos/manifest_transcripciones_validacion.csv;archivo;texto;nombre de archivo;nombre del .txt de transcripción;no aplica (obligatorio);generado al inventariar la carpeta de evidencia
-datos_crudos/manifest_transcripciones_validacion.csv;tipo;texto;categoría;transcripcion_validacion;no aplica (obligatorio);generado al inventariar la carpeta de evidencia
-datos_crudos/manifest_transcripciones_validacion.csv;estado;texto;categoría cerrada;DISPONIBLE / NO_DISPONIBLE;no aplica (obligatorio);generado al inventariar la carpeta de evidencia
-datos_crudos/manifest_transcripciones_validacion.csv;bytes;entero;bytes;>= 0;no aplica (obligatorio);calculado con os.path.getsize sobre el archivo original
-datos_crudos/manifest_transcripciones_validacion.csv;sha256;texto;hash hexadecimal;64 caracteres hexadecimales;no aplica (obligatorio);calculado con sha256sum sobre el archivo original
-datos_procesados/observacion_requisito_long.csv;id_registro;texto;identificador;igual a ficha_observacion.csv;no aplica (obligatorio);06_Experimento/scripts_analisis/run_all.py
-datos_procesados/observacion_requisito_long.csv;codigo_sesion;texto;identificador;igual a ficha_observacion.csv;no aplica (obligatorio);06_Experimento/scripts_analisis/run_all.py
-datos_procesados/observacion_requisito_long.csv;area;texto;categoría;igual a ficha_observacion.csv;no aplica (obligatorio);06_Experimento/scripts_analisis/run_all.py
-datos_procesados/observacion_requisito_long.csv;requisito;texto;identificador;un solo RF- por fila (formato "long", una fila por relación observación-requisito);no aplica (obligatorio);06_Experimento/scripts_analisis/run_all.py (explota requisito_relacionado a formato long)
-datos_procesados/observacion_requisito_long.csv;estado_tarea;texto;categoría cerrada;igual a ficha_observacion.csv;no aplica (obligatorio);06_Experimento/scripts_analisis/run_all.py
-datos_procesados/observacion_requisito_long.csv;fuente_evidencia;texto;nombre de archivo;igual a ficha_observacion.csv;no aplica (obligatorio);06_Experimento/scripts_analisis/run_all.py
-datos_procesados/resumen_descriptivo.csv;metrica;texto;nombre de métrica;ej. sesiones_validacion_con_transcripcion;no aplica (obligatorio);06_Experimento/scripts_analisis/run_all.py
-datos_procesados/resumen_descriptivo.csv;valor;numérico o texto;según métrica;>= 0 para conteos;no aplica (obligatorio);06_Experimento/scripts_analisis/run_all.py
-resultados/cobertura_RF_Must_final.csv;RF;texto;identificador;RF-01 a RF-40;no aplica (obligatorio);06_Experimento/scripts_analisis/verificar_rf_must.js
-resultados/cobertura_RF_Must_final.csv;Nombre;texto;descripción;nombre del requisito;no aplica (obligatorio);01_ERS/ERS_SRS_2B_V2.0.tex
-resultados/cobertura_RF_Must_final.csv;Prioridad;texto;categoría cerrada;Must / Should / Could / Won't;no aplica (obligatorio);priorizacion_moscow_kano.csv
-resultados/cobertura_RF_Must_final.csv;Evidencia_walkthrough_original;texto;lista de IDs OBS-;uno o más separados por ";";vacío si no hay evidencia de walkthrough;06_Experimento/scripts_analisis/run_all.py
-resultados/cobertura_RF_Must_final.csv;Estado_walkthrough;texto;categoría;ej. EVIDENCIA_FORMATIVA_EXISTENTE;no aplica (obligatorio);06_Experimento/scripts_analisis/run_all.py
-resultados/cobertura_RF_Must_final.csv;Verificacion_final;texto;descripción con métrica;incluye resultado de prueba técnica reproducible;no aplica (obligatorio);06_Experimento/scripts_analisis/verificar_rf_must.js
-resultados/cobertura_RF_Must_final.csv;Estado_C3;texto;categoría cerrada;PASA / NO_PASA;no aplica (obligatorio);06_Experimento/scripts_analisis/verificar_rf_must.js
-resultados/power_calculation.csv;cohen_d;numérico;adimensional;0 a 2 (convención Cohen);no aplica (obligatorio);supuesto declarado, ver power_calculation_justificacion.md
-resultados/power_calculation.csv;alpha;numérico;probabilidad;0 a 1;no aplica (obligatorio);supuesto declarado, ver power_calculation_justificacion.md
-resultados/power_calculation.csv;potencia;numérico;probabilidad;0 a 1;no aplica (obligatorio);supuesto declarado, ver power_calculation_justificacion.md
-resultados/power_calculation.csv;n_por_grupo;entero;participantes;> 0;no aplica (obligatorio);calculado a partir de cohen_d, alpha y potencia
-resultados/power_calculation.csv;n_total;entero;participantes;> 0;no aplica (obligatorio);n_por_grupo * 2
+archivo,columna,tipo,unidad,rango_admisible,codificacion_valores_perdidos,procedencia
+datos_crudos/ficha_observacion.csv,id_registro,texto,identificador,ELI-### o OBS-###,no aplica (obligatorio),"instrumento de campo, sin edición manual"
+datos_crudos/ficha_observacion.csv,codigo_sesion,texto,identificador,"ej. ELIC-P01, VAL-ENF",no aplica (obligatorio),instrumento de campo
+datos_crudos/ficha_observacion.csv,codigo_participante,texto,identificador,ej. P01..P08,vacío si no aplica al registro,instrumento de campo
+datos_crudos/ficha_observacion.csv,area,texto,categoría,rol clínico/administrativo del participante,no aplica (obligatorio),instrumento de campo
+datos_crudos/ficha_observacion.csv,fuente_evidencia,texto,nombre de archivo,nombre de transcripción asociada,no aplica (obligatorio),instrumento de campo
+datos_crudos/ficha_observacion.csv,tarea_funcion,texto,descripción libre,texto libre,vacío si no observado,instrumento de campo
+datos_crudos/ficha_observacion.csv,requisito_relacionado,texto,lista de IDs,"uno o más RF- separados por "";""",vacío si no se identificó relación,instrumento de campo
+datos_crudos/ficha_observacion.csv,estado_tarea,texto,categoría cerrada,CONTEXTO_ELICITACION / COMPLETADA_CON_OBSERVACION / etc.,no aplica (obligatorio),instrumento de campo
+datos_crudos/ficha_observacion.csv,dificultad_incidente,texto,descripción libre,texto libre,vacío si no hubo incidente,instrumento de campo
+datos_crudos/ficha_observacion.csv,comentario_participante,texto,descripción libre,texto libre,vacío si el participante no comentó,instrumento de campo
+datos_crudos/ficha_observacion.csv,observacion_investigador,texto,descripción libre,texto libre,vacío si no aplica,instrumento de campo
+datos_crudos/ficha_observacion.csv,recomendacion,texto,descripción libre,texto libre,vacío si no se generó recomendación,instrumento de campo
+datos_crudos/ficha_observacion.csv,referencia_evidencia,texto,nombre de archivo,coincide con fuente_evidencia,no aplica (obligatorio),instrumento de campo
+datos_crudos/ficha_observacion.csv,estado_revision,texto,categoría cerrada,REVISADO / PENDIENTE,no aplica (obligatorio),instrumento de campo
+datos_crudos/manifest_transcripciones_validacion.csv,archivo,texto,nombre de archivo,nombre del .txt de transcripción,no aplica (obligatorio),generado al inventariar la carpeta de evidencia
+datos_crudos/manifest_transcripciones_validacion.csv,tipo,texto,categoría,transcripcion_validacion,no aplica (obligatorio),generado al inventariar la carpeta de evidencia
+datos_crudos/manifest_transcripciones_validacion.csv,estado,texto,categoría cerrada,DISPONIBLE / NO_DISPONIBLE,no aplica (obligatorio),generado al inventariar la carpeta de evidencia
+datos_crudos/manifest_transcripciones_validacion.csv,bytes,entero,bytes,>= 0,no aplica (obligatorio),calculado con os.path.getsize sobre el archivo original
+datos_crudos/manifest_transcripciones_validacion.csv,sha256,texto,hash hexadecimal,64 caracteres hexadecimales,no aplica (obligatorio),calculado con sha256sum sobre el archivo original
+datos_procesados/observacion_requisito_long.csv,id_registro,texto,identificador,igual a ficha_observacion.csv,no aplica (obligatorio),06_Experimento/scripts_analisis/run_all.py
+datos_procesados/observacion_requisito_long.csv,codigo_sesion,texto,identificador,igual a ficha_observacion.csv,no aplica (obligatorio),06_Experimento/scripts_analisis/run_all.py
+datos_procesados/observacion_requisito_long.csv,area,texto,categoría,igual a ficha_observacion.csv,no aplica (obligatorio),06_Experimento/scripts_analisis/run_all.py
+datos_procesados/observacion_requisito_long.csv,requisito,texto,identificador,"un solo RF- por fila (formato ""long"", una fila por relación observación-requisito)",no aplica (obligatorio),06_Experimento/scripts_analisis/run_all.py (explota requisito_relacionado a formato long)
+datos_procesados/observacion_requisito_long.csv,estado_tarea,texto,categoría cerrada,igual a ficha_observacion.csv,no aplica (obligatorio),06_Experimento/scripts_analisis/run_all.py
+datos_procesados/observacion_requisito_long.csv,fuente_evidencia,texto,nombre de archivo,igual a ficha_observacion.csv,no aplica (obligatorio),06_Experimento/scripts_analisis/run_all.py
+datos_procesados/resumen_descriptivo.csv,metrica,texto,nombre de métrica,ej. sesiones_validacion_con_transcripcion,no aplica (obligatorio),06_Experimento/scripts_analisis/run_all.py
+datos_procesados/resumen_descriptivo.csv,valor,numérico o texto,según métrica,>= 0 para conteos,no aplica (obligatorio),06_Experimento/scripts_analisis/run_all.py
+resultados/cobertura_RF_Must_final.csv,RF,texto,identificador,RF-01 a RF-40,no aplica (obligatorio),06_Experimento/scripts_analisis/verificar_rf_must.js
+resultados/cobertura_RF_Must_final.csv,Nombre,texto,descripción,nombre del requisito,no aplica (obligatorio),01_ERS/ERS_SRS_2B_V2.0.tex
+resultados/cobertura_RF_Must_final.csv,Prioridad,texto,categoría cerrada,Must / Should / Could / Won't,no aplica (obligatorio),priorizacion_moscow_kano.csv
+resultados/cobertura_RF_Must_final.csv,Evidencia_walkthrough_original,texto,lista de IDs OBS-,"uno o más separados por "";""",vacío si no hay evidencia de walkthrough,06_Experimento/scripts_analisis/run_all.py
+resultados/cobertura_RF_Must_final.csv,Estado_walkthrough,texto,categoría,ej. EVIDENCIA_FORMATIVA_EXISTENTE,no aplica (obligatorio),06_Experimento/scripts_analisis/run_all.py
+resultados/cobertura_RF_Must_final.csv,Verificacion_final,texto,descripción con métrica,incluye resultado de prueba técnica reproducible,no aplica (obligatorio),06_Experimento/scripts_analisis/verificar_rf_must.js
+resultados/cobertura_RF_Must_final.csv,Estado_C3,texto,categoría cerrada,PASA / NO_PASA,no aplica (obligatorio),06_Experimento/scripts_analisis/verificar_rf_must.js
+resultados/power_calculation.csv,cohen_d,numérico,adimensional,0 a 2 (convención Cohen),no aplica (obligatorio),"supuesto declarado, ver power_calculation_justificacion.md"
+resultados/power_calculation.csv,alpha,numérico,probabilidad,0 a 1,no aplica (obligatorio),"supuesto declarado, ver power_calculation_justificacion.md"
+resultados/power_calculation.csv,potencia,numérico,probabilidad,0 a 1,no aplica (obligatorio),"supuesto declarado, ver power_calculation_justificacion.md"
+resultados/power_calculation.csv,n_por_grupo,entero,participantes,> 0,no aplica (obligatorio),"calculado a partir de cohen_d, alpha y potencia"
+resultados/power_calculation.csv,n_total,entero,participantes,> 0,no aplica (obligatorio),n_por_grupo * 2
