@@ -17,8 +17,7 @@
 
 Códigos ya definidos en la primera ronda de codificación
 (`02_Evidencias/Codificacion_Tematica/categorias_tematicas.pdf`).
-**No inventes categorías nuevas** — si un segmento no encaja en
-ninguna, usa `C99` y anótalo para discutir en la reunión de
+, usa `C99` y anótalo para discutir en la reunión de
 conciliación.
 
 ---
