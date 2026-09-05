@@ -1,41 +1,41 @@
-RF;MoSCoW;Kano;Valor;Costo;Tamano;WSJF;Justificacion breve
-RF-01;Must;Basico;10;9;6;3.17;Nucleo del sistema
-RF-02;Must;Rendimiento;9;8;5;3.40;Agendamiento digital, alto valor percibido
-RF-03;Must;Basico;8;7;3;5.00;Busqueda esencial para operar historial
-RF-04;Should;Rendimiento;6;5;3;3.67;Digitaliza receta, complementa RF-01
-RF-05;Should;Rendimiento;5;4;2;4.50;Extension de RF-01, esfuerzo bajo
-RF-06;Must;Basico;7;7;3;4.67;Libera turnos automaticamente
-RF-07;Should;Rendimiento;6;5;4;2.75;Coordinacion entre areas
-RF-08;Should;Rendimiento;5;4;4;2.25;Apoyo a decisiones, no bloqueante
-RF-09;Must;Basico;9;9;3;6.00;Prerrequisito de todo el sistema, esfuerzo bajo
-RF-10;Must;Basico;8;8;4;4.00;Seguridad y cumplimiento legal
-RF-11;Must;Basico;8;9;4;4.25;Notificacion al paciente, 100% preferencia WhatsApp (EV-02)
-RF-12;Must;Basico;8;7;3;5.00;Cumplimiento LOPDP Art. 10, esfuerzo bajo
-RF-13;Must;Rendimiento;7;6;3;4.33;Consulta de solo lectura, esfuerzo bajo
-RF-14;Could;Deleite;3;2;5;1.00;Meta cualitativa (80% de formularios), largo plazo
-RF-15;Should;Rendimiento;6;5;4;2.75;Reemplaza registro manual de enfermeria
-RF-16;Should;Deleite;6;5;6;1.83;Depende de infraestructura de IA aun incompleta
-RF-17;Must;Basico;7;6;3;4.33;Prerrequisito de turnos
-RF-18;Must;Basico;7;7;5;2.80;Depende de RF-17 y RF-24
-RF-19;Must;Rendimiento;7;6;3;4.33;Consulta de solo lectura, esfuerzo bajo
-RF-20;Should;Rendimiento;5;4;4;2.25;Gestion de contingencia, no bloqueante
-RF-21;Must;Basico;8;9;4;4.25;Exigencia legal SRI
-RF-22;Must;Basico;7;7;3;4.67;Control de saldos
-RF-23;Should;Rendimiento;5;4;3;3.00;Apoyo gerencial, no critico para operar
-RF-24;Must;Basico;8;8;3;5.33;Infraestructura base de turnos
-RF-25;Should;Rendimiento;5;4;2;4.50;Ajuste fino, esfuerzo bajo
-RF-26;Must;Basico;9;8;4;4.25;Digitaliza el proceso 100% en papel
-RF-27;Must;Basico;9;9;2;9.00;Mejora mas valorada, esfuerzo minimo
-RF-28;Must;Basico;9;8;3;5.67;Identificacion indispensable
-RF-29;Should;Rendimiento;5;4;3;3.00;Caso de borde, esfuerzo moderado
-RF-30;Must;Basico;8;8;4;4.00;Confidencialidad clinica
-RF-31;Could;Deleite;4;3;3;2.33;Alerta preventiva, no critica
-RF-32;Should;Basico;6;6;3;4.00;Trazabilidad de entregas, evita errores de identidad
-RF-33;Must;Basico;9;8;3;5.67;Primer paso obligatorio del flujo
-RF-34;Must;Basico;8;7;3;5.00;Reemplaza asignacion manual
-RF-35;Should;Rendimiento;6;5;4;2.75;Elimina traslado fisico de documentos
-RF-36;Should;Rendimiento;6;5;4;2.75;Habilita agendamiento en areas por cita
-RF-37;Could;Rendimiento;4;3;3;2.33;Conveniencia, no bloqueante
-RF-38;Must;Basico;7;6;2;6.50;Alto valor, esfuerzo minimo
-RF-39;Could;Rendimiento;3;2;2;2.50;Informacion de apoyo, bajo esfuerzo
-RF-40;Should;Rendimiento;6;5;4;2.75;Seguimiento especializado nutricional y terapeutico
+RF,MoSCoW,Kano,Valor,Costo,Tamano,WSJF,Justificacion breve
+RF-01,Must,Basico,10,9,6,3.17,Nucleo del sistema
+RF-02,Must,Rendimiento,9,8,5,3.40,"Agendamiento digital, alto valor percibido"
+RF-03,Must,Basico,8,7,3,5.00,Busqueda esencial para operar historial
+RF-04,Should,Rendimiento,6,5,3,3.67,"Digitaliza receta, complementa RF-01"
+RF-05,Should,Rendimiento,5,4,2,4.50,"Extension de RF-01, esfuerzo bajo"
+RF-06,Must,Basico,7,7,3,4.67,Libera turnos automaticamente
+RF-07,Should,Rendimiento,6,5,4,2.75,Coordinacion entre areas
+RF-08,Should,Rendimiento,5,4,4,2.25,"Apoyo a decisiones, no bloqueante"
+RF-09,Must,Basico,9,9,3,6.00,"Prerrequisito de todo el sistema, esfuerzo bajo"
+RF-10,Must,Basico,8,8,4,4.00,Seguridad y cumplimiento legal
+RF-11,Must,Basico,8,9,4,4.25,"Notificacion al paciente, 100% preferencia WhatsApp (EV-02)"
+RF-12,Must,Basico,8,7,3,5.00,"Cumplimiento LOPDP Art. 10, esfuerzo bajo"
+RF-13,Must,Rendimiento,7,6,3,4.33,"Consulta de solo lectura, esfuerzo bajo"
+RF-14,Could,Deleite,3,2,5,1.00,"Meta cualitativa (80% de formularios), largo plazo"
+RF-15,Should,Rendimiento,6,5,4,2.75,Reemplaza registro manual de enfermeria
+RF-16,Should,Deleite,6,5,6,1.83,Depende de infraestructura de IA aun incompleta
+RF-17,Must,Basico,7,6,3,4.33,Prerrequisito de turnos
+RF-18,Must,Basico,7,7,5,2.80,Depende de RF-17 y RF-24
+RF-19,Must,Rendimiento,7,6,3,4.33,"Consulta de solo lectura, esfuerzo bajo"
+RF-20,Should,Rendimiento,5,4,4,2.25,"Gestion de contingencia, no bloqueante"
+RF-21,Must,Basico,8,9,4,4.25,Exigencia legal SRI
+RF-22,Must,Basico,7,7,3,4.67,Control de saldos
+RF-23,Should,Rendimiento,5,4,3,3.00,"Apoyo gerencial, no critico para operar"
+RF-24,Must,Basico,8,8,3,5.33,Infraestructura base de turnos
+RF-25,Should,Rendimiento,5,4,2,4.50,"Ajuste fino, esfuerzo bajo"
+RF-26,Must,Basico,9,8,4,4.25,Digitaliza el proceso 100% en papel
+RF-27,Must,Basico,9,9,2,9.00,"Mejora mas valorada, esfuerzo minimo"
+RF-28,Must,Basico,9,8,3,5.67,Identificacion indispensable
+RF-29,Should,Rendimiento,5,4,3,3.00,"Caso de borde, esfuerzo moderado"
+RF-30,Must,Basico,8,8,4,4.00,Confidencialidad clinica
+RF-31,Could,Deleite,4,3,3,2.33,"Alerta preventiva, no critica"
+RF-32,Should,Basico,6,6,3,4.00,"Trazabilidad de entregas, evita errores de identidad"
+RF-33,Must,Basico,9,8,3,5.67,Primer paso obligatorio del flujo
+RF-34,Must,Basico,8,7,3,5.00,Reemplaza asignacion manual
+RF-35,Should,Rendimiento,6,5,4,2.75,Elimina traslado fisico de documentos
+RF-36,Should,Rendimiento,6,5,4,2.75,Habilita agendamiento en areas por cita
+RF-37,Could,Rendimiento,4,3,3,2.33,"Conveniencia, no bloqueante"
+RF-38,Must,Basico,7,6,2,6.50,"Alto valor, esfuerzo minimo"
+RF-39,Could,Rendimiento,3,2,2,2.50,"Informacion de apoyo, bajo esfuerzo"
+RF-40,Should,Rendimiento,6,5,4,2.75,Seguimiento especializado nutricional y terapeutico
