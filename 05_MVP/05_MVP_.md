@@ -12,6 +12,7 @@
 ![Estado](https://img.shields.io/badge/Estado-Publicado-success?style=for-the-badge)
 ![Validacion](https://img.shields.io/badge/Validacion-Walkthrough-success?style=for-the-badge)
 ![Tecnologia](https://img.shields.io/badge/Tecnologia-HTML_%2F_CSS_%2F_JS-00509d?style=for-the-badge)
+![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 
 </div>
 
@@ -35,11 +36,11 @@ La demostración publicada permite revisar los principales módulos y flujos del
 
 ## 📖 Qué es este MVP
 
-Es una **demostración guiada y autoreproducible** del sistema SICM.
+Es una **demostración guiada y autorreproducible** del sistema SICM.
 
 Simula la navegación por las principales interfaces del sistema y permite observar el flujo de atención de diferentes usuarios y áreas del centro médico.
 
-La demostración fue **actualizada después del proceso de validación walkthrough**, incorporando las principales observaciones identificadas durante las sesiones con los participantes.
+La demostración fue **actualizada después del proceso de Validación Walkthrough**, incorporando las principales observaciones identificadas durante las sesiones con los participantes.
 
 La demostración tiene una duración aproximada de:
 
@@ -72,8 +73,8 @@ Entre los módulos y procesos representados se encuentran:
 
 La demostración incluye los siguientes controles:
 
-- 🔊 Activar / silenciar la narración
-- ⏸️ Pausar / reanudar la demostración
+- 🔊 Activar o silenciar la narración
+- ⏸️ Pausar o reanudar la demostración
 - ⛶ Pantalla completa
 - 🔠 `A+` para aumentar el tamaño del texto
 
@@ -85,7 +86,7 @@ La narración utiliza las capacidades disponibles en el navegador para acompaña
 
 Además de la demostración guiada, esta carpeta contiene la **versión final revisada del prototipo del sistema SICM**.
 
-Este prototipo corresponde a la versión obtenida después del proceso de:
+Este prototipo corresponde a la versión obtenida después del siguiente proceso:
 
 **Prototipo inicial → Validación Walkthrough → Observaciones → Correcciones → Prototipo final revisado**
 
@@ -93,12 +94,12 @@ El objetivo fue incorporar las observaciones de los participantes **sin modifica
 
 Por lo tanto, se conservaron:
 
-- distribución general de los módulos;
-- menú lateral;
-- estructura de navegación;
-- identidad visual;
-- organización por roles;
-- flujo general de atención.
+- Distribución general de los módulos
+- Menú lateral
+- Estructura de navegación
+- Identidad visual
+- Organización por roles
+- Flujo general de atención
 
 Las modificaciones se concentraron principalmente en funcionalidades, campos, mensajes, accesibilidad y necesidades detectadas durante la validación.
 
@@ -108,32 +109,32 @@ Las modificaciones se concentraron principalmente en funcionalidades, campos, me
 
 Entre las principales mejoras incorporadas al prototipo final y representadas en la demostración se encuentran:
 
-- identificación mediante **cédula o pasaporte**;
-- consideración de pacientes menores de edad;
-- información de representante legal cuando corresponde;
-- teléfono de contacto de emergencia;
-- mensajes de confirmación más claros;
-- control `A+` para mejorar la legibilidad;
-- selección de profesional al solicitar una cita;
-- visualización más clara de horarios disponibles;
-- agenda por día, semana y mes;
-- consulta de pagos y comprobantes;
-- registro de frecuencia respiratoria;
-- registro de saturación de oxígeno;
-- notas y procedimientos de Enfermería;
-- historia clínica filtrable por especialidad;
-- antecedentes psicológicos previos;
-- objetivo terapéutico en Psicología;
-- mejoras en el registro de Terapia Física;
-- número y duración de sesión;
-- prioridad de atención;
-- registro de ejercicios realizados;
-- derivaciones con área de origen y destino;
-- contexto clínico para el área receptora;
-- apoyo de accesibilidad mediante dictado por voz;
-- gestión de profesionales y horarios desde Coordinación;
-- reportes automáticos por área;
-- mejoras en notificaciones y trazabilidad.
+- Identificación mediante **cédula o pasaporte**
+- Consideración de pacientes menores de edad
+- Información de representante legal cuando corresponde
+- Teléfono de contacto de emergencia
+- Mensajes de confirmación más claros
+- Control `A+` para mejorar la legibilidad
+- Selección de profesional al solicitar una cita
+- Visualización más clara de horarios disponibles
+- Agenda por día, semana y mes
+- Consulta de pagos y comprobantes
+- Registro de frecuencia respiratoria
+- Registro de saturación de oxígeno
+- Notas y procedimientos de Enfermería
+- Historia clínica filtrable por especialidad
+- Antecedentes psicológicos previos
+- Objetivo terapéutico en Psicología
+- Mejoras en el registro de Terapia Física
+- Número y duración de sesión
+- Prioridad de atención
+- Registro de ejercicios realizados
+- Derivaciones con área de origen y destino
+- Contexto clínico para el área receptora
+- Apoyo de accesibilidad mediante dictado por voz
+- Gestión de profesionales y horarios desde Coordinación
+- Reportes automáticos por área
+- Mejoras en notificaciones y trazabilidad
 
 ---
 
@@ -152,12 +153,12 @@ Una vez registrada, la receta se envía al área de **Enfermería**.
 
 Enfermería puede consultar:
 
-- paciente;
-- medicamento;
-- dosis;
-- frecuencia;
-- cantidad;
-- indicaciones.
+- Paciente
+- Medicamento
+- Dosis
+- Frecuencia
+- Cantidad
+- Indicaciones
 
 Después de entregar el medicamento al paciente, Enfermería puede marcarlo como:
 
@@ -169,9 +170,9 @@ De esta manera se mantiene la trazabilidad entre la prescripción y la entrega d
 
 ## 🏥 Áreas y roles representados
 
-El MVP representa los principales actores y áreas definidas para SICM:
+El MVP representa los principales actores y áreas definidos para SICM:
 
-| Rol / Área | Funciones representadas |
+| Rol o área | Funciones representadas |
 |---|---|
 | 👤 Paciente | Datos personales, citas, pagos y consulta de información |
 | 🗂️ Recepción | Registro, búsqueda de pacientes y gestión de citas |
@@ -233,13 +234,13 @@ MVP actualizado
 
 Esto permite mantener coherencia entre:
 
-- requisitos;
-- validación;
-- observaciones;
-- interfaces;
-- prototipo;
-- MVP;
-- trazabilidad.
+- Requisitos
+- Validación
+- Observaciones
+- Interfaces
+- Prototipo
+- MVP
+- Trazabilidad
 
 ---
 
@@ -251,12 +252,12 @@ Su objetivo es demostrar visualmente el comportamiento esperado del sistema.
 
 Por tratarse de un prototipo académico:
 
-- no utiliza una base de datos clínica de producción;
-- no almacena información médica real;
-- no procesa pagos reales;
-- no sustituye un sistema médico productivo;
-- los datos mostrados son simulados;
-- algunas operaciones representan el comportamiento esperado del sistema.
+- No utiliza una base de datos clínica de producción
+- No almacena información médica real
+- No procesa pagos reales
+- No sustituye un sistema médico productivo
+- Los datos mostrados son simulados
+- Algunas operaciones representan el comportamiento esperado del sistema
 
 ---
 
@@ -286,6 +287,83 @@ La publicación se realiza mediante **GitHub Actions**, utilizando únicamente l
 
 ---
 
+## 🐳 Despliegue reproducible con Docker
+
+El MVP también puede ejecutarse localmente mediante **Docker y Docker Compose**, sin necesidad de abrir manualmente el archivo `index.html`.
+
+Este mecanismo permite reproducir el despliegue del prototipo en un entorno limpio utilizando un servidor web Nginx.
+
+### Requisitos
+
+Antes de ejecutar el prototipo, debe estar instalado:
+
+- Docker Desktop
+- Docker Compose
+
+### Clonar el repositorio
+
+```bash
+git clone https://github.com/ptigasis-Alexander/MediCita_ISR401.git
+```
+
+### Ingresar a la carpeta del MVP
+
+```bash
+cd MediCita_ISR401/05_MVP
+```
+
+### Construir e iniciar el contenedor
+
+```bash
+docker compose up --build
+```
+
+Después de finalizar la construcción, abrir en el navegador:
+
+```text
+http://localhost:8080
+```
+
+El prototipo será servido mediante **Nginx** dentro de un contenedor Docker.
+
+### Detener el MVP
+
+Para detener y eliminar el contenedor creado, ejecutar:
+
+```bash
+docker compose down
+```
+
+### Reconstruir después de realizar cambios
+
+Si se modifican los archivos HTML, CSS o JavaScript, ejecutar nuevamente:
+
+```bash
+docker compose up --build
+```
+
+### Verificar el contenedor
+
+Para comprobar que el contenedor se encuentra en ejecución:
+
+```bash
+docker ps
+```
+
+Debe aparecer un contenedor llamado:
+
+```text
+medicita_mvp
+```
+
+Este procedimiento proporciona un despliegue reproducible mediante una única orden:
+
+```bash
+docker compose up --build
+```
+
+---
+
 ## 📂 Archivos de esta carpeta
 
 | Archivo | Función |
@@ -294,7 +372,9 @@ La publicación se realiza mediante **GitHub Actions**, utilizando únicamente l
 | [`style.css`](style.css) | Diseño visual, componentes y animaciones |
 | [`script.js`](script.js) | Reproducción automática, escenas, narración y controles |
 | [`05_MVP_.md`](05_MVP_.md) | Documentación del MVP y de la versión revisada |
-| `MediCita_prototipo_final_actualizado.html` | **Prototipo final revisado después de la Validación Walkthrough** |
+| [`MediCita_prototipo_final_actualizado.html`](MediCita_prototipo_final_actualizado.html) | Prototipo final revisado después de la Validación Walkthrough |
+| [`Dockerfile`](Dockerfile) | Construcción de la imagen del MVP mediante Nginx |
+| [`docker-compose.yml`](docker-compose.yml) | Configuración para iniciar el despliegue reproducible |
 
 > El prototipo final permite realizar una revisión más detallada de las interfaces y funcionalidades, mientras que la demostración guiada presenta los principales flujos del sistema de manera automática.
 
@@ -307,9 +387,10 @@ Para evaluar esta sección del repositorio se recomienda:
 1. Abrir la **demostración publicada en GitHub Pages**.
 2. Ejecutar los **5 minutos de la demostración guiada**.
 3. Revisar el **prototipo final actualizado**.
-4. Consultar las evidencias de **Validación Walkthrough**.
-5. Contrastar las observaciones con las mejoras incorporadas.
-6. Revisar la trazabilidad con los requisitos correspondientes.
+4. Ejecutar el MVP mediante **Docker Compose**.
+5. Consultar las evidencias de **Validación Walkthrough**.
+6. Contrastar las observaciones con las mejoras incorporadas.
+7. Revisar la trazabilidad con los requisitos correspondientes.
 
 ---
 
@@ -319,6 +400,9 @@ Para evaluar esta sección del repositorio se recomienda:
 - CSS3
 - JavaScript
 - Web Speech API
+- Docker
+- Docker Compose
+- Nginx
 - GitHub Pages
 - GitHub Actions
 
@@ -333,6 +417,8 @@ Para evaluar esta sección del repositorio se recomienda:
 ### ✅ Prototipo final revisado
 
 ### ✅ Mejoras de Validación Walkthrough incorporadas
+
+### ✅ Despliegue reproducible mediante Docker Compose
 
 ### ✅ GitHub Pages publicado
 
