@@ -18,8 +18,8 @@
 |---|---|---|---|---|---|---|:---:|
 | 1 | **28/05/2026** | Solicitud | Paul Alexander Tigasi Sampedro | Ing. Rosa Andrade Rivas, Directora General DGDS | Oficio físico, firmado, sello de recepción (8:19 am) | [`solicitud_entrevista.pdf`](../../02_Evidencias/Documentos_Organizacion/solicitud_entrevista.pdf) | 🟢 |
 | 2 | **22/07/2026** | Aval institucional | Sergio Antonio Yepez Rizzo (Coordinador DGDS) | Vicerrector Académico UTEQ | Oficio físico, firmado | [`A5_Aval_Institucional.pdf`](../../08_Etica/A5_Aval_Institucional.pdf) | 🟢 |
-| 3 | **20/08/2026** | Aval específico del establecimiento | Sergio Antonio Yepez Rizzo (Coordinador DGDS) | Ing. Gleiston Guerrero Ulloa / Rosa Andrade Rivas | Oficio físico, firmado | [`CategoriaA_A3_Aval_Establecimiento.pdf`](../../08_Etica/Categoria_A/CategoriaA_A3_Aval_Establecimiento.pdf) | 🟡 En trámite |
-| 4 | **04/09/2026** *(programado)* | Oficio de respaldo institucional | DGDS (Sergio Antonio Yepez Rizzo) | Ing. Gleiston Guerrero Ulloa | Oficio físico | `Oficio_Respaldo_Institucional_DGDS.pdf` | 🟡 En trámite |
+| 3 | **20/08/2026** | Aval específico del establecimiento | Sergio Antonio Yepez Rizzo (Coordinador DGDS) | Ing. Gleiston Guerrero Ulloa / Rosa Andrade Rivas | Oficio físico, firmado | [`CategoriaA_A3_Aval_Establecimiento.pdf`](../../08_Etica/Categoria_A/CategoriaA_A3_Aval_Establecimiento.pdf) | 🟢 Completo|
+| 4 | **04/09/2026**  | Oficio de respaldo institucional | DGDS (Sergio Antonio Yepez Rizzo) | Ing. Gleiston Guerrero Ulloa | Oficio físico | `Oficio_Respaldo_Institucional_DGDS.pdf` | 🟢 Completo |
 
 **Leyenda:** 🟢 Completo y verificado ·  🟡 En trámite, firma programada
 
@@ -54,5 +54,5 @@ Borrador listo y verificado (`Oficio_Respaldo_Institucional_DGDS_CORREGIDO.docx`
 |---|:---:|
 | Solicitud inicial de acceso | 🟢 Completo |
 | Autorización institucional general (5 integrantes) | 🟢 Completo |
-| Autorización específica del establecimiento de salud | 🟡 En trámite |
-| Respaldo institucional formal hacia el docente | 🟡 En trámite (04/09/2026) |
+| Autorización específica del establecimiento de salud |🟢 Completo|
+| Respaldo institucional formal hacia el docente | 🟢 Completo |
