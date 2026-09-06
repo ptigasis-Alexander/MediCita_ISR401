@@ -88,5 +88,5 @@ Al firmar, cada integrante confirma que la información de esta declaración es 
 | Paul Alexander Tigasi Sampedro | Alexander Sampedro | 03/09/2026 17:29 |
 | Steven Santiago Díaz Pontón | Steven Diaz | 03/09/2026 23:31 |
 | Jamileth Estefanía Gamarra Zárate | Jamileth Gamarra | 03/09/2026 18:38 |
-| Thais Melanie Herrera Ramos | | |
+| Thais Melanie Herrera Ramos | Herrera Thais | 05/09/2026 19:17|
 | Mayummy Jailly Trujillo Vega |Trujillo Mayummy |03/09/2026 23:09 |
