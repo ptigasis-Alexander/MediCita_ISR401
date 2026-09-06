@@ -1,34 +1,49 @@
+<div align="center">
 
-# Fotos_equipos — Evidencia de autoría (A6)
+# 👥 Fotos_equipos/ — A6: Fotos del Equipo en la Organización
 
-Esta carpeta contiene fotografías del equipo trabajando en la organización cooperante (Centro Médico), como evidencia de que el trabajo de campo fue realizado presencialmente por integrantes reales del equipo.
+### Proyecto MediCita (SICM) — ISR-401
 
-## Requisitos de cada fotografía (según la guía de desarrollo)
+![Estado](https://img.shields.io/badge/Estado-Completo-success?style=for-the-badge)
+![Elemento](https://img.shields.io/badge/Elemento-A6-informational?style=for-the-badge)
+![EXIF](https://img.shields.io/badge/EXIF-Verificado-success?style=for-the-badge)
 
-- Al menos **2 integrantes del equipo identificables** por fotografía (rostro visible, no de espaldas).
-- La fecha de captura debe conservarse en los **metadatos EXIF originales** de la imagen — no se debe editar, comprimir ni recortar la foto de forma que se pierdan esos metadatos.
-- Debe corresponder a una visita real a la organización (Centro Médico), no a una foto genérica o de otro contexto.
+</div>
 
-## Nomenclatura sugerida
+---
+
+## 📌 Sobre esta carpeta
+
+Fotografías del equipo trabajando en la organización cooperante (Centro Médico Municipal, DGDS), como evidencia de que el trabajo de campo fue realizado presencialmente por integrantes reales del equipo.
+
+## 📋 Requisitos de cada fotografía
+
+- Al menos **2 integrantes del equipo identificables** (rostro visible, no de espaldas).
+- Fecha de captura conservada en los **metadatos EXIF originales**.
+- Debe corresponder a una visita real a la organización, no a una foto genérica.
+
+## 🏷️ Nomenclatura sugerida
 
 ```
 AAAA-MM-DD_integrantes_lugar.jpg
 ```
 
-Ejemplo: `2026-07-07_steven-jamileth_recepcion_centro_medico.jpg`
+---
 
-## Estado actual
+## 📊 Estado actual — verificado con EXIF real
 
-*(Completar conforme se agreguen fotografías reales.)*
+| Archivo | Fecha (EXIF) | Dispositivo | Integrantes identificables | Lugar |
+|---|---|---|---|---|
+| `2026_09_04_Facha_Establecimiento.jpg` | 04/09/2026 08:21:31 | Redmi Note 13 (23129RA5FL) | 2 | Fachada de la DGDS |
+| `2026_09_04_Area_Recepción(Recaudación).jpg` | 04/09/2026 08:19:21 | Redmi Note 13 (23129RA5FL) | 2 | Área de Recepción/Recaudación |
+| `2026_09_04_Pasillo_Entrda(principal).jpg` | 04/09/2026 08:18:44 | Redmi Note 13 (23129RA5FL) | 2 | Pasillo de entrada principal |
 
-| Archivo | Fecha (EXIF) | Integrantes identificables | Lugar |
-|---|---|---|---|
-| — | — | — | — |
+✅ **3 de 3 fotografías cumplen los requisitos**: EXIF real verificado, 2 integrantes identificables, en la organización cooperante.
 
-## Relación con `10_Autoria/exif_inventario.csv`
+## 🔗 Relación con `10_Autoria/exif_inventario.csv`
 
-Cada fotografía que se agregue aquí debe tener también su fila correspondiente en `10_Autoria/exif_inventario.csv`, con el nombre del archivo, la fecha de captura tomada del EXIF, el dispositivo con el que se tomó, y su hash SHA-256.
+Las 3 fotografías ya tienen su fila correspondiente en `exif_inventario.csv`, con fecha EXIF, dispositivo y hash SHA-256.
 
-## Importante: privacidad
+## 🔒 Privacidad
 
-Estas fotos son del **equipo investigador**, no de participantes del estudio ni de pacientes — por lo tanto no requieren enmascarar rostros. No incluir en estas fotos a personal del centro médico ni a ningún participante entrevistado sin su consentimiento explícito para aparecer identificable en este material.
+Estas fotos son del **equipo investigador**, no de participantes ni pacientes — no requieren enmascarar rostros.
