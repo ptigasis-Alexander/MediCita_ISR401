@@ -1,39 +1,39 @@
 id_segmento,transcripcion_origen,texto_segmento,"codigo_asignado (C01-C49, ver referencia)",nombre_del_codificador
-SEG-001,P02_Medicina_General,Cuatro años en el cargo y seis años de experiencia profesional en el área.,C25,Gamarra Zárate Jamileth
+SEG-001,P02_Medicina_General,"Cuatro años en el cargo y seis años de experiencia profesional en el área.",C25,Gamarra Zárate Jamileth
 SEG-002,P02_Medicina_General,"La atención se realiza según el orden de llegada y la clasificación del Triaje de Manchester. Los casos con mayor prioridad son atendidos primero, aunque hayan llegado después.",C07,Gamarra Zárate Jamileth
-SEG-003,P02_Medicina_General,Aproximadamente veinte usuarios.,C20,Gamarra Zárate Jamileth
+SEG-003,P02_Medicina_General,"Aproximadamente veinte usuarios.",C20,Gamarra Zárate Jamileth
 SEG-004,P02_Medicina_General,"Se agenda una nueva cita. Si el usuario lo desea, deja un número telefónico para confirmar la disponibilidad del profesional.",C02,Gamarra Zárate Jamileth
-SEG-005,P02_Medicina_General,Sí. El tiempo promedio es de 20 minutos por paciente.,C08,Gamarra Zárate Jamileth
+SEG-005,P02_Medicina_General,"Sí. El tiempo promedio es de 20 minutos por paciente.",C08,Gamarra Zárate Jamileth
 SEG-006,P02_Medicina_General,"La coordinación es directa. Cuando se requiere una interconsulta, me comunico personalmente con el profesional correspondiente.",C09,Gamarra Zárate Jamileth
 SEG-007,P02_Medicina_General,"Mediante una hoja de ruta donde se registra el paciente, el diagnóstico y la hora de atención.",C10,Gamarra Zárate Jamileth
 SEG-008,P02_Medicina_General,"Sí, siempre, para brindar una atención adecuada.",C12,Gamarra Zárate Jamileth
 SEG-009,P02_Medicina_General,"Antecedentes patológicos personales y familiares, así como la medicación prescrita anteriormente.",C12,Gamarra Zárate Jamileth
 SEG-010,P02_Medicina_General,"Solo el personal de salud tiene acceso; sin embargo, los historiales físicos permanecen en archivadores, por lo que la seguridad es limitada.",C13,Gamarra Zárate Jamileth
 SEG-011,P02_Medicina_General,"Sí, siempre que el caso lo requiere.",C09,Gamarra Zárate Jamileth
-SEG-012,P02_Medicina_General,En la hoja de ruta.,C10,Gamarra Zárate Jamileth
-SEG-013,P02_Medicina_General,Mediante una hoja de cálculo en Excel.,C14,Gamarra Zárate Jamileth
-SEG-014,P02_Medicina_General,La coordinadora del área.,C14,Gamarra Zárate Jamileth
+SEG-012,P02_Medicina_General,"En la hoja de ruta.",C10,Gamarra Zárate Jamileth
+SEG-013,P02_Medicina_General,"Mediante una hoja de cálculo en Excel.",C14,Gamarra Zárate Jamileth
+SEG-014,P02_Medicina_General,"La coordinadora del área.",C14,Gamarra Zárate Jamileth
 SEG-015,P02_Medicina_General,"Se registra la entrega, pero para conocer el medicamento específico es necesario revisar la receta.",C16,Gamarra Zárate Jamileth
-SEG-016,P02_Medicina_General,Generalmente no existe un medio formal; en ocasiones se utilizan redes sociales.,C17,Gamarra Zárate Jamileth
+SEG-016,P02_Medicina_General,"Generalmente no existe un medio formal; en ocasiones se utilizan redes sociales.",C17,Gamarra Zárate Jamileth
 SEG-017,P02_Medicina_General,"Sí, ocurre con bastante frecuencia.",C18,Gamarra Zárate Jamileth
-SEG-018,P02_Medicina_General,Implementaría un sistema informático para registrar y consultar la información.,C36,Gamarra Zárate Jamileth
+SEG-018,P02_Medicina_General,"Implementaría un sistema informático para registrar y consultar la información.",C36,Gamarra Zárate Jamileth
 SEG-019,P02_Medicina_General,"No, porque dificulta brindar un servicio de calidad.",C11,Gamarra Zárate Jamileth
 SEG-020,P02_Medicina_General,"Sí, facilitaría el seguimiento del tratamiento.",C22,Gamarra Zárate Jamileth
-SEG-021,P02_Medicina_General,Con mucha frecuencia.,C11,Gamarra Zárate Jamileth
-SEG-022,P02_Medicina_General,No completamente; todavía presenta dificultades.,C36,Gamarra Zárate Jamileth
+SEG-021,P02_Medicina_General,"Con mucha frecuencia.",C11,Gamarra Zárate Jamileth
+SEG-022,P02_Medicina_General,"No completamente; todavía presenta dificultades.",C36,Gamarra Zárate Jamileth
 SEG-023,P02_Medicina_General,"Que sea sencillo, intuitivo y centrado en la información esencial de la historia clínica, evitando procesos complejos.",C19,Gamarra Zárate Jamileth
-SEG-024,P02_Medicina_General,Sí. Observaciones derivadas * El proceso depende de registros manuales y hojas de cálculo. * Existe dificultad constante para localizar historias clínicas. * El control de medicamentos no está completamente integrado con la información del paciente. * Se identifica la necesidad de una historia clínica electrónica centralizada. * El participante considera conveniente incorporar un sistema sencillo con apoyo de inteligencia artificial.,C36,Gamarra Zárate Jamileth
+SEG-024,P02_Medicina_General,"Sí. Observaciones derivadas * El proceso depende de registros manuales y hojas de cálculo. * Existe dificultad constante para localizar historias clínicas. * El control de medicamentos no está completamente integrado con la información del paciente. * Se identifica la necesidad de una historia clínica electrónica centralizada. * El participante considera conveniente incorporar un sistema sencillo con apoyo de inteligencia artificial.",C36,Gamarra Zárate Jamileth
 SEG-025,P06_Enfermeria,"Realizo el registro de pacientes, toma de signos vitales, campañas de vitaminización, elaboración de informes semanales y actualización de la matriz de atención de enfermería.",C48,Gamarra Zárate Jamileth
-SEG-026,P06_Enfermeria,Generalmente solo verifico el área a la que será derivado el paciente. La información clínica detallada es consultada por el profesional tratante para mantener la confidencialidad.,C13,Gamarra Zárate Jamileth
-SEG-027,P06_Enfermeria,La principal dificultad ocurre cuando los representantes de menores de edad no conocen o no proporcionan correctamente el número de cédula del paciente.,C39,Gamarra Zárate Jamileth
-SEG-028,P06_Enfermeria,No existen mayores inconvenientes porque los expedientes están organizados; sin embargo, el proceso podría ser más rápido.,C05,Gamarra Zárate Jamileth
+SEG-026,P06_Enfermeria,"Generalmente solo verifico el área a la que será derivado el paciente. La información clínica detallada es consultada por el profesional tratante para mantener la confidencialidad.",C13,Gamarra Zárate Jamileth
+SEG-027,P06_Enfermeria,"La principal dificultad ocurre cuando los representantes de menores de edad no conocen o no proporcionan correctamente el número de cédula del paciente.",C39,Gamarra Zárate Jamileth
+SEG-028,P06_Enfermeria,"No existen mayores inconvenientes porque los expedientes están organizados; sin embargo, el proceso podría ser más rápido.",C05,Gamarra Zárate Jamileth
 SEG-029,P06_Enfermeria,"Número de cédula, nombres completos, apellidos, fecha de nacimiento y demás datos de identificación correctamente registrados.",C45,Gamarra Zárate Jamileth
-SEG-030,P06_Enfermeria,Permitir registrar la información directamente en la computadora y localizar rápidamente el expediente mediante el número de cédula.,C40,Gamarra Zárate Jamileth
-SEG-031,P06_Enfermeria,Mediante un sistema integrado donde la información ingresada esté disponible inmediatamente para los demás profesionales autorizados.,C41,Gamarra Zárate Jamileth
-SEG-032,P06_Enfermeria,Realizo informes periódicos de entradas y salidas de medicamentos y los entrego a la coordinación.,C38,Gamarra Zárate Jamileth
-SEG-033,P06_Enfermeria,Se registra manualmente en una hoja con la información del paciente y la entrega realizada.,C16,Gamarra Zárate Jamileth
+SEG-030,P06_Enfermeria,"Permitir registrar la información directamente en la computadora y localizar rápidamente el expediente mediante el número de cédula.",C40,Gamarra Zárate Jamileth
+SEG-031,P06_Enfermeria,"Mediante un sistema integrado donde la información ingresada esté disponible inmediatamente para los demás profesionales autorizados.",C41,Gamarra Zárate Jamileth
+SEG-032,P06_Enfermeria,"Realizo informes periódicos de entradas y salidas de medicamentos y los entrego a la coordinación.",C38,Gamarra Zárate Jamileth
+SEG-033,P06_Enfermeria,"Se registra manualmente en una hoja con la información del paciente y la entrega realizada.",C16,Gamarra Zárate Jamileth
 SEG-034,P06_Enfermeria,"A través de informes de inventario que incluyen nombre del medicamento, presentación, fecha de fabricación y vencimiento.",C42,Gamarra Zárate Jamileth
-SEG-035,P06_Enfermeria,La principal limitación es depender de registros físicos cuando sería más eficiente trabajar con un sistema digital.,C03,Gamarra Zárate Jamileth
+SEG-035,P06_Enfermeria,"La principal limitación es depender de registros físicos cuando sería más eficiente trabajar con un sistema digital.",C03,Gamarra Zárate Jamileth
 SEG-036,P06_Enfermeria,"Ninguna importante, ya que el área dispone de equipos e Internet.",C43,Gamarra Zárate Jamileth
-SEG-037,P06_Enfermeria,Mayor agilidad para localizar información y reducir el tiempo de búsqueda de expedientes.,C05,Gamarra Zárate Jamileth
-SEG-038,P06_Enfermeria,Permitir buscar e ingresar la información del paciente mediante el número de cédula de forma rápida y segura. Observaciones derivadas * El área mantiene registros físicos y matrices de control. * El inventario de medicamentos se administra mediante informes periódicos. * Existe interés en implementar una historia clínica electrónica integrada. * La búsqueda por número de cédula es considerada una función prioritaria. * El personal considera viable la adopción de un sistema digital.,C40,Gamarra Zárate Jamileth
+SEG-037,P06_Enfermeria,"Mayor agilidad para localizar información y reducir el tiempo de búsqueda de expedientes.",C05,Gamarra Zárate Jamileth
+SEG-038,P06_Enfermeria,"Permitir buscar e ingresar la información del paciente mediante el número de cédula de forma rápida y segura. Observaciones derivadas * El área mantiene registros físicos y matrices de control. * El inventario de medicamentos se administra mediante informes periódicos. * Existe interés en implementar una historia clínica electrónica integrada. * La búsqueda por número de cédula es considerada una función prioritaria. * El personal considera viable la adopción de un sistema digital.",C40,Gamarra Zárate Jamileth
