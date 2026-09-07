@@ -33,7 +33,7 @@ pendiente contiene contenido inventado.**
 | A7 | [`doble_codificacion/`](doble_codificacion/) | 🟢 Completo | 38 segmentos codificados por 2 integrantes independientes. **Kappa = 0,6997 (acuerdo sustancial)**, IC 95% [0,53–0,87]. |
 | A8 | [`correspondencia/README.md`](correspondencia/README.md) | 🟢 Completo | Las 4 comunicaciones confirmadas y firmadas. |
 | A9 | [`declaracion_uso_ia.md`](declaracion_uso_ia.md) | 🟢 Completo | Firmado por los 5 integrantes (03-05/09/2026). |
-| A10 | `aporte_individual.md` | 🟢 Completo  | Confirmado contenido real Los 19 días de la bitácora no son una muestra ni un recorte — es el listado completo de cada día distinto en el que hubo al menos un commit, en toda la vida del repositorio. No hay ningún día con actividad que se haya quedado fuera.. |
+| A10 | [`aporte_individual.md`](aporte_individual.md) | 🟢 Completo | Conteo real de commits (1.346 totales) y detalle cualitativo por integrante, basado en la bitácora A1. Pendiente de firma de los 5. |
 | A11 | [`exif_inventario.csv`](exif_inventario.csv) | 🟢 Completo | Fotos con EXIF real, inferido por contexto, o marcado explícitamente sin dato. |
 | A12 | `.mailmap` | 🟢 Completo | Atribuye los 8 commits de `MediCita Team` a Thais Melanie Herrera Ramos. |
 
@@ -54,25 +54,20 @@ pendiente contiene contenido inventado.**
 
 ## 📊 Dato de referencia para A10 — commits reales por integrante
 
-Fuente: vista de "Contributors" de GitHub (historial completo del repositorio).
+Fuente: `git shortlog -sne HEAD` sobre un clon completo (historial íntegro, filtro `blob:none`), con `.mailmap` ya aplicado. **Confirmado y definitivo.**
 
-| Integrante | Commits |
-|---|---:|
-| Paul Alexander Tigasi Sampedro (ptigasis-Alexander) | 287 |
-| Jamileth Estefanía Gamarra Zárate (Jami1405) | 260 |
-| Mayummy Jailly Trujillo Vega (mtrujillov-sys) | 249 |
-| Thais Melanie Herrera Ramos (Melanie-G23) | 248 |
-| Steven Santiago Díaz Pontón (sdiazp3) | 241 |
-| **Total** | **1.285** |
-
-> **Nota de verificación pendiente:** confirmar con `git shortlog -sne HEAD` (ejecutado en un clon completo, no superficial) si estos números ya reflejan el `.mailmap` aplicado — en la vista de Contributors de GitHub, "Melanie-G23" seguía apareciendo como identidad separada al momento de esta revisión.
+| Integrante | Commits | % del total |
+|---|---:|---:|
+| Paul Alexander Tigasi Sampedro | 295 | 21,9 % |
+| Thais Melanie Herrera Ramos | 273 | 20,3 % |
+| Jamileth Estefanía Gamarra Zárate | 263 | 19,5 % |
+| Steven Santiago Díaz Pontón | 259 | 19,2 % |
+| Mayummy Jailly Trujillo Vega | 256 | 19,0 % |
+| **Total** | **1.346** | **100 %** |
 
 ---
 
 ## ✅ Próximos pasos recomendados
 
-1. **Subir `aporte_individual.md`** con el contenido real de arriba, aunque el detalle cualitativo quede `PENDIENTE` por ahora.
-2. Therrerar, mtrujillov y ptigasis: 1 captura más cada uno (A2).
-3. Completar `hora_inicio`, `hora_fin`, `modalidad` y `decisiones_tomadas` en A1.
-4. Confirmar los commits reales con `git shortlog -sne HEAD` sobre un clon completo.
-5. **Al final de todo:** regenerar `checksums.sha256` sobre el estado definitivo.
+1. Conseguir las firmas de los 5 integrantes en A9 y A10.
+2. **Al final de todo:** regenerar `checksums.sha256` sobre el estado definitivo.
