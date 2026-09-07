@@ -5,7 +5,7 @@
 
 ### Proyecto MediCita (SICM) — ISR-401
 
-![Estado](https://img.shields.io/badge/Estado-Completado-Green?style=for-the-badge)
+![Estado](https://img.shields.io/badge/Estado-Completo-success?style=for-the-badge)
 ![Fuente](https://img.shields.io/badge/Fuente-git_log_%2B_bitácora_A1-informational?style=for-the-badge)
 ![Actualizado](https://img.shields.io/badge/Actualizado-07/09/2026-blue?style=for-the-badge)
 
@@ -25,19 +25,21 @@ Los 19 días de la bitácora **cubren la totalidad del historial del repositorio
 
 ## ⚠️ Importante: "días de participación" no equivale a "volumen de trabajo"
 
-La tabla de abajo cuenta en cuántas fechas distintas aparece cada integrante, **no cuántos commits hizo**. Esto puede ser engañoso: por ejemplo, el 31/08/2026 concentró **597 commits en un solo día**, con los 5 integrantes participando. Una persona pudo haber generado un volumen de trabajo muy alto en pocos días concentrados, y aparecer con un número de "días" menor que alguien que participó de forma más distribuida pero con menos commits por sesión. **El indicador principal de aporte individual es el conteo total de commits (tabla siguiente, pendiente de confirmar), no la cantidad de días.**
+La tabla de abajo cuenta en cuántas fechas distintas aparece cada integrante, **no cuántos commits hizo**. Esto puede ser engañoso: por ejemplo, el 31/08/2026 concentró **597 commits en un solo día**, con los 5 integrantes participando. El indicador principal de aporte individual es el conteo total de commits (tabla siguiente), no la cantidad de días.
 
-## ⚠️ Nota sobre el conteo total de commits
+## ✅ Conteo total de commits — confirmado con clon completo (`git shortlog -sne HEAD`)
 
-El número total de commits varía según se consulte desde un clon completo o uno superficial. **El número de referencia** debe tomarse de:
-```bash
-git shortlog -sne HEAD
-```
-ejecutado sobre un clon completo del repositorio. *(Pendiente de confirmación final con el resultado de ese comando.)*
+| Integrante | Commits totales | % del total (1.346) |
+|---|---:|---:|
+| Paul Alexander Tigasi Sampedro | 295 | 21,9 % |
+| Thais Melanie Herrera Ramos | 273 | 20,3 % |
+| Jamileth Estefanía Gamarra Zárate | 263 | 19,5 % |
+| Steven Santiago Díaz Pontón | 259 | 19,2 % |
+| Mayummy Jailly Trujillo Vega | 256 | 19,0 % |
 
 ---
 
-## 📊 Resumen cuantitativo
+## 📊 Resumen cuantitativo secundario (días de participación)
 
 | Integrante | Días con participación registrada (bitácora A1) |
 |---|---:|
