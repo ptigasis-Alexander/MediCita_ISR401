@@ -5,7 +5,7 @@
 
 ### Proyecto MediCita (SICM) — ISR-401
 
-![Estado](https://img.shields.io/badge/Estado-En_progreso-yellow?style=for-the-badge)
+![Estado](https://img.shields.io/badge/Estado-Completado-Green?style=for-the-badge)
 ![Fuente](https://img.shields.io/badge/Fuente-git_log_%2B_bitácora_A1-informational?style=for-the-badge)
 ![Actualizado](https://img.shields.io/badge/Actualizado-07/09/2026-blue?style=for-the-badge)
 
