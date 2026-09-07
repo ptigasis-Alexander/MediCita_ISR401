@@ -24,7 +24,7 @@ Mínimo 3 capturas por integrante, mostrando herramienta + archivo del proyecto 
 | jgamarraz | 3 | ✅ Cumple|
 | therrerar | 3 | ✅ Cumple |
 | mtrujillov | 3 | ✅ Cumple |
-| ptigasis | 2 | 🟡 falta 1 |
+| ptigasis | 3 | ✅ Cumple|
 
 ## ✅ Próximo paso
 
