@@ -22,10 +22,10 @@ Mínimo 3 capturas por integrante, mostrando herramienta + archivo del proyecto 
 |---|:---:|:---:|
 | sdiazp3 | 3 | ✅ Cumple 
 | jgamarraz | 3 | ✅ Cumple|
-| therrerar | 2 | 🟡 falta 1 |
+| therrerar | 3 | ✅ Cumple |
 | mtrujillov | 3 | ✅ Cumple |
 | ptigasis | 2 | 🟡 falta 1 |
 
 ## ✅ Próximo paso
 
-Therrerar y ptigasis necesitan 1 captura más cada uno para llegar al mínimo.
+ptigasis necesitan 1 captura más cada uno para llegar al mínimo.
