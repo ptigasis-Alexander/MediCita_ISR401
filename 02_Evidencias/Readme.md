@@ -24,7 +24,7 @@
 | `Fotos_Entorno/` | Fotografías del entorno físico del centro médico. |
 | `Documentos_Organizacion/` | Correspondencia y solicitudes formales. |
 | `Validacion_Walkthrough/` | 10 sesiones de validación del prototipo, con su propia subcarpeta `Consentimientos_validacion/` — ver nota abajo. |
-| `Member_Checking/` | *(ver nota)* |
+| `Member_Checking/` | Sesión de miembro-verificación con 3 participantes previos del estudio — ver nota abajo. |
 | `00_Restringido/` | Evidencia audiovisual restringida — publicada como GitHub Release. Ver `00_Restringido_.md`. |
 
 ---
@@ -38,13 +38,24 @@ Los consentimientos del proyecto **no están todos en una sola carpeta** — est
 | `Consentimientos/` | **8** | Elicitación de requisitos (junio–julio 2026) |
 | `Validacion_Walkthrough/Consentimientos_validacion/` | **9** | Validación del prototipo (agosto 2026) |
 
-Esto se relaciona directamente con el conteo de evidencia audiovisual documentado en `00_Restringido/00_Restringido_.md`: **19 videos en total** (8-9 de la ronda de elicitación + 10 de la ronda de validación), que superan el mínimo de 16 exigido por la rúbrica en cantidad de archivos.
+Esto se relaciona directamente con el conteo de evidencia audiovisual documentado en `00_Restringido/00_Restringido_.md`: **19 videos en total** (8-9 de la ronda de elicitación + 10 de la ronda de validación), que superan el mínimo de 16 exigido por la rúbrica (Criterio C4: ≥16 consentimientos, ≥16 videos ≥240 min, ≥16 audios).
 
 **Aclaración importante para quien revise:** el número de *videos* (19) y el número de *consentimientos* (8+9=17) **no equivalen automáticamente al número de participantes distintos**. Varias sesiones de la ronda de validación fueron ejecutadas por integrantes del propio equipo actuando roles (ver `08_Etica/Fe_de_Erratas_Adenda_Walkthrough.md` para el detalle exacto de cuáles). Se recomienda revisar esa nota antes de asumir que son 17 personas externas distintas.
 
+---
+
 ## 📝 Nota sobre `Member_Checking/`
 
-Carpeta creada recientemente; propósito y contenido específico pendiente de documentar.
+Contiene la sesión final de miembro-verificación exigida por el Criterio C4 de la rúbrica: **1 sesión, 3 participantes previos del estudio** (P02 — Medicina General, P06 — Enfermería, P07 — Recepción/Recaudación) confirmando la interpretación de los resultados del análisis cualitativo, realizada el 04/09/2026 de forma presencial.
+
+| Documento | Contenido |
+|---|---|
+| `Readme.md` | Guion completo de la sesión (bloques temáticos y preguntas) |
+| `Resumen_Member_Checking.md` | Resumen narrativo de los resultados por participante |
+| `member_checking_bloques.csv` | Registro estructurado por bloque (7 bloques, MC-01 a MC-07) |
+| `Acta_MemberChecking_MediCita.docx/.pdf` | Acta formal con firmas de conformidad de los 3 participantes y las 2 facilitadoras |
+
+**Nota:** la sesión fue presencial, con consentimiento verbal otorgado en el momento; no se realizó grabación, hecho declarado explícitamente en el acta (no se presenta como evidencia audiovisual existente).
 
 ## 🔒 Privacidad
 
