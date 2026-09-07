@@ -44,7 +44,7 @@ Contiene el expediente ético completo del proyecto: protocolo de investigación
 |---|---|:---:|
 | CA-1 | `Categoria_A/CategoriaA_A1_Protocolo_Disociacion.pdf` | 🟢 Completó |
 | CA-2 | `Categoria_A/CategoriaA_A2_Declaracion_Datos_Sinteticos.pdf` | 🟢 Completó |
-| CA-3 | `Categoria_A/CategoriaA_A3_Aval_Establecimiento.pdf` | 🟠 Ver nota 1 |
+| CA-3 | `Categoria_A/CategoriaA_A3_Aval_Establecimiento.pdf` | 🟢 Completó  |
 | CA-4 | `Categoria_A/CategoriaA_A4_Referencia_LOPDP.pdf` | 🟢 Completó |
 | CA-5 | `Categoria_A/CategoriaA_A5_Protocolo_Imagenes_Clinicas.pdf` | 🟢 Completó |
 
