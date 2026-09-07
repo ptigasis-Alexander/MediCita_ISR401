@@ -119,4 +119,4 @@ Al firmar, cada integrante confirma que la información de este documento es cor
 | Steven Santiago Díaz Pontón |Steven Diaz | 07/09/2026 0:16 |
 | Jamileth Estefanía Gamarra Zárate | | |
 | Thais Melanie Herrera Ramos | Herrera Thais | 07/09/2026 0:19 |
-| Mayummy Jailly Trujillo Vega | | |
+| Mayummy Jailly Trujillo Vega | Trujillo Mayummy | 07/09/2026 0:20 |
