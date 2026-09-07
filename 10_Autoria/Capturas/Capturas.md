@@ -20,12 +20,12 @@ Mínimo 3 capturas por integrante, mostrando herramienta + archivo del proyecto 
 
 | Integrante | Capturas | ¿Cumple mínimo 3? |
 |---|:---:|:---:|
-| sdiazp3 | 3 | ✅ |
-| jgamarraz | 3 | ✅ |
+| sdiazp3 | 3 | ✅ Cumple 
+| jgamarraz | 3 | ✅ Cumple|
 | therrerar | 2 | 🟡 falta 1 |
-| mtrujillov | 2 | 🟡 falta 1 |
+| mtrujillov | 3 | ✅ Cumple |
 | ptigasis | 2 | 🟡 falta 1 |
 
 ## ✅ Próximo paso
 
-Therrerar, mtrujillov y ptigasis necesitan 1 captura más cada uno para llegar al mínimo.
+Therrerar y ptigasis necesitan 1 captura más cada uno para llegar al mínimo.
