@@ -6,7 +6,7 @@
 
 ![Estado](https://img.shields.io/badge/Estado-Completado-green?style=for-the-badge)
 ![Establecimiento](https://img.shields.io/badge/Establecimiento-DGDS_Quevedo-003366?style=for-the-badge)
-![Actualizado](https://img.shields.io/badge/Actualizado-05/09/2026-informational?style=for-the-badge)
+![Actualizado](https://img.shields.io/badge/Actualizado-06/09/2026-informational?style=for-the-badge)
 
 </div>
 
