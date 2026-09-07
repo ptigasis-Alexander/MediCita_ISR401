@@ -118,5 +118,5 @@ Al firmar, cada integrante confirma que la información de este documento es cor
 | Paul Alexander Tigasi Sampedro | | |
 | Steven Santiago Díaz Pontón |Steven Diaz | 07/09/2026 0:16 |
 | Jamileth Estefanía Gamarra Zárate | | |
-| Thais Melanie Herrera Ramos | | |
+| Thais Melanie Herrera Ramos | Herrera Thais | 07/09/2026 0:19 |
 | Mayummy Jailly Trujillo Vega | | |
