@@ -1,7 +1,7 @@
 
 <div align="center">
 
-# 📊 Resumen de Member Checking — MediCita
+# 📊 resumen de member checking — MediCita
 
 ### Proyecto MediCita (SICM) — ISR-401
 
