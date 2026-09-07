@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🔁 Guion de Member Checking — SICM / MediCita
+# 🔁 guion de member checking — SICM / MediCita
 
 ### Proyecto MediCita (SICM) — ISR-401
 
