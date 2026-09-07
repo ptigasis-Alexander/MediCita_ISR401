@@ -34,7 +34,7 @@ Contiene el expediente ético completo del proyecto: protocolo de investigación
 | A10 | `A10_Cronograma_Gantt.pdf` | 🟢 Completó |
 | A11 | `A11_Analisis_Riesgos.pdf` | 🟢 Completó |
 | A12 | `A12_Certificado_Etica.pdf` | 🟢 Completó |
-| A13 | `A13_Participantes_Externos_MediCita.pdf` | 🔴 Sin firma del docente responsable |
+| A13 | `A13_Participantes_Externos_MediCita.pdf` | 🟢 Completó  |
 
 ---
 
@@ -54,16 +54,11 @@ Contiene el expediente ético completo del proyecto: protocolo de investigación
 
 | Documento | Estado |
 |---|:---:|
-| `Adenda_Segunda_Ronda.pdf` | 🔴 Sin firma del docente responsable |
-| `Adenda_Validacion_Walkthrough_corregida.pdf` | 🔴 Sin firma del docente responsable |
+| `Adenda_Segunda_Ronda.pdf` | 🟢 Completó  |
+| `Adenda_Validacion_Walkthrough_corregida.pdf` | 🟢 Completó  |
 | [`Fe_de_Erratas_Adenda_Walkthrough.md`](Fe_de_Erratas_Adenda_Walkthrough.md) | 🟢 Aclara discrepancia entre la addenda y las transcripciones reales |
 | `Oficio_Respaldo_Institucional_DGDS.pdf` |🟢 Completó |
 
----
-
-## 📝 Nota 2 — Autorización del Ministerio de Salud Pública
-
-`CategoriaA_A3_Aval_Establecimiento.pdf` declara explícitamente que la autorización adicional del MSP, requerida por tratarse de un establecimiento de salud público, **no ha sido obtenida**. Este punto está remitido a consideración del docente responsable y sigue sin resolución formal.
 
 ---
 
