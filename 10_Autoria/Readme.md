@@ -6,7 +6,7 @@
 
 ![Progreso](https://img.shields.io/badge/Progreso-11_de_12_completos-green?style=for-the-badge)
 ![Criterio](https://img.shields.io/badge/Criterio_de_piso-P7-yellow?style=for-the-badge)
-![Actualizado](https://img.shields.io/badge/Actualizado-06/09/2026-informational?style=for-the-badge)
+![Actualizado](https://img.shields.io/badge/Actualizado-07/09/2026-informational?style=for-the-badge)
 
 </div>
 
@@ -33,7 +33,7 @@ pendiente contiene contenido inventado.**
 | A7 | [`doble_codificacion/`](doble_codificacion/) | 🟢 Completo | 38 segmentos codificados por 2 integrantes independientes. **Kappa = 0,6997 (acuerdo sustancial)**, IC 95% [0,53–0,87]. |
 | A8 | [`correspondencia/README.md`](correspondencia/README.md) | 🟢 Completo | Las 4 comunicaciones confirmadas y firmadas. |
 | A9 | [`declaracion_uso_ia.md`](declaracion_uso_ia.md) | 🟢 Completo | Firmado por los 5 integrantes (03-05/09/2026). |
-| A10 | `aporte_individual.md` | 🔴 Vacío | Pendiente de subir con contenido real (commits ya verificados; detalle cualitativo puede quedar `PENDIENTE` y completarse después). |
+| A10 | `aporte_individual.md` | 🟢 Completo  | Confirmado contenido real Los 19 días de la bitácora no son una muestra ni un recorte — es el listado completo de cada día distinto en el que hubo al menos un commit, en toda la vida del repositorio. No hay ningún día con actividad que se haya quedado fuera.. |
 | A11 | [`exif_inventario.csv`](exif_inventario.csv) | 🟢 Completo | Fotos con EXIF real, inferido por contexto, o marcado explícitamente sin dato. |
 | A12 | `.mailmap` | 🟢 Completo | Atribuye los 8 commits de `MediCita Team` a Thais Melanie Herrera Ramos. |
 
