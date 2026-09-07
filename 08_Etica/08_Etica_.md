@@ -24,9 +24,9 @@ Contiene el expediente ético completo del proyecto: protocolo de investigación
 |---|---|:---:|
 | A1 | `A1_Protocolo_Investigacion.pdf` | 🟢 Completó |
 | A2 | `A2_Instrumentos_Recoleccion.pdf` | 🟢 Completó |
-| A3 | `A3_Consentimiento_Informado.pdf` | 🟢 |
+| A3 | `A3_Consentimiento_Informado.pdf` | 🟢Completó |
 | A4 | `A4_Plan_Gestion_Datos.pdf` | 🟢 Completó |
-| A5 | `A5_Aval_Institucional.pdf` | 🟠 Ver nota 1 |
+| A5 | `A5_Aval_Institucional.pdf` | 🟢 Completó|
 | A6 | `A6_Declaracion_Conflicto_Intereses.pdf` | 🟢 Completó |
 | A7 | `A7_Compromiso_Confidencialidad.pdf` | 🟢 Completó |
 | A8 | `A8_CV_Docente.pdf` | 🟢 Completó |
@@ -60,10 +60,6 @@ Contiene el expediente ético completo del proyecto: protocolo de investigación
 | `Oficio_Respaldo_Institucional_DGDS.pdf` |🟢 Completó |
 
 ---
-
-## 📝 Nota 1 — Documentos firmados con observación
-
-`A5_Aval_Institucional.pdf` y `CategoriaA_A3_Aval_Establecimiento.pdf` están firmados por Sergio Antonio Yepez Rizzo (Coordinador DGDS), pero la plantilla original tenía el nombre de otra persona impreso en el bloque de firma. Versiones corregidas disponibles para eventual re-firma. Detalle completo en `10_Autoria/correspondencia/README.md`.
 
 ## 📝 Nota 2 — Autorización del Ministerio de Salud Pública
 
