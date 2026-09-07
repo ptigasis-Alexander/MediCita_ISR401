@@ -25,7 +25,7 @@ pendiente contiene contenido inventado.**
 | Cód. | Elemento | Estado | Notas |
 |---|---|:---:|---|
 | A1 | [`bitacora_sesiones.csv`](bitacora_sesiones.csv) | 🟡 Parcial | 16 filas reales de `git log`. Faltan `hora_inicio`, `hora_fin`, `modalidad`, `decisiones_tomadas`. |
-| A2 | [`Capturas/`](Capturas/Capturas.md) | 🟡 En progreso | 12 capturas subidas. sdiazp3 y jgamarraz ya llegan a 3; therrerar, mtrujillov y ptigasis tienen 2, falta 1 cada uno. |
+| A2 | [`Capturas/`](Capturas/Capturas.md) | 🟢 Completo | 15 capturas subidas. sdiazp3 , jgamarraz , therrerar, mtrujillov y ptigasis tienen 3 capturas subidas |
 | A3 | Fuentes editables de diagramas | 🟢 Completo | `.drawio` + `.png` para todo el UML; mockups con fuente real en `05_MVP/`. |
 | A4 | [`grabaciones/`](grabaciones/grabaciones.md) | 🟢 Completo | 2 de 2 grabaciones mínimas. |
 | A5 | [`notas_campo/`](notas_campo/notas_campo.md) | 🟢 Completo | 8 de 8 notas manuscritas escaneadas, una por entrevista de elicitación. |
