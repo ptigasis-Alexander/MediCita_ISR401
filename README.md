@@ -42,11 +42,6 @@ El repositorio integra la línea base final del proyecto **SICM / MediCita**, in
 
 ---
 
-## ⚠️ Práctica V5 — material no evaluable en esta entrega
-
-La **Práctica V5 no forma parte de los artefactos que deben evaluarse para la Entrega 4 (2B / Defensa Final)**. Su presencia en el historial de commits no implica que forme parte de la línea base evaluable.
-
----
 
 ## 🗃️ Historial de repositorios del proyecto
 
@@ -97,27 +92,24 @@ Los hashes SHA-256 de cada archivo, declarados en `fichas_tecnicas.csv`, corresp
 | Sección / artefacto | Contenido principal | Estado |
 |---|---|:---:|
 | `01_ERS/` | ERS/SRS (40 RF, 19 RNF activos), fuentes LaTeX, bibliografía y figuras | 🟢 Completo |
-| `02_Evidencias/` | Entrevistas, consentimientos, transcripciones, codificación temática, cuestionario, walkthrough y evidencia restringida | 🟡 Ver nota de consentimientos |
+| `02_Evidencias/` | Entrevistas, consentimientos, transcripciones, codificación temática, cuestionario, walkthrough y evidencia restringida | 🟢 Completo |
 | `03_Modelado/` | Diagramas UML y mockups/interfaces finales | 🟢 Completo |
 | `04_Trazabilidad/` | Matrices de trazabilidad y priorización de requisitos | 🟢 Completo |
 | `05_MVP/` | Prototipo funcional y demo mediante GitHub Pages | 🟢 Completo |
 | `06_Experimento/` | Protocolo, OSF, instrumentos, prompts LLM y desviaciones | 🟢 Completo |
 | `07_Datos/` | Paquete de datos crudos, procesados, resultados y script orquestador reproducible | 🟢 Completo |
 | `07_Publicacion/` | Manuscrito, bibliografía, figuras, tablas y paquete de publicación | 🟢 Completo |
-| `08_Etica/` | Documentación ética y anexos | 🟠 Ver nota de firmas pendientes |
+| `08_Etica/` | Documentación ética y anexos | 🟢 Completo  |
 | `09_Defensa/` | Presentación, guion, folleto y video de defensa final | 🟢 Completo |
-| `10_Autoria/` | Bitácora de sesiones, `.mailmap`, declaración de uso de IA, aporte individual, correspondencia | 🟡 En progreso — ver detalle en `10_Autoria/README.md` |
-| Práctica V5 | Material académico independiente | ⚪ No evaluable en 2B |
+| `10_Autoria/` | Bitácora de sesiones, `.mailmap`, declaración de uso de IA, aporte individual, correspondencia | 🟢 Completo |
 | Registro OSF | DOI `10.17605/OSF.IO/DTYNC` | 🟢 Público |
 | Depósito Zenodo | DOI `10.5281/zenodo.22236373` | 🟢 Publicado |
 | Software Heritage | Repositorio espejo en preparación (sin evidencia audiovisual) | 🟠 En trámite |
 | Integridad SHA-256 | Comprobación de integridad de archivos | 🟡 Regenerar después del último cambio |
 | Autoevaluación FAIR | Evaluación de principios FAIR | 🟡 Verificar versión final |
 
-> **Nota — `08_Etica/`:** el respaldo institucional del establecimiento de salud está firmado (`A5_Aval_Institucional.pdf`, `CategoriaA_A3_Aval_Establecimiento.pdf`), pero el `A13_Participantes_Externos_MediCita.pdf` y sus addendas permanecen sin firma del docente responsable, y el `Oficio_Respaldo_Institucional_DGDS` está en trámite. Ver `10_Autoria/correspondencia/README.md` para el detalle cronológico completo.
 
-> **Nota — `02_Evidencias/`:** 2 de los 8 consentimientos originales (Enfermería, Recepcionista) están pendientes de firma; 1 (Paciente Simulado) requiere corregir una redacción incompleta.
-
+> **Nota — `02_Evidencias/`:**  los 8 consentimientos originales están pixeleados para manter la privadiad de datos sencibles como los nombre y firmas.
 > **Importante:** si se modifica, agrega o elimina cualquier archivo después de generar `checksums.sha256`, los hashes deben regenerarse antes del cierre definitivo.
 
 ---
@@ -164,7 +156,7 @@ El sistema contempla procesos de: registro de pacientes, gestión de citas, agen
 | 📑 Manuscrito final | [`07_Publicacion/manuscrito_final.pdf`](07_Publicacion/manuscrito_final.pdf) | 🟢 |
 | 📦 Dataset Zenodo | [10.5281/zenodo.22236373](https://doi.org/10.5281/zenodo.22236373) | 🟢 |
 | 🎬 Evidencia audiovisual restringida | [GitHub Release](https://github.com/ptigasis-Alexander/MediCita_ISR401/releases/tag/evidencia-restringida-v1) | 🟢 |
-| 🧾 Evidencia de autoría | [`10_Autoria/README.md`](10_Autoria/README.md) | 🟡 |
+| 🧾 Evidencia de autoría | [`10_Autoria/README.md`](10_Autoria/README.md) | 🟢 |
 | 🎓 Defensa final | [`09_Defensa/`](09_Defensa/) | 🟢 |
 | 📜 Citación | [`CITATION.cff`](CITATION.cff) | 🟢 |
 | ⚖️ Licencia | [`LICENSE`](LICENSE) | 🟢 |
