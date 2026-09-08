@@ -1,5 +1,5 @@
-const TOTAL = 150;
-const SCENE_SECONDS = TOTAL / 7;
+const TOTAL = 112;
+const SCENE_SECONDS = 16;
 
 let running = false;
 let paused = false;
@@ -226,14 +226,8 @@ function moveCursor(x,y,click=false){
     fx.classList.add('go');
   },800);
 }
-function highlight(x,y,w=17,h=8){
-  const s=$('#spotlight');
-  s.style.left=x+'%';
-  s.style.top=y+'%';
-  s.style.width=w+'%';
-  s.style.height=h+'%';
-  s.classList.add('show');
-  later(()=>s.classList.remove('show'),2600);
+function 
+  if (s) s.classList.remove('show');
 }
 function loginActions(){
   const type=(el,text,step)=>{
@@ -245,16 +239,16 @@ function loginActions(){
     },step);
     sceneTimers.push(t);
   };
-  later(()=>{moveCursor(70,47,true);highlight(59,42,29,8);type($('#userValue'),'recepcion.demo',95)},1100);
-  later(()=>{moveCursor(70,59,true);highlight(59,54,29,8);type($('#passValue'),'••••••••',100)},3300);
-  later(()=>{moveCursor(72,70,true);highlight(59,65,29,8)},5700);
+  later(()=>{moveCursor(70,47,true);type($('#userValue'),'recepcion.demo',75)},700);
+  later(()=>{moveCursor(70,59,true);type($('#passValue'),'••••••••',80)},2400);
+  later(()=>{moveCursor(72,70,true);
 }
 function speak(text){
   if(muted||!('speechSynthesis' in window)) return;
   speechSynthesis.cancel();
   const u=new SpeechSynthesisUtterance(text);
   u.lang='es-ES';
-  u.rate=.98;
+  u.rate=1.08;
   u.pitch=1;
   u.volume=1;
   const voices=speechSynthesis.getVoices();
@@ -282,8 +276,8 @@ function showScene(i){
     setTimeout(()=>ch.classList.remove('show'),2600);
 
     moveCursor(sc.cursor[0],sc.cursor[1]);
-    later(()=>highlight(sc.cursor[0]-7,sc.cursor[1]-3),3900);
-    later(()=>moveCursor(Math.min(82,sc.cursor[0]+8),Math.min(76,sc.cursor[1]+9),true),6500);
+    
+    later(()=>moveCursor(Math.min(82,sc.cursor[0]+8),Math.min(76,sc.cursor[1]+9),true),4200);
 
     if(sc.actions) sc.actions();
     speak(sc.speech);
