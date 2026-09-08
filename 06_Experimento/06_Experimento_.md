@@ -1,4 +1,3 @@
-
 <div align="center">
 
 # 🧪 06_Experimento — Componente Empírico Reproducible
@@ -20,7 +19,7 @@
 | `protocolo.pdf` | Protocolo de investigación registrado. |
 | `osf_registration.pdf` | Prerregistro OSF (DOI 10.17605/OSF.IO/DTYNC). |
 | `osf_deviations.pdf` | Desviaciones respecto del protocolo. |
-| `instrumentos/` | Ficha de observación y demás instrumentos. |
+| `instrumentos/` | Reubicado a `07_Datos/datos_crudos/` con la nueva Guía de Desarrollo (ver nota en la carpeta). |
 | `prompst_LLm/` | Registro de uso de IA para revisión documental. |
 | `scripts_analisis/run_all.py` | Script único de análisis cuantitativo. |
 
