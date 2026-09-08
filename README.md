@@ -106,7 +106,7 @@ Los hashes SHA-256 de cada archivo, declarados en `fichas_tecnicas.csv`, corresp
 | Depósito Zenodo | DOI `10.5281/zenodo.22236373` | 🟢 Publicado |
 | Software Heritage | Repositorio espejo en preparación (sin evidencia audiovisual) | 🟠 En trámite |
 | Integridad SHA-256 | Comprobación de integridad de archivos | 🟡 Regenerar después del último cambio |
-| Autoevaluación FAIR | Evaluación de principios FAIR | 🟡 Verificar versión final |
+| Autoevaluación FAIR | Evaluación de principios FAIR (F-UJI, 88%) | 🟢 Confirmado (v1.0.0, 01/09/2026) |
 
 
 > **Nota — `02_Evidencias/`:**  los 8 consentimientos originales están pixeleados para manter la privadiad de datos sencibles como los nombre y firmas.
