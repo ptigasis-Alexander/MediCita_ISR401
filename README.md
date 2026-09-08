@@ -12,7 +12,7 @@
 ![Carrera](https://img.shields.io/badge/Carrera-Ingeniería_de_Software-00509d?style=for-the-badge)
 ![Norma](https://img.shields.io/badge/ISO-29148:2018-orange?style=for-the-badge)
 ![Licencia](https://img.shields.io/badge/Licencia-MIT_%2B_CC_BY_4.0-2e7d32?style=for-the-badge)
-![Entrega](https://img.shields.io/badge/Entrega Final_Defensa_Final-success?style=for-the-badge)
+![Entrega](https://img.shields.io/badge/Entrega_Final_Defensa_Final-success?style=for-the-badge)
 
 </div>
 
