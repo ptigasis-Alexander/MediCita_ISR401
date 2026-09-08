@@ -51,7 +51,7 @@ https://github.com/ptigasis-Alexander/PFC_IR_AVANCES_TIGASI_GAMARRA-ZARATE_DIAZ_
 **Repositorio vigente — desde 2A hasta Entrega 4 (2B):**
 https://github.com/ptigasis-Alexander/MediCita_ISR401
 
-Para la **Entrega 4 (2B / Defensa Final)** prevalece el contenido vigente de este repositorio.
+Para la **Entrega Final** prevalece el contenido vigente de este repositorio.
 
 ---
 
