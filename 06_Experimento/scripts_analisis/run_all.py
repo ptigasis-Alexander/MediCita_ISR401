@@ -91,6 +91,43 @@ def write_csv(path: Path, rows: list[list[object]]) -> None:
         csv.writer(stream, delimiter=";").writerows(rows)
 
 
+def bootstrap_cramer_ci(
+    relations: list[dict[str, str]],
+    group_order: list[str],
+    replicas: int = 10_000,
+    seed: int = 42,
+) -> tuple[float, float]:
+    """IC 95% de V de Cramér por bootstrap no paramétrico sobre las unidades
+    observación-requisito (remuestreo con reemplazo), percentiles 2.5/97.5.
+    Misma semilla que la prueba de permutación, para reproducibilidad.
+    """
+
+    rng = random.Random(seed)
+    n = len(relations)
+    valores = []
+    for _ in range(replicas):
+        muestra = [relations[rng.randrange(n)] for _ in range(n)]
+        grouped = defaultdict(lambda: [0, 0])
+        for row in muestra:
+            finding = row["estado_tarea"] != "COMPLETADA"
+            grouped[group_area(row["area"])][int(finding)] += 1
+        tabla = [grouped[group] for group in group_order]
+        # si algún grupo quedó vacío en la remuestra, se omite esa réplica
+        if any(sum(fila) == 0 for fila in tabla):
+            continue
+        try:
+            _, expected_min, v = chi_square(tabla)
+        except ZeroDivisionError:
+            continue
+        if expected_min <= 0:
+            continue
+        valores.append(v)
+    valores.sort()
+    lo = valores[int(0.025 * len(valores))]
+    hi = valores[int(0.975 * len(valores)) - 1]
+    return lo, hi
+
+
 def main() -> None:
     observations = read_semicolon("observaciones_validacion_procesadas.csv")
     relations = read_semicolon("observacion_requisito_long.csv")
@@ -104,6 +141,7 @@ def main() -> None:
     contingency = [grouped[group] for group in group_order]
     statistic, expected_min, cramer_v = chi_square(contingency)
     p_value = monte_carlo(contingency, statistic)
+    cramer_v_ic_inf, cramer_v_ic_sup = bootstrap_cramer_ci(relations, group_order)
 
     coverage_path = RESULTS / "cobertura_RF_Must_final.csv"
     with coverage_path.open(encoding="utf-8-sig", newline="") as stream:
@@ -130,6 +168,9 @@ def main() -> None:
         "semilla": 42,
         "p_permutacion": round(p_value, 6),
         "v_cramer": round(cramer_v, 6),
+        "v_cramer_ic95_inferior": round(cramer_v_ic_inf, 6),
+        "v_cramer_ic95_superior": round(cramer_v_ic_sup, 6),
+        "v_cramer_ic95_metodo": "bootstrap no paramétrico, 10000 réplicas, semilla 42, percentiles 2.5/97.5",
         "rf_must_aprobados": passed,
         "rf_must_total": total,
         "cobertura_rf_must_porcentaje": round(coverage_percent, 2),
@@ -158,6 +199,7 @@ def main() -> None:
         ["relaciones_observacion_requisito", len(relations)],
         ["p_permutacion_monte_carlo", f"{p_value:.6f}"],
         ["v_cramer", f"{cramer_v:.6f}"],
+        ["v_cramer_ic95", f"[{cramer_v_ic_inf:.6f}, {cramer_v_ic_sup:.6f}]"],
         ["rf_must_verificacion_tecnica_aprobados", passed],
         ["rf_must_total", total],
         ["cobertura_rf_must_porcentaje", f"{coverage_percent:.2f}"],
