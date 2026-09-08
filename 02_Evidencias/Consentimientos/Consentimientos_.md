@@ -1,10 +1,24 @@
-# Consentimientos — Ronda de elicitación de requisitos (P01–P08)
+<div align="center">
 
-Esta carpeta contiene las copias **públicas y enmascaradas** de los consentimientos informados firmados por las 8 personas que participaron en la primera ronda de campo (entrevistas de levantamiento de requisitos), correspondientes a las transcripciones de `02_Evidencias/Transcripcion/`.
+# 📝 Consentimientos — Ronda de Elicitación (P01–P08)
+
+### Proyecto MediCita (SICM) — ISR-401
+
+![Estado](https://img.shields.io/badge/Estado-En_progreso-yellow?style=for-the-badge)
+![Firmas](https://img.shields.io/badge/Firmas-8_de_8-success?style=for-the-badge)
+![CI](https://img.shields.io/badge/Campo_CI-2_pendientes-orange?style=for-the-badge)
+
+</div>
+
+---
+
+## 📌 Sobre esta carpeta
+
+Copias **públicas y enmascaradas** de los consentimientos informados firmados por las 8 personas que participaron en la ronda de elicitación de requisitos, correspondientes a las transcripciones de `02_Evidencias/Transcripcion/`.
 
 En cada archivo se tapó el nombre, la firma, el nombre y apellido, y el número de cédula. Los originales sin tapar se conservan únicamente en la zona restringida cifrada del repositorio (`02_Evidencias/00_Restringido/`), nunca en esta carpeta.
 
-## Correspondencia con las transcripciones de elicitación
+## 📋 Correspondencia con las transcripciones de elicitación
 
 | Consentimiento | Código de transcripción | Área |
 |---|---|---|
@@ -19,11 +33,12 @@ En cada archivo se tapó el nombre, la firma, el nombre y apellido, y el número
 
 **Total: 8 consentimientos, uno por persona entrevistada (P01–P08).**
 
-## Relación con la tercera ronda
 
-Los consentimientos de la ronda de validación del prototipo (walkthrough, **tercera ronda de campo**, 28 de agosto de 2026) — un grupo de participantes distinto — van en `02_Evidencias/Validacion_Walkthrough/Consentimientos_validacion/consentimientos_validacion.md`, junto con las transcripciones de esa tercera ronda. No deben confundirse ni sumarse las tres rondas (elicitación 1, elicitación 2 y walkthrough) como si fueran los mismos participantes.
+## 🔗 Relación con la ronda de validación
 
-## Zonas de evidencia
+Los consentimientos de la ronda de validación del prototipo (walkthrough, agosto 2026) — un grupo de participantes externos distinto, sin superposición con estos 8 — van en `02_Evidencias/Validacion_Walkthrough/Consentimientos_validacion/consentimientos_validacion.md`. No deben confundirse ni sumarse ambas rondas como si fueran las mismas personas — ver `02_Evidencias/Readme.md` para el conteo total confirmado de 16 participantes externos distintos.
+
+## 🔒 Zonas de evidencia
 
 Conforme al protocolo ético del proyecto (Categoría A):
 - **Zona pública [P]:** esta carpeta — copias enmascaradas, sin nombre, firma ni cédula visibles.
