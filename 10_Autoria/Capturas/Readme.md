@@ -14,7 +14,7 @@
 
 ## 📋 Requisito
 
-Mínimo 3 capturas por integrante, mostrando herramienta + archivo del proyecto + reloj del sistema + usuario de sesión. Formato: `AAAA-MM-DD_usuario_artefacto.png`.
+Mínimo 3 capturas por integrante, mostrando herramienta + archivo del proyecto + reloj del sistema + usuario de sesión. Formato: `AAAA-MM-DD_usuario_artefacto.png` o .jpg.
 
 ## 📊 Estado por integrante (12 capturas subidas en total)
 
