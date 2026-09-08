@@ -26,6 +26,3 @@ Mínimo 3 capturas por integrante, mostrando herramienta + archivo del proyecto 
 | mtrujillov | 3 | ✅ Cumple |
 | ptigasis | 3 | ✅ Cumple|
 
-## ✅ Próximo paso
-
-ptigasis necesitan 1 captura más cada uno para llegar al mínimo.
