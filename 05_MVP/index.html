@@ -3,15 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SICM — Demostración automática actualizada</title>
+  <title>SICM — Demostración para la defensa final</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="ambient one"></div><div class="ambient two"></div>
+
   <div id="app">
     <header class="topbar">
-      <div class="brand"><span class="brandmark">S</span><span><b>SICM</b><small>Centro médico inteligente</small></span></div>
-      <div class="demo-label"><span class="live-dot"></span> DEMOSTRACIÓN GUIADA · VALIDACIÓN WALKTHROUGH</div>
+      <div class="brand">
+        <span class="brandmark">S</span>
+        <span><b>SICM</b><small>Centro médico inteligente</small></span>
+      </div>
+
+      <div class="demo-label">
+        <span class="live-dot"></span>
+        DEMOSTRACIÓN DE DEFENSA · FLUJO CRÍTICO DEL MVP
+      </div>
+
       <div class="controls">
         <button id="fontBtn" aria-label="Cambiar tamaño de texto">A+</button>
         <button id="soundBtn" aria-label="Activar o silenciar narración">🔊</button>
@@ -19,18 +28,31 @@
         <button id="fullBtn">Pantalla completa</button>
       </div>
     </header>
+
     <main class="stage">
       <section class="browser" id="browser">
-        <div class="browserbar"><span></span><span></span><span></span><div class="address">🔒 sicm.centro-medico.local</div></div>
+        <div class="browserbar">
+          <span></span><span></span><span></span>
+          <div class="address">🔒 sicm.centro-medico.local · datos simulados</div>
+        </div>
         <div id="screen" class="screen"></div>
         <div id="spotlight" class="spotlight"></div>
       </section>
-      <div id="chapter" class="chapter"><small id="chapterKicker"></small><strong id="chapterTitle"></strong></div>
+
+      <div id="chapter" class="chapter">
+        <small id="chapterKicker"></small>
+        <strong id="chapterTitle"></strong>
+      </div>
+
       <div id="cursor" class="cursor"><i></i></div>
       <div id="clickFx" class="click-fx"></div>
     </main>
+
     <footer class="timeline">
-      <div class="timeline-copy"><span id="sceneName">Introducción</span><span id="clock">00:00 / 05:00</span></div>
+      <div class="timeline-copy">
+        <span id="sceneName">Ruta de defensa</span>
+        <span id="clock">00:00 / 01:52</span>
+      </div>
       <div class="track"><div id="progress"></div></div>
       <div id="markers" class="markers"></div>
     </footer>
@@ -38,13 +60,24 @@
 
   <div id="welcome" class="welcome">
     <div class="welcome-card">
-      <span class="eyebrow">DEMO INTERACTIVA · 5 MINUTOS · VERSIÓN VALIDADA</span>
+      <span class="eyebrow">DEFENSA FINAL · 7 PASOS · DATOS FICTICIOS</span>
       <div class="hero-icon">S</div>
-      <h1>Conozca SICM</h1>
-      <p>Demostración automática del prototipo final, actualizada con las observaciones obtenidas en la validación walkthrough.</p>
-      <div class="feature-row"><span>🎙 Narración</span><span>↗ Cursor guiado</span><span>◉ 20 escenas</span><span>A+ Accesibilidad</span></div>
-      <button id="startBtn">Iniciar demostración con narración <b>▶</b></button>
-      <small>La narración utiliza la voz en español instalada en su navegador.</small>
+      <h1>Ruta corta de demostración</h1>
+      <p>
+        La demostración pública se concentra únicamente en el flujo que se explica
+        durante la defensa: acceso por rol, recepción, enfermería, atención clínica,
+        receta, entrega de medicamento y reportes.
+      </p>
+      <div class="feature-row">
+        <span>🔐 Roles</span>
+        <span>🗂 Recepción</span>
+        <span>💉 Enfermería</span>
+        <span>🩺 Atención</span>
+        <span>💊 Medicamentos</span>
+        <span>📊 Reportes</span>
+      </div>
+      <button id="startBtn">Iniciar demostración de defensa <b>▶</b></button>
+      <small>No se muestran datos reales ni contenido de 00_Restringido.</small>
     </div>
   </div>
 
