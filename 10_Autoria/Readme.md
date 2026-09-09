@@ -67,7 +67,3 @@ Fuente: `git shortlog -sne HEAD` sobre un clon completo (historial íntegro, fil
 
 ---
 
-## ✅ Próximos pasos recomendados
-
-1. Conseguir las firmas de los 5 integrantes en A9 y A10.
-2. **Al final de todo:** regenerar `checksums.sha256` sobre el estado definitivo.
