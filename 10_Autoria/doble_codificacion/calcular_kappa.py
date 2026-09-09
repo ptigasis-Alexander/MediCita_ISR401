@@ -25,7 +25,10 @@ HOJA_B = CARPETA / "hoja_CODIFICADOR_B.csv"
 def leer_codigos(ruta: Path) -> dict[str, str]:
     codigos = {}
     with open(ruta, encoding="utf-8") as f:
-        reader = csv.DictReader(f, delimiter=";")
+        primera_linea = f.readline()
+        delimitador = ";" if primera_linea.count(";") > primera_linea.count(",") else ","
+        f.seek(0)
+        reader = csv.DictReader(f, delimiter=delimitador)
         for fila in reader:
             sid = fila["id_segmento"]
             codigo = fila["codigo_asignado (C01-C49, ver referencia)"].strip()
