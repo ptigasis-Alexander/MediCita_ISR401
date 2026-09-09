@@ -8,14 +8,22 @@ y el proyecto utiliza [versionado semántico](https://semver.org/lang/es/).
 
 ### Pendiente
 
-- Firma del docente responsable en `A13_Participantes_Externos_MediCita.pdf`,
-  `Adenda_Segunda_Ronda.pdf` y `Adenda_Validacion_Walkthrough_corregida.pdf`.
 - Corrección de la pixelación de las firmas de P02, P06 y P07 en
-  `Acta_MemberChecking_MediCita.pdf`.
+  `Acta_MemberChecking_MediCita.pdf` (sigue con desenfoque débil, aún legible).
 - Repositorio espejo (`MediCita_ISR401-archive`) y archivado en Software
-  Heritage; incorporación del SWHID real en `CITATION.cff`.
-- Verificar que ningún archivo de `02_Evidencias/00_Restringido/` forme parte
-  del depósito abierto.
+  Heritage; incorporación del SWHID real en `CITATION.cff` (solicitud enviada,
+  en trámite).
+- Completar el campo de número de cédula (CI) en `C_Enfermería.pdf` y
+  `C_Paciente_Simulado.pdf` (firma y nombre ya completos).
+
+### Nota sobre firmas del expediente ético
+
+`A13_Participantes_Externos_MediCita.pdf`, `Adenda_Segunda_Ronda.pdf` y
+`Adenda_Validacion_Walkthrough_corregida.pdf` permanecen sin firma del
+docente responsable por decisión explícita de este, comunicada al equipo:
+sirven como constancia del proceso realizado, ya que los documentos
+originales firmados se conservan en el comité de ética. No se trata de un
+pendiente.
 
 ## [4.0.0] - 2026-09-07 — Entrega 4 (2B) / Defensa Final
 
