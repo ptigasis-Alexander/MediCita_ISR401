@@ -33,7 +33,7 @@ pendiente contiene contenido inventado.**
 | A7 | [`doble_codificacion/`](doble_codificacion/) | 🟢 Completo | 38 segmentos codificados por 2 integrantes independientes. **Kappa = 0,6997 (acuerdo sustancial)**, IC 95% [0,53–0,87]. |
 | A8 | [`correspondencia/README.md`](correspondencia/README.md) | 🟢 Completo | Las 4 comunicaciones confirmadas y firmadas. |
 | A9 | [`declaracion_uso_ia.md`](declaracion_uso_ia.md) | 🟢 Completo | Firmado por los 5 integrantes (03-05/09/2026). |
-| A10 | [`aporte_individual.md`](aporte_individual.md) | 🟢 Completo | Conteo real de commits (1.346 totales) y detalle cualitativo por integrante, basado en la bitácora A1. Pendiente de firma de los 5. |
+| A10 | [`aporte_individual.md`](aporte_individual.md) | 🟢 Completo | Conteo real de commits (1.346 totales) y detalle cualitativo por integrante, basado en la bitácora A1. |
 | A11 | [`exif_inventario.csv`](exif_inventario.csv) | 🟢 Completo | Fotos con EXIF real, inferido por contexto, o marcado explícitamente sin dato. |
 | A12 | `.mailmap` | 🟢 Completo | Atribuye los 8 commits de `MediCita Team` a Thais Melanie Herrera Ramos. |
 
