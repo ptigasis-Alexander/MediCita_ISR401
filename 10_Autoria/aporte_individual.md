@@ -28,29 +28,29 @@ La tabla de días cuenta en cuántas fechas distintas aparece cada integrante, *
 
 ## ✅ Conteo total de commits — confirmado con clon completo (`git shortlog -sne HEAD`)
 
-| Integrante | Commits totales | % del total (1.411) |
+| Integrante | Commits totales | % del total (1.429) |
 |---|---:|---:|
-| Paul Alexander Tigasi Sampedro | 298 | 21,1 % |
-| Thais Melanie Herrera Ramos | 285 | 20,2 % |
-| Jamileth Estefanía Gamarra Zárate | 278 | 19,7 % |
-| Steven Santiago Díaz Pontón | 277 | 19,6 % |
-| Mayummy Jailly Trujillo Vega | 273 | 19,3 % |
-| **Total** | **1.411** | **100 %** |
+| Paul Alexander Tigasi Sampedro | 298 | 20,85 % |
+| Thais Melanie Herrera Ramos | 289 | 20,22 % |
+| Steven Santiago Díaz Pontón | 285 | 19,94 % |
+| Mayummy Jailly Trujillo Vega | 279 | 19,52 % |
+| Jamileth Estefanía Gamarra Zárate | 278 | 19,45 % |
+| **Total** | **1.429** | **100 %** |
 
-El reparto es notablemente parejo entre los cinco integrantes (19,3 % a 21,1 %), el rango más estrecho registrado hasta ahora en el proyecto.
+El reparto es notablemente parejo entre los cinco integrantes (19,45 % a 20,85 %), el rango más estrecho registrado hasta ahora en el proyecto.
 
 ## 🔍 Comparación con la vista "Contributors" de GitHub
 
-GitHub ofrece una vista gráfica de commits por integrante en la pestaña "Insights → Contributors" del repositorio. Sus números, al 08/09/2026, no coinciden exactamente con el conteo de `git shortlog`:
+GitHub ofrece una vista gráfica de commits por integrante en la pestaña "Insights → Contributors" del repositorio. Sus números, al 09/09/2026, no coinciden exactamente con el conteo de `git shortlog`:
 
 | Integrante | GitHub (Insights) | `git shortlog` (clon completo) | Diferencia |
 |---|---:|---:|---:|
 | Paul Alexander Tigasi Sampedro | 292 | 298 | +6 |
-| Thais Melanie Herrera Ramos | 273 | 285 | +12 |
+| Thais Melanie Herrera Ramos | 277 | 289 | +12 |
+| Steven Santiago Díaz Pontón | 278 | 285 | +7 |
+| Mayummy Jailly Trujillo Vega | 278 | 279 | +1 |
 | Jamileth Estefanía Gamarra Zárate | 277 | 278 | +1 |
-| Steven Santiago Díaz Pontón | 271 | 277 | +6 |
-| Mayummy Jailly Trujillo Vega | 272 | 273 | +1 |
-| **Total** | **1.385** | **1.411** | **+26** |
+| **Total** | **1.402** | **1.429** | **+27** |
 
 ### Por qué existe esta diferencia
 
