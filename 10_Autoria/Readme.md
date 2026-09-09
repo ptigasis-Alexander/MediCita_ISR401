@@ -45,7 +45,7 @@ pendiente contiene contenido inventado.**
 
 | Documento | Estado |
 |---|:---:|
-| [`verificacion_previa.docx`](verificacion_previa.docx) | 🟡 Firma en proceso — 11 de 12 comprobaciones técnicas ya en SÍ; solo queda mover la etiqueta `vFinal` al cierre. |
+| [`verificacion_previa.docx`](verificacion_previa.pdf) | 🟡 Firma en proceso — 11 de 12 comprobaciones técnicas ya en SÍ; solo queda mover la etiqueta `vFinal` al cierre. |
 
 ---
 
