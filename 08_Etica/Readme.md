@@ -61,10 +61,3 @@ Contiene el expediente ético completo del proyecto: protocolo de investigación
 
 
 ---
-
-## ✅ Próximos pasos
-
-1. Conseguir la firma del docente responsable en A13 y ambas addendas.
-2. Cerrar el trámite del Oficio de Respaldo Institucional (ver correspondencia).
-3. Resolver o documentar formalmente el punto de la autorización del MSP.
-4. Evaluar si se re-firma A5 y CA-3 con la plantilla corregida.
