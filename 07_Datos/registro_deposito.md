@@ -6,7 +6,7 @@
 
 ![Zenodo](https://img.shields.io/badge/Zenodo-Publicado-success?style=for-the-badge)
 ![OSF](https://img.shields.io/badge/OSF-Prerregistrado-success?style=for-the-badge)
-![Software Heritage](https://img.shields.io/badge/Software_Heritage-Pendiente-orange?style=for-the-badge)
+![Software Heritage](https://img.shields.io/badge/Software_Heritage-Obtenido-success?style=for-the-badge)
 
 </div>
 
@@ -33,8 +33,8 @@
 
 | Campo | Valor |
 |---|---|
-| **Estado** | 🟠 Pendiente. `CITATION.cff` conserva un marcador de relleno para el SWHID hasta completar el archivado. |
-| **Plan** | Repositorio espejo `MediCita_ISR401-archive` (sin `02_Evidencias/00_Restringido/*.7z*`), a archivar mediante "Save code now" en https://archive.softwareheritage.org/save/ |
+| **Estado** | 🟢 Obtenido. SWHID `swh:1:dir:6fbdc09760140cb9d176d33621b1262e1b9de2c2` (09/09/2026), incorporado en `CITATION.cff`. |
+| **Repositorio archivado** | `MediCita_ISR401-archive` (sin `02_Evidencias/00_Restringido/*.7z*`) |
 
 ---
 
