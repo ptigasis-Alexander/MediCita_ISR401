@@ -33,7 +33,7 @@ pendiente contiene contenido inventado.**
 | A7 | [`doble_codificacion/`](doble_codificacion/) | 🟢 Completo | 38 segmentos codificados por 2 integrantes independientes. **Kappa = 0,6997 (acuerdo sustancial)**, IC 95% [0,5255–0,8739]. Resultado generado por script (`resultado_kappa.md`). |
 | A8 | [`correspondencia/README.md`](correspondencia/README.md) | 🟢 Completo | Las 4 comunicaciones confirmadas y firmadas. |
 | A9 | [`declaracion_uso_ia.md`](declaracion_uso_ia.md) | 🟢 Completo | Firmado por los 5 integrantes (03-05/09/2026). |
-| A10 | [`aporte_individual.md`](aporte_individual.md) | 🟢 Completo | Conteo real de commits (1.429 totales) y detalle cualitativo por integrante, basado en la bitácora A1. |
+| A10 | [`aporte_individual.md`](aporte_individual.md) | 🟢 Completo | Conteo real de commits (1.441 totales) y detalle cualitativo por integrante, basado en la bitácora A1. |
 | A11 | [`exif_inventario.csv`](exif_inventario.csv) | 🟢 Completo | Fotos con EXIF real, inferido por contexto, o marcado explícitamente sin dato. |
 | A12 | `.mailmap` | 🟢 Completo | Atribuye los 8 commits de `MediCita Team` a Thais Melanie Herrera Ramos. |
 
@@ -66,11 +66,11 @@ Fuente: `git shortlog -sne HEAD` sobre un clon completo (historial íntegro, fil
 
 | Integrante | Commits | % del total |
 |---|---:|---:|
-| Paul Alexander Tigasi Sampedro | 298 | 20,85 % |
-| Thais Melanie Herrera Ramos | 289 | 20,22 % |
-| Steven Santiago Díaz Pontón | 285 | 19,94 % |
-| Mayummy Jailly Trujillo Vega | 279 | 19,52 % |
-| Jamileth Estefanía Gamarra Zárate | 278 | 19,45 % |
-| **Total** | **1.429** | **100 %** |
+| Paul Alexander Tigasi Sampedro | 298 | 20,68 % |
+| Thais Melanie Herrera Ramos | 292 | 20,26 % |
+| Steven Santiago Díaz Pontón | 287 | 19,92 % |
+| Mayummy Jailly Trujillo Vega | 283 | 19,64 % |
+| Jamileth Estefanía Gamarra Zárate | 281 | 19,50 % |
+| **Total** | **1.441** | **100 %** |
 
-El reparto es notablemente parejo entre los cinco integrantes (19,45 % a 20,85 %).
+El reparto es notablemente parejo entre los cinco integrantes (19,50 % a 20,68 %).
