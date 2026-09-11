@@ -36,11 +36,14 @@ keywords:
 
 doi: '10.5281/zenodo.22236373'
 
-# Agregar después de archivar en Software Heritage (Save code now):
-# identifiers:
-#   - type: swh
-#     value: 'swh:1:dir:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
-#
+identifiers:
+  - type: swh
+    value: 'swh:1:dir:6fbdc09760140cb9d176d33621b1262e1b9de2c2'
+    description: >-
+      Software Heritage — archivado del repositorio espejo
+      MediCita_ISR401-archive (sin evidencia audiovisual restringida),
+      09/09/2026.
+
 # El campo license identifica la licencia del software citado. La documentación
 # y el dataset anonimizado usan CC BY 4.0. El contenido de
 # 02_Evidencias/00_Restringido/ está excluido. Véase LICENSE.
