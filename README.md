@@ -105,7 +105,7 @@ Los hashes SHA-256 de cada archivo, declarados en `fichas_tecnicas.csv`, corresp
 | Registro OSF | DOI `10.17605/OSF.IO/DTYNC` | 🟢 Público |
 | Depósito Zenodo | DOI `10.5281/zenodo.22236373` | 🟢 Publicado |
 | Software Heritage | SWHID `swh:1:dir:6fbdc0976...` | 🟢 Obtenido |
-| Integridad SHA-256 | Comprobación de integridad de archivos | 🟡 Regenerar después del último cambio |
+| Integridad SHA-256 | Comprobación de integridad de archivos | 🟢 Obtenido |
 | Autoevaluación FAIR | Evaluación de principios FAIR (F-UJI, 88%) | 🟢 Confirmado (v1.0.0, 01/09/2026) |
 
 
@@ -353,7 +353,7 @@ Documentada en `fair_assessment.pdf`. Mecanismo distinto del archivado en Softwa
 |---|---|:---:|
 | OSF | `10.17605/OSF.IO/DTYNC` | 🟢 Obtenido |
 | Zenodo | `10.5281/zenodo.22236373` | 🟢 Obtenido |
-| Software Heritage | SWHID | 🟠 En trámite |
+| Software Heritage | SWHID | 🟢 Obtenido|
 
 ---
 
