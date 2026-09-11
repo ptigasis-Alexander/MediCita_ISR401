@@ -6,7 +6,7 @@
 
 ![Estado](https://img.shields.io/badge/Estado-En_progreso-yellow?style=for-the-badge)
 ![Firmas](https://img.shields.io/badge/Firmas-8_de_8-success?style=for-the-badge)
-![CI](https://img.shields.io/badge/Campo_CI-2_pendientes-orange?style=for-the-badge)
+![CI](https://img.shields.io/badge/Campo_CI-2_sin_completar_por_el_firmante-orange?style=for-the-badge)
 
 </div>
 
@@ -32,6 +32,17 @@ En cada archivo se tapó el nombre, la firma, el nombre y apellido, y el número
 | `C_Recepcionista.pdf` | P07 | Recepción y Recaudación |
 
 **Total: 8 consentimientos, uno por persona entrevistada (P01–P08).**
+
+## ⚠️ Nota de honestidad: campo de cédula (CI) sin completar en 2 documentos
+
+En `C_Enfermería.pdf` y `C_Paciente_Simulado.pdf`, la **firma y el nombre completo sí están presentes**, pero la persona firmante dejó en blanco el campo del número de cédula (CI) al momento de firmar. No se completó ese dato de forma retroactiva ni por el equipo, para no comprometer la integridad del documento original tal como fue firmado.
+
+La identidad de ambas personas queda de todos modos verificable mediante:
+- La firma manuscrita (conservada sin enmascarar en la zona restringida `02_Evidencias/00_Restringido/`).
+- El nombre y apellido completos.
+- El código de sesión que vincula cada consentimiento con su transcripción correspondiente (P06 y P08 respectivamente).
+
+Se prefirió documentar esta omisión con transparencia antes que ocultarla o completarla sin respaldo real.
 
 
 ## 🔗 Relación con la ronda de validación
