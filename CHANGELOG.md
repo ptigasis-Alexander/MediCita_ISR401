@@ -10,11 +10,14 @@ y el proyecto utiliza [versionado semántico](https://semver.org/lang/es/).
 
 - Corrección de la pixelación de las firmas de P02, P06 y P07 en
   `Acta_MemberChecking_MediCita.pdf` (sigue con desenfoque débil, aún legible).
-- Repositorio espejo (`MediCita_ISR401-archive`) y archivado en Software
-  Heritage; incorporación del SWHID real en `CITATION.cff` (solicitud enviada,
-  en trámite).
 - Completar el campo de número de cédula (CI) en `C_Enfermería.pdf` y
   `C_Paciente_Simulado.pdf` (firma y nombre ya completos).
+
+### Resuelto
+
+- Repositorio espejo (`MediCita_ISR401-archive`) archivado en Software
+  Heritage; SWHID real (`swh:1:dir:6fbdc09760140cb9d176d33621b1262e1b9de2c2`)
+  incorporado en `CITATION.cff` (09/09/2026).
 
 ### Nota sobre firmas del expediente ético
 
