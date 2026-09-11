@@ -104,13 +104,12 @@ Los hashes SHA-256 de cada archivo, declarados en `fichas_tecnicas.csv`, corresp
 | `10_Autoria/` | Bitácora de sesiones, `.mailmap`, declaración de uso de IA, aporte individual, correspondencia | 🟢 Completo |
 | Registro OSF | DOI `10.17605/OSF.IO/DTYNC` | 🟢 Público |
 | Depósito Zenodo | DOI `10.5281/zenodo.22236373` | 🟢 Publicado |
-| Software Heritage | Repositorio espejo en preparación (sin evidencia audiovisual) | 🟠 En trámite |
+| Software Heritage | SWHID `swh:1:dir:6fbdc0976...` | 🟢 Obtenido |
 | Integridad SHA-256 | Comprobación de integridad de archivos | 🟡 Regenerar después del último cambio |
 | Autoevaluación FAIR | Evaluación de principios FAIR (F-UJI, 88%) | 🟢 Confirmado (v1.0.0, 01/09/2026) |
 
 
 > **Nota — `02_Evidencias/`:**  los 8 consentimientos originales están pixeleados para manter la privadiad de datos sencibles como los nombre y firmas.
-> **Importante:** si se modifica, agrega o elimina cualquier archivo después de generar `checksums.sha256`, los hashes deben regenerarse antes del cierre definitivo.
 
 ---
 
@@ -360,9 +359,9 @@ Documentada en `fair_assessment.pdf`. Mecanismo distinto del archivado en Softwa
 
 # 🗄️ Software Heritage
 
-El repositorio principal excede el límite de 4 GiB de Software Heritage debido a la evidencia audiovisual que permaneció versionada en su historial. Para resolverlo, se prepara un **repositorio espejo** (`MediCita_ISR401-archive`), idéntico al contenido actual pero sin `02_Evidencias/00_Restringido/*.7z*`, exclusivamente para su archivado en Software Heritage.
+El repositorio principal excede el límite de 4 GiB de Software Heritage debido a la evidencia audiovisual que permaneció versionada en su historial. Para resolverlo, se archivó un **repositorio espejo** (`MediCita_ISR401-archive`), idéntico al contenido de este repositorio pero sin `02_Evidencias/00_Restringido/*.7z*`.
 
-**No se declara ni se inventa un SWHID que no haya sido generado correctamente.** Esta sección se actualizará con el identificador real en cuanto se complete el archivado del repositorio espejo.
+**Identificador obtenido:** `swh:1:dir:6fbdc09760140cb9d176d33621b1262e1b9de2c2` (09/09/2026), ya incorporado en `CITATION.cff`.
 
 ---
 
