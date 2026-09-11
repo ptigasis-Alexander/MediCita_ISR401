@@ -28,16 +28,16 @@ La tabla de días cuenta en cuántas fechas distintas aparece cada integrante, *
 
 ## ✅ Conteo total de commits — confirmado con clon completo (`git shortlog -sne HEAD`)
 
-| Integrante | Commits totales | % del total (1.429) |
+| Integrante | Commits totales | % del total (1.441) |
 |---|---:|---:|
-| Paul Alexander Tigasi Sampedro | 298 | 20,85 % |
-| Thais Melanie Herrera Ramos | 289 | 20,22 % |
-| Steven Santiago Díaz Pontón | 285 | 19,94 % |
-| Mayummy Jailly Trujillo Vega | 279 | 19,52 % |
-| Jamileth Estefanía Gamarra Zárate | 278 | 19,45 % |
-| **Total** | **1.429** | **100 %** |
+| Paul Alexander Tigasi Sampedro | 298 | 20,68 % |
+| Thais Melanie Herrera Ramos | 292 | 20,26 % |
+| Steven Santiago Díaz Pontón | 287 | 19,92 % |
+| Mayummy Jailly Trujillo Vega | 283 | 19,64 % |
+| Jamileth Estefanía Gamarra Zárate | 281 | 19,50 % |
+| **Total** | **1.441** | **100 %** |
 
-El reparto es notablemente parejo entre los cinco integrantes (19,45 % a 20,85 %), el rango más estrecho registrado hasta ahora en el proyecto.
+El reparto es notablemente parejo entre los cinco integrantes (19,50 % a 20,68 %), el rango más estrecho registrado hasta ahora en el proyecto.
 
 ## 🔍 Comparación con la vista "Contributors" de GitHub
 
