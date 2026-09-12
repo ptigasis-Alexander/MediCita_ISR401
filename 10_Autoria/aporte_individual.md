@@ -142,7 +142,7 @@ El reparto de participación por días es razonablemente parejo entre los cinco 
 |---|---|---|
 | Paul Alexander Tigasi Sampedro | Tigasi Sampedro | 12/09/2026 10:33 |
 | Steven Santiago Díaz Pontón |Steven Diaz | 07/09/2026 0:16 |
-| Jamileth Estefanía Gamarra Zárate | Jamileth Gamarra | 07/09/2026 0:25 |
+| Jamileth Estefanía Gamarra Zárate | Jamileth Gamarra | 12/09/2026 10:34 |
 | Thais Melanie Herrera Ramos | Herrera Thais | 12/09/2026 10:28 |
 | Mayummy Jailly Trujillo Vega | Trujillo Mayummy | 12/09/2026 10:31 |
 
