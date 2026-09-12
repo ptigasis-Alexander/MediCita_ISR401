@@ -6,7 +6,7 @@
 
 ![Estado](https://img.shields.io/badge/Estado-Completado-Green?style=for-the-badge)
 ![Herramientas](https://img.shields.io/badge/Herramientas-GPT--5.6_Sol_%2B_Claude_Sonnet_5-6e56cf?style=for-the-badge)
-![Actualizado](https://img.shields.io/badge/Actualizado-07/09/2026-informational?style=for-the-badge)
+![Actualizado](https://img.shields.io/badge/Actualizado-12/09/2026-informational?style=for-the-badge)
 
 </div>
 
@@ -79,14 +79,33 @@ Fuente: [`06_Experimento/prompst_LLm/registro_uso_llm.csv`](../06_Experimento/pr
 
 ---
 
+## 5️⃣ Corrección final del repositorio tras la revisión de cierre — Claude Sonnet 5 (Anthropic), 09-12/09/2026
+
+> **Sobre la columna "Quién verificó":** igual que en la sección 3️⃣, la interacción directa con la IA la realizó Paul Alexander Tigasi Sampedro; los cambios se discutieron y validaron en conjunto con el equipo antes de aceptarlos como definitivos.
+
+| Tarea | Para qué se usó | Quién verificó | Método de verificación |
+|---|---|---|---|
+| Redacción de la sección "Alcance del componente de IA y requisitos que no aplican" | Declarar explícitamente que RF-02/RF-13 no son un componente de IA y que el requisito de "asignación/recomendación automática de cita" no aplica al sistema | Paul Alexander Tigasi Sampedro (interacción directa) — validado en conjunto con el equipo | Revisión línea por línea de RF-02 y RF-13 contra la especificación real, sin modelo ni métrica de acierto |
+| Redacción de RNF-21 (supervisión humana) y RNF-22 (clasificación del nivel de riesgo) | Completar los seis requisitos del componente inteligente exigidos por la guía de cierre | Paul Alexander Tigasi Sampedro (interacción directa) — validado en conjunto con el equipo | Revisión de que la métrica y el umbral fueran razonables para el dominio; compilación real del documento sin errores (xelatex + bibtex, 3 pasadas) |
+| Reescritura de RNF-19 (equidad), re-enfocado de RF-02/RF-13 a RF-16 | Corregir la referencia errónea a un componente que no es de IA | Paul Alexander Tigasi Sampedro (interacción directa) — validado en conjunto con el equipo | Contraste contra el único componente de IA real del sistema (RF-16) |
+| Corrección de un `\begin{quote}` sin cerrar en `ERS_SRS_2B_V2.0.tex` | Reparar una falla de compilación que afectaba la reproducibilidad documental (P2) | Paul Alexander Tigasi Sampedro (interacción directa) — validado en conjunto con el equipo | Recompilación real del documento, confirmando 0 errores |
+| Corrección de las filas 71, 73 y 74 de `matriz_trazabilidad_ACTUALIZADA.csv` | Sincronizar la matriz con la corrección de RNF-19 y agregar RNF-21/RNF-22 | Paul Alexander Tigasi Sampedro (interacción directa) — validado en conjunto con el equipo | Contraste manual contra la tabla equivalente ya corregida dentro del ERS |
+| Redacción de finalidad y plazo de conservación en `CategoriaA_A4_Referencia_LOPDP.pdf` | Completar los cuatro elementos exigidos por el ítem B6 (base de licitud, finalidad, plazo, responsable) | Paul Alexander Tigasi Sampedro (interacción directa) — validado en conjunto con el equipo | Revisión de que el plazo declarado (6 meses tras la defensa) fuera razonable para el equipo |
+| Diseño de las plantillas y el script de la doble observación independiente (`10_Autoria/doble_observacion_sesiones/`) | Cubrir el ítem B4 (kappa entre dos observadores independientes sobre el 20% de las sesiones de validación) | Paul Alexander Tigasi Sampedro (interacción directa) — validado en conjunto con el equipo | El script se probó verificando que se niega a calcular el Kappa si falta algún juicio del segundo observador |
+| Cálculo de la tabla de duración por sesión en `ficha_observacion.csv` y del perfil agregado de participantes (`perfil_agregado_participantes.csv`) | Completar los datos de duración y el perfil agregado exigidos por B3, cruzando `fuente_evidencia` contra `fichas_tecnicas.csv` ya verificado | Paul Alexander Tigasi Sampedro (interacción directa) — validado en conjunto con el equipo | Cruce por nombre de archivo contra el inventario técnico ya verificado con hash SHA-256; dos asignaciones de menor certeza (VAL-COORD, VAL-PAC) quedaron marcadas para confirmación del equipo |
+
+> **Nota importante:** el contenido observacional en sí (qué se completó, qué incidente se registró en cada tarea del walkthrough, el juicio del segundo observador) fue producido por integrantes del equipo viendo directamente los videos de validación — la IA no generó, sugirió ni completó ningún juicio de observación de campo.
+
+---
+
 ## ✍️ Firma de los integrantes
 
-Al firmar, cada integrante confirma que la información de esta declaración es correcta según su propio conocimiento, y que corrigió cualquier atribución marcada como que no le correspondiera.
+
 
 | Integrante | Firma | Fecha |
 |---|---|---|
 | Paul Alexander Tigasi Sampedro | Alexander Sampedro | 03/09/2026 17:29 |
-| Steven Santiago Díaz Pontón | Steven Diaz | 03/09/2026 23:31 |
+| Steven Santiago Díaz Pontón | Steven Diaz | 12/09/2026 0:14 |
 | Jamileth Estefanía Gamarra Zárate | Jamileth Gamarra | 03/09/2026 18:38 |
 | Thais Melanie Herrera Ramos | Herrera Thais | 05/09/2026 19:17|
 | Mayummy Jailly Trujillo Vega |Trujillo Mayummy |03/09/2026 23:09 |
