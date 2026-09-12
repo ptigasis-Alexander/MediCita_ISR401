@@ -1,12 +1,11 @@
-
 <div align="center">
 
 # 📊 Resultado de la Doble Observación Independiente (B4)
 
 ### Proyecto MediCita (SICM) — ISR-401
 
-![Kappa](https://img.shields.io/badge/Cohen's_Kappa-(-0.0714)-critical?style=for-the-badge)
-![Interpretación](https://img.shields.io/badge/Interpretación-Sin_acuerdo-critical?style=for-the-badge)
+![Kappa](https://img.shields.io/badge/Cohen's_Kappa-(-0.0714)-yellow?style=for-the-badge)
+![Interpretación](https://img.shields.io/badge/Interpretación-Sin_acuerdo-yellow?style=for-the-badge)
 ![Generado](https://img.shields.io/badge/Generado_por-script-informational?style=for-the-badge)
 
 </div>
