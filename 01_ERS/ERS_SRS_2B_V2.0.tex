@@ -1861,8 +1861,134 @@
 	\end{longtable}
 	
 	\begin{quote}
-		\textbf{Pendiente para el equipo:} este RNF-20 define el requisito, los indicadores y su umbral; el monitoreo real solo puede ejecutarse una vez el asistente esté desplegado en producción, lo cual está fuera del alcance de este corte del PFC.
+
+	
+	\paragraph{Nota — explicabilidad diferenciada por rol (ampliación RNF-18).}
+	El RNF-18, tal como está definido, especifica la explicación que recibe el
+	\emph{paciente} cuando el asistente deriva la consulta. Para cubrir también
+	al \emph{personal de recepción} como usuario afectado, se agrega:
+	
+	\begin{quote}
+		Cuando el asistente deriva una consulta al personal de recepción, debe
+		adjuntar al ticket de derivación un resumen estructurado de máximo
+		3 líneas con: (a) motivo de la derivación (categoría cerrada, no texto
+		libre del paciente), (b) nivel de urgencia declarado por el paciente
+		(si aplica), y (c) hora de la solicitud original. El personal de
+		recepción debe poder calificar la utilidad de ese resumen
+		(escala 1--5) en al menos 6 casos de la ronda de validación del
+		componente empírico (Sección 5), con calificación media \(\geq 4/5\).
 	\end{quote}
+	
+	
+	\subsubsection{Requisito de supervisión humana (obligatorio — componente de IA)}
+	
+	Toda decisión o sugerencia generada por el componente de IA que afecte
+	la atención de un paciente debe permanecer bajo control humano
+	efectivo, con posibilidad de anulación y registro de esa anulación
+	[6, 27].
+	
+	\begin{center}
+		\begin{tabular}{|p{3.2cm}|p{9.5cm}|}
+			\hline
+			\textbf{Atributo} & \textbf{Detalle} \\
+			\hline
+			Identificador & RNF-21 \\
+			\hline
+			Característica &
+			Supervisión humana efectiva sobre las decisiones del componente de IA,
+			tratada como propiedad verificable e independiente de RNF-18 \\
+			\hline
+			Componente asociado & RF-16 --- Asistente virtual con IA (chat box) \\
+			\hline
+			Usuarios afectados &
+			Personal de recepción y personal clínico (con permiso de anulación);
+			paciente (afectado indirectamente por la decisión anulada o
+			confirmada) \\
+			\hline
+			Mecanismo de anulación &
+			Toda derivación o respuesta automática del asistente debe incluir un
+			botón/acción de "anular sugerencia" visible para el personal
+			autorizado, que revierte la acción propuesta antes de que impacte el
+			flujo del paciente \\
+			\hline
+			Métrica y umbral &
+			100\,\% de las anulaciones deben quedar registradas con: identificador
+			de la interacción anulada, usuario que anuló, marca de tiempo, y
+			motivo (campo obligatorio de texto corto). 0 anulaciones sin registro
+			en auditorías periódicas \\
+			\hline
+			Prioridad (MoSCoW) & Must \\
+			\hline
+			Método de verificación &
+			Auditoría del registro de anulaciones sobre un período de referencia;
+			prueba de aceptación simulando al menos 3 anulaciones y verificando
+			que las 3 quedan trazadas \\
+			\hline
+			Responsable & Equipo de desarrollo, con supervisión del responsable del
+			tratamiento de datos declarado en la sección de ética \\
+			\hline
+			Frecuencia de medición & Cada corte de entrega y, en producción,
+			mensual \\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+	
+	\subsubsection{Requisito de clasificación del nivel de riesgo (obligatorio — componente de IA, datos de salud)}
+	
+	Dado que el componente de IA (RF-16) procesa consultas que pueden
+	involucrar datos de salud, el sistema debe clasificar cada interacción
+	según su nivel de riesgo antes de decidir si responde automáticamente
+	o deriva a un humano [6, 27].
+	
+	\begin{center}
+		\begin{tabular}{|p{3.2cm}|p{9.5cm}|}
+			\hline
+			\textbf{Atributo} & \textbf{Detalle} \\
+			\hline
+			Identificador & RNF-22 \\
+			\hline
+			Característica &
+			Clasificación del nivel de riesgo de cada interacción del componente
+			de IA, atendiendo expresamente a que procesa datos de salud \\
+			\hline
+			Componente asociado & RF-16 --- Asistente virtual con IA (chat box) \\
+			\hline
+			Usuarios afectados & Paciente (usuario directo); personal clínico y de
+			recepción (receptores de las derivaciones de riesgo alto) \\
+			\hline
+			Niveles definidos &
+			\textbf{Bajo}: consultas administrativas sin datos clínicos (horarios,
+			ubicación, requisitos de cita).
+			\textbf{Medio}: consultas que mencionan síntomas generales sin
+			urgencia declarada.
+			\textbf{Alto}: consultas que mencionan síntomas de urgencia, datos
+			clínicos sensibles, o el paciente solicita explícitamente hablar con
+			personal humano \\
+			\hline
+			Métrica y umbral &
+			100\,\% de las interacciones de riesgo \textbf{alto} deben derivarse a
+			un humano sin excepción (el asistente no responde directamente en
+			ese nivel); tasa de clasificación errónea (alto clasificado como
+			medio/bajo) \(\leq 2\,\%\) sobre un conjunto de prueba etiquetado
+			manualmente [AJUSTAR umbral si el equipo define otro] \\
+			\hline
+			Prioridad (MoSCoW) & Must \\
+			\hline
+			Método de verificación &
+			Conjunto de prueba con al menos 20 interacciones sintéticas
+			etiquetadas manualmente por nivel de riesgo (mínimo 5 por nivel);
+			comparación automática contra la clasificación del sistema \\
+			\hline
+			Responsable & Equipo de desarrollo, con revisión del responsable del
+			tratamiento de datos declarado en la sección de ética \\
+			\hline
+			Frecuencia de medición & Cada corte de entrega y, en producción,
+			trimestral \\
+			\hline
+		\end{tabular}
+	\end{center}
+
 	
 	\subsubsection{ Requisitos legales explícitos (LOPDP)}
 	
