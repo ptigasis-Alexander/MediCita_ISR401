@@ -6,7 +6,7 @@
 
 ![Estado](https://img.shields.io/badge/Estado-Completo-success?style=for-the-badge)
 ![Fuente](https://img.shields.io/badge/Fuente-git_log_%2B_bitácora_A1-informational?style=for-the-badge)
-![Actualizado](https://img.shields.io/badge/Actualizado-08/09/2026-blue?style=for-the-badge)
+![Actualizado](https://img.shields.io/badge/Actualizado-12/09/2026-blue?style=for-the-badge)
 
 </div>
 
@@ -18,9 +18,9 @@ Este documento se construyó cruzando dos fuentes verificables:
 1. **Conteo de commits** por integrante (`git shortlog -sne HEAD` sobre un clon completo, con `.mailmap` aplicado).
 2. **Bitácora de sesiones** (`10_Autoria/bitacora_sesiones.csv`), que registra en qué días participó cada quien y qué se decidió/hizo ese día, con base en los mensajes reales de commit.
 
-## ⚠️ Alcance de los 21 días registrados
+## ⚠️ Alcance de los 25 días registrados
 
-Los 21 días de la bitácora **cubren la totalidad del historial del repositorio**: desde el primer commit (21/07/2026) hasta el más reciente (08/09/2026). No es una muestra — es cada día distinto en el que hubo al menos un commit, sin excepciones.
+Los 25 días de la bitácora **cubren la totalidad del historial del repositorio**: desde el primer commit (21/07/2026) hasta el más reciente (12/09/2026), incluyendo la ronda final de correcciones previa a la defensa (09–12/09/2026: reparación del fragmento de evidencia, RNF-21/22, matriz de trazabilidad, LOPDP, doble observación, corrección de `script.js`, y actualización de guion/PPT/folleto). No es una muestra — es cada día distinto en el que hubo al menos un commit, sin excepciones.
 
 ## ⚠️ Importante: "días de participación" no equivale a "volumen de trabajo"
 
@@ -28,20 +28,20 @@ La tabla de días cuenta en cuántas fechas distintas aparece cada integrante, *
 
 ## ✅ Conteo total de commits — confirmado con clon completo (`git shortlog -sne HEAD`)
 
-| Integrante | Commits totales | % del total (1.441) |
+| Integrante | Commits totales | % del total (1.513) |
 |---|---:|---:|
-| Paul Alexander Tigasi Sampedro | 298 | 20,68 % |
-| Thais Melanie Herrera Ramos | 292 | 20,26 % |
-| Steven Santiago Díaz Pontón | 287 | 19,92 % |
-| Mayummy Jailly Trujillo Vega | 283 | 19,64 % |
-| Jamileth Estefanía Gamarra Zárate | 281 | 19,50 % |
-| **Total** | **1.441** | **100 %** |
+| Paul Alexander Tigasi Sampedro | 328 | 21,68 % |
+| Steven Santiago Díaz Pontón | 302 | 19,96 % |
+| Thais Melanie Herrera Ramos | 301 | 19,89 % |
+| Mayummy Jailly Trujillo Vega | 292 | 19,30 % |
+| Jamileth Estefanía Gamarra Zárate | 290 | 19,17 % |
+| **Total** | **1.513** | **100 %** |
 
-El reparto es notablemente parejo entre los cinco integrantes (19,50 % a 20,68 %), el rango más estrecho registrado hasta ahora en el proyecto.
+El reparto se mantiene parejo entre los cinco integrantes (19,17 % a 21,68 %), consistente con el registrado antes de esta última ronda.
 
 ## 🔍 Comparación con la vista "Contributors" de GitHub
 
-GitHub ofrece una vista gráfica de commits por integrante en la pestaña "Insights → Contributors" del repositorio. Sus números, al 09/09/2026, no coinciden exactamente con el conteo de `git shortlog`:
+GitHub ofrece una vista gráfica de commits por integrante en la pestaña "Insights → Contributors" del repositorio. Sus números, al 09/09/2026, no coincidían exactamente con el conteo de `git shortlog` de esa fecha. Esta comparación no se repitió en la actualización del 12/09/2026: la fuente oficial de este documento sigue siendo `git shortlog` sobre un clon completo, no la vista de GitHub, por lo que la tabla de abajo queda como referencia histórica del comportamiento de esa discrepancia, no como una cifra vigente.
 
 | Integrante | GitHub (Insights) | `git shortlog` (clon completo) | Diferencia |
 |---|---:|---:|---:|
@@ -67,11 +67,11 @@ El conteo de **`git shortlog -sne HEAD` sobre un clon completo (1.411)**, por se
 
 | Integrante | Días con participación registrada (bitácora A1) |
 |---|---:|
-| Paul Alexander Tigasi Sampedro | 18 de 21 |
-| Jamileth Estefanía Gamarra Zárate | 13 de 21 |
-| Thais Melanie Herrera Ramos | 13 de 21 |
-| Steven Santiago Díaz Pontón | 11 de 21 |
-| Mayummy Jailly Trujillo Vega | 11 de 21 |
+| Paul Alexander Tigasi Sampedro | 20 de 25 |
+| Thais Melanie Herrera Ramos | 18 de 25 |
+| Jamileth Estefanía Gamarra Zárate | 18 de 25 |
+| Mayummy Jailly Trujillo Vega | 16 de 25 |
+| Steven Santiago Díaz Pontón | 15 de 25 |
 
 ---
 
@@ -81,7 +81,7 @@ El conteo de **`git shortlog -sne HEAD` sobre un clon completo (1.411)**, por se
 
 **Participación:** 18 de los 21 días registrados en la bitácora — la más alta del equipo.
 
-**Aporte narrativo:** Carga inicial de fotografías del entorno; organización de la estructura de `02_Evidencias`; consolidación del ERS 2A; creación de guías de verificación de codificación temática y transcripciones; participó en la jornada de anonimización del 31/08; lideró la corrección final del repositorio en la Entrega 4 (2B): migración de evidencia audiovisual a GitHub Release, renombrado de scripts, construcción de `07_Datos/`, eliminación de `PE5_U5`, `.mailmap`, documentación de `10_Autoria/`, y la corrección final del manuscrito y del guion/presentación de defensa (07/09).
+**Aporte narrativo:** Carga inicial de fotografías del entorno; organización de la estructura de `02_Evidencias`; consolidación del ERS 2A; creación de guías de verificación de codificación temática y transcripciones; participó en la jornada de anonimización del 31/08; lideró la corrección final del repositorio en la Entrega 4 (2B): migración de evidencia audiovisual a GitHub Release, renombrado de scripts, construcción de `07_Datos/`, eliminación de `PE5_U5`, `.mailmap`, documentación de `10_Autoria/`, y la corrección final del manuscrito y del guion/presentación de defensa (07/09); en el cierre final (11-12/09) corrigió el ERS/SRS (sección de alcance del componente de IA, RNF-21 y RNF-22) y reparó dos fragmentos de código incompletos en `05_MVP/script.js` que impedían que la demostración interactiva respondiera.
 
 **Commits que lo acreditan:** ver columna `commits_producidos` de `bitacora_sesiones.csv`, filas 2026-07-21 a 2026-09-07 donde aparece `ptigasis-Alexander`.
 
@@ -91,7 +91,7 @@ El conteo de **`git shortlog -sne HEAD` sobre un clon completo (1.411)**, por se
 
 **Participación:** 11 de 21 días.
 
-**Aporte narrativo:** Carga y organización de fotografías de entorno; creación de mockups de interfaz; trabajo en la práctica independiente PE5 (Unidad V); participó en la jornada de anonimización del 31/08; corrección de rutas de diagramas UML y renombrado de fotos con metadatos EXIF (04/09); registro de datos de Member Checking (06/09); corrección final del manuscrito y del guion de defensa (07/09); renombrado uniforme de los índices de carpeta a `Readme.md` (08/09).
+**Aporte narrativo:** Carga y organización de fotografías de entorno; creación de mockups de interfaz; trabajo en la práctica independiente PE5 (Unidad V); participó en la jornada de anonimización del 31/08; corrección de rutas de diagramas UML y renombrado de fotos con metadatos EXIF (04/09); registro de datos de Member Checking (06/09); corrección final del manuscrito y del guion de defensa (07/09); renombrado uniforme de los índices de carpeta a `Readme.md` (08/09); en el cierre final (09-12/09) actualizó el estado de Software Heritage y su SWHID, corrigió `generar_paquete_datos.py`, agregó el resumen del perfil agregado de participantes al README de datos, y actualizó el guion, el PPT y el folleto de defensa.
 
 **Commits que lo acreditan:** ver `bitacora_sesiones.csv`, filas donde aparece `DIAZ PONTON STEVEN`.
 
@@ -101,7 +101,7 @@ El conteo de **`git shortlog -sne HEAD` sobre un clon completo (1.411)**, por se
 
 **Participación:** 13 de 21 días.
 
-**Aporte narrativo:** Organización de fotos de entorno; limpieza de transcripciones duplicadas; incorporación de ORCID de los 5 integrantes en `CITATION.cff`; reorganización estructural de `02_Evidencias`; creación de mockups; trabajo en práctica PE5; participó en la jornada de anonimización; corrección de rutas de diagramas y fotos (04/09); actualización de `02_Evidencias`, `00_Restringido` y `Capturas` (05/09) — incluye la corrección del número de oficio (059→069) y la sesión de facilitación del Member Checking; aclaración de roles de participantes en la validación walkthrough (07/09); renombrado uniforme de índices a `Readme.md` (08/09).
+**Aporte narrativo:** Organización de fotos de entorno; limpieza de transcripciones duplicadas; incorporación de ORCID de los 5 integrantes en `CITATION.cff`; reorganización estructural de `02_Evidencias`; creación de mockups; trabajo en práctica PE5; participó en la jornada de anonimización; corrección de rutas de diagramas y fotos (04/09); actualización de `02_Evidencias`, `00_Restringido` y `Capturas` (05/09) — incluye la corrección del número de oficio (059→069) y la sesión de facilitación del Member Checking; aclaración de roles de participantes en la validación walkthrough (07/09); renombrado uniforme de índices a `Readme.md` (08/09); en el cierre final (09-12/09) agregó la columna de duración a `ficha_observacion.csv`, corrigió el formato y las filas de `diccionario_datos.csv` y de la matriz de trazabilidad, y renombró `Readme.md` a `README_datos.md` en el paquete de datos.
 
 **Commits que lo acreditan:** ver `bitacora_sesiones.csv`, filas donde aparece `Jami1405`.
 
@@ -111,7 +111,7 @@ El conteo de **`git shortlog -sne HEAD` sobre un clon completo (1.411)**, por se
 
 **Participación:** 13 de 21 días *(incluye los 8 commits atribuidos vía `.mailmap` desde la identidad `MediCita Team`, del 18-19/08)*.
 
-**Aporte narrativo:** Limpieza de transcripciones y actualización de `CITATION.cff`; reorganización de `02_Evidencias`; creación de mockups; trabajo en las dos prácticas independientes PE5 (18-21/08); participó en la jornada de anonimización del 31/08; actualización de documentación (05/09); registro y facilitación de la sesión de Member Checking (06/09); corrección final del manuscrito y del guion de defensa (07/09); renombrado uniforme de índices a `Readme.md` (08/09).
+**Aporte narrativo:** Limpieza de transcripciones y actualización de `CITATION.cff`; reorganización de `02_Evidencias`; creación de mockups; trabajo en las dos prácticas independientes PE5 (18-21/08); participó en la jornada de anonimización del 31/08; actualización de documentación (05/09); registro y facilitación de la sesión de Member Checking (06/09); corrección final del manuscrito y del guion de defensa (07/09); renombrado uniforme de índices a `Readme.md` (08/09); en el cierre final (09-12/09) documentó el resultado de la doble codificación (`resultado_kappa.md`), actualizó el estado de Software Heritage, registró la hoja de observación independiente de las sesiones VAL-MG/VAL-ENF, y documentó la separación entre la capa pública y la restringida de los datos.
 
 **Commits que lo acreditan:** ver `bitacora_sesiones.csv`, filas donde aparece `Thais Melanie Herrera Ramos`.
 
@@ -123,7 +123,7 @@ El conteo de **`git shortlog -sne HEAD` sobre un clon completo (1.411)**, por se
 
 **Participación:** 11 de 21 días.
 
-**Aporte narrativo:** Organización de fotos de entorno; reorganización de `02_Evidencias`; creación de mockups; trabajo en la práctica PE5 (Unidad V); participó en la jornada de anonimización del 31/08; actualización de documentación (05/09); registro de datos de Member Checking (06/09); renombrado uniforme de índices a `Readme.md` (08/09).
+**Aporte narrativo:** Organización de fotos de entorno; reorganización de `02_Evidencias`; creación de mockups; trabajo en la práctica PE5 (Unidad V); participó en la jornada de anonimización del 31/08; actualización de documentación (05/09); registro de datos de Member Checking (06/09); renombrado uniforme de índices a `Readme.md` (08/09); en el cierre final (09-12/09) corrigió el video de verificación previa, actualizó el CHANGELOG y el estado del proyecto a completo, agregó el perfil agregado de participantes y el resultado de la doble observación independiente, y actualizó el video final de la defensa.
 
 **Commits que lo acreditan:** ver `bitacora_sesiones.csv`, filas donde aparece `mtrujillov-sys`.
 
@@ -131,13 +131,15 @@ El conteo de **`git shortlog -sne HEAD` sobre un clon completo (1.411)**, por se
 
 ## 🔍 Nota metodológica
 
-El reparto de participación por días es razonablemente parejo entre los cinco integrantes (11 a 18 de 21 días), consistente con lo ya señalado en el informe individual del docente: *"El reparto de confirmaciones en la ventana es notablemente parejo entre los cinco integrantes."* Paul Alexander Tigasi Sampedro, como líder de equipo, presenta la mayor participación por haber coordinado directamente la corrección final del repositorio en la Entrega 4 (2B).
+El reparto de participación por días es razonablemente parejo entre los cinco integrantes (15 a 20 de 25 días), consistente con lo ya señalado en el informe individual del docente: *"El reparto de confirmaciones en la ventana es notablemente parejo entre los cinco integrantes."* Paul Alexander Tigasi Sampedro, como líder de equipo, presenta la mayor participación por haber coordinado directamente la corrección final del repositorio en la Entrega 4 (2B) y el cierre final previo a la defensa.
 
 ---
 
 ## ✍️ Firma de los integrantes
 
 Al firmar, cada integrante confirma que la información de este documento es correcta según su propio conocimiento, y corrige cualquier atribución que no le correspondiera.
+
+> ⚠️ **Pendiente:** las firmas de abajo corresponden a la versión de este documento anterior a la actualización del 12/09/2026 (cierre final, commits del 09 al 12/09). El equipo debe revisar los conteos y las narrativas nuevas y volver a firmar con fecha actualizada antes del cierre.
 
 | Integrante | Firma | Fecha |
 |---|---|---|
@@ -147,4 +149,4 @@ Al firmar, cada integrante confirma que la información de este documento es cor
 | Thais Melanie Herrera Ramos | Herrera Thais | 07/09/2026 0:19 |
 | Mayummy Jailly Trujillo Vega | Trujillo Mayummy | 07/09/2026 0:20 |
 
-> **Nota:** las cifras de commits y días de esta versión se actualizaron el 08/09/2026, con posterioridad a las firmas anteriores. Si algún integrante considera que su aporte narrativo necesita ajuste tras esta actualización, puede corregirlo y volver a firmar.
+> **Nota:** las cifras de commits y días de esta versión se actualizaron el 12/09/2026, con posterioridad a las firmas anteriores. Si algún integrante considera que su aporte narrativo necesita ajuste tras esta actualización, puede corregirlo y volver a firmar.
