@@ -104,7 +104,7 @@ Fuente: [`06_Experimento/prompst_LLm/registro_uso_llm.csv`](../06_Experimento/pr
 
 | Integrante | Firma | Fecha |
 |---|---|---|
-| Paul Alexander Tigasi Sampedro | Alexander Sampedro | 03/09/2026 17:29 |
+| Paul Alexander Tigasi Sampedro | Alexander Sampedro | 12/09/2026 0:18 |
 | Steven Santiago Díaz Pontón | Steven Diaz | 12/09/2026 0:14 |
 | Jamileth Estefanía Gamarra Zárate | Jamileth Gamarra | 12/09/2026 0:17 |
 | Thais Melanie Herrera Ramos | Herrera Thais | 12/09/2026 0:16|
