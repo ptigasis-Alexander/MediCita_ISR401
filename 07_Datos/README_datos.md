@@ -18,6 +18,14 @@
 
 ---
 
+## 🔓 Capa pública vs. capa restringida
+
+Este paquete es **capa pública anonimizada**: todo archivo de `datos_crudos/`, `datos_procesados/` y `resultados/` usa exclusivamente códigos de participante (P01–P08, PS-XX, MG-XX) y códigos de sesión (VAL-MG, ELIC-P01, etc.), nunca nombres reales, cédulas, ni datos de contacto. Ningún archivo de esta carpeta permite reidentificar a un paciente o miembro del personal por sí solo.
+
+La **capa restringida** —grabaciones originales, consentimientos sin pixelar, y cualquier archivo que sí pueda vincularse a una identidad real— vive exclusivamente en `02_Evidencias/00_Restringido/` (cifrada en volúmenes `.7z`, publicada como GitHub Release aparte) y en `08_Etica/`. Nada de esa capa se mezcla con este paquete de datos abierto.
+
+---
+
 ## 📋 Qué contiene
 
 | Carpeta/archivo | Descripción |
