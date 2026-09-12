@@ -4,17 +4,61 @@ Todos los cambios relevantes del proyecto se documentan en este archivo.
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/)
 y el proyecto utiliza [versionado semántico](https://semver.org/lang/es/).
 
-## [No publicado]
-
-### Pendiente
-
-- Corrección de la pixelación de las firmas de P02, P06 y P07 en
-  `Acta_MemberChecking_MediCita.pdf` (sigue con desenfoque débil, aún legible).
-- Completar el campo de número de cédula (CI) en `C_Enfermería.pdf` y
-  `C_Paciente_Simulado.pdf` (firma y nombre ya completos).
 
 ### Resuelto
 
+- Fragmento roto de evidencia audiovisual (`VIDEOS_Validacion.7z.206`, 2 bytes)
+  reparado y republicado en el Release `evidencia-restringida-v1` con su
+  tamaño e integridad correctos.
+- Nueva sección "Alcance del componente de IA y requisitos que no aplican" en
+  el ERS/SRS: se deja constancia expresa de que RF-02 y RF-13 no son un
+  componente de IA (son consultas deterministas), y que el requisito de
+  "asignación/recomendación automática de cita" no aplica a este sistema.
+- RNF-21 (supervisión humana) y RNF-22 (clasificación del nivel de riesgo)
+  añadidos al ERS/SRS, con métrica, umbral, responsable y frecuencia
+  definidos; catálogo de RNF activos actualizado de 19 a 21.
+- RNF-19 (equidad) reescrito: estaba incorrectamente asociado a RF-02/RF-13;
+  ahora se define sobre el único componente de IA real del sistema (RF-16).
+- Corrección de un `\begin{quote}` sin cerrar en `ERS_SRS_2B_V2.0.tex` que
+  impedía la recompilación limpia del documento (afectaba directamente la
+  reproducibilidad documental).
+- Matriz de trazabilidad (`matriz_trazabilidad_ACTUALIZADA.csv` y su tabla
+  equivalente dentro del ERS): fila 71 corregida para reflejar RF-16 en vez
+  de RF-02/RF-13; filas 73 y 74 añadidas para RNF-21 y RNF-22.
+- Finalidad del tratamiento y plazo de conservación añadidos a
+  `CategoriaA_A4_Referencia_LOPDP.pdf`, completando los cuatro elementos que
+  exige el ítem de ética de la guía de cierre.
+- Columna de duración por sesión añadida a `ficha_observacion.csv`, cruzada
+  contra el inventario técnico ya verificado con hash SHA-256.
+- Perfil agregado de los participantes de validación
+  (`07_Datos/datos_procesados/perfil_agregado_participantes.csv`), con su
+  sección correspondiente en `README_datos.md`.
+- Doble observación independiente sobre el 25% de las sesiones de validación
+  (VAL-MG, VAL-ENF): kappa de Cohen = -0,07 (sin acuerdo, por desbalance de
+  categorías), documentado en `10_Autoria/doble_observacion_sesiones/` junto
+  con las dos hojas de observación y el script de cálculo.
+- Corrección de dos fragmentos de código incompletos en `05_MVP/script.js`
+  (una función sin cerrar y una llamada `later()` sin cerrar) que impedían
+  que la demostración interactiva del MVP respondiera al hacer clic.
+- Guion de defensa, presentación PPTX y folleto de una hoja actualizados
+  para reflejar los 21 RNF, los tres controles de confiabilidad (incluido el
+  kappa de doble observación), y el reparto real de diapositivas (Paul
+  9–12, Mayummy 13–18, con traspaso a Thais en la diapositiva 16).
+- `checksums_datos.sha256` y `diccionario_datos.csv` regenerados para
+  reflejar los archivos nuevos y modificados de `07_Datos/`.
+- Declaración de uso de IA y aporte individual actualizados y refirmados
+  por los 5 integrantes con fecha 12/09/2026.
+- Script de análisis (`06_Experimento/scripts_analisis/run_all.py`) dividido
+  en tres etapas independientes (`leer_datos.py`, `procesar_datos.py`,
+  `generar_resultados.py`) más un orquestador, tal como exige el ítem A4;
+  salida verificada como idéntica byte por byte a la versión anterior de un
+  solo archivo.
+- Doce archivos de 1 byte que anunciaban evidencia o documentación sin
+  contenerla (`scripts_analisis_.md`, `prompts_LLm_.md`, y nueve `README.md`
+  de subcarpetas de `03_Modelado/Diagramas_UML_Corregidos/` y
+  `Mockups_Prototipo_Final/`) completados con su descripción real o
+  eliminados, para eliminar el riesgo de cero directo por el criterio de
+  piso P3.
 - Repositorio espejo (`MediCita_ISR401-archive`) archivado en Software
   Heritage; SWHID real (`swh:1:dir:6fbdc09760140cb9d176d33621b1262e1b9de2c2`)
   incorporado en `CITATION.cff` (09/09/2026).
