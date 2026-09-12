@@ -26,7 +26,7 @@ La evaluación de esta entrega debe considerar los artefactos organizados en las
 
 El repositorio integra la línea base final del proyecto **SICM / MediCita**, incluyendo:
 
-- ERS/SRS (40 RF, 19 RNF activos).
+- ERS/SRS (40 RF, 21 RNF activos).
 - Evidencias de elicitación y validación.
 - Modelado UML.
 - Trazabilidad.
@@ -91,7 +91,7 @@ Los hashes SHA-256 de cada archivo, declarados en `fichas_tecnicas.csv`, corresp
 
 | Sección / artefacto | Contenido principal | Estado |
 |---|---|:---:|
-| `01_ERS/` | ERS/SRS (40 RF, 19 RNF activos), fuentes LaTeX, bibliografía y figuras | 🟢 Completo |
+| `01_ERS/` | ERS/SRS (40 RF, 21 RNF activos), fuentes LaTeX, bibliografía y figuras | 🟢 Completo |
 | `02_Evidencias/` | Entrevistas, consentimientos, transcripciones, codificación temática, cuestionario, walkthrough y evidencia restringida | 🟢 Completo |
 | `03_Modelado/` | Diagramas UML y mockups/interfaces finales | 🟢 Completo |
 | `04_Trazabilidad/` | Matrices de trazabilidad y priorización de requisitos | 🟢 Completo |
@@ -147,7 +147,7 @@ El sistema contempla procesos de: registro de pacientes, gestión de citas, agen
 | Recurso | Enlace | Estado |
 |---|---|:---:|
 | 📄 ERS/SRS 2A | [`01_ERS/ERS_SRS_2A_v1.0.pdf`](01_ERS/ERS_SRS_2A_v1.0.pdf) | 🟢 |
-| 📄 ERS/SRS 2B final (117 pág., 40 RF, 19 RNF) | [`01_ERS/ERS_SRS_2B_V2.0.pdf`](01_ERS/ERS_SRS_2B_V2.0.pdf) | 🟢 |
+| 📄 ERS/SRS 2B final (119 pág., 40 RF, 21 RNF) | [`01_ERS/ERS_SRS_2B_V2.0.pdf`](01_ERS/ERS_SRS_2B_V2.0.pdf) | 🟢 |
 | 📝 Fuente LaTeX ERS 2B | [`01_ERS/ERS_SRS_2B_V2.0.tex`](01_ERS/ERS_SRS_2B_V2.0.tex) | 🟢 |
 | 💻 MVP funcional | [GitHub Pages](https://ptigasis-alexander.github.io/MediCita_ISR401/) | 🟢 |
 | 📦 Paquete de datos reproducible | [`07_Datos/README_datos.md`](07_Datos/README_datos.md) | 🟢 |
@@ -155,7 +155,7 @@ El sistema contempla procesos de: registro de pacientes, gestión de citas, agen
 | 📑 Manuscrito final | [`07_Publicacion/manuscrito_final.pdf`](07_Publicacion/manuscrito_final.pdf) | 🟢 |
 | 📦 Dataset Zenodo | [10.5281/zenodo.22236373](https://doi.org/10.5281/zenodo.22236373) | 🟢 |
 | 🎬 Evidencia audiovisual restringida | [GitHub Release](https://github.com/ptigasis-Alexander/MediCita_ISR401/releases/tag/evidencia-restringida-v1) | 🟢 |
-| 🧾 Evidencia de autoría | [`10_Autoria/README.md`](10_Autoria/README.md) | 🟢 |
+| 🧾 Evidencia de autoría | [`10_Autoria/Readme.md`](10_Autoria/Readme.md) | 🟢 |
 | 🎓 Defensa final | [`09_Defensa/`](09_Defensa/) | 🟢 |
 | 📜 Citación | [`CITATION.cff`](CITATION.cff) | 🟢 |
 | ⚖️ Licencia | [`LICENSE`](LICENSE) | 🟢 |
@@ -196,13 +196,15 @@ No representa SUS, satisfacción de participantes, precisión de IA, ni una segu
 
 # 🤖 Componente inteligente — requisitos no funcionales
 
-El catálogo de RNF activos incluye 3 requisitos específicos del componente de IA, cada uno con métrica, umbral y método de verificación propios:
+El único componente de IA identificado en el sistema es **RF-16 — Asistente virtual con IA (chat box)**. RF-02 y RF-13 (agendar cita, consultar disponibilidad) son consultas deterministas y no forman parte de este componente. Sobre RF-16 se definieron 5 requisitos no funcionales específicos, cada uno con métrica, umbral y método de verificación propios:
 
 | RNF | Característica | Estado de validación |
 |---|---|:---:|
 | RNF-18 | Explicabilidad | 🟡 Base normativa definida; validación de campo pendiente |
-| RNF-19 | Equidad en el acceso a la cita | 🟡 Requisito y métrica definidos; medición pendiente de datos en producción |
+| RNF-19 | Equidad en la resolución de consultas del asistente | 🟡 Requisito y métrica definidos; medición pendiente de datos en producción |
 | RNF-20 | Monitoreo posterior al despliegue | 🟡 Requisito e indicadores definidos; monitoreo pendiente de despliegue |
+| RNF-21 | Supervisión humana | 🟡 Mecanismo de anulación definido; medición pendiente de datos en producción |
+| RNF-22 | Clasificación del nivel de riesgo | 🟡 Niveles y método de verificación definidos; conjunto de prueba etiquetado pendiente |
 
 ---
 
@@ -213,7 +215,7 @@ Fuente / necesidad → Requisito → Caso de uso / historia → Modelo UML
 → Interfaz / MVP → Observación de validación → Verificación
 ```
 
-Archivos en `04_Trazabilidad/` — matriz vigente: `matriz_trazabilidad_ACTUALIZADA.csv` (72 filas).
+Archivos en `04_Trazabilidad/` — matriz vigente: `matriz_trazabilidad_ACTUALIZADA.csv` (74 filas).
 
 ---
 
@@ -249,7 +251,7 @@ MediCita_ISR401/
 ---
 
 ## 📁 `01_ERS/`
-Especificación de Requisitos de Software: 40 RF, 19 RNF activos, reglas de negocio, priorización, historias de usuario, casos de uso, referencias, figuras, fuentes LaTeX y PDF.
+Especificación de Requisitos de Software: 40 RF, 21 RNF activos, reglas de negocio, priorización, historias de usuario, casos de uso, referencias, figuras, fuentes LaTeX y PDF.
 
 ## 📁 `02_Evidencias/`
 Consentimientos, transcripciones, codificación temática, cuestionario, fotografías de entorno, validación walkthrough y evidencia restringida. Los archivos con información sensible permanecen en el área restringida o se publican anonimizados.
@@ -279,7 +281,7 @@ Documentación ética y anexos. Los materiales con datos identificables deben tr
 Presentación, guion de exposición, folleto de apoyo y video de la Defensa Final.
 
 ## 📁 `10_Autoria/`
-Evidencia de autoría y trabajo propio: bitácora de sesiones (generada a partir del historial real de Git), `.mailmap`, declaración de uso de IA por sección, aporte individual, correspondencia con la organización, y demás elementos A1–A12 exigidos por la Guía de Desarrollo. Ver `10_Autoria/README.md` para el estado detallado de cada elemento.
+Evidencia de autoría y trabajo propio: bitácora de sesiones (generada a partir del historial real de Git), `.mailmap`, declaración de uso de IA por sección, aporte individual, correspondencia con la organización, y demás elementos A1–A12 exigidos por la Guía de Desarrollo. Ver `10_Autoria/Readme.md` para el estado detallado de cada elemento.
 
 ---
 
