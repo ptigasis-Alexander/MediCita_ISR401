@@ -38,6 +38,31 @@ La **capa restringida** —grabaciones originales, consentimientos sin pixelar, 
 | `checksums_datos.sha256` | Hash SHA-256 de cada archivo, para verificar integridad tras la descarga. |
 
 ---
+## 👥 Perfil agregado de los participantes de validación
+
+Para incorporar en `07_Datos/README_datos.md`, después de la sección "Qué contiene" y antes de "Cómo se generó".
+
+---
+
+Resumen agregado de las 8 sesiones de validación con prototipo (walkthrough), sin ningún dato que permita reidentificar a pacientes ni a personal sanitario — solo código de participante (P01–P08), área y duración.
+
+| Área | Código participante | Duración | Fecha |
+|---|---|---|---|
+| Coordinación | P05 | 00:13:35 | 28/08/2026 |
+| Enfermería | P06 | 00:17:18 | 28/08/2026 |
+| Medicina General | P02 | 00:15:35 | 28/08/2026 |
+| Nutrición | P04 | 00:14:43 | 28/08/2026 |
+| Odontología | P05 | 00:08:07 | 28/08/2026 |
+| Paciente (simulación) | P08 | 00:13:25 | 28/08/2026 |
+| Recepción/Recaudación | P07 | 00:16:24 | 28/08/2026 |
+| Terapia Física | P03 | 00:14:05 | 28/08/2026 |
+
+**Totales:**
+- 8 sesiones de validación, cubriendo 7 participantes únicos (P05 participó en dos sesiones: Coordinación y Odontología).
+- Duración promedio: 00:14:09 · mínima: 00:08:07 (Odontología) · máxima: 00:17:18 (Enfermería).
+- Todas las sesiones se realizaron en una sola jornada: 28/08/2026.
+
+Tabla fuente (formato CSV, para reprocesar): [`datos_procesados/perfil_agregado_participantes.csv`](datos_procesados/perfil_agregado_participantes.csv).
 
 ## ⚙️ Cómo se generó
 
