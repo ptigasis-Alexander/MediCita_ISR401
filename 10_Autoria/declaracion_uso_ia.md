@@ -108,4 +108,4 @@ Fuente: [`06_Experimento/prompst_LLm/registro_uso_llm.csv`](../06_Experimento/pr
 | Steven Santiago Díaz Pontón | Steven Diaz | 12/09/2026 0:14 |
 | Jamileth Estefanía Gamarra Zárate | Jamileth Gamarra | 03/09/2026 18:38 |
 | Thais Melanie Herrera Ramos | Herrera Thais | 05/09/2026 19:17|
-| Mayummy Jailly Trujillo Vega |Trujillo Mayummy |03/09/2026 23:09 |
+| Mayummy Jailly Trujillo Vega |Trujillo Mayummy |12/09/2026 0:15 |
