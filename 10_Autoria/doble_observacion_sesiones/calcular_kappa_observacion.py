@@ -16,7 +16,7 @@ Uso:
 Requiere en la misma carpeta:
     hoja_OBSERVADOR_1_VAL-MG_VAL-ENF.csv       (ya completa — es la
         ficha original tal como quedó registrada en campo)
-    hoja_OBSERVADOR_2_PLANTILLA_VAL-MG_VAL-ENF.csv  (debe completarse
+    hoja_OBSERVADOR_2_VAL-MG_VAL-ENF.csv (debe completarse
         primero: un segundo integrante ve los videos de esas 10
         interacciones SIN ver la hoja del observador 1, y llena
         'estado_tarea', 'dificultad_incidente' y
@@ -34,7 +34,7 @@ from pathlib import Path
 
 CARPETA = Path(__file__).resolve().parent
 HOJA_1 = CARPETA / "hoja_OBSERVADOR_1_VAL-MG_VAL-ENF.csv"
-HOJA_2 = CARPETA / "hoja_OBSERVADOR_2_PLANTILLA_VAL-MG_VAL-ENF.csv"
+HOJA_2 = CARPETA / "hoja_OBSERVADOR_2_VAL-MG_VAL-ENF.csv"
 
 
 def leer_juicios(ruta: Path) -> dict[str, str]:
