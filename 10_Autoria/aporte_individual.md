@@ -144,6 +144,6 @@ El reparto de participación por días es razonablemente parejo entre los cinco 
 | Steven Santiago Díaz Pontón |Steven Diaz | 07/09/2026 0:16 |
 | Jamileth Estefanía Gamarra Zárate | Jamileth Gamarra | 07/09/2026 0:25 |
 | Thais Melanie Herrera Ramos | Herrera Thais | 12/09/2026 10:28 |
-| Mayummy Jailly Trujillo Vega | Trujillo Mayummy | 07/09/2026 0:20 |
+| Mayummy Jailly Trujillo Vega | Trujillo Mayummy | 12/09/2026 10:31 |
 
 > **Nota:** las cifras de commits y días de esta versión se actualizaron el 12/09/2026, con posterioridad a las firmas anteriores. Si algún integrante considera que su aporte narrativo necesita ajuste tras esta actualización, puede corregirlo y volver a firmar.
