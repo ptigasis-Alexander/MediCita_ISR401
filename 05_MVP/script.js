@@ -226,9 +226,6 @@ function moveCursor(x,y,click=false){
     fx.classList.add('go');
   },800);
 }
-function 
-  if (s) s.classList.remove('show');
-}
 function loginActions(){
   const type=(el,text,step)=>{
     let i=0;
@@ -241,7 +238,7 @@ function loginActions(){
   };
   later(()=>{moveCursor(70,47,true);type($('#userValue'),'recepcion.demo',75)},700);
   later(()=>{moveCursor(70,59,true);type($('#passValue'),'••••••••',80)},2400);
-  later(()=>{moveCursor(72,70,true);
+  later(()=>{moveCursor(72,70,true);},3800);
 }
 function speak(text){
   if(muted||!('speechSynthesis' in window)) return;
