@@ -1,4 +1,3 @@
+# Diagramas_Secuencias_drawio/
 
-# Diagramas_Secuencias_png/
-
-33 diagramas de secuencia exportados en PNG desde sus fuentes .drawio, con nomenclatura `Diagrama_Secuencia_##_Nombre.drawio.png`.
+34 fuentes editables (.drawio) de diagramas de secuencia, con nomenclatura `Diagrama_Secuencia_##_Nombre.drawio`, incluyendo el proceso general del SICM (`_00_Proceso_general_del_SICM`).
