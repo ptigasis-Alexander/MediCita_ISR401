@@ -11,14 +11,17 @@ run_all.py) — no hay ninguna copia intermedia que sincronizar desde
 Qué hace este script, en orden:
   1. Verifica que los archivos crudos (el punto de partida fijo del
      estudio) estén presentes en 07_Datos/datos_crudos/.
-  2. Verifica que los artefactos estáticos de datos_procesados/ y
-     resultados/ que el pipeline necesita como entrada (o que se
-     documentan a mano y no se recalculan, como power_calculation_
+  2. Verifica que los resultados estáticos de resultados/ que se
+     documentan a mano y no se recalculan (como power_calculation_
      justificacion.md) estén presentes.
-  3. Ejecuta el pipeline real (run_all.py), que sobrescribe en su
-     propio destino final (07_Datos/) los archivos que sí calcula:
-     resumen_descriptivo.csv, cobertura_RF_Must_final.csv,
-     resultados_estadisticos.json y power_calculation.csv.
+  3. Ejecuta el pipeline real (run_all.py), que ahora arranca desde
+     datos_crudos/ficha_observacion.csv, regenera
+     observaciones_validacion_procesadas.csv y
+     observacion_requisito_long.csv (antes eran estáticos, ver
+     generar_procesados.py), y sobrescribe en su propio destino final
+     (07_Datos/) los demás archivos que calcula: resumen_descriptivo.csv,
+     cobertura_RF_Must_final.csv, resultados_estadisticos.json y
+     power_calculation.csv.
   4. Verifica que todo lo esperado haya quedado en su lugar.
 
 Si algún archivo falta, el script se detiene con un mensaje claro en
@@ -49,16 +52,11 @@ ARCHIVOS_CRUDOS_ESPERADOS = [
     "manifest_transcripciones_validacion.csv",
 ]
 
-# Procesados que el pipeline necesita como ENTRADA y no recalcula
-# (provienen de la codificación temática/observación, no del script):
-PROCESADOS_ESTATICOS_ESPERADOS = [
-    "observacion_requisito_long.csv",
-    "observaciones_validacion_procesadas.csv",
-]
-
 # Procesado que run_all.py sí escribe (línea `DATA / "resumen_descriptivo.csv"`):
 PROCESADOS_GENERADOS_POR_PIPELINE = [
     "resumen_descriptivo.csv",
+    "observaciones_validacion_procesadas.csv",
+    "observacion_requisito_long.csv",
 ]
 
 # Resultados que run_all.py sí calcula y escribe en RESULTS:
@@ -104,7 +102,6 @@ def ejecutar_pipeline_real() -> None:
 def main() -> None:
     print("Verificando entradas fijas...")
     _verificar(DATOS_CRUDOS, ARCHIVOS_CRUDOS_ESPERADOS, "crudo")
-    _verificar(DATOS_PROCESADOS, PROCESADOS_ESTATICOS_ESPERADOS, "procesado estático")
     _verificar(RESULTADOS, RESULTADOS_ESTATICOS_ESPERADOS, "resultado estático")
 
     ejecutar_pipeline_real()
