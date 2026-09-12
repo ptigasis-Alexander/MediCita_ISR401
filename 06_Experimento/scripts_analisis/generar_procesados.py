@@ -16,17 +16,16 @@ Este script cierra ese hueco:
   4. Explota requisito_relacionado ("RF-26; RF-39") en una fila por
      requisito para observacion_requisito_long.csv.
 
-Nota sobre 5 filas con inconsistencia heredada (OBS-010, OBS-021,
-OBS-023, OBS-024, OBS-027): el crudo declara "RNF-03; RNF-04", pero el
-archivo procesado oficial ya publicado (y el conteo de 72 relaciones
-citado en el manuscrito, el ERS y la defensa) solo usa RNF-03 para esas
-cinco. Esta inconsistencia es anterior a esta correccion, no se origino
-aqui. Este script reproduce el conteo YA PUBLICADO (72 relaciones)
-excluyendo RNF-04 solo de esas cinco filas puntuales, y deja un aviso
-explicito al final de la ejecucion para que el equipo decida:
-  (a) corregir el dato crudo (quitar "; RNF-04" de esas 5 filas), o
-  (b) si RNF-04 si corresponde, actualizar el conteo de 72 a 77
-      relaciones en todos los documentos que lo citan.
+Nota historica: 5 filas (OBS-010, OBS-021, OBS-023, OBS-024, OBS-027)
+declaraban "RNF-03; RNF-04" en el crudo. Se corrigio a solo "RNF-03"
+porque las 5 son observaciones de legibilidad (tamano de letra), que
+corresponde a RNF-03 (Usabilidad). RNF-04 es Fiabilidad/Disponibilidad
+del sistema (tiempo de actividad del servidor) y no tiene relacion
+semantica con legibilidad de texto - era un error de etiquetado, no una
+relacion valida que hiciera falta conservar. Con esta correccion el
+conteo de 72 relaciones (ya publicado en el manuscrito, el ERS y la
+defensa) queda respaldado directamente por el dato crudo, sin ninguna
+excepcion ni exclusion aplicada en este script.
 """
 
 from __future__ import annotations
@@ -37,8 +36,6 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 CRUDOS = ROOT / "07_Datos" / "datos_crudos"
 DATA = ROOT / "07_Datos" / "datos_procesados"
-
-_EXCEPCION_RNF04 = {"OBS-010", "OBS-021", "OBS-023", "OBS-024", "OBS-027"}
 
 
 def leer_crudo() -> list[dict[str, str]]:
@@ -60,8 +57,6 @@ def generar_observacion_requisito_long(validacion: list[dict[str, str]]) -> list
     filas = []
     for fila in validacion:
         requisitos = [r.strip() for r in fila["requisito_relacionado"].split(";")]
-        if fila["id_registro"] in _EXCEPCION_RNF04:
-            requisitos = [r for r in requisitos if r != "RNF-04"]
         for requisito in requisitos:
             filas.append({
                 "id_registro": fila["id_registro"],
@@ -95,14 +90,6 @@ def generar() -> None:
 
     print(f"observaciones_validacion_procesadas.csv: {len(validacion)} filas")
     print(f"observacion_requisito_long.csv: {len(largo)} filas")
-    if _EXCEPCION_RNF04:
-        print(
-            "\nAVISO: 5 filas del crudo (OBS-010, OBS-021, OBS-023, OBS-024, OBS-027) "
-            "declaran 'RNF-03; RNF-04', pero este script excluye RNF-04 para reproducir "
-            "el conteo de 72 relaciones ya publicado. El equipo debe decidir si corrige "
-            "el dato crudo o actualiza el conteo publicado a 77. Ver docstring de este "
-            "archivo para mas detalle."
-        )
 
 
 if __name__ == "__main__":
