@@ -16,7 +16,7 @@ datos_crudos/ficha_observacion.csv,estado_revision,texto,categoría cerrada,REVI
 datos_crudos/manifest_transcripciones_validacion.csv,archivo,texto,nombre de archivo,nombre del .txt de transcripción,no aplica (obligatorio),generado al inventariar la carpeta de evidencia
 datos_crudos/manifest_transcripciones_validacion.csv,tipo,texto,categoría,transcripcion_validacion,no aplica (obligatorio),generado al inventariar la carpeta de evidencia
 datos_crudos/manifest_transcripciones_validacion.csv,estado,texto,categoría cerrada,DISPONIBLE / NO_DISPONIBLE,no aplica (obligatorio),generado al inventariar la carpeta de evidencia
-datos_crudos/manifest_transcripciones_validacion.csv,bytes,entero,bytes,>= 0,no aplica (obligatorio),calculado con os.path.getsize sobre el archivo original
+datos_crudos/manifest_transcripciones_validacion.csv,bytes,entero,bytes,">= 0",no aplica (obligatorio),calculado con os.path.getsize sobre el archivo original
 datos_crudos/manifest_transcripciones_validacion.csv,sha256,texto,hash hexadecimal,64 caracteres hexadecimales,no aplica (obligatorio),calculado con sha256sum sobre el archivo original
 datos_procesados/observacion_requisito_long.csv,id_registro,texto,identificador,igual a ficha_observacion.csv,no aplica (obligatorio),06_Experimento/scripts_analisis/run_all.py
 datos_procesados/observacion_requisito_long.csv,codigo_sesion,texto,identificador,igual a ficha_observacion.csv,no aplica (obligatorio),06_Experimento/scripts_analisis/run_all.py
@@ -25,7 +25,7 @@ datos_procesados/observacion_requisito_long.csv,requisito,texto,identificador,"u
 datos_procesados/observacion_requisito_long.csv,estado_tarea,texto,categoría cerrada,igual a ficha_observacion.csv,no aplica (obligatorio),06_Experimento/scripts_analisis/run_all.py
 datos_procesados/observacion_requisito_long.csv,fuente_evidencia,texto,nombre de archivo,igual a ficha_observacion.csv,no aplica (obligatorio),06_Experimento/scripts_analisis/run_all.py
 datos_procesados/resumen_descriptivo.csv,metrica,texto,nombre de métrica,ej. sesiones_validacion_con_transcripcion,no aplica (obligatorio),06_Experimento/scripts_analisis/run_all.py
-datos_procesados/resumen_descriptivo.csv,valor,numérico o texto,según métrica,>= 0 para conteos,no aplica (obligatorio),06_Experimento/scripts_analisis/run_all.py
+datos_procesados/resumen_descriptivo.csv,valor,numérico o texto,según métrica,">= 0 para conteos",no aplica (obligatorio),06_Experimento/scripts_analisis/run_all.py
 resultados/cobertura_RF_Must_final.csv,RF,texto,identificador,RF-01 a RF-40,no aplica (obligatorio),06_Experimento/scripts_analisis/verificar_rf_must.js
 resultados/cobertura_RF_Must_final.csv,Nombre,texto,descripción,nombre del requisito,no aplica (obligatorio),01_ERS/ERS_SRS_2B_V2.0.tex
 resultados/cobertura_RF_Must_final.csv,Prioridad,texto,categoría cerrada,Must / Should / Could / Won't,no aplica (obligatorio),priorizacion_moscow_kano.csv
@@ -36,5 +36,9 @@ resultados/cobertura_RF_Must_final.csv,Estado_C3,texto,categoría cerrada,PASA /
 resultados/power_calculation.csv,cohen_d,numérico,adimensional,0 a 2 (convención Cohen),no aplica (obligatorio),"supuesto declarado, ver power_calculation_justificacion.md"
 resultados/power_calculation.csv,alpha,numérico,probabilidad,0 a 1,no aplica (obligatorio),"supuesto declarado, ver power_calculation_justificacion.md"
 resultados/power_calculation.csv,potencia,numérico,probabilidad,0 a 1,no aplica (obligatorio),"supuesto declarado, ver power_calculation_justificacion.md"
-resultados/power_calculation.csv,n_por_grupo,entero,participantes,> 0,no aplica (obligatorio),"calculado a partir de cohen_d, alpha y potencia"
-resultados/power_calculation.csv,n_total,entero,participantes,> 0,no aplica (obligatorio),n_por_grupo * 2
+resultados/power_calculation.csv,n_por_grupo,entero,participantes,"> 0",no aplica (obligatorio),"calculado a partir de cohen_d, alpha y potencia"
+resultados/power_calculation.csv,n_total,entero,participantes,"> 0",no aplica (obligatorio),n_por_grupo * 2
+datos_procesados/perfil_agregado_participantes.csv,area,texto,nombre del área médica/administrativa,una de las 8 áreas del walkthrough,no aplica (obligatorio),datos_crudos/ficha_observacion.csv
+datos_procesados/perfil_agregado_participantes.csv,codigo_participante,texto,código pseudonimizado,P01-P08,no aplica (obligatorio),datos_crudos/ficha_observacion.csv
+datos_procesados/perfil_agregado_participantes.csv,duracion_sesion,texto,HH:MM:SS,00:00:00 a 23:59:59,no aplica (obligatorio),02_Evidencias/00_Restringido/fichas_tecnicas.csv (cruce por nombre de archivo)
+datos_procesados/perfil_agregado_participantes.csv,fecha,texto,DD/MM/AAAA,fechas del componente empírico (2026),no aplica (obligatorio),02_Evidencias/00_Restringido/fichas_tecnicas.csv (cruce por nombre de archivo)
