@@ -2,10 +2,27 @@
 """Orquestador único de 07_Datos/.
 
 Este script NO reimplementa el análisis: ejecuta el pipeline real que ya
-existe en 06_Experimento/scripts_analisis/run_all.py (rutas verificadas y
-usadas por el manuscrito) y luego sincroniza sus salidas hacia
-07_Datos/datos_procesados/ y 07_Datos/resultados/, para que ambas copias
-queden siempre generadas por el mismo código, sin edición manual.
+existe en 06_Experimento/scripts_analisis/run_all.py. Ese pipeline lee y
+escribe directamente sobre 07_Datos/datos_procesados/ y
+07_Datos/resultados/ (ver las constantes DATA y RESULTS al inicio de
+run_all.py) — no hay ninguna copia intermedia que sincronizar desde
+06_Experimento/.
+
+Qué hace este script, en orden:
+  1. Verifica que los archivos crudos (el punto de partida fijo del
+     estudio) estén presentes en 07_Datos/datos_crudos/.
+  2. Verifica que los artefactos estáticos de datos_procesados/ y
+     resultados/ que el pipeline necesita como entrada (o que se
+     documentan a mano y no se recalculan, como power_calculation_
+     justificacion.md) estén presentes.
+  3. Ejecuta el pipeline real (run_all.py), que sobrescribe en su
+     propio destino final (07_Datos/) los archivos que sí calcula:
+     resumen_descriptivo.csv, cobertura_RF_Must_final.csv,
+     resultados_estadisticos.json y power_calculation.csv.
+  4. Verifica que todo lo esperado haya quedado en su lugar.
+
+Si algún archivo falta, el script se detiene con un mensaje claro en
+lugar de fallar a mitad de camino con un traceback de Python.
 
 Uso (desde la raíz del repositorio):
     python 07_Datos/scripts/generar_paquete_datos.py
@@ -13,7 +30,6 @@ Uso (desde la raíz del repositorio):
 
 from __future__ import annotations
 
-import shutil
 import subprocess
 import sys
 from pathlib import Path
@@ -21,37 +37,62 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 PIPELINE_REAL = ROOT / "06_Experimento" / "scripts_analisis" / "run_all.py"
 
-FUENTE_PROCESADOS = ROOT / "06_Experimento" / "datos_procesados"
-FUENTE_RESULTADOS = ROOT / "06_Experimento" / "resultados"
+DATOS_CRUDOS = ROOT / "07_Datos" / "datos_crudos"
+DATOS_PROCESADOS = ROOT / "07_Datos" / "datos_procesados"
+RESULTADOS = ROOT / "07_Datos" / "resultados"
 
-DESTINO_CRUDOS = ROOT / "07_Datos" / "datos_crudos"
-DESTINO_PROCESADOS = ROOT / "07_Datos" / "datos_procesados"
-DESTINO_RESULTADOS = ROOT / "07_Datos" / "resultados"
-
-ARCHIVOS_CRUDOS = [
-    (ROOT / "06_Experimento" / "instrumentos" / "ficha_observacion.csv", DESTINO_CRUDOS),
-    (ROOT / "06_Experimento" / "datos_crudos" / "manifest_transcripciones_validacion.csv", DESTINO_CRUDOS),
+# Crudos: punto de partida fijo del estudio, versionado directamente en
+# su destino final. El pipeline los LEE desde aquí; nunca se copian ni
+# se regeneran.
+ARCHIVOS_CRUDOS_ESPERADOS = [
+    "ficha_observacion.csv",
+    "manifest_transcripciones_validacion.csv",
 ]
 
-ARCHIVOS_PROCESADOS = [
+# Procesados que el pipeline necesita como ENTRADA y no recalcula
+# (provienen de la codificación temática/observación, no del script):
+PROCESADOS_ESTATICOS_ESPERADOS = [
     "observacion_requisito_long.csv",
     "observaciones_validacion_procesadas.csv",
+]
+
+# Procesado que run_all.py sí escribe (línea `DATA / "resumen_descriptivo.csv"`):
+PROCESADOS_GENERADOS_POR_PIPELINE = [
     "resumen_descriptivo.csv",
 ]
 
-ARCHIVOS_RESULTADOS = [
+# Resultados que run_all.py sí calcula y escribe en RESULTS:
+RESULTADOS_GENERADOS_POR_PIPELINE = [
     "cobertura_RF_Must_final.csv",
     "resultados_estadisticos.json",
+    "power_calculation.csv",
+]
+
+# Resultados estáticos: verificación técnica y documentación de
+# respaldo que no se recalculan en cada corrida (verificar_rf_must.js
+# se ejecuta y se documenta aparte; power_calculation_justificacion.md
+# es texto redactado, no una salida de script):
+RESULTADOS_ESTATICOS_ESPERADOS = [
     "run_all_output.json",
     "verificacion_tecnica_RF_Must.json",
     "trazabilidad_observacion_correccion.csv",
-    "power_calculation.csv",
     "power_calculation_justificacion.md",
 ]
 
 
+def _verificar(carpeta: Path, nombres: list[str], etiqueta: str) -> None:
+    faltantes = [nombre for nombre in nombres if not (carpeta / nombre).exists()]
+    if faltantes:
+        raise SystemExit(
+            f"Faltan archivos {etiqueta} en {carpeta.relative_to(ROOT)}: "
+            f"{', '.join(faltantes)}."
+        )
+    for nombre in nombres:
+        print(f"  {etiqueta}: {nombre}")
+
+
 def ejecutar_pipeline_real() -> None:
-    print(f"Ejecutando pipeline real: {PIPELINE_REAL}")
+    print(f"Ejecutando pipeline real: {PIPELINE_REAL.relative_to(ROOT)}")
     resultado = subprocess.run([sys.executable, str(PIPELINE_REAL)], cwd=ROOT)
     if resultado.returncode != 0:
         raise SystemExit(
@@ -60,30 +101,19 @@ def ejecutar_pipeline_real() -> None:
         )
 
 
-def sincronizar() -> None:
-    DESTINO_CRUDOS.mkdir(parents=True, exist_ok=True)
-    DESTINO_PROCESADOS.mkdir(parents=True, exist_ok=True)
-    DESTINO_RESULTADOS.mkdir(parents=True, exist_ok=True)
-
-    for origen, destino_dir in ARCHIVOS_CRUDOS:
-        shutil.copy2(origen, destino_dir / origen.name)
-        print(f"  crudo:      {origen.name}")
-
-    for nombre in ARCHIVOS_PROCESADOS:
-        shutil.copy2(FUENTE_PROCESADOS / nombre, DESTINO_PROCESADOS / nombre)
-        print(f"  procesado:  {nombre}")
-
-    for nombre in ARCHIVOS_RESULTADOS:
-        origen = FUENTE_RESULTADOS / nombre
-        if origen.exists():
-            shutil.copy2(origen, DESTINO_RESULTADOS / nombre)
-            print(f"  resultado:  {nombre}")
-
-
 def main() -> None:
+    print("Verificando entradas fijas...")
+    _verificar(DATOS_CRUDOS, ARCHIVOS_CRUDOS_ESPERADOS, "crudo")
+    _verificar(DATOS_PROCESADOS, PROCESADOS_ESTATICOS_ESPERADOS, "procesado estático")
+    _verificar(RESULTADOS, RESULTADOS_ESTATICOS_ESPERADOS, "resultado estático")
+
     ejecutar_pipeline_real()
-    sincronizar()
-    print("\n07_Datos/ regenerado a partir del pipeline real de 06_Experimento.")
+
+    print("Verificando salidas del pipeline...")
+    _verificar(DATOS_PROCESADOS, PROCESADOS_GENERADOS_POR_PIPELINE, "procesado generado")
+    _verificar(RESULTADOS, RESULTADOS_GENERADOS_POR_PIPELINE, "resultado generado")
+
+    print("\n07_Datos/ verificado y regenerado correctamente en su destino final.")
 
 
 if __name__ == "__main__":
