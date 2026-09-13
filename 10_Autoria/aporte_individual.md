@@ -28,16 +28,16 @@ La tabla de días cuenta en cuántas fechas distintas aparece cada integrante, *
 
 ## ✅ Conteo total de commits — confirmado con clon completo (`git shortlog -sne HEAD`)
 
-| Integrante | Commits totales | % del total (1.555) |
+| Integrante | Commits totales | % del total (1.581) |
 |---|---:|---:|
-| Paul Alexander Tigasi Sampedro | 331 | 21,29 % |
-| Thais Melanie Herrera Ramos | 312 | 20,06 % |
-| Steven Santiago Díaz Pontón | 309 | 19,87 % |
-| Jamileth Estefanía Gamarra Zárate | 303 | 19,49 % |
-| Mayummy Jailly Trujillo Vega | 300 | 19,29 % |
-| **Total** | **1.555** | **100 %** |
+| Paul Alexander Tigasi Sampedro | 342 | 21,63 % |
+| Steven Santiago Díaz Pontón | 315 | 19,92 % |
+| Thais Melanie Herrera Ramos | 314 | 19,86 % |
+| Jamileth Estefanía Gamarra Zárate | 306 | 19,35 % |
+| Mayummy Jailly Trujillo Vega | 304 | 19,23 % |
+| **Total** | **1.581** | **100 %** |
 
-El reparto se mantiene parejo entre los cinco integrantes (19,29 % a 21,29 %), consistente con el registrado antes de esta última ronda.
+El reparto se mantiene parejo entre los cinco integrantes (19,23 % a 21,63 %), consistente con el registrado antes de esta última ronda.
 
 ## 🔍 Comparación con la vista "Contributors" de GitHub
 
@@ -79,9 +79,9 @@ El conteo de **`git shortlog -sne HEAD` sobre un clon completo (1.411)**, por se
 
 ### Paul Alexander Tigasi Sampedro (líder de equipo)
 
-**Participación:** 18 de los 21 días registrados en la bitácora — la más alta del equipo.
+**Participación:** 20 de los 25 días registrados en la bitácora — la más alta del equipo.
 
-**Aporte narrativo:** Carga inicial de fotografías del entorno; organización de la estructura de `02_Evidencias`; consolidación del ERS 2A; creación de guías de verificación de codificación temática y transcripciones; participó en la jornada de anonimización del 31/08; lideró la corrección final del repositorio en la Entrega 4 (2B): migración de evidencia audiovisual a GitHub Release, renombrado de scripts, construcción de `07_Datos/`, eliminación de `PE5_U5`, `.mailmap`, documentación de `10_Autoria/`, y la corrección final del manuscrito y del guion/presentación de defensa (07/09); en el cierre final (11-12/09) corrigió el ERS/SRS (sección de alcance del componente de IA, RNF-21 y RNF-22) y reparó dos fragmentos de código incompletos en `05_MVP/script.js` que impedían que la demostración interactiva respondiera.
+**Aporte narrativo:** Carga inicial de fotografías del entorno; organización de la estructura de `02_Evidencias`; consolidación del ERS 2A; creación de guías de verificación de codificación temática y transcripciones; participó en la jornada de anonimización del 31/08; lideró la corrección final del repositorio en la Entrega 4 (2B): migración de evidencia audiovisual a GitHub Release, renombrado de scripts, construcción de `07_Datos/`, eliminación de `PE5_U5`, `.mailmap`, documentación de `10_Autoria/`, y la corrección final del manuscrito y del guion/presentación de defensa (07/09); en el cierre final (11-12/09) corrigió el ERS/SRS (sección de alcance del componente de IA, RNF-21 y RNF-22) y reparó dos fragmentos de código incompletos en `05_MVP/script.js` que impedían que la demostración interactiva respondiera; en la ronda de cierre de A8 (12-13/09) depositó la correspondencia institucional real en `10_Autoria/correspondencia/`, coordinó la recuperación de evidencia fotográfica fechada de 5 de las 7 sesiones de elicitación, e indicó el pixelado del rostro de cada persona entrevistada conservando visible solo al integrante del equipo que condujo la entrevista.
 
 **Commits que lo acreditan:** ver columna `commits_producidos` de `bitacora_sesiones.csv`, filas 2026-07-21 a 2026-09-07 donde aparece `ptigasis-Alexander`.
 
@@ -89,7 +89,7 @@ El conteo de **`git shortlog -sne HEAD` sobre un clon completo (1.411)**, por se
 
 ### Steven Santiago Díaz Pontón
 
-**Participación:** 11 de 21 días.
+**Participación:** 15 de 25 días.
 
 **Aporte narrativo:** Carga y organización de fotografías de entorno; creación de mockups de interfaz; trabajo en la práctica independiente PE5 (Unidad V); participó en la jornada de anonimización del 31/08; corrección de rutas de diagramas UML y renombrado de fotos con metadatos EXIF (04/09); registro de datos de Member Checking (06/09); corrección final del manuscrito y del guion de defensa (07/09); renombrado uniforme de los índices de carpeta a `Readme.md` (08/09); en el cierre final (09-12/09) actualizó el estado de Software Heritage y su SWHID, corrigió `generar_paquete_datos.py`, agregó el resumen del perfil agregado de participantes al README de datos, y actualizó el guion, el PPT y el folleto de defensa; completó el contenido de `resultados_.md` (antes vacío), y creó los README de las carpetas de tablas y figuras de publicación; corrigió `power_calculation_justificacion.md` para aclarar que el cálculo de potencia no forma parte del contenido prerregistrado en OSF, evitando una atribución no respaldada por la evidencia del prerregistro.
 
@@ -99,7 +99,7 @@ El conteo de **`git shortlog -sne HEAD` sobre un clon completo (1.411)**, por se
 
 ### Jamileth Estefanía Gamarra Zárate
 
-**Participación:** 13 de 21 días.
+**Participación:** 18 de 25 días.
 
 **Aporte narrativo:** Organización de fotos de entorno; limpieza de transcripciones duplicadas; incorporación de ORCID de los 5 integrantes en `CITATION.cff`; reorganización estructural de `02_Evidencias`; creación de mockups; trabajo en práctica PE5; participó en la jornada de anonimización; corrección de rutas de diagramas y fotos (04/09); actualización de `02_Evidencias`, `00_Restringido` y `Capturas` (05/09) — incluye la corrección del número de oficio (059→069) y la sesión de facilitación del Member Checking; aclaración de roles de participantes en la validación walkthrough (07/09); renombrado uniforme de índices a `Readme.md` (08/09); en el cierre final (09-12/09) agregó la columna de duración a `ficha_observacion.csv`, corrigió el formato y las filas de `diccionario_datos.csv` y de la matriz de trazabilidad, y renombró `Readme.md` a `README_datos.md` en el paquete de datos; dividió `run_all.py` en las etapas `leer_datos.py` y `procesar_datos.py` según lo exigido por el ítem A4, y completó el contenido de varios `README.md` vacíos de `03_Modelado/Diagramas_UML_Corregidos/` (casos de uso, secuencias).
 
@@ -109,7 +109,7 @@ El conteo de **`git shortlog -sne HEAD` sobre un clon completo (1.411)**, por se
 
 ### Thais Melanie Herrera Ramos
 
-**Participación:** 13 de 21 días *(incluye los 8 commits atribuidos vía `.mailmap` desde la identidad `MediCita Team`, del 18-19/08)*.
+**Participación:** 18 de 25 días *(incluye los 8 commits atribuidos vía `.mailmap` desde la identidad `MediCita Team`, del 18-19/08)*.
 
 **Aporte narrativo:** Limpieza de transcripciones y actualización de `CITATION.cff`; reorganización de `02_Evidencias`; creación de mockups; trabajo en las dos prácticas independientes PE5 (18-21/08); participó en la jornada de anonimización del 31/08; actualización de documentación (05/09); registro y facilitación de la sesión de Member Checking (06/09); corrección final del manuscrito y del guion de defensa (07/09); renombrado uniforme de índices a `Readme.md` (08/09); en el cierre final (09-12/09) documentó el resultado de la doble codificación (`resultado_kappa.md`), actualizó el estado de Software Heritage, registró la hoja de observación independiente de las sesiones VAL-MG/VAL-ENF, y documentó la separación entre la capa pública y la restringida de los datos; completó la división del script de análisis (`run_all.py` como coordinador y `generar_resultados.py`) exigida por el ítem A4; agregó las 16 filas reales que faltaban en `ficha_observacion.csv` (sesiones VAL-PSI y VAL-PAC02) y creó `generar_procesados.py`, cerrando el hueco por el cual la cadena de análisis no arrancaba realmente desde el dato crudo.
 
@@ -121,7 +121,7 @@ El conteo de **`git shortlog -sne HEAD` sobre un clon completo (1.411)**, por se
 
 ### Mayummy Jailly Trujillo Vega
 
-**Participación:** 11 de 21 días.
+**Participación:** 16 de 25 días.
 
 **Aporte narrativo:** Organización de fotos de entorno; reorganización de `02_Evidencias`; creación de mockups; trabajo en la práctica PE5 (Unidad V); participó en la jornada de anonimización del 31/08; actualización de documentación (05/09); registro de datos de Member Checking (06/09); renombrado uniforme de índices a `Readme.md` (08/09); en el cierre final (09-12/09) corrigió el video de verificación previa, actualizó el CHANGELOG y el estado del proyecto a completo, agregó el perfil agregado de participantes y el resultado de la doble observación independiente, y actualizó el video final de la defensa; documentó el proceso de revisión asistida por IA en `prompts_LLm_.md` (antes vacío) y creó el `Readme.md` de `scripts_analisis/` y el `README.md` de `Mockups_Prototipo_Final/`; ajustó `leer_datos.py` para que invoque la transformación real desde el dato crudo.
 
@@ -146,4 +146,3 @@ El reparto de participación por días es razonablemente parejo entre los cinco 
 | Thais Melanie Herrera Ramos | Herrera Thais | 12/09/2026 10:28 |
 | Mayummy Jailly Trujillo Vega | Trujillo Mayummy | 12/09/2026 10:31 |
 
-> **Nota:** las cifras de commits y días de esta versión se actualizaron el 12/09/2026, con posterioridad a las firmas anteriores. Si algún integrante considera que su aporte narrativo necesita ajuste tras esta actualización, puede corregirlo y volver a firmar.
