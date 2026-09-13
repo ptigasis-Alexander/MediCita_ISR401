@@ -7,6 +7,25 @@ y el proyecto utiliza [versionado semántico](https://semver.org/lang/es/).
 
 ### Resuelto
 
+- `10_Autoria/correspondencia/` (ítem A8): depositados los 4 documentos reales
+  de correspondencia institucional (solicitud del 28/05/2026, aval
+  institucional del 22/07/2026, aval del establecimiento del 20/08/2026 y
+  oficio de respaldo del 04/09/2026), antes solo referenciados desde otras
+  carpetas y ausentes del propio directorio de autoría.
+- Evidencia fotográfica fechada de 5 de las 7 sesiones de la ronda de
+  elicitación (Nutrición, Psicología, Coordinación/Odontología, Recepción,
+  Enfermería), recuperada de los dispositivos del equipo y depositada en
+  `10_Autoria/correspondencia/evidencia_entrevista/`, con el rostro de cada
+  persona entrevistada pixelado y el del integrante del equipo visible.
+- Desviación declarada explícitamente en `07_Datos/desviaciones.md`: la
+  coordinación puntual de horario de cada sesión de campo se realizó de
+  forma verbal/telefónica sin registro escrito; las 2 sesiones sin
+  evidencia fotográfica recuperable (Fisioterapia, Medicina General) se
+  declaran como pérdida por limpieza de espacio, sin reconstruirse.
+- Corrección de rutas rotas en `07_Datos/desviaciones.md` (carpeta
+  `evidencia_entrevistas` mal escrita, debía ser `evidencia_entrevista`; un
+  nombre de archivo con letra faltante).
+
 - Fragmento roto de evidencia audiovisual (`VIDEOS_Validacion.7z.206`, 2 bytes)
   reparado y republicado en el Release `evidencia-restringida-v1` con su
   tamaño e integridad correctos.
