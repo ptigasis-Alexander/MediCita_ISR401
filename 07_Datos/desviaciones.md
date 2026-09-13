@@ -42,11 +42,33 @@ No fabricar ni imputar respuestas u observaciones inexistentes.
 | | Documentado por escrito | Ejecutado |
 |---|---|---|
 | **Respaldo institucional (acceso al centro)** | Sí — solicitud, avales y oficio de respaldo, ver `10_Autoria/correspondencia/` | Completo, 4 de 4 documentos |
-| **Coordinación puntual de horario por sesión** (enfermería, medicina general, recepción, odontología, psicología, nutrición, terapia física, coordinación) | No | Se coordinó de forma verbal o telefónica directamente con el personal de cada área |
+| **Coordinación previa de horario por sesión** | No | Se coordinó de forma verbal o telefónica directamente con el personal de cada área |
+| **Evidencia de la fecha y hora reales de cada sesión** | Parcial — recuperada de fotografías con marca de tiempo, ver `10_Autoria/correspondencia/evidencia_entrevistas/` | 5 de 7 sesiones de elicitación con evidencia fotográfica fechada |
 
-El acceso institucional al centro médico está respaldado documentalmente en su totalidad (ver `10_Autoria/correspondencia/`). Lo que no quedó registrado por escrito es la coordinación operativa de fecha y hora de cada sesión individual: esas confirmaciones se manejaron de palabra con el personal de cada área, sin dejar correo, mensaje ni nota firmada.
+El acceso institucional al centro médico está respaldado documentalmente en su totalidad (ver `10_Autoria/correspondencia/`). La coordinación previa de fecha y hora de cada sesión individual se manejó de palabra con el personal de cada área, sin dejar correo, mensaje ni nota firmada — esa parte de la desviación se mantiene.
 
-Se declara esta desviación explícitamente, siguiendo el mismo criterio de la sección 1: no se fabrica ni se reconstruye retroactivamente un registro que no existió.
+Sin embargo, sí se recuperó evidencia fotográfica con marca de tiempo del dispositivo que registra cuándo ocurrió efectivamente cada sesión (no la coordinación previa, sino el momento real de ejecución):
+
+| Fecha | Hora | Entrevista | Evidencia |
+|---|---|---|---|
+| 04/06/2026 | 09:34 | Nutrición | `evidencia_entrevistas/2026-06-04_nutricion.png` |
+| 04/06/2026 | 09:53 | Psicología | `evidencia_entrevistas/2026-06-04_psicologia.png` |
+| 04/06/2026 | 10:16 | Coordinación / Odontología (mismo cargo, misma persona) | `evidencia_entrevistas/2026-06-04_oordinacion-odontologia.png` |
+| 17/07/2026 | 13:21 | Recepción | `evidencia_entrevistas/2026-07-17_recepcion.png` |
+| 17/07/2026 | 13:35 | Enfermería | `evidencia_entrevistas/2026-07-17_enfermeria.png` |
+
+Las fotografías fueron pixeladas en el rostro de la persona entrevistada, conservando visible únicamente al integrante del equipo que condujo la entrevista, siguiendo el mismo criterio de anonimización ya aplicado en los consentimientos y demás evidencia visual del proyecto.
+
+Dos sesiones de la primera ronda no cuentan con evidencia fotográfica recuperable — se perdió con el tiempo por limpieza de espacio de almacenamiento en los dispositivos del equipo. El equipo recuerda la hora aproximada de ambas, pero no puede respaldarla con una fotografía fechada:
+
+| Fecha (aproximada, según memoria del equipo) | Hora aproximada | Entrevista | Evidencia fotográfica |
+|---|---|---|---|
+| 04/06/2026 | ~10:30 | Fisioterapia | No disponible — se perdió con el tiempo |
+| 05/06/2026 | ~10:00 | Medicina General | No disponible — se perdió con el tiempo |
+
+Estas dos sesiones sí están respaldadas por otros medios ya existentes en el repositorio (transcripciones, actas firmadas, videos de la entrevista), solo falta la fotografía puntual con marca de hora. Esta pérdida parcial se declara explícitamente en vez de reconstruirse o inventarse.
+
+Se declara esta desviación explícitamente, siguiendo el mismo criterio de la sección 1: no se fabrica ni se reconstruye retroactivamente un registro que no existió o que ya no está disponible.
 ---
 
 ## 📄 Documento fuente completo
