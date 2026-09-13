@@ -37,6 +37,16 @@ Las sesiones adicionales respecto del plan original se reportan como desviacione
 
 No fabricar ni imputar respuestas u observaciones inexistentes.
 
+### 4. Confirmaciones puntuales de horario con el personal del centro médico
+
+| | Documentado por escrito | Ejecutado |
+|---|---|---|
+| **Respaldo institucional (acceso al centro)** | Sí — solicitud, avales y oficio de respaldo, ver `10_Autoria/correspondencia/` | Completo, 4 de 4 documentos |
+| **Coordinación puntual de horario por sesión** (enfermería, medicina general, recepción, odontología, psicología, nutrición, terapia física, coordinación) | No | Se coordinó de forma verbal o telefónica directamente con el personal de cada área |
+
+El acceso institucional al centro médico está respaldado documentalmente en su totalidad (ver `10_Autoria/correspondencia/`). Lo que no quedó registrado por escrito es la coordinación operativa de fecha y hora de cada sesión individual: esas confirmaciones se manejaron de palabra con el personal de cada área, sin dejar correo, mensaje ni nota firmada.
+
+Se declara esta desviación explícitamente, siguiendo el mismo criterio de la sección 1: no se fabrica ni se reconstruye retroactivamente un registro que no existió.
 ---
 
 ## 📄 Documento fuente completo
